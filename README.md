@@ -37,26 +37,25 @@ This compiles optimized, minified JS, CSS, and HTML into the `/dist` directory.
 
 You can deploy this repository to Hostinger using any of the following 3 fast methods:
 
-### Method 1: Hostinger Git Deployment (Easiest & Recommended)
+### Method 1: Hostinger Git Deployment (Fastest 1-Click Git Deploy)
 
-1. **Push your code to GitHub**:
-   Push the `cytos-react` project to your GitHub repository (e.g., `https://github.com/your-username/cytos-website`).
+Hostinger's Git tool copies files straight into `public_html`. Because vanilla Apache doesn't execute Node build commands automatically, use the pre-compiled **`production`** branch:
 
-2. **Open Hostinger hPanel**:
+1. **Open Hostinger hPanel**:
    - Go to your Hostinger Dashboard → Select your domain (`cytos.in`).
    - In the search bar or left sidebar, click **Git**.
 
-3. **Connect Your GitHub Repository**:
-   - **Repository URL**: `https://github.com/your-username/cytos-website.git`
-   - **Branch**: `main` (or `master`)
+2. **Connect Your GitHub Repository**:
+   - **Repository URL**: `https://github.com/mhaskeprasad44/cytos.git`
+   - **Branch**: `production`  *(Important: select `production`, which contains the compiled HTML, CSS, JS & .htaccess)*
    - **Install path**: Leave empty or set to `public_html`.
    - Click **Create**.
 
-4. **Auto-Deploy Webhook**:
+3. **Auto-Deploy Webhook (Optional)**:
    - Hostinger provides a Webhook URL. Copy it.
    - In your GitHub repo: Go to **Settings** → **Webhooks** → **Add Webhook**.
    - Paste the Payload URL and select `application/json`.
-   - Now, every `git push` automatically updates your Hostinger site!
+   - Whenever you run `npm run build:prod`, the `production` branch updates on GitHub and Hostinger automatically pulls the new build!
 
 ---
 

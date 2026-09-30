@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:prod": "vite build && python scripts/push_production_branch.py",
     "preview": "vite preview"
   },
   "dependencies": {
