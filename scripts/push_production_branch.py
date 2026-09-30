@@ -14,7 +14,7 @@ temp_dir = os.path.join(tempfile.gettempdir(), "cytos_production_release")
 if os.path.exists(temp_dir):
     shutil.rmtree(temp_dir, ignore_errors=True)
 
-shutil.copytree(DIST_DIR, temp_dir)
+shutil.copytree(DIST_DIR, temp_dir, dirs_exist_ok=True)
 print(f"Copied dist contents to {temp_dir}")
 
 def run_git(args, cwd):
