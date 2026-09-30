@@ -2506,12 +2506,15 @@ a[href*="wa.me"] svg {
     height: calc(100dvh - 65px);
     background: #ffffff;
     flex-direction: column;
+    align-items: stretch;
+    gap: 0;
     padding: 1.25rem 1.5rem 3rem;
     border-top: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-lg);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 9999;
+    text-align: left;
   }
 
   .nav-links.active {
@@ -2532,7 +2535,9 @@ a[href*="wa.me"] svg {
     color: var(--text-pure);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
   }
 
   .mobile-menu-btn {
@@ -2594,6 +2599,7 @@ a[href*="wa.me"] svg {
     font-weight: 600;
     color: var(--text-pure);
     cursor: pointer;
+    text-align: left;
   }
 
   .dropdown-arrow {
