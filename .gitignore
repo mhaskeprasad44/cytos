@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+cytos-react/node_modules/
+
+# Production build outputs
+cytos-react/dist/
+cytos-react/dist-ssr/
+cytos-react/build_err.txt
+
+# Scratch and temporary testing files
+scratch/
+scratch_*
+debug_*.py
+favicon-test*
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

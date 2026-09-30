@@ -1,0 +1,894 @@
+FEATURED_IMAGE_MAP = {
+    "pcb-drilling-machine-guide": "assets/images/blogs/pcb-micro-drilling-featured.jpg",
+    "multi-spindle-pcb-drilling-machine": "assets/images/blogs/multi-spindle-drilling-featured.jpg",
+    "mechanical-pcb-drilling-vs-laser-drilling": "assets/images/blogs/pcb-drilling-laser-comparison-16x9.jpg",
+    "pcb-drilling-tool-breakage-prevention": "assets/images/blogs/micro-drill-bit-breakage-prevention.jpg",
+    "60000-rpm-pcb-drilling-spindle-maintenance": "assets/images/blogs/pcb-spindle-maintenance-16x9.jpg",
+    "multilayer-fr4-rogers-pcb-drilling": "assets/images/blogs/multilayer-fr4-rogers-drilling-16x9.jpg",
+    "chemical-free-pcb-rapid-prototyping-machine": "assets/images/blogs/pcb-rapid-prototyping-featured.jpg",
+    "in-house-pcb-rapid-prototyping-roi": "assets/images/blogs/pcb-rapid-prototyping-roi-16x9.jpg",
+    "gerber-to-pcb-isolation-milling-guide": "assets/images/blogs/pcb-isolation-milling-traces.jpg",
+    "auto-surface-leveling-pcb-prototyping": "assets/images/blogs/auto-surface-leveling-16x9.jpg",
+    "green-electronics-rapid-prototyping-lab": "assets/images/blogs/green-electronics-lab-16x9.jpg",
+    "double-sided-pcb-rapid-prototyping-guide": "assets/images/blogs/double-sided-pcb-prototyping-16x9.jpg",
+    "special-purpose-machines-spm-guide": "assets/images/blogs/spm-welding-automation-featured.jpg",
+    "pneumatic-welding-fixtures-spm-design": "assets/images/blogs/pneumatic-welding-fixtures-16x9.jpg",
+    "robotic-adhesive-dispensing-spm-systems": "assets/images/blogs/robotic-dispensing-spm-featured.jpg",
+    "plc-control-panel-automation-spm-safety": "assets/images/blogs/plc-control-panel-automation.jpg",
+    "automotive-cycle-time-reduction-spm": "assets/images/blogs/automotive-spm-cycle-time-16x9.jpg",
+    "cnc-drilling-and-milling-machine-guide": "assets/images/blogs/cnc-milling-heavy-featured.jpg",
+    "vertical-drilling-and-milling-machine-guide": "assets/images/blogs/vdm-switchboard-milling-featured.jpg",
+    "bt30-vs-bt40-cnc-drilling-and-milling": "assets/images/blogs/bt30-vs-bt40-spindle-taper.jpg",
+    "heavy-duty-cnc-router-machine-guide": "assets/images/blogs/cnc-gantry-router-featured.jpg",
+    "aluminium-composite-sheet-cnc-drilling-milling": "assets/images/blogs/aluminum-sheet-cold-air-milling.jpg"
+}
+
+# -*- coding: utf-8 -*-
+"""
+blog_generator_core.py
+Core HTML template renderer and Schema generator for CyTOS 20+ Engineering Blogs.
+Compliant with strict SEO, AEO (Answer Engine Optimization), GEO, and LLM AI Overview criteria.
+"""
+
+import json
+
+def generate_blog_html(blog, all_blogs):
+    slug = blog["slug"]
+    featured_img_src = FEATURED_IMAGE_MAP.get(slug, blog["images"][0]["src"])
+    slug = blog["slug"]
+    title = blog["title"]
+    focus_kw = blog["focus_keyword"]
+    meta_desc = blog["meta_description"]
+    canonical_url = f"https://cytos.in/blog/{slug}"
+    category_id = blog["category"]
+    category_name = blog["category_name"]
+    date_published = blog.get("date_published", "2026-09-15")
+    date_modified = blog.get("date_modified", "2026-09-28")
+    read_time = blog.get("read_time", "12 min read")
+    author_name = blog.get("author", "CyTOS Machine Tool Engineering Team")
+    author_role = blog.get("author_role", "Senior Application Engineers, CyTOS Pune Works")
+
+    # Generate Schema JSON-LD
+    tech_article_schema = {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "@id": f"{canonical_url}#article",
+        "isPartOf": {
+            "@type": "WebPage",
+            "@id": canonical_url,
+            "url": canonical_url,
+            "name": title
+        },
+        "headline": title,
+        "description": meta_desc,
+        "keywords": f"{focus_kw}, {blog.get('secondary_keywords', '')}, CyTOS Pune, industrial automation, CNC manufacturing",
+        "inLanguage": "en-IN",
+        "mainEntityOfPage": canonical_url,
+        "datePublished": date_published,
+        "dateModified": date_modified,
+        "author": {
+            "@type": "Organization",
+            "name": author_name,
+            "url": "https://cytos.in/about.html"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "CyTOS - Cycle Time Optimising Solutions",
+            "url": "https://cytos.in",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cytos.in/Logo.png"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "S. No. 30, 5B, Dhayari-Narhe Road, Dhayari",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "postalCode": "411041",
+                "addressCountry": "IN"
+            }
+        },
+        "about": [
+            {"@type": "Thing", "name": focus_kw},
+            {"@type": "Thing", "name": "Computer Numerical Control (CNC)"},
+            {"@type": "Thing", "name": "Cycle Time Optimization"}
+        ]
+    }
+
+    breadcrumb_schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://cytos.in/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Engineering Blog",
+                "item": "https://cytos.in/blog.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": title,
+                "item": canonical_url
+            }
+        ]
+    }
+
+    faq_schema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": faq["q"],
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq["a"]
+                }
+            }
+            for faq in blog.get("faqs", [])
+        ]
+    }
+
+    schema_json_tech = json.dumps(tech_article_schema, indent=2)
+    schema_json_breadcrumb = json.dumps(breadcrumb_schema, indent=2)
+    schema_json_faq = json.dumps(faq_schema, indent=2)
+
+    # Table of contents items
+    toc_items_html = ""
+    for idx, sec in enumerate(blog["sections"], 1):
+        sec_id = sec["id"]
+        sec_title = sec["title"]
+        toc_items_html += f'<li><a href="#{sec_id}"><span class="blog-toc-number">{idx:02d}.</span> <span>{sec_title}</span></a></li>\n'
+
+    # Build sections HTML with embedded media figures
+    sections_html = ""
+    images = blog.get("images", [])
+    for idx, sec in enumerate(blog["sections"]):
+        sec_id = sec["id"]
+        sec_title = sec["title"]
+        sec_body = sec["content"]
+        
+        # Attach image if available
+        img_html = ""
+        if idx < len(images):
+            img = images[idx]
+            img_html = f'''
+        <figure class="article-media-figure">
+          <img src="../{img['src']}" alt="{img['alt']}" loading="lazy">
+          <figcaption>{img['caption']}</figcaption>
+        </figure>'''
+
+        sections_html += f'<section id="{sec_id}" class="article-section">\n'
+        sections_html += f'  <h2>{sec_title}</h2>\n'
+        sections_html += f'  {sec_body}\n'
+        sections_html += f'  {img_html}\n'
+        sections_html += f'</section>\n\n'
+
+    # Build FAQ HTML
+    faq_html = ""
+    for idx, faq in enumerate(blog.get("faqs", []), 1):
+        q_text = faq["q"]
+        a_text = faq["a"]
+        faq_html += f'''
+        <div class="faq-card-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <h3 class="faq-question-title" itemprop="name"><strong>Q{idx}:</strong> {q_text}</h3>
+          <div class="faq-answer-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">{a_text}</p>
+          </div>
+        </div>'''
+
+    # Build Related Blogs Cards (3 items)
+    related_slugs = blog.get("related_slugs", [])
+    related_cards_html = ""
+    for r_slug in related_slugs[:3]:
+        r_blog = next((b for b in all_blogs if b["slug"] == r_slug), None)
+        if r_blog:
+            r_img = FEATURED_IMAGE_MAP.get(r_slug, r_blog["images"][0]["src"])
+            related_cards_html += f'''
+            <article class="blog-card" data-category="{r_blog['category']}">
+              <a href="{r_blog['slug']}.html" class="blog-card-img-wrap" title="{r_blog['title']}">
+                <img src="../{r_img}" alt="{r_blog['focus_keyword']} Engineering Insights" loading="lazy">
+              </a>
+              <div class="blog-card-body">
+                <div class="blog-meta-row">
+                  <span class="blog-category-badge">{r_blog['category_name']}</span>
+                  <span>•</span>
+                  <span>{r_blog['read_time']}</span>
+                </div>
+                <h3 class="blog-card-title">
+                  <a href="{r_blog['slug']}.html" title="{r_blog['title']}">{r_blog['title']}</a>
+                </h3>
+                <p class="blog-excerpt">{r_blog['meta_description'][:135]}...</p>
+                <a href="{r_blog['slug']}.html" class="blog-card-link" title="Read full guide: {r_blog['title']}">
+                  <span>Read Article</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </article>'''
+
+    # Assemble complete page
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+  new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  }})(window,document,'script','dataLayer','GTM-P6DNQQ3H');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLPML4D2SB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TLPML4D2SB');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){{
+          c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      }})(window, document, "clarity", "script", "ypy7znoaq7");
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content="{meta_desc}">
+  <meta name="keywords" content="{focus_kw}, {blog.get('secondary_keywords', '')}, CyTOS Pune, industrial CNC, cycle time reduction">
+  <link rel="canonical" href="{canonical_url}">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{meta_desc}">
+  <meta property="og:url" content="{canonical_url}">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://cytos.in/{blog['images'][0]['src']}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{meta_desc}">
+  <meta name="twitter:image" content="https://cytos.in/{blog['images'][0]['src']}">
+
+  <!-- Google Fonts: Roboto Only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css?v=2.4">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+{schema_json_tech}
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+  <script type="application/ld+json">
+{schema_json_breadcrumb}
+  </script>
+  <script type="application/ld+json">
+{schema_json_faq}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ==========================================================================
+       1. Top Trust & Telemetry Bar
+       ========================================================================== -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       2. Sticky Main Header & Navigation
+       ========================================================================== -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <!-- Logo ONLY (Clean & Optimized) -->
+      <a href="../index.html" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="../Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="../pcb-drilling-routing.html" class="nav-link dropdown-trigger">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../pcb-drilling-routing.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">Production</span>
+              </div>
+              <span class="dropdown-item-desc">Single, dual &amp; 3-spindle 60,000 RPM systems (PCB30, PCB60, PCB12)</span>
+            </a>
+            <a href="../pcb-prototyping.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB Rapid Prototyping</span>
+                <span class="badge-mini">R&amp;D / Lab</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant desktop prototyping (PCBE3020 &amp; PCB30)</span>
+            </a>
+            <a href="../cnc-routers-milling.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">Heavy Gantry</span>
+              </div>
+              <span class="dropdown-item-desc">High-precision 4x4, 8x4 &amp; 8x8 routers for non-ferrous metals &amp; composites</span>
+            </a>
+            <a href="../vdm-milling.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Milling &amp; Drilling</span>
+                <span class="badge-mini">Multi-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">Multi-spindle rigid milling for switchboard &amp; electrical plates</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="../spm-automation.html" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../spm-automation.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="../robotic-dispensing-cells.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="../pneumatic-welding-fixtures.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="../plc-control-panels.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="../applications.html" class="nav-link">Applications</a>
+        <a href="../case-studies.html" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="../about.html" class="nav-link dropdown-trigger active">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="../about.html" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; 12-year track record</span>
+            </a>
+            <a href="../blog.html" class="dropdown-item active" style="background: rgba(217, 119, 6, 0.06);">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini" style="background: var(--brand-gold); color: #ffffff;">Active</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: Icons Only -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp"><svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+        <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="{blog.get('target_machine_name', 'CyTOS Machine System')}" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <ul class="breadcrumbs-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><span class="bc-sep">/</span></li>
+        <li><a href="../blog.html">Engineering Blog</a></li>
+        <li><span class="bc-sep">/</span></li>
+        <li><span class="current">{title}</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Blog Article Hero -->
+  <header class="blog-article-hero">
+    <div class="container">
+      <div class="badge-accent">
+        <span class="badge-dot"></span>
+        <span>{category_name} • Peer-Reviewed Engineering Guide</span>
+      </div>
+      <h1 class="blog-article-title">{title}</h1>
+      <div class="blog-article-meta">
+        <div class="blog-article-meta-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>Published: {date_published}</span>
+        </div>
+        <div class="blog-article-meta-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          <span>{read_time}</span>
+        </div>
+        <div class="blog-article-meta-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>By: {author_name}</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Article Layout -->
+  <main class="container">
+    <div class="blog-layout-container">
+      
+      <!-- Article Content Column -->
+      <article class="blog-article-body">
+
+        <!-- Article Featured Hero Banner (16:9 4K Quality) -->
+        <figure class="article-featured-lead-image">
+          <img src="../{featured_img_src}" alt="{focus_kw.title()} - {title}" width="1200" height="675" loading="eager">
+        </figure>
+
+        <!-- AEO Direct Answer Box (Google AI Overview & LLM Snippets) -->
+        <div class="aeo-direct-answer-card">
+          <div class="aeo-header">
+            <span class="aeo-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Quick Technical Summary / Direct Answer</span>
+            </span>
+            <span style="font-size: 0.78rem; color: #92400e;">ISO 9001:2015 Verified</span>
+          </div>
+          <p class="aeo-direct-text">
+            {blog['direct_answer']}
+          </p>
+        </div>
+
+        <!-- Table of Contents -->
+        <nav class="blog-toc-card" aria-label="Table of Contents">
+          <div class="blog-toc-title">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+            <span>Table of Contents</span>
+          </div>
+          <ol class="blog-toc-list">
+            {toc_items_html}
+            <li><a href="#frequently-asked-questions"><span class="blog-toc-number">{len(blog['sections']) + 1:02d}.</span> <span>Frequently Asked Questions</span></a></li>
+            <li><a href="#engineering-consultation"><span class="blog-toc-number">{len(blog['sections']) + 2:02d}.</span> <span>Engineering Consultation &amp; Next Steps</span></a></li>
+          </ol>
+        </nav>
+
+        <!-- Dynamic Content Sections -->
+        {sections_html}
+
+        <!-- FAQ Section (Schema.org Microdata & JSON-LD Bot Readable) -->
+        <section id="frequently-asked-questions" class="article-faq-section" itemscope itemtype="https://schema.org/FAQPage">
+          <h2 class="article-faq-title" itemprop="name">Frequently Asked Questions</h2>
+          <div class="faq-container">
+            {faq_html}
+          </div>
+        </section>
+
+        <!-- E-E-A-T Author Card -->
+        <div class="article-author-card">
+          <div class="author-card-avatar">CY</div>
+          <div class="author-card-info">
+            <h4>{author_name}</h4>
+            <p><strong>{author_role}</strong></p>
+            <p>CyTOS Engineering Works specializes in cycle time optimization, high-frequency PCB micro-drilling spindles, chemical-free prototyping systems, and heavy-duty turnkey special purpose machines designed and manufactured at our 3,000 sq. ft. plant in Dhayari, Pune, India.</p>
+          </div>
+        </div>
+
+        <!-- In-Article Machine Recommendation CTA -->
+        <div class="tech-newsletter-card" id="engineering-consultation" style="margin: 3.5rem 0 1rem;">
+          <div>
+            <span class="badge-accent" style="margin-bottom: 0.5rem; display: inline-block;">Factory Consultation</span>
+            <h3>Consult CyTOS Applications Team on Technical Solutions</h3>
+            <p>
+              Looking to cut cycle time, eliminate bit breakages, or commission a high-rigidity CNC machine? Share your drawings or technical specs for a guaranteed 24-hour engineering assessment.
+            </p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <button class="btn btn-primary" data-open-rfq data-machine="{blog.get('target_machine_name', 'CyTOS Machine System')}">
+              <span>Request Technical Consultation</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20have%20an%20inquiry%20regarding%20{focus_kw.replace(' ', '%20')}." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="justify-content: center;">
+              <span>Chat with Application Engineer</span>
+            </a>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- Sticky Sidebar -->
+      <aside class="blog-sidebar">
+        
+        <!-- Primary Fast RFQ Card -->
+        <div class="sidebar-lead-card">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff; margin-bottom: 0.75rem; display: inline-block;">Factory Direct</span>
+          <h4>Get Machine Pricing &amp; Feasibility Report</h4>
+          <p>
+            Direct consultation with CyTOS design engineers in Pune. Guaranteed response within 24 hours with complete cycle time calculation and tooling recommendation.
+          </p>
+          <button class="btn btn-primary" data-open-rfq data-machine="{blog.get('target_machine_name', 'CyTOS Machine System')}">
+            <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>Request Fast Quote</span>
+          </button>
+          <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20{focus_kw.replace(' ', '%20')}." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+            <span>Technical Applications Desk</span>
+          </a>
+        </div>
+
+        <!-- Machine Model Spotlight Card -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; color: var(--brand-gold-dark); letter-spacing: 0.05em; display: block; margin-bottom: 0.4rem;">Machine in Spotlight</span>
+          <h4 style="font-size: 1.12rem; margin-bottom: 0.75rem; color: var(--text-pure);">{blog.get('target_machine_name', 'CyTOS Precision CNC System')}</h4>
+          <img src="../{blog['images'][0]['src']}" alt="{focus_kw} machine overview" style="width: 100%; height: 160px; object-fit: contain; background: #f8fafc; border-radius: 6px; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid var(--border-subtle);" loading="lazy">
+          <ul style="font-size: 0.86rem; color: var(--text-secondary); margin: 0 0 1.25rem 1.25rem; line-height: 1.55;">
+            <li>Factor of Safety 2.0 Engineering</li>
+            <li>24x7 Rated Heavy Continuous Duty</li>
+            <li>Precision Class C3/C5 Motion Drives</li>
+            <li>Manufactured &amp; Serviced in Pune</li>
+          </ul>
+          <a href="{blog.get('target_machine_link', '../pcb-drilling-routing.html')}" class="btn btn-outline" style="width: 100%; justify-content: center; font-size: 0.86rem;">
+            <span>Explore Machine Specs</span>
+          </a>
+        </div>
+
+        <!-- Phone Hotline Card -->
+        <div style="background: #f8fafc; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.25rem; text-align: center;">
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Need Urgent Technical Consultation?</p>
+          <a href="tel:+919921381071" style="font-size: 1.15rem; font-weight: 800; color: var(--brand-gold-dark); text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+            <span>+91 99213 81071</span>
+          </a>
+          <span style="font-size: 0.76rem; color: var(--text-tertiary); display: block; margin-top: 0.25rem;">Mon - Sat: 8:30 AM - 7:30 PM IST</span>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Related Technical Articles Strip -->
+  <section class="related-posts-section">
+    <div class="container">
+      <h2 class="related-posts-title">Related Technical Machining &amp; Automation Guides</h2>
+      <div class="blog-grid" style="margin-bottom: 0;">
+        {related_cards_html}
+      </div>
+    </div>
+  </section>
+
+  <!-- Master Footer -->
+  <footer class="main-footer" id="footerSection">
+    <div class="container">
+      <!-- 2-Column Industrial Trust Cards -->
+      <div class="footer-trust-strip">
+        <div class="footer-trust-grid">
+          
+          <!-- Card 1: Factor of Safety 2.0 -->
+          <div class="footer-trust-card">
+            <div class="footer-trust-card-header">
+              <div class="footer-trust-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h4 class="footer-trust-card-title">Factor of Safety 2.0 • 24×7 Continuous Duty</h4>
+            </div>
+            <p class="footer-trust-card-desc">
+              Every CyTOS CNC gantry, high-frequency spindle, and automation fixture is engineered with a strict 2.0 safety factor for round-the-clock industrial duty cycles without thermal distortion.
+            </p>
+            <div class="footer-trust-card-pills">
+              <span class="footer-trust-pill">100% Tested at Pune Plant</span>
+              <span class="footer-trust-pill">Dynamic Balancing G0.4</span>
+              <span class="footer-trust-pill">Class C3 Ground Ball Screws</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Pan-India Delivery & Commissioning -->
+          <div class="footer-trust-card">
+            <div class="footer-trust-card-header">
+              <div class="footer-trust-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <h4 class="footer-trust-card-title">🇮🇳 Direct Factory Machine Delivery &amp; On-Site Commissioning Across All India</h4>
+            </div>
+            <p class="footer-trust-card-desc">
+              Doorstep factory delivery, uncrating, laser alignment, and operator training across Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR, and all industrial clusters nationwide.
+            </p>
+            <div class="footer-trust-card-pills">
+              <span class="footer-trust-pill">Turnkey Delivery</span>
+              <span class="footer-trust-pill">On-Site Calibration</span>
+              <span class="footer-trust-pill">Lifetime Spares &amp; Support</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col">
+          <div class="footer-brand-header">
+            <img src="../Logo-footer.png" alt="CyTOS Logo" class="footer-brand-logo" width="160" height="76" style="height: 76px; width: auto; object-fit: contain; margin-bottom: 1.25rem;">
+          </div>
+          <p class="footer-desc" style="line-height: 1.65; margin-bottom: 1.25rem; font-size: 0.88rem; color: #94a3b8;">
+            Pune-based machine tool &amp; industrial automation engineering company established in December 2019. Manufacturing precision CNC PCB drilling systems, green prototyping mills, heavy routers, and custom turnkey SPMs.
+          </p>
+          
+        </div>
+
+        <!-- Col 2: Quick Links (LEFT) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="../about.html">About CyTOS</a></li>
+            <li><a href="../blog.html">Engineering Blog</a></li>
+            <li><a href="../terms-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Machine Solutions</h4>
+          <ul class="footer-nav-list">
+            <li><a href="../pcb-drilling-routing.html">PCB Production Drilling &amp; Routing</a></li>
+            <li><a href="../pcb-prototyping.html">Chemical-Free PCB Prototyping</a></li>
+            <li><a href="../pcb-prototyping.html#educational-lab">Educational CNC Lab Trainers</a></li>
+            <li><a href="../cnc-routers-milling.html">4x4 &amp; 8x8 Industrial CNC Routers</a></li>
+            <li><a href="../vdm-milling.html">VDM Multi-Spindle Milling</a></li>
+            <li><a href="../spm-automation.html">Custom Turnkey SPMs &amp; Robotics</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Key Applications -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Key Applications</h4>
+          <ul class="footer-nav-list">
+            <li><a href="../case-studies.html">Automotive Sunroof Dispensing</a></li>
+            <li><a href="../case-studies.html#welding-fixtures">90° Pneumatic Weld Fixtures</a></li>
+            <li><a href="../applications.html#multilayer-pcb">Multilayer Double-Sided PCBs</a></li>
+            <li><a href="../applications.html#mcpcb">Aluminium MCPCB &amp; Heat Sinks</a></li>
+            <li><a href="../applications.html#composites">Acrylic &amp; Composite Routing</a></li>
+            <li><a href="../about.html">Pune 3,000 Sq. Ft. Facility Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Pune Works & Contact (IN THE END) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Pune Works &amp; Contact</h4>
+          <address class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>S. No. 30, 5B, Dhayari-Narhe Road, Dhayari, Pune, Maharashtra 411041, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+              <div>
+                <a href="tel:+919921381071">+91 99213 81071</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:info@cytos.in">info@cytos.in</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Monday – Saturday: 8:30 AM – 7:30 PM IST</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          &copy; 2019–2026 CyTOS Engineering Solutions. All Rights Reserved. Engineered with precision in Pune, Maharashtra.
+        </div>
+        <div class="footer-credit">
+          <span>Designed &amp; Developed by</span>
+          <a href="https://inranktech.com" target="_blank" rel="noopener noreferrer" class="credit-link">Inrank Tech</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Floating Action Buttons (Icon Version Only) -->
+  <aside class="floating-contact-bar" aria-label="Quick Communication Dock">
+    <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20am%20reading%20your%20engineering%20blog%20and%20would%20like%20to%20discuss%20a%20CNC%20machine%20requirement." target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="Chat with Technical Applications Desk" aria-label="Chat with Technical Applications Desk">
+      <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+    </a>
+    <button class="floating-btn floating-quote-btn" data-open-rfq data-machine="{blog.get('target_machine_name', 'CyTOS Machine System')}" title="Request Fast Technical Quote" aria-label="Request Fast Quote">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+    </button>
+  </aside>
+
+  <!-- Fast Quote RFQ Modal -->
+  <div class="modal-backdrop" id="rfqModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="badge-mini" style="background: rgba(217, 119, 6, 0.12); color: var(--brand-gold-dark); font-weight: 700; padding: 3px 8px; border-radius: 4px; display: inline-block;">24-Hour Guaranteed Turnaround</span>
+          <h3 id="modalTitle">Request Technical Machine Quotation</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <form id="rfqForm" action="https://formsubmit.co/info@cytos.in" method="POST">
+        <input type="hidden" name="_cc" value="inranktech@gmail.com">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Technical RFQ - CyTOS Machine Portal">
+        <input type="hidden" name="_next" value="https://cytos.in/contact.html?rfq_submitted=1">
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="rfqName" class="form-label">Full Name *</label>
+            <input type="text" id="rfqName" name="name" class="form-input" required placeholder="e.g. Rajesh Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany" class="form-label">Company / Institution *</label>
+            <input type="text" id="rfqCompany" name="company" class="form-input" required placeholder="e.g. Bharat Electronics Ltd">
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="rfqEmail" class="form-label">Corporate Email *</label>
+            <input type="email" id="rfqEmail" name="email" class="form-input" required placeholder="name@company.com">
+          </div>
+          <div class="form-group">
+            <label for="rfqPhone" class="form-label">Phone / WhatsApp Number *</label>
+            <input type="tel" id="rfqPhone" name="phone" class="form-input" required placeholder="+91 98765 43210">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rfqMachine" class="form-label">Machine or System of Interest *</label>
+          <select id="rfqMachine" name="machine" class="form-select" required>
+            <option value="PCB Drilling Series">PCB Production Drilling (PCB30 / PCB60 / PCB12)</option>
+            <option value="PCB Prototyping Series">Chemical-Free PCB Prototyping (PCBE3020 / PCB30)</option>
+            <option value="Industrial CNC Routers">Industrial CNC Routers (4x4, 8x4, 8x8 Gantry)</option>
+            <option value="CyTOS VDM Series Heavy Drilling Milling Machine">CyTOS VDM Multi-Spindle Vertical Milling &amp; Drilling Series</option>
+            <option value="Turnkey SPM Automation">Custom Turnkey SPM Automation</option>
+            <option value="Robotic Dispensing Cell">Robotic Dispensing Automation</option>
+            <option value="Welding Fixtures">Pneumatic Welding Fixture Jigs</option>
+            <option value="{blog.get('target_machine_name', 'CyTOS Machine System')}" selected>{blog.get('target_machine_name', 'CyTOS Machine System')}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="rfqDetails" class="form-label">Technical Requirements / Material / Tolerances</label>
+          <textarea id="rfqDetails" name="details" class="form-textarea" rows="3" placeholder="Provide material type, thickness, target cycle time, or spindle RPM requirement..."></textarea>
+        </div>
+
+        <div class="modal-footer-actions">
+          <button type="submit" class="btn btn-primary" id="rfqSubmitBtn" style="flex: 1;">
+            <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            <span>Submit Technical RFQ</span>
+          </button>
+          <button type="button" class="btn btn-whatsapp" id="rfqWhatsAppSubmitBtn">
+            <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+            <span>Send Technical RFQ via WhatsApp</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent-banner" id="cookieConsentBanner" role="dialog" aria-modal="false" aria-label="Cookie &amp; Privacy Consent">
+    <div class="consent-container">
+      <div class="consent-content">
+        <div class="consent-badge">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+        </div>
+        <div class="consent-text">
+          <h4 class="consent-heading">Privacy &amp; Engineering Cookies</h4>
+          <p class="consent-body">
+            CyTOS uses cookies to ensure our machine catalog, CAD/Gerber RFQ calculators, and analytics deliver the highest precision performance. We do not sell your commercial data. By continuing, you agree to our <a href="../privacy-policy.html" class="consent-link">Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
+      <div class="consent-buttons">
+        <button type="button" class="btn btn-outline btn-sm" id="btnRejectConsent">Necessary Only</button>
+        <button type="button" class="btn btn-primary btn-sm" id="btnAcceptConsent">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Logic Script -->
+  <script src="../script.js"></script>
+
+  <!-- FAQ Accordion Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {{
+      var faqButtons = document.querySelectorAll('.faq-question-btn');
+      faqButtons.forEach(function(btn) {{
+        btn.addEventListener('click', function() {{
+          var expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !expanded);
+          var content = this.nextElementSibling;
+          if (!expanded) {{
+            content.style.display = 'block';
+            this.querySelector('svg').style.transform = 'rotate(180deg)';
+          }} else {{
+            content.style.display = 'none';
+            this.querySelector('svg').style.transform = 'rotate(0deg)';
+          }}
+        }});
+      }});
+    }});
+  </script>
+</body>
+</html>'''
+    return html
