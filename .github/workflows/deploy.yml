@@ -1,10 +1,12 @@
-name: Deploy CyTOS React to Hostinger
+name: Build and Deploy CyTOS Website
 
 on:
   push:
     branches:
       - main
-      - master
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -26,11 +28,16 @@ jobs:
       - name: 🛠️ Build Production Bundle
         run: npm run build
 
-      # OPTION 1: Automatic FTP/FTPS Deployment to Hostinger public_html
-      # To enable this, add secrets in your GitHub repository:
-      # Settings -> Secrets and variables -> Actions
-      # Add: HOSTINGER_FTP_SERVER, HOSTINGER_FTP_USERNAME, HOSTINGER_FTP_PASSWORD
-      - name: 🚀 Deploy to Hostinger via FTP
+      # Automatically keeps the 'production' branch updated with compiled HTML/CSS/JS for Hostinger Git
+      - name: 🚀 Update Production Branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: production
+          folder: dist
+          commit-message: "Automated production build from commit ${{ github.sha }}"
+
+      # Optional direct FTP upload to Hostinger if secrets are configured
+      - name: 📡 Direct Deploy to Hostinger via FTP (Optional)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         if: env.HOSTINGER_FTP_SERVER != ''
         env:
