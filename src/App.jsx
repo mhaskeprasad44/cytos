@@ -18,6 +18,7 @@ import TermsPage from './pages/TermsPage';
 import VdmMillingPage from './pages/VdmMillingPage';
 import BlogListingPage from './pages/BlogListingPage';
 import CookieConsent from './components/CookieConsent';
+import { blogArticles } from './data/blogData';
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 
 function PageLoader() {
@@ -52,6 +53,15 @@ export default function App() {
         {/* Blog Knowledge Hub */}
         <Route path="/blog" element={<BlogListingPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route path="/blog/:slug.html" element={<BlogPostPage />} />
+
+        {/* Naked blog slug redirects to /blog/:slug */}
+        {blogArticles.map((b) => (
+          <React.Fragment key={b.slug}>
+            <Route path={`/${b.slug}`} element={<Navigate to={`/blog/${b.slug}`} replace />} />
+            <Route path={`/${b.slug}.html`} element={<Navigate to={`/blog/${b.slug}`} replace />} />
+          </React.Fragment>
+        ))}
 
         {/* Direct .html aliases for backwards compatibility */}
         <Route path="/index.html" element={<Navigate to="/" replace />} />

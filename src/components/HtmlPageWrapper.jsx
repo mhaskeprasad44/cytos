@@ -41,7 +41,8 @@ export default function HtmlPageWrapper({ htmlContent, title, description }) {
         href.startsWith('mailto:') ||
         href.includes('wa.me') ||
         link.target === '_blank' ||
-        href.endsWith('.pdf')
+        href.endsWith('.pdf') ||
+        href.endsWith('.xml')
       ) {
         return;
       }
@@ -52,13 +53,21 @@ export default function HtmlPageWrapper({ htmlContent, title, description }) {
       }
 
       // Convert .html link to clean route path
-      let cleanPath = href.replace(/\.html$/, '');
-      if (cleanPath === 'index' || cleanPath === './index') cleanPath = '/';
+      let [pathPart, hashPart] = href.split('#');
+      let cleanPath = pathPart.replace(/\.html$/, '');
+      if (cleanPath === 'index' || cleanPath === './index' || cleanPath === '/index') cleanPath = '/';
       else if (!cleanPath.startsWith('/')) cleanPath = '/' + cleanPath;
 
       e.preventDefault();
       navigate(cleanPath);
-      window.scrollTo(0, 0);
+      if (hashPart) {
+        setTimeout(() => {
+          const el = document.getElementById(hashPart);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      } else {
+        window.scrollTo(0, 0);
+      }
     };
 
     container.addEventListener('click', handleLinkClick);

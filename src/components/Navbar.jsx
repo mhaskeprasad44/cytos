@@ -77,7 +77,7 @@ export default function Navbar({ onOpenQuote }) {
       <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-container">
           <Link to="/" className="site-logo" aria-label="CyTOS Machines Home">
-            <img src="/Logo-cropped.png" alt="CyTOS Machines Pune Logo" width="180" height="48" />
+            <img src="/CyTOS New Logo.png" alt="CyTOS Machines Pune Logo" width="180" height="48" />
           </Link>
 
           {/* Desktop Navigation */}
