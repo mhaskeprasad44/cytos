@@ -17,6 +17,7 @@ import SpmAutomationPage from './pages/SpmAutomationPage';
 import TermsPage from './pages/TermsPage';
 import VdmMillingPage from './pages/VdmMillingPage';
 import BlogListingPage from './pages/BlogListingPage';
+import CookieConsent from './components/CookieConsent';
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 
 function PageLoader() {
@@ -73,6 +74,7 @@ export default function App() {
         {/* Fallback to Home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <CookieConsent />
     </Suspense>
   );
 }
