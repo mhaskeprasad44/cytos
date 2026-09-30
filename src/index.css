@@ -2543,6 +2543,41 @@ a[href*="wa.me"] svg {
     height: 42px;
   }
 
+  /* Mobile Nav Actions: Prevent Overflow & Cramping */
+  .nav-container {
+    flex-wrap: nowrap;
+  }
+
+  .nav-actions {
+    gap: 0.5rem !important;
+    flex-shrink: 0;
+  }
+
+  .nav-actions .btn span {
+    display: none;
+  }
+
+  .nav-actions .btn {
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    padding: 0 0.65rem !important;
+    font-size: 0 !important;
+    min-width: 40px;
+    justify-content: center;
+  }
+
+  .nav-actions .btn svg,
+  .nav-actions .btn .btn-icon-svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .brand-logo-img {
+    height: 52px !important;
+    max-height: 52px !important;
+  }
+
   /* Mobile Accordion Submenu */
   .nav-item-dropdown {
     flex-direction: column;

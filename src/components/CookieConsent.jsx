@@ -85,10 +85,10 @@ export default function CookieConsent() {
               width: '46px',
               height: '46px',
               borderRadius: '50%',
-              backgroundColor: '#0a369d',
+              backgroundColor: '#d97706',
               color: '#ffffff',
               border: '2px solid rgba(255, 255, 255, 0.9)',
-              boxShadow: '0 4px 14px rgba(10, 54, 157, 0.35)',
+              boxShadow: '0 4px 14px rgba(217, 119, 6, 0.35)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -98,13 +98,13 @@ export default function CookieConsent() {
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'scale(1.1)';
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(10, 54, 157, 0.5)';
+              e.currentTarget.style.boxShadow = '0 6px 20px rgba(217, 119, 6, 0.5)';
               e.currentTarget.style.backgroundColor = '#d97706';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = '0 4px 14px rgba(10, 54, 157, 0.35)';
-              e.currentTarget.style.backgroundColor = '#0a369d';
+              e.currentTarget.style.boxShadow = '0 4px 14px rgba(217, 119, 6, 0.35)';
+              e.currentTarget.style.backgroundColor = '#d97706';
             }}
           >
             {/* Crisp Cookie SVG Icon */}
@@ -182,8 +182,8 @@ export default function CookieConsent() {
             </p>
 
             <div style={{ fontSize: '0.82rem', color: '#64748b', marginBottom: '14px' }}>
-              Review our <Link to="/privacy-policy" onClick={() => setIsOpen(false)} style={{ color: '#0a369d', fontWeight: 600, textDecoration: 'underline' }}>Privacy Policy</Link> and{' '}
-              <Link to="/terms-conditions" onClick={() => setIsOpen(false)} style={{ color: '#0a369d', fontWeight: 600, textDecoration: 'underline' }}>Terms & Conditions</Link>.
+              Review our <Link to="/privacy-policy" onClick={() => setIsOpen(false)} style={{ color: '#b45309', fontWeight: 600, textDecoration: 'underline' }}>Privacy Policy</Link> and{' '}
+              <Link to="/terms-conditions" onClick={() => setIsOpen(false)} style={{ color: '#b45309', fontWeight: 600, textDecoration: 'underline' }}>Terms & Conditions</Link>.
             </div>
 
             {/* Expandable Preferences Toggle */}
@@ -230,7 +230,7 @@ export default function CookieConsent() {
                     type="checkbox"
                     checked={preferences.analytics}
                     onChange={(e) => setPreferences({ ...preferences, analytics: e.target.checked })}
-                    style={{ cursor: 'pointer', width: '16px', height: '16px', accentColor: '#0a369d' }}
+                    style={{ cursor: 'pointer', width: '16px', height: '16px', accentColor: '#d97706' }}
                   />
                 </div>
 
@@ -244,7 +244,7 @@ export default function CookieConsent() {
                     type="checkbox"
                     checked={preferences.functional}
                     onChange={(e) => setPreferences({ ...preferences, functional: e.target.checked })}
-                    style={{ cursor: 'pointer', width: '16px', height: '16px', accentColor: '#0a369d' }}
+                    style={{ cursor: 'pointer', width: '16px', height: '16px', accentColor: '#d97706' }}
                   />
                 </div>
               </div>
@@ -272,7 +272,7 @@ export default function CookieConsent() {
                   borderRadius: '6px',
                   fontSize: '0.85rem',
                   fontWeight: 600,
-                  backgroundColor: '#0a369d',
+                  backgroundColor: '#d97706',
                   color: '#ffffff',
                   border: 'none',
                   cursor: 'pointer'
@@ -305,11 +305,11 @@ export default function CookieConsent() {
                 borderRadius: '6px',
                 fontSize: '0.85rem',
                 fontWeight: 700,
-                backgroundColor: '#0a369d',
+                backgroundColor: '#d97706',
                 color: '#ffffff',
                 border: 'none',
                 cursor: 'pointer',
-                boxShadow: '0 2px 6px rgba(10, 54, 157, 0.25)'
+                boxShadow: '0 2px 6px rgba(217, 119, 6, 0.25)'
               }}
             >
               Accept All
