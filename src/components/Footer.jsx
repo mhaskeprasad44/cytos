@@ -10,7 +10,7 @@ export default function Footer({ onOpenQuote }) {
         {/* Company Identity */}
         <div className="footer-col footer-col-brand">
           <Link to="/" className="footer-logo">
-            <img src="/CyTOS New Logo.png" alt="CyTOS Machines Pune" width="180" height="48" />
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Machines Pune" width="180" height="48" />
           </Link>
           <p className="footer-brand-desc">
             CyTOS Machines is an ISO 9001:2015 certified manufacturer of high-precision CNC Routers, 60,000 RPM PCB Drilling & Routing Machines, Vertical Milling Centers, and Special Purpose Automation Systems (SPM) based in Bhosari MIDC, Pune.
