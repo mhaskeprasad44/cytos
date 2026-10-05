@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { initAllPageScripts } from '../legacyScript';
 
-export default function HtmlPageWrapper({ htmlContent, title, description }) {
+export default function HtmlPageWrapper({ htmlContent, title, description, canonical }) {
   const containerRef = useRef(null);
   const navigate = useNavigate();
 
@@ -10,6 +10,10 @@ export default function HtmlPageWrapper({ htmlContent, title, description }) {
     // 1. Update Title and Meta
     if (title) {
       document.title = title;
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', title);
+      let twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', title);
     }
     if (description) {
       let metaDesc = document.querySelector('meta[name="description"]');
@@ -19,7 +23,27 @@ export default function HtmlPageWrapper({ htmlContent, title, description }) {
         document.head.appendChild(metaDesc);
       }
       metaDesc.setAttribute('content', description);
+      let ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', description);
+      let twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute('content', description);
     }
+
+    // 2. Set Page-Specific Canonical URL
+    const pathname = window.location.pathname || '/';
+    const cleanPath = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
+    const canonicalUrl = canonical || (`https://cytos.in${cleanPath}`);
+
+    let linkCanonical = document.querySelector('link[rel="canonical"]');
+    if (!linkCanonical) {
+      linkCanonical = document.createElement('link');
+      linkCanonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(linkCanonical);
+    }
+    linkCanonical.setAttribute('href', canonicalUrl);
+
+    let ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
 
     window.scrollTo(0, 0);
 

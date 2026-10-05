@@ -6,7 +6,47 @@
     <title>CyTOS Machines Pune | CNC Routers, PCB Drilling, Milling & Automation SPM</title>
     <meta name="description" content="CyTOS Machines Pune - Leading manufacturer of Precision CNC Routers, PCB Drilling & Milling Machines, VDM Milling, and Custom SPM Automation in Bhosari MIDC Pune." />
     <meta name="keywords" content="CyTOS Pune, CNC Routers, PCB Drilling Machine, PCB Prototyping, VDM Milling, SPM Automation, Robotic Dispensing, Bhosari MIDC" />
-    <link rel="canonical" href="https://cytos.in/" />
+    <!-- Search Engine Indexing & Robots Directives -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Google Site Verification (Add your GSC verification token below if using HTML tag method) -->
+    <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" /> -->
+
+    <!-- Canonical URL (dynamically updated by script below and React Router) -->
+    <link rel="canonical" id="canonical-link" href="https://cytos.in/" />
+    <script>
+      (function() {
+        try {
+          var p = window.location.pathname || '/';
+          var clean = p === '/' ? '/' : p.replace(/\/$/, '');
+          var c = document.getElementById('canonical-link');
+          if (c) c.setAttribute('href', 'https://cytos.in' + clean);
+        } catch(e) {}
+      })();
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CyTOS Machines" />
+    <meta property="og:title" content="CyTOS Machines Pune | CNC Routers, PCB Drilling, Milling & Automation SPM" />
+    <meta property="og:description" content="Precision CNC Routers, PCB Drilling & Milling Machines, VDM Milling, and Custom SPM Automation in Bhosari MIDC Pune." />
+    <meta property="og:url" content="https://cytos.in/" />
+    <meta property="og:image" content="https://cytos.in/CyTOS%20New%20Logo.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CyTOS Machines Pune" />
+    <meta name="twitter:description" content="Precision CNC Routers, PCB Drilling & Milling Machines, and SPM Automation in Pune, India." />
+    <meta name="twitter:image" content="https://cytos.in/CyTOS%20New%20Logo.png" />
+
+    <!-- Google Tag Manager (Enables 1-Click Verification in Google Search Console) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P6DNQQ3H');</script>
+    <!-- End Google Tag Manager -->
 
     <!-- High-Visibility Color Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -42,6 +82,11 @@
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
