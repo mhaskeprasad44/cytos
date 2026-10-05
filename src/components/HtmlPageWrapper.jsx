@@ -32,7 +32,7 @@ export default function HtmlPageWrapper({ htmlContent, title, description, canon
     // 2. Set Page-Specific Canonical URL
     const pathname = window.location.pathname || '/';
     const cleanPath = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
-    const canonicalUrl = canonical || (`https://cytos.in${cleanPath}`);
+    const canonicalUrl = canonical || (`https://www.cytos.in${cleanPath}`);
 
     let linkCanonical = document.querySelector('link[rel="canonical"]');
     if (!linkCanonical) {

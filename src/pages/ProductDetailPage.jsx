@@ -11,7 +11,7 @@ export default function ProductDetailPage({ machineId, onOpenQuote }) {
       <SEO
         title={`${machine.name} | CyTOS Machines Pune`}
         description={machine.description}
-        canonical={`https://cytos.in${machine.path}`}
+        canonical={`https://www.cytos.in${machine.path}`}
         keywords={`${machine.name}, CyTOS Pune, industrial machine, Bhosari MIDC, ${machine.category}`}
       />
 

@@ -27,4 +27,4 @@ User-agent: Cohere-ai
 Allow: /
 
 # XML Sitemap and LLM AI Knowledge File
-Sitemap: https://cytos.in/sitemap.xml
+Sitemap: https://www.cytos.in/sitemap.xml

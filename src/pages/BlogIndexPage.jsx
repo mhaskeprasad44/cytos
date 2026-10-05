@@ -23,7 +23,7 @@ export default function BlogIndexPage() {
       <SEO
         title="Technical Blog & Engineering Guides | CyTOS Pune"
         description="Explore 22 technical engineering guides on 60,000 RPM PCB drilling, collet runout calibration, chemical-free isolation milling, CNC gantry routers, and robotic dispensing automation."
-        canonical="https://cytos.in/blog"
+        canonical="https://www.cytos.in/blog"
       />
 
       <section className="page-header-section">
