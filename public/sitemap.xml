@@ -1,231 +1,550 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.cytos.in/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/CyTOS%20New%20Logo.png</image:loc>
+      <image:title>CyTOS Machines Pune - Precision CNC and Industrial Automation</image:title>
+      <image:caption>CyTOS - Cycle Time Optimising Solutions manufacturer logo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png</image:loc>
+      <image:title>CyTOS PCB60 Dual-Spindle High Speed PCB Drilling Machine</image:title>
+      <image:caption>CyTOS PCB60 60,000 RPM dual spindle PCB drilling and routing machine in Pune</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>CyTOS PCB30 Chemical-Free PCB Prototyping Machine</image:title>
+      <image:caption>Desktop chemical-free laboratory PCB rapid prototyping CNC machine</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-router-gantry.png</image:loc>
+      <image:title>CyTOS Heavy Duty Industrial Gantry CNC Router</image:title>
+      <image:caption>Precision industrial CNC router for aluminium, acrylic, composites and wood</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/cnc-6060-pcb-drilling-routing-machine</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png</image:loc>
+      <image:title>CNC 6060 PCB Drilling &amp; Routing Machine - 60,000 to 100,000 RPM Spindle</image:title>
+      <image:caption>CyTOS CNC 6060 high-speed PCB drilling and routing machine manufactured in Pune with 600x600mm work area and 0.2mm micro-drilling precision</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-cnc-cabinet.png</image:loc>
+      <image:title>CNC 6060 Integrated Control Console and Servo Drives</image:title>
+      <image:caption>Industrial PC control console and hybrid closed-loop servo drives for CyTOS CNC 6060</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/cnc-3020-pcb-prototyping-machine</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>CNC 3020 PCB Rapid Prototyping Machine - Chemical Free Desktop Mill</image:title>
+      <image:caption>CyTOS CNC 3020 desktop chemical-free circuit board rapid prototyping machine with auto Z-leveling and 0.1mm isolation tracks</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/cnc-3030-pcb-prototyping-machine</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>CNC 3030 PCB Rapid Prototyping Machine - 40,000 RPM Lab Prototyper</image:title>
+      <image:caption>CyTOS CNC 3030 laboratory PCB rapid prototyping machine with 40,000 RPM spindle and direct Gerber RS-274X import</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/pcb12-multi-spindle-drilling-machine</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb12-multi-spindle.png</image:loc>
+      <image:title>PCB12 Multi-Spindle PCB Drilling Machine - 3 Spindles 60,000 RPM</image:title>
+      <image:caption>CyTOS PCB12 heavy-duty 3-spindle synchronized PCB drilling machine for commercial PCB manufacturing plants</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/cnc-wood-acrylic-aluminium-router-machine</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-router-gantry.png</image:loc>
+      <image:title>CNC Wood, Acrylic &amp; Aluminium Router Machine - Heavy Duty Gantry</image:title>
+      <image:caption>Industrial CNC router machine for non-ferrous metals, acrylic, composites and wood with vacuum hold-down bed</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-router-workshop.png</image:loc>
+      <image:title>CyTOS Heavy Duty CNC Gantry Welding and Stress Relieving</image:title>
+      <image:caption>Welded tubular steel gantry engineered to Safety Factor 2.0 at CyTOS Bhosari MIDC Pune plant</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/vdm-heavy-vertical-drilling-milling-machine</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/vdm-milling-machine.png</image:loc>
+      <image:title>VDM Heavy Vertical Drilling &amp; Milling Machine - Multi-Spindle SPM</image:title>
+      <image:caption>CyTOS VDM multi-spindle rigid vertical drilling and milling machine for switchboard door cutouts and busbars</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/foam-welding-machine</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/foam-welding-machine.png</image:loc>
+      <image:title>Industrial Foam Welding Machine - Hot Air Thermal Welder</image:title>
+      <image:caption>Automated hot-air thermal bonding and welding machine for acoustic foam and protective packaging</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/educational-cnc-machines</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/educational-cnc-lab.png</image:loc>
+      <image:title>Educational CNC Machines - Lab Lathe, Milling &amp; Training Systems</image:title>
+      <image:caption>Fully enclosed safe industrial-grade CNC training lathe and milling machines for engineering universities</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/pcb-drilling-routing</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png</image:loc>
+      <image:title>High Speed CNC PCB Drilling &amp; Routing Machines</image:title>
+      <image:caption>CyTOS PCB drilling machines engineered for 24/7 high volume production with 60,000 RPM spindles</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb12-multi-spindle.png</image:loc>
+      <image:title>Multi-Spindle PCB Drilling Systems</image:title>
+      <image:caption>3-spindle synchronized drilling for commercial panel production</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/pcb-prototyping</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>Chemical-Free PCB Rapid Prototyping Systems</image:title>
+      <image:caption>In-house green R&amp;D laboratory circuit board isolation milling CNC systems</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/cnc-routers-milling</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-router-gantry.png</image:loc>
+      <image:title>Industrial CNC Routers &amp; Gantry Milling Machines</image:title>
+      <image:caption>Heavy duty gantry CNC routers for non-ferrous metals and industrial composite sheets</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-router-acrylic.jpg</image:loc>
+      <image:title>High Precision CNC Acrylic and Aluminium Routing</image:title>
+      <image:caption>Vibration-damped rigid steel gantry with high-torque liquid cooled spindle</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/vdm-milling</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/vdm-milling-machine.png</image:loc>
+      <image:title>VDM Series Multi-Spindle Vertical Milling &amp; Drilling</image:title>
+      <image:caption>Multi-spindle rigid milling for electrical switchboard plates and busbar fabrication</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/spm-automation</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-automation-cell.jpg</image:loc>
+      <image:title>Custom Turnkey Special Purpose Machines (SPM)</image:title>
+      <image:caption>Turnkey SPM automation cells designed to reduce manufacturing cycle times by 30% to 60%</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-pneumatic-fixture.jpg</image:loc>
+      <image:title>Automotive Pneumatic Welding Jigs and Fixtures</image:title>
+      <image:caption>90 degree rotary indexing turnover fixture for robotic welding lines</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/robotic-dispensing-cells</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-automation-cell.jpg</image:loc>
+      <image:title>Robotic Dispensing Cells - 3-Axis Cartesian Automation</image:title>
+      <image:caption>High-speed automated dispensing systems for RTV silicone, sealants, and potting adhesives</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/pneumatic-welding-fixtures</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-pneumatic-fixture.jpg</image:loc>
+      <image:title>Pneumatic Welding Fixtures &amp; 90° Rotary Indexing Jigs</image:title>
+      <image:caption>Heavy clamping jigs and positioners engineered for zero thermal distortion in Pune</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/plc-control-panels</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/industrial-control-panel.jpg</image:loc>
+      <image:title>Industrial PLC Automation Control Panels</image:title>
+      <image:caption>Siemens S7-1200, Mitsubishi, and Delta PLC control panel enclosures with HMI touchscreens</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/case-studies</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/precision-machining-parts.jpg</image:loc>
+      <image:title>CyTOS Engineering Case Studies and Customer Results</image:title>
+      <image:caption>Cycle time optimization, multi-spindle throughput gains, and robotic welding fixture deployment proof</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/applications</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/precision-machining-parts.png</image:loc>
+      <image:title>Industrial Applications of CyTOS CNC &amp; Automation Machinery</image:title>
+      <image:caption>Precision parts machined for electronics, automotive tier-1, switchgear, aerospace and medical devices</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/about</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cytos-pune-plant.jpg</image:loc>
+      <image:title>CyTOS Manufacturing Plant in Bhosari MIDC, Pune</image:title>
+      <image:caption>Modern 3,000 sq ft CNC machine tool fabrication and assembly facility in Pune, Maharashtra</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cytos-assembly-floor.png</image:loc>
+      <image:title>CyTOS Clean Assembly Floor and CNC Calibration Bay</image:title>
+      <image:caption>Precision laser alignment and granite metrology validation on CyTOS assembly floor</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cytos-testing-station.png</image:loc>
+      <image:title>72-Hour Continuous Burn-in Testing Station</image:title>
+      <image:caption>Machine endurance and dynamic runout testing before nationwide dispatch</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cytos-engineering-cad.png</image:loc>
+      <image:title>CyTOS Engineering Blog and Technical Insights</image:title>
+      <image:caption>Technical guides on PCB drilling, chemical-free prototyping, heavy CNC routing, and custom SPMs</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/contact</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cytos-facility-overview.png</image:loc>
+      <image:title>Contact CyTOS Pune - Machine Consultation &amp; Plant Visit</image:title>
+      <image:caption>J-153, MIDC Bhosari, Pune - application engineers and live machine demonstrations</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/terms-conditions</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
     <loc>https://www.cytos.in/privacy-policy</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/pcb-drilling-machine-guide</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png</image:loc>
+      <image:title>PCB Drilling Machine Complete Engineering Guide</image:title>
+      <image:caption>Guide to high speed PCB drilling machines, spindles, feeds and speeds</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/multi-spindle-pcb-drilling-machine</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb12-multi-spindle.png</image:loc>
+      <image:title>Multi-Spindle PCB Drilling Machines Throughput Analysis</image:title>
+      <image:caption>Scaling commercial PCB panel drilling with 2 and 3 synchronized spindles</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/mechanical-pcb-drilling-vs-laser-drilling</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png</image:loc>
+      <image:title>Mechanical PCB Drilling vs Laser Drilling Comparison</image:title>
+      <image:caption>Hole-wall quality, micro-via accuracy, thermal smear and ROI comparison</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/pcb-drilling-tool-breakage-prevention</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-tooling-system.png</image:loc>
+      <image:title>PCB Drilling Micro-Tool Breakage Prevention Guide</image:title>
+      <image:caption>Preventing 0.2mm carbide micro-drill bit breakage in high-speed spindles</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/60000-rpm-pcb-drilling-spindle-maintenance</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png</image:loc>
+      <image:title>60,000 RPM PCB Drilling Spindle Maintenance Guide</image:title>
+      <image:caption>Ceramic bearing maintenance, chiller fluid, and dynamic runout calibration</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/multilayer-fr4-rogers-pcb-drilling</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png</image:loc>
+      <image:title>Multilayer FR4 and Rogers High-Frequency PCB Drilling</image:title>
+      <image:caption>Drilling high-frequency PTFE, Rogers RF, and metal core laminates</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/chemical-free-pcb-rapid-prototyping-machine</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>Chemical-Free PCB Rapid Prototyping Machine Guide</image:title>
+      <image:caption>Mechanical circuit board isolation milling without etching acids</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/in-house-pcb-rapid-prototyping-roi</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>In-House PCB Rapid Prototyping ROI and Payback Analysis</image:title>
+      <image:caption>Financial ROI model comparing outsourced prototype fab vs same-day in-house milling</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/gerber-to-pcb-isolation-milling-guide</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>Gerber to PCB Isolation Milling CAM Software Guide</image:title>
+      <image:caption>Direct RS-274X Gerber file ingestion, rubout algorithms, and tool compensation</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/auto-surface-leveling-pcb-prototyping</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>Auto-Surface Leveling in PCB Prototyping CNC Machines</image:title>
+      <image:caption>Capacitive surface height matrix leveling for perfectly uniform trace depth</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/green-electronics-rapid-prototyping-lab</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/educational-cnc-lab.png</image:loc>
+      <image:title>Setting Up a Green Electronics Rapid Prototyping Lab</image:title>
+      <image:caption>Zero-chemical electronics R&amp;D infrastructure with HEPA dust extraction</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/double-sided-pcb-rapid-prototyping-guide</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png</image:loc>
+      <image:title>Double-Sided PCB Rapid Prototyping Step-by-Step</image:title>
+      <image:caption>Dowel pin registration, layer flipping, through-hole eyeletting, and ground clearance</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/special-purpose-machines-spm-guide</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-automation-cell.jpg</image:loc>
+      <image:title>Turnkey Special Purpose Machines (SPM) Engineering Guide</image:title>
+      <image:caption>Concept-to-commissioning architecture for custom industrial automation</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/pneumatic-welding-fixtures-spm-design</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-pneumatic-fixture.jpg</image:loc>
+      <image:title>Pneumatic Welding Fixture Design and Toggle Clamping</image:title>
+      <image:caption>90-degree rotary turnover welding jigs and thermal distortion control</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/robotic-adhesive-dispensing-spm-systems</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-automation-cell.jpg</image:loc>
+      <image:title>Robotic Adhesive Dispensing SPM Systems</image:title>
+      <image:caption>Progressive cavity pumps and 3-axis path control for sealant bead accuracy</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/plc-control-panel-automation-spm-safety</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/industrial-control-panel.jpg</image:loc>
+      <image:title>PLC Control Panel Automation and Machine Safety Standards</image:title>
+      <image:caption>Category 4 emergency stops, optical light curtains, and IEC 61439 panels</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/automotive-cycle-time-reduction-spm</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/spm-automation-cell.jpg</image:loc>
+      <image:title>Automotive Cycle Time Reduction SPM Case Study</image:title>
+      <image:caption>60% cycle time reduction on tier-1 robotic automotive component welding lines</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/cnc-drilling-and-milling-machine-guide</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-milling-detail.png</image:loc>
+      <image:title>Heavy Duty CNC Drilling and Milling Machine Guide</image:title>
+      <image:caption>Cast iron gantry rigidity, preloaded linear rails, and high-feed metal milling</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/vertical-drilling-and-milling-machine-guide</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/vdm-milling-machine.png</image:loc>
+      <image:title>Vertical Drilling &amp; Milling (VDM) Machines for Switchboards</image:title>
+      <image:caption>Switchgear door cutouts, rectangular meter cutouts, and busbar multi-drilling</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/bt30-vs-bt40-cnc-drilling-and-milling</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-tooling-system.png</image:loc>
+      <image:title>BT30 vs BT40 Spindle Taper Comparison for Drilling &amp; Milling</image:title>
+      <image:caption>High-RPM light alloy milling vs high-torque face milling rigidity trade-offs</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/heavy-duty-cnc-router-machine-guide</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-router-gantry.png</image:loc>
+      <image:title>Heavy Duty Industrial CNC Router Machine Guide</image:title>
+      <image:caption>Stress-relieved steel gantry, 24,000 RPM spindle, and multi-zone vacuum bed engineering</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.cytos.in/blog/aluminium-composite-sheet-cnc-drilling-milling</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.cytos.in/assets/images/machines/cnc-router-acrylic.jpg</image:loc>
+      <image:title>Aluminium &amp; Composite Sheet CNC Drilling and Milling Guide</image:title>
+      <image:caption>Single-flute polished carbide tool geometry, cold air cooling, and burr-free edges</image:caption>
+    </image:image>
   </url>
 </urlset>

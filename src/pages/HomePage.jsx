@@ -7,8 +7,8 @@ export default function HomePage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="CyTOS | Precision CNC PCB Drilling, Prototyping & Custom Automation Machines Pune"
-      description="CyTOS designs high-speed PCB drilling & routing machines, rapid chemical-free prototyping CNCs, heavy routers, and custom turnkey SPMs in Pune, India. Request a fast 2-hour technical quote."
+      title="CNC Machines & Industrial Automation Manufacturer from Pune, India | CyTOS"
+      description="CyTOS Pune is a leading manufacturer of CNC PCB drilling machines, rapid PCB prototyping machines, industrial CNC routers, and custom SPM automation in Bhosari MIDC, Pune."
     />
   );
 }

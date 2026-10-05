@@ -7,8 +7,8 @@ export default function PcbPrototypingPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="PCB Rapid Prototyping & Educational CNC Machines | PCBE3020 | CyTOS Pune"
-      description="Chemical-free PCB rapid prototyping machines and educational CNC systems manufactured in Pune by CyTOS. Turn Gerber files into working prototypes in 30 minutes. Safe for R&D labs and colleges."
+      title="PCB Prototyping Machine - Chemical-Free Desktop CNC Circuit Prototyper Manufacturer from Pune | CyTOS"
+      description="PCB Prototyping Machine Manufacturer from Pune, India. Chemical-free desktop PCB rapid prototyping CNCs. Mill double-sided PCBs in 15 minutes with auto Z-leveling and 0.1mm isolation tracks."
     />
   );
 }

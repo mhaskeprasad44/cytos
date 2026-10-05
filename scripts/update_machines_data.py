@@ -1,4 +1,15 @@
-export const machinesData = [
+# -*- coding: utf-8 -*-
+"""
+scripts/update_machines_data.py
+Updates src/data/machinesData.js with comprehensive details for all 12 machines/categories.
+"""
+
+import os
+
+ROOT = r"c:\Users\PrasadMhaske\Downloads\Project1"
+MACHINES_DATA_FILE = os.path.join(ROOT, "src", "data", "machinesData.js")
+
+machines_data_js = """export const machinesData = [
   {
     id: "cnc-6060",
     path: "/cnc-6060-pcb-drilling-routing-machine",
@@ -330,7 +341,7 @@ export const machinesData = [
     specs: [
       { label: "Enclosure Rating", val: "IP54 / IP55 / IP65 Dust and Water Protection" },
       { label: "PLC Hardware", val: "Siemens S7-1200 / S7-1500, Mitsubishi FX5U, Delta" },
-      { label: "HMI Display", val: "7\" to 15\" Color TFT Touchscreens with Recipe Storage" },
+      { label: "HMI Display", val: "7\\\" to 15\\\" Color TFT Touchscreens with Recipe Storage" },
       { label: "Switchgear Brands", val: "Schneider Electric / ABB / Siemens Industrial Switchgear" },
       { label: "Documentation", val: "Complete EPLAN Circuit Schematics & Wire Ferruling Map" }
     ],
@@ -369,3 +380,9 @@ export const machinesData = [
     ]
   }
 ];
+"""
+
+with open(MACHINES_DATA_FILE, "w", encoding="utf-8") as f:
+    f.write(machines_data_js)
+
+print("Updated src/data/machinesData.js with all 12 machines.")

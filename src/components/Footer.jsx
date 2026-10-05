@@ -26,18 +26,18 @@ export default function Footer({ onOpenQuote }) {
           </div>
         </div>
 
-        {/* Machine Categories */}
+        {/* Machine Categories & Dedicated Models */}
         <div className="footer-col">
-          <h4 className="footer-heading">Precision Machines</h4>
+          <h4 className="footer-heading">Precision CNC Machines</h4>
           <ul className="footer-links">
-            <li><Link to="/cnc-routers-milling">Heavy-Duty CNC Routers</Link></li>
-            <li><Link to="/pcb-drilling-routing">PCB Drilling & Routing (60k RPM)</Link></li>
-            <li><Link to="/pcb-prototyping">Chemical-Free PCB Prototyping</Link></li>
-            <li><Link to="/vdm-milling">VDM Vertical Drilling & Milling</Link></li>
-            <li><Link to="/robotic-dispensing-cells">Robotic Dispensing Cells</Link></li>
-            <li><Link to="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</Link></li>
-            <li><Link to="/plc-control-panels">PLC Control Panels & VFD</Link></li>
-            <li><Link to="/spm-automation">Custom SPM Automation</Link></li>
+            <li><Link to="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling & Routing</Link></li>
+            <li><Link to="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</Link></li>
+            <li><Link to="/cnc-3030-pcb-prototyping-machine">CNC 3030 PCB Prototyper</Link></li>
+            <li><Link to="/pcb12-multi-spindle-drilling-machine">PCB12 Multi-Spindle (3-Head)</Link></li>
+            <li><Link to="/cnc-wood-acrylic-aluminium-router-machine">CNC Wood/Acrylic/Aluminium Router</Link></li>
+            <li><Link to="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling & Milling</Link></li>
+            <li><Link to="/foam-welding-machine">Foam Welding Machine</Link></li>
+            <li><Link to="/educational-cnc-machines">Educational CNC Machines</Link></li>
           </ul>
         </div>
 

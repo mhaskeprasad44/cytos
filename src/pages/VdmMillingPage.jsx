@@ -7,8 +7,8 @@ export default function VdmMillingPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="VDM Series Multi-Spindle Vertical Milling & Drilling Machine | CyTOS Pune"
-      description="CyTOS VDM Series multi-spindle rigid milling and drilling machines for switchboard plates, mild steel, and automotive components. Cut cycle times up to 65% with synchronized gantry spindles."
+      title="VDM Milling Machine - Multi-Spindle Vertical Drilling & Milling SPM Manufacturer from Pune | CyTOS"
+      description="VDM Milling Machine Manufacturer from Pune, India. Multi-spindle vertical drilling & milling systems for switchboard plates, busbars and components. Cuts cycle times up to 65%."
     />
   );
 }

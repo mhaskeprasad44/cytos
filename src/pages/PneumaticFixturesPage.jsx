@@ -7,8 +7,8 @@ export default function PneumaticFixturesPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="Pneumatic Welding Fixtures &amp; 90° Rotary Indexing Jigs | CyTOS Pune"
-      description="Heavy-duty pneumatic welding fixtures, 90°/180° rotary turnover jigs, and robotic MIG/TIG welding tooling manufactured in Pune by CyTOS. Up to 15 kN clamping force, hardened tool steel locators, zero thermal distortion."
+      title="Pneumatic Welding Fixture - Custom Jigs & 90° Rotary Indexing Manufacturer from Pune | CyTOS"
+      description="Pneumatic Welding Fixture Manufacturer from Pune, India. Heavy-duty pneumatic welding fixtures, 90°/180° rotary turnover jigs, and robotic MIG/TIG welding tooling. Up to 15 kN clamping force and zero distortion."
     />
   );
 }

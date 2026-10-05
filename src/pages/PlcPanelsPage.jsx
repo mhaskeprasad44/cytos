@@ -7,8 +7,8 @@ export default function PlcPanelsPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="Industrial PLC Automation Control Panels | Siemens S7 &amp; Delta | CyTOS Pune"
-      description="Custom turnkey PLC industrial control panels, Siemens S7-1200/1500 &amp; Delta programming, VFD drive integration, and HMI touchscreens engineered in Pune by CyTOS. IP55 powder-coated enclosures, neat ferruled wiring, Category 3/4 safety circuits."
+      title="PLC Control Panel - Industrial Automation & HMI Control Panels Manufacturer from Pune | CyTOS"
+      description="PLC Control Panel Manufacturer from Pune, India. Custom turnkey PLC industrial control panels, Siemens S7-1200/1500 & Delta programming, VFD drives, and HMI touchscreens. IP55 powder-coated enclosures."
     />
   );
 }

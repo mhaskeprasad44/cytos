@@ -7,8 +7,8 @@ export default function PcbDrillingPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="CNC PCB Drilling & Routing Machines | PCB30, PCB60, PCB12 | CyTOS Pune"
-      description="High-precision CNC PCB drilling and routing machines manufactured in Pune by CyTOS. Up to 60,000 RPM, 0.2mm micro-drilling, single to 3-spindle configurations for production and FR4/MCPCB."
+      title="PCB Drilling Machine - 60,000 RPM CNC Multi-Spindle PCB Router Manufacturer from Pune | CyTOS"
+      description="PCB Drilling Machine Manufacturer from Pune, India. Up to 60,000 RPM, 0.2mm micro-drilling, single, dual & 3-spindle models for high-throughput PCB manufacturing. Direct factory price from CyTOS."
     />
   );
 }

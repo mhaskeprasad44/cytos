@@ -7,8 +7,8 @@ export default function SpmAutomationPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="Special Purpose Machines (SPM), Robotics &amp; Industrial Automation | CyTOS Pune"
-      description="Custom Special Purpose Machines (SPMs), pneumatic welding fixtures, robotic dispensing cells, and Siemens/Delta industrial control panels engineered in Pune by CyTOS. Turnkey concept-to-commissioning."
+      title="SPM Automation - Custom Special Purpose Machines Manufacturer from Pune | CyTOS"
+      description="SPM Automation Manufacturer from Pune, India. Custom special purpose machines, pneumatic welding fixtures, robotic dispensing cells, and Siemens/Delta industrial control panels. Turnkey concept-to-commissioning."
     />
   );
 }

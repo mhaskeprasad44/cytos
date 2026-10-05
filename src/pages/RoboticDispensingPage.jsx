@@ -7,8 +7,8 @@ export default function RoboticDispensingPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="Automotive &amp; Industrial Robotic Dispensing Cells | 3-Axis &amp; Gantry | CyTOS Pune"
-      description="Precision 3-axis Cartesian and articulated robotic dispensing cells engineered in Pune by CyTOS. ±0.02 mm bead repeatability for RTV silicones, polyurethane sealants, thermal adhesives, and epoxy potting. Cut cycle time up to 70%."
+      title="Robotic Dispensing Machine - 3-Axis Industrial Dispensing Cells Manufacturer from Pune | CyTOS"
+      description="Robotic Dispensing Machine Manufacturer from Pune, India. Precision 3-axis Cartesian and robotic dispensing cells for RTV silicones, polyurethane sealants, adhesives, and epoxy potting. ±0.02mm bead repeatability."
     />
   );
 }

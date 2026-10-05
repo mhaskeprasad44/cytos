@@ -1,4 +1,15 @@
-import React, { Suspense, lazy } from 'react';
+# -*- coding: utf-8 -*-
+"""
+scripts/update_app_jsx.py
+Updates src/App.jsx with all new product page routes and redirects.
+"""
+
+import os
+
+ROOT = r"c:\Users\PrasadMhaske\Downloads\Project1"
+APP_FILE = os.path.join(ROOT, "src", "App.jsx")
+
+app_content = """import React, { Suspense, lazy } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
@@ -122,3 +133,9 @@ export default function App() {
     </Suspense>
   );
 }
+"""
+
+with open(APP_FILE, "w", encoding="utf-8") as f:
+    f.write(app_content)
+
+print("Updated src/App.jsx with all new routes and aliases.")

@@ -7,8 +7,8 @@ export default function CncRoutersPage() {
   return (
     <HtmlPageWrapper
       htmlContent={pageHtml}
-      title="Industrial CNC Routers & VDM Milling Machines | 4x4, 8x8 | CyTOS Pune"
-      description="Industrial CNC router machines (4x4, 8x8) and VDM heavy drilling/milling systems engineered in Pune by CyTOS. Factor of Safety 2.0, AC servo drives, multi-zone vacuum bed for aluminium, acrylic, composites, and wood."
+      title="CNC Router Machine - Heavy Duty Industrial Gantry Routers Manufacturer from Pune | CyTOS"
+      description="CNC Router Machine Manufacturer from Pune, India. Heavy-duty 4x4, 8x4 and 8x8 industrial CNC routers for aluminium, acrylic, composites and wood. Factor of Safety 2.0, 24,000 RPM spindle & vacuum beds."
     />
   );
 }
