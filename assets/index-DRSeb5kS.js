@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BlogPostPage-DI7AfcLw.js","assets/vendor-6BnBuTEh.js"])))=>i.map(i=>d[i]);
-import{r as T,a as oe,u as le,L as X,R as ce,b as v,c as ne,N as w,B as de}from"./vendor-6BnBuTEh.js";(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))o(a);new MutationObserver(a=>{for(const s of a)if(s.type==="childList")for(const l of s.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&o(l)}).observe(document,{childList:!0,subtree:!0});function t(a){const s={};return a.integrity&&(s.integrity=a.integrity),a.referrerPolicy&&(s.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?s.credentials="include":a.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(a){if(a.ep)return;a.ep=!0;const s=t(a);fetch(a.href,s)}})();var ae={exports:{}},F={};/**
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/BlogPostPage-CEFOK_05.js","assets/vendor-6BnBuTEh.js"])))=>i.map(i=>d[i]);
+import{r as T,a as oe,u as le,L as J,R as de,b as d,c as ae,N as C,B as ce}from"./vendor-6BnBuTEh.js";(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))o(r);new MutationObserver(r=>{for(const s of r)if(s.type==="childList")for(const l of s.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&o(l)}).observe(document,{childList:!0,subtree:!0});function n(r){const s={};return r.integrity&&(s.integrity=r.integrity),r.referrerPolicy&&(s.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?s.credentials="include":r.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(r){if(r.ep)return;r.ep=!0;const s=n(r);fetch(r.href,s)}})();var re={exports:{}},L={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
@@ -7,17 +7,17 @@ import{r as T,a as oe,u as le,L as X,R as ce,b as v,c as ne,N as w,B as de}from"
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var pe=T,ue=Symbol.for("react.element"),me=Symbol.for("react.fragment"),ge=Object.prototype.hasOwnProperty,he=pe.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,ve={key:!0,ref:!0,__self:!0,__source:!0};function te(r,n,t){var o,a={},s=null,l=null;t!==void 0&&(s=""+t),n.key!==void 0&&(s=""+n.key),n.ref!==void 0&&(l=n.ref);for(o in n)ge.call(n,o)&&!ve.hasOwnProperty(o)&&(a[o]=n[o]);if(r&&r.defaultProps)for(o in n=r.defaultProps,n)a[o]===void 0&&(a[o]=n[o]);return{$$typeof:ue,type:r,key:s,ref:l,props:a,_owner:he.current}}F.Fragment=me;F.jsx=te;F.jsxs=te;ae.exports=F;var e=ae.exports,N={},ee=oe;N.createRoot=ee.createRoot,N.hydrateRoot=ee.hydrateRoot;const ye="modulepreload",fe=function(r){return"/"+r},re={},be=function(n,t,o){let a=Promise.resolve();if(t&&t.length>0){document.getElementsByTagName("link");const l=document.querySelector("meta[property=csp-nonce]"),d=(l==null?void 0:l.nonce)||(l==null?void 0:l.getAttribute("nonce"));a=Promise.allSettled(t.map(u=>{if(u=fe(u),u in re)return;re[u]=!0;const c=u.endsWith(".css"),f=c?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${u}"]${f}`))return;const i=document.createElement("link");if(i.rel=c?"stylesheet":ye,c||(i.as="script"),i.crossOrigin="",i.href=u,d&&i.setAttribute("nonce",d),document.head.appendChild(i),c)return new Promise((p,g)=>{i.addEventListener("load",p),i.addEventListener("error",()=>g(new Error(`Unable to preload CSS for ${u}`)))})}))}function s(l){const d=new Event("vite:preloadError",{cancelable:!0});if(d.payload=l,window.dispatchEvent(d),!d.defaultPrevented)throw l}return a.then(l=>{for(const d of l||[])d.status==="rejected"&&s(d.reason);return n().catch(s)})};async function H(r){try{const n=JSON.parse(localStorage.getItem("cytos_saved_leads")||"[]");n.push({timestamp:new Date().toISOString(),...r}),localStorage.setItem("cytos_saved_leads",JSON.stringify(n)),console.log("[CyTOS] Inquiry securely saved to local vault:",r)}catch(n){console.warn("[CyTOS] LocalStorage vault warning:",n)}try{const n=new AbortController,t=setTimeout(()=>n.abort(),3500),o=await fetch("https://formsubmit.co/ajax/info@cytos.in",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},signal:n.signal,body:JSON.stringify({_subject:r._subject||"New CyTOS Machinery Inquiry",_cc:"inranktech@gmail.com",_captcha:"false",_template:"table",...r})});return clearTimeout(t),o.ok}catch(n){return console.warn("[CyTOS] Background mailer note (handled gracefully):",n.message||n),!1}}function Ce(){Se(),xe(),ke(),Pe(),Me(),Te(),Be(),Ae(),Re(),Ie(),qe(),De(),Oe(),Ee(),Le(),we()}function we(){try{const r=new URLSearchParams(window.location.search);(r.get("submitted")||r.get("rfq_submitted")||r.get("status")==="success")&&alert("Thank you! Your Technical Inquiry has been received. Our Pune engineering desk (info@cytos.in) will review your specifications and respond within 2 business hours.")}catch{}}function Se(){const r=document.querySelectorAll(".hero-slide"),n=document.querySelectorAll(".slider-tab-btn"),t=document.getElementById("sliderPrevBtn"),o=document.getElementById("sliderNextBtn");if(document.querySelector(".hero-slider-container"),!r.length)return;let a=0;const s=r.length,l=5e3;let d=null;function u(i){i<0&&(i=s-1),i>=s&&(i=0),a=i,r.forEach((m,y)=>{m.classList.toggle("active",y===a)});const p=document.getElementById("sliderCounterCurrent"),g=document.getElementById("sliderCounterTotal");p&&(p.textContent=String(a+1).padStart(2,"0")),g&&(g.textContent=String(s).padStart(2,"0")),n.forEach((m,y)=>{m.classList.toggle("active",y===a);const h=m.querySelector(".tab-progress-line");h&&(h.style.transition="none",h.style.width="0%",y===a&&setTimeout(()=>{h.style.transition=`width ${l}ms linear`,h.style.width="100%"},30))})}function c(){f(),u(a),d=setInterval(()=>{u((a+1)%s)},l)}function f(){d&&(clearInterval(d),d=null)}t&&(t.onclick=i=>{i.preventDefault(),u((a-1+s)%s),c()}),o&&(o.onclick=i=>{i.preventDefault(),u((a+1)%s),c()}),n.forEach((i,p)=>{i.onclick=()=>{u(p),c()}}),c()}function xe(){const r=document.getElementById("finderRequirement"),n=document.getElementById("finderMaterial"),t=document.getElementById("finderModelResult"),o=document.getElementById("finderSpecsResult"),a=document.getElementById("finderQuoteBtn");if(!r||!n)return;const s={"pcb-prod":{fr4:{model:"CyTOS PCB60 Dual-Spindle",specs:"600x600mm • 60,000 RPM • 0.2mm Min Drill • 2X Throughput",ref:"PCB60"},mcpcb:{model:"CyTOS PCB12 Multi-Spindle High-Power",specs:"1200x1200mm • 60,000 RPM • Heavy-Duty Aluminium Core Routing",ref:"PCB12"},default:{model:"CyTOS PCB60 / PCB12 Series",specs:"Custom Spindle Count (1-3) • 60,000 RPM Spindles • Auto Tool Change",ref:"PCB-Series"}},"pcb-proto":{fr4:{model:"CyTOS PCB30 Chemical-Free Prototyping",specs:"300x300mm • Zero Chemistry • Direct Gerber • 15-Min Turnaround",ref:"PCB30"},edu:{model:"CyTOS PCBE3020 Educational CNC Lab System",specs:"Safe Enclosure • Excellon Import • Comprehensive Lab Curriculum",ref:"PCBE3020"},default:{model:"CyTOS PCB30 Benchtop Lab Prototyper",specs:"0.1mm Track Resolution • Z-Surface Mapping • Gerber RS-274X",ref:"PCB30"}},"cnc-router":{metal:{model:"CyTOS 4x4 Rigid Aluminium Router",specs:"1220x1220mm • 24,000 RPM Water-Cooled • AC-Servo • Mist Coolant",ref:"Router-4x4"},composite:{model:"CyTOS 8x8 Industrial Heavy Gantry",specs:"2440x2440mm • Vacuum Bed Clamping • High-Torque Spindle",ref:"Router-8x8"},default:{model:"CyTOS Industrial CNC Router Series",specs:"Custom Bed Dimensions • Rigid Steel Chassis • Safety Factor 2.0",ref:"Router-Series"}},"custom-spm":{fixture:{model:"CyTOS 90° Rotary Pneumatic Weld Fixture",specs:"Pneumatic Clamp • Repeatable Indexing • Eliminates Manual Flipping",ref:"SPM-WeldFixture"},dispensing:{model:"CyTOS 6-Axis Robotic Adhesive Cell",specs:"Sunroof & Sealant Dispensing • Automated Component Placement",ref:"SPM-RoboticCell"},default:{model:"CyTOS Bespoke Automation & Turnkey SPM",specs:"Concept to Site Commissioning • In-House Controller & Software",ref:"SPM-Turnkey"}}};function l(){const d=r.value,u=n.value,c=s[d]||s["pcb-prod"],f=c[u]||c.default||c[Object.keys(c)[0]];t&&(t.textContent=f.model),o&&(o.textContent=f.specs),a&&(a.onclick=()=>{j(f.model)})}r.onchange=l,n.onchange=l,l()}function ke(){const r=document.getElementById("reviewsSliderTrack"),n=document.getElementById("reviewsPrevBtn"),t=document.getElementById("reviewsNextBtn"),o=document.getElementById("reviewsCurrentIndex"),a=document.getElementById("reviewsTotalCount"),s=document.getElementById("reviewsSliderDots"),l=s?s.querySelectorAll(".review-dot"):[];if(!r)return;const d=r.querySelectorAll(".review-testimonial-card"),u=d.length;if(!u)return;a&&(a.textContent=String(u).padStart(2,"0"));let c=0,f=null;const i=5e3;function p(){return window.innerWidth<=640?1:window.innerWidth<=1024?2:3}function g(){const b=p();return Math.max(0,u-b)}function m(b=!0){const x=g();c>x&&(c=x),c<0&&(c=0);const P=d[0],B=window.getComputedStyle(r),A=parseFloat(B.gap)||24,M=P.getBoundingClientRect().width,D=c*(M+A);r.style.transition=b?"transform 0.45s cubic-bezier(0.25, 1, 0.5, 1)":"none",r.style.transform=`translateX(-${D}px)`,o&&(o.textContent=String(c+1).padStart(2,"0")),l.forEach((R,I)=>{R.classList.toggle("active",I===c)})}function y(){const b=g();c>=b?c=0:c++,m(!0)}function h(){const b=g();c<=0?c=b:c--,m(!0)}function C(){S(),f=setInterval(()=>{y()},i)}function S(){f&&(clearInterval(f),f=null)}t&&(t.onclick=()=>{y(),C()}),n&&(n.onclick=()=>{h(),C()}),l.forEach((b,x)=>{b.onclick=()=>{const P=g();c=Math.min(x,P),m(!0),C()}}),m(!1),C()}function Pe(){const r=document.getElementById("calcBoards"),n=document.getElementById("calcCost"),t=document.getElementById("calcDays"),o=document.getElementById("calcBoardsVal"),a=document.getElementById("calcCostVal"),s=document.getElementById("calcDaysVal"),l=document.getElementById("calcAnnualSavings"),d=document.getElementById("calcPaybackMonths"),u=document.getElementById("calcTimeSaved"),c=document.getElementById("calcSendRoiBtn");if(!r||!n)return;function f(){const i=parseInt(r.value,10),p=parseInt(n.value,10),g=parseInt(t.value,10);o&&(o.textContent=`${i} boards`),a&&(a.textContent=`₹${p.toLocaleString("en-IN")}`),s&&(s.textContent=`${g} days delay`);const m=i*p,y=i*(p*.15),h=m-y,C=h*12,b=Math.max(1.8,45e4/h).toFixed(1),x=Math.round(i*g*.85);l&&(l.textContent=`₹${Math.round(C).toLocaleString("en-IN")}`),d&&(d.textContent=`${b} Months`),u&&(u.textContent=`${x} Days / Yr`)}r.oninput=f,n.oninput=f,t&&(t.oninput=f),c&&(c.onclick=()=>{const i=r.value,p=n.value,g=`ROI Estimate: ${i} boards/mo @ ₹${p}/board. Requesting feasibility study.`;j("PCB Rapid Prototyping Machine",g)}),f()}function Me(){const r=document.querySelectorAll(".pillar-nav-btn"),n=document.querySelectorAll(".pillar-content-panel");r.length&&r.forEach(t=>{t.onclick=()=>{const o=t.getAttribute("data-pillar");r.forEach(a=>a.classList.remove("active")),t.classList.add("active"),n.forEach(a=>{a.id===`pillar-${o}`?a.classList.add("active"):a.classList.remove("active")})}})}function Te(){const r=document.querySelectorAll(".app-filter-btn"),n=document.querySelectorAll(".app-matrix-card");r.length&&r.forEach(t=>{t.onclick=()=>{const o=t.getAttribute("data-filter");r.forEach(a=>a.classList.remove("active")),t.classList.add("active"),n.forEach(a=>{const s=a.getAttribute("data-category");o==="all"||s===o?a.style.display="block":a.style.display="none"})}})}function Be(){const r=document.querySelectorAll(".faq-item");r.forEach(n=>{const t=n.querySelector(".faq-question-btn");t&&(t.onclick=()=>{const o=n.classList.contains("active");r.forEach(a=>{a.classList.remove("active")}),o||n.classList.add("active")})})}let z="General CNC / Automation RFQ";function O(r){return r?String(r).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;"):""}function j(r="CyTOS Machine System",n=""){var c,f;z=r;const t=document.getElementById("rfqModalOverlay")||document.getElementById("rfqModal"),o=document.getElementById("rfqMachineSelect"),a=document.getElementById("rfqSelectedMachine"),s=document.getElementById("rfqNotes")||document.getElementById("rfqDetails"),l=document.getElementById("rfqStep1"),d=document.getElementById("rfqStep2"),u=document.getElementById("rfqSuccessMessage");o&&(o.value=r),a&&(a.value=r),s&&n&&(s.value=n),l&&d&&(l.style.display="block",l.classList.add("active"),d.style.display="none",d.classList.remove("active")),u&&(u.style.display="none",u.classList.remove("active")),(c=document.getElementById("stepBadge1"))==null||c.classList.add("active"),(f=document.getElementById("stepBadge2"))==null||f.classList.remove("active"),t&&(t.classList.add("active"),document.body.style.overflow="hidden")}function q(){const r=document.getElementById("rfqModalOverlay")||document.getElementById("rfqModal");r&&(r.classList.remove("active"),document.body.style.overflow="")}function Ae(){const r=document.getElementById("rfqModalOverlay")||document.getElementById("rfqModal"),n=document.getElementById("rfqModalCloseBtn")||document.getElementById("closeRfqModal")||document.getElementById("modalCloseBtn");document.querySelectorAll(".modal-close-btn").forEach(i=>{i.onclick=q});const t=document.getElementById("rfqStep1"),o=document.getElementById("rfqStep2"),a=document.getElementById("rfqNextBtn")||document.getElementById("rfqNextStepBtn"),s=document.getElementById("rfqBackBtn")||document.getElementById("rfqPrevStepBtn"),l=document.getElementById("rfqSubmitBtn"),d=document.getElementById("rfqWhatsAppSubmitBtn"),u=document.getElementById("rfqSuccessMessage"),c=document.querySelectorAll("#rfqForm, #rfqModalForm, .rfq-modal-dialog form, .modal-dialog form, .rfq-modal-window form");c.forEach(i=>{i.setAttribute("action","javascript:void(0);"),i.setAttribute("onsubmit","return false;")}),document.querySelectorAll("[data-open-rfq]").forEach(i=>{i.onclick=p=>{p.preventDefault();const g=i.getAttribute("data-machine")||"CyTOS Machine / Automation";j(g)}}),n&&(n.onclick=q),r&&(r.onclick=i=>{i.target===r&&q()}),document.addEventListener("keydown",i=>{i.key==="Escape"&&r&&r.classList.contains("active")&&q()}),a&&t&&o&&(a.onclick=()=>{var m,y,h,C,S;const i=(m=document.getElementById("rfqName"))==null?void 0:m.value.trim(),p=(y=document.getElementById("rfqPhone"))==null?void 0:y.value.trim(),g=(h=document.getElementById("rfqEmail"))==null?void 0:h.value.trim();if(!i||!p||!g){alert("Please provide your Name, Mobile/WhatsApp number, and Email to proceed.");return}t.style.display="none",t.classList.remove("active"),o.style.display="block",o.classList.add("active"),(C=document.getElementById("stepBadge1"))==null||C.classList.remove("active"),(S=document.getElementById("stepBadge2"))==null||S.classList.add("active")}),s&&t&&o&&(s.onclick=()=>{var i,p;o.style.display="none",o.classList.remove("active"),t.style.display="block",t.classList.add("active"),(i=document.getElementById("stepBadge2"))==null||i.classList.remove("active"),(p=document.getElementById("stepBadge1"))==null||p.classList.add("active")});const f=async i=>{var M,D,R,I,E,L,W,G,V,Q,_,U,Z,Y,K,$,J;i&&i.preventDefault();const p=((M=document.getElementById("rfqName"))==null?void 0:M.value.trim())||"",g=((D=document.getElementById("rfqCompany"))==null?void 0:D.value.trim())||"",m=((R=document.getElementById("rfqPhone"))==null?void 0:R.value.trim())||"",y=((I=document.getElementById("rfqEmail"))==null?void 0:I.value.trim())||"",h=((E=document.getElementById("rfqCity"))==null?void 0:E.value.trim())||((L=document.getElementById("rfqLocation"))==null?void 0:L.value.trim())||"",C=((W=document.getElementById("rfqMachineSelect"))==null?void 0:W.value)||((G=document.getElementById("rfqSelectedMachine"))==null?void 0:G.value)||((V=document.getElementById("rfqMachine"))==null?void 0:V.value)||z,S=((Q=document.getElementById("rfqMaterial"))==null?void 0:Q.value)||"",b=((_=document.getElementById("rfqTolerance"))==null?void 0:_.value)||"",x=((U=document.getElementById("rfqTimeline"))==null?void 0:U.value)||"",P=((Z=document.getElementById("rfqNotes"))==null?void 0:Z.value.trim())||((Y=document.getElementById("rfqDetails"))==null?void 0:Y.value.trim())||"";if(!p||!m&&!y){alert("Please provide your Name and a valid Mobile/WhatsApp number or Email."),t&&o&&(o.style.display="none",o.classList.remove("active"),t.style.display="block",t.classList.add("active"),(K=document.getElementById("stepBadge2"))==null||K.classList.remove("active"),($=document.getElementById("stepBadge1"))==null||$.classList.add("active"));return}const B=l?l.textContent:"Submit Technical RFQ";l&&(l.textContent="Transmitting to Pune Engineering Desk...",l.disabled=!0),await H({_subject:`New Technical RFQ: ${C} from ${g||p}`,Client_Name:p,Company:g,Phone_WhatsApp:m,Email:y,City_Location:h,Machine_Model:C,Workpiece_Material:S,Required_Tolerance:b,Project_Timeline:x,Application_Notes:P,Source:"CyTOS RFQ Modal Portal"}),l&&(l.textContent=B,l.disabled=!1),t&&(t.style.display="none",t.classList.remove("active")),o&&(o.style.display="none",o.classList.remove("active"));const A=encodeURIComponent(`*New Technical RFQ for CyTOS Pune*
+ */var pe=T,me=Symbol.for("react.element"),ue=Symbol.for("react.fragment"),ge=Object.prototype.hasOwnProperty,he=pe.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,ve={key:!0,ref:!0,__self:!0,__source:!0};function ne(i,a,n){var o,r={},s=null,l=null;n!==void 0&&(s=""+n),a.key!==void 0&&(s=""+a.key),a.ref!==void 0&&(l=a.ref);for(o in a)ge.call(a,o)&&!ve.hasOwnProperty(o)&&(r[o]=a[o]);if(i&&i.defaultProps)for(o in a=i.defaultProps,a)r[o]===void 0&&(r[o]=a[o]);return{$$typeof:me,type:i,key:s,ref:l,props:r,_owner:he.current}}L.Fragment=ue;L.jsx=ne;L.jsxs=ne;re.exports=L;var e=re.exports,F={},ee=oe;F.createRoot=ee.createRoot,F.hydrateRoot=ee.hydrateRoot;const fe="modulepreload",ye=function(i){return"/"+i},ie={},be=function(a,n,o){let r=Promise.resolve();if(n&&n.length>0){document.getElementsByTagName("link");const l=document.querySelector("meta[property=csp-nonce]"),p=(l==null?void 0:l.nonce)||(l==null?void 0:l.getAttribute("nonce"));r=Promise.allSettled(n.map(u=>{if(u=ye(u),u in ie)return;ie[u]=!0;const c=u.endsWith(".css"),y=c?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${u}"]${y}`))return;const t=document.createElement("link");if(t.rel=c?"stylesheet":fe,c||(t.as="script"),t.crossOrigin="",t.href=u,p&&t.setAttribute("nonce",p),document.head.appendChild(t),c)return new Promise((m,h)=>{t.addEventListener("load",m),t.addEventListener("error",()=>h(new Error(`Unable to preload CSS for ${u}`)))})}))}function s(l){const p=new Event("vite:preloadError",{cancelable:!0});if(p.payload=l,window.dispatchEvent(p),!p.defaultPrevented)throw l}return r.then(l=>{for(const p of l||[])p.status==="rejected"&&s(p.reason);return a().catch(s)})};async function H(i){try{const a=JSON.parse(localStorage.getItem("cytos_saved_leads")||"[]");a.push({timestamp:new Date().toISOString(),...i}),localStorage.setItem("cytos_saved_leads",JSON.stringify(a)),console.log("[CyTOS] Inquiry securely saved to local vault:",i)}catch(a){console.warn("[CyTOS] LocalStorage vault warning:",a)}try{const a=new AbortController,n=setTimeout(()=>a.abort(),3500),o=await fetch("https://formsubmit.co/ajax/info@cytos.in",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},signal:a.signal,body:JSON.stringify({_subject:i._subject||"New CyTOS Machinery Inquiry",_cc:"inranktech@gmail.com",_captcha:"false",_template:"table",...i})});return clearTimeout(n),o.ok}catch(a){return console.warn("[CyTOS] Background mailer note (handled gracefully):",a.message||a),!1}}function Ce(){xe(),Pe(),Se(),ke(),Me(),Te(),Be(),Ae(),Re(),Ie(),qe(),De(),Ne(),Oe(),Ee(),we()}function we(){try{const i=new URLSearchParams(window.location.search);(i.get("submitted")||i.get("rfq_submitted")||i.get("status")==="success")&&alert("Thank you! Your Technical Inquiry has been received. Our Pune engineering desk (info@cytos.in) will review your specifications and respond within 2 business hours.")}catch{}}function xe(){const i=document.querySelectorAll(".hero-slide"),a=document.querySelectorAll(".slider-tab-btn"),n=document.getElementById("sliderPrevBtn"),o=document.getElementById("sliderNextBtn");if(document.querySelector(".hero-slider-container"),!i.length)return;let r=0;const s=i.length,l=5e3;let p=null;function u(t){t<0&&(t=s-1),t>=s&&(t=0),r=t,i.forEach((g,f)=>{g.classList.toggle("active",f===r)});const m=document.getElementById("sliderCounterCurrent"),h=document.getElementById("sliderCounterTotal");m&&(m.textContent=String(r+1).padStart(2,"0")),h&&(h.textContent=String(s).padStart(2,"0")),a.forEach((g,f)=>{g.classList.toggle("active",f===r);const v=g.querySelector(".tab-progress-line");v&&(v.style.transition="none",v.style.width="0%",f===r&&setTimeout(()=>{v.style.transition=`width ${l}ms linear`,v.style.width="100%"},30))})}function c(){y(),u(r),p=setInterval(()=>{u((r+1)%s)},l)}function y(){p&&(clearInterval(p),p=null)}n&&(n.onclick=t=>{t.preventDefault(),u((r-1+s)%s),c()}),o&&(o.onclick=t=>{t.preventDefault(),u((r+1)%s),c()}),a.forEach((t,m)=>{t.onclick=()=>{u(m),c()}}),c()}function Pe(){const i=document.getElementById("finderRequirement"),a=document.getElementById("finderMaterial"),n=document.getElementById("finderModelResult"),o=document.getElementById("finderSpecsResult"),r=document.getElementById("finderQuoteBtn");if(!i||!a)return;const s={"pcb-prod":{fr4:{model:"CyTOS PCB60 Dual-Spindle",specs:"600x600mm • 60,000 RPM • 0.2mm Min Drill • 2X Throughput",ref:"PCB60"},mcpcb:{model:"CyTOS PCB12 Multi-Spindle High-Power",specs:"1200x1200mm • 60,000 RPM • Heavy-Duty Aluminium Core Routing",ref:"PCB12"},default:{model:"CyTOS PCB60 / PCB12 Series",specs:"Custom Spindle Count (1-3) • 60,000 RPM Spindles • Auto Tool Change",ref:"PCB-Series"}},"pcb-proto":{fr4:{model:"CyTOS PCB30 Chemical-Free Prototyping",specs:"300x300mm • Zero Chemistry • Direct Gerber • 15-Min Turnaround",ref:"PCB30"},edu:{model:"CyTOS PCBE3020 Educational CNC Lab System",specs:"Safe Enclosure • Excellon Import • Comprehensive Lab Curriculum",ref:"PCBE3020"},default:{model:"CyTOS PCB30 Benchtop Lab Prototyper",specs:"0.1mm Track Resolution • Z-Surface Mapping • Gerber RS-274X",ref:"PCB30"}},"cnc-router":{metal:{model:"CyTOS 4x4 Rigid Aluminium Router",specs:"1220x1220mm • 24,000 RPM Water-Cooled • AC-Servo • Mist Coolant",ref:"Router-4x4"},composite:{model:"CyTOS 8x8 Industrial Heavy Gantry",specs:"2440x2440mm • Vacuum Bed Clamping • High-Torque Spindle",ref:"Router-8x8"},default:{model:"CyTOS Industrial CNC Router Series",specs:"Custom Bed Dimensions • Rigid Steel Chassis • Safety Factor 2.0",ref:"Router-Series"}},"custom-spm":{fixture:{model:"CyTOS 90° Rotary Pneumatic Weld Fixture",specs:"Pneumatic Clamp • Repeatable Indexing • Eliminates Manual Flipping",ref:"SPM-WeldFixture"},dispensing:{model:"CyTOS 6-Axis Robotic Adhesive Cell",specs:"Sunroof & Sealant Dispensing • Automated Component Placement",ref:"SPM-RoboticCell"},default:{model:"CyTOS Bespoke Automation & Turnkey SPM",specs:"Concept to Site Commissioning • In-House Controller & Software",ref:"SPM-Turnkey"}}};function l(){const p=i.value,u=a.value,c=s[p]||s["pcb-prod"],y=c[u]||c.default||c[Object.keys(c)[0]];n&&(n.textContent=y.model),o&&(o.textContent=y.specs),r&&(r.onclick=()=>{W(y.model)})}i.onchange=l,a.onchange=l,l()}function Se(){const i=document.getElementById("reviewsSliderTrack"),a=document.getElementById("reviewsPrevBtn"),n=document.getElementById("reviewsNextBtn"),o=document.getElementById("reviewsCurrentIndex"),r=document.getElementById("reviewsTotalCount"),s=document.getElementById("reviewsSliderDots"),l=s?s.querySelectorAll(".review-dot"):[];if(!i)return;const p=i.querySelectorAll(".review-testimonial-card"),u=p.length;if(!u)return;r&&(r.textContent=String(u).padStart(2,"0"));let c=0,y=null;const t=5e3;function m(){return window.innerWidth<=640?1:window.innerWidth<=1024?2:3}function h(){const b=m();return Math.max(0,u-b)}function g(b=!0){const S=h();c>S&&(c=S),c<0&&(c=0);const k=p[0],B=window.getComputedStyle(i),A=parseFloat(B.gap)||24,M=k.getBoundingClientRect().width,D=c*(M+A);i.style.transition=b?"transform 0.45s cubic-bezier(0.25, 1, 0.5, 1)":"none",i.style.transform=`translateX(-${D}px)`,o&&(o.textContent=String(c+1).padStart(2,"0")),l.forEach((R,I)=>{R.classList.toggle("active",I===c)})}function f(){const b=h();c>=b?c=0:c++,g(!0)}function v(){const b=h();c<=0?c=b:c--,g(!0)}function w(){P(),y=setInterval(()=>{f()},t)}function P(){y&&(clearInterval(y),y=null)}n&&(n.onclick=()=>{f(),w()}),a&&(a.onclick=()=>{v(),w()}),l.forEach((b,S)=>{b.onclick=()=>{const k=h();c=Math.min(S,k),g(!0),w()}}),g(!1),w()}function ke(){const i=document.getElementById("calcBoards"),a=document.getElementById("calcCost"),n=document.getElementById("calcDays"),o=document.getElementById("calcBoardsVal"),r=document.getElementById("calcCostVal"),s=document.getElementById("calcDaysVal"),l=document.getElementById("calcAnnualSavings"),p=document.getElementById("calcPaybackMonths"),u=document.getElementById("calcTimeSaved"),c=document.getElementById("calcSendRoiBtn");if(!i||!a)return;function y(){const t=parseInt(i.value,10),m=parseInt(a.value,10),h=parseInt(n.value,10);o&&(o.textContent=`${t} boards`),r&&(r.textContent=`₹${m.toLocaleString("en-IN")}`),s&&(s.textContent=`${h} days delay`);const g=t*m,f=t*(m*.15),v=g-f,w=v*12,b=Math.max(1.8,45e4/v).toFixed(1),S=Math.round(t*h*.85);l&&(l.textContent=`₹${Math.round(w).toLocaleString("en-IN")}`),p&&(p.textContent=`${b} Months`),u&&(u.textContent=`${S} Days / Yr`)}i.oninput=y,a.oninput=y,n&&(n.oninput=y),c&&(c.onclick=()=>{const t=i.value,m=a.value,h=`ROI Estimate: ${t} boards/mo @ ₹${m}/board. Requesting feasibility study.`;W("PCB Rapid Prototyping Machine",h)}),y()}function Me(){const i=document.querySelectorAll(".pillar-nav-btn"),a=document.querySelectorAll(".pillar-content-panel");i.length&&i.forEach(n=>{n.onclick=()=>{const o=n.getAttribute("data-pillar");i.forEach(r=>r.classList.remove("active")),n.classList.add("active"),a.forEach(r=>{r.id===`pillar-${o}`?r.classList.add("active"):r.classList.remove("active")})}})}function Te(){const i=document.querySelectorAll(".app-filter-btn"),a=document.querySelectorAll(".app-matrix-card");i.length&&i.forEach(n=>{n.onclick=()=>{const o=n.getAttribute("data-filter");i.forEach(r=>r.classList.remove("active")),n.classList.add("active"),a.forEach(r=>{const s=r.getAttribute("data-category");o==="all"||s===o?r.style.display="block":r.style.display="none"})}})}function Be(){const i=document.querySelectorAll(".faq-item");i.forEach(a=>{const n=a.querySelector(".faq-question-btn");n&&(n.onclick=()=>{const o=a.classList.contains("active");i.forEach(r=>{r.classList.remove("active")}),o||a.classList.add("active")})})}let z="General CNC / Automation RFQ";function N(i){return i?String(i).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;"):""}function W(i="CyTOS Machine System",a=""){var c,y;z=i;const n=document.getElementById("rfqModalOverlay")||document.getElementById("rfqModal"),o=document.getElementById("rfqMachineSelect"),r=document.getElementById("rfqSelectedMachine"),s=document.getElementById("rfqNotes")||document.getElementById("rfqDetails"),l=document.getElementById("rfqStep1"),p=document.getElementById("rfqStep2"),u=document.getElementById("rfqSuccessMessage");o&&(o.value=i),r&&(r.value=i),s&&a&&(s.value=a),l&&p&&(l.style.display="block",l.classList.add("active"),p.style.display="none",p.classList.remove("active")),u&&(u.style.display="none",u.classList.remove("active")),(c=document.getElementById("stepBadge1"))==null||c.classList.add("active"),(y=document.getElementById("stepBadge2"))==null||y.classList.remove("active"),n&&(n.classList.add("active"),document.body.style.overflow="hidden")}function q(){const i=document.getElementById("rfqModalOverlay")||document.getElementById("rfqModal");i&&(i.classList.remove("active"),document.body.style.overflow="")}function Ae(){const i=document.getElementById("rfqModalOverlay")||document.getElementById("rfqModal"),a=document.getElementById("rfqModalCloseBtn")||document.getElementById("closeRfqModal")||document.getElementById("modalCloseBtn");document.querySelectorAll(".modal-close-btn").forEach(t=>{t.onclick=q});const n=document.getElementById("rfqStep1"),o=document.getElementById("rfqStep2"),r=document.getElementById("rfqNextBtn")||document.getElementById("rfqNextStepBtn"),s=document.getElementById("rfqBackBtn")||document.getElementById("rfqPrevStepBtn"),l=document.getElementById("rfqSubmitBtn"),p=document.getElementById("rfqWhatsAppSubmitBtn"),u=document.getElementById("rfqSuccessMessage"),c=document.querySelectorAll("#rfqForm, #rfqModalForm, .rfq-modal-dialog form, .modal-dialog form, .rfq-modal-window form");c.forEach(t=>{t.setAttribute("action","javascript:void(0);"),t.setAttribute("onsubmit","return false;")}),document.querySelectorAll("[data-open-rfq]").forEach(t=>{t.onclick=m=>{m.preventDefault();const h=t.getAttribute("data-machine")||"CyTOS Machine / Automation";W(h)}}),a&&(a.onclick=q),i&&(i.onclick=t=>{t.target===i&&q()}),document.addEventListener("keydown",t=>{t.key==="Escape"&&i&&i.classList.contains("active")&&q()}),r&&n&&o&&(r.onclick=()=>{var g,f,v,w,P;const t=(g=document.getElementById("rfqName"))==null?void 0:g.value.trim(),m=(f=document.getElementById("rfqPhone"))==null?void 0:f.value.trim(),h=(v=document.getElementById("rfqEmail"))==null?void 0:v.value.trim();if(!t||!m||!h){alert("Please provide your Name, Mobile/WhatsApp number, and Email to proceed.");return}n.style.display="none",n.classList.remove("active"),o.style.display="block",o.classList.add("active"),(w=document.getElementById("stepBadge1"))==null||w.classList.remove("active"),(P=document.getElementById("stepBadge2"))==null||P.classList.add("active")}),s&&n&&o&&(s.onclick=()=>{var t,m;o.style.display="none",o.classList.remove("active"),n.style.display="block",n.classList.add("active"),(t=document.getElementById("stepBadge2"))==null||t.classList.remove("active"),(m=document.getElementById("stepBadge1"))==null||m.classList.add("active")});const y=async t=>{var M,D,R,I,O,E,j,V,G,Q,_,U,Z,Y,K,$,X;t&&t.preventDefault();const m=((M=document.getElementById("rfqName"))==null?void 0:M.value.trim())||"",h=((D=document.getElementById("rfqCompany"))==null?void 0:D.value.trim())||"",g=((R=document.getElementById("rfqPhone"))==null?void 0:R.value.trim())||"",f=((I=document.getElementById("rfqEmail"))==null?void 0:I.value.trim())||"",v=((O=document.getElementById("rfqCity"))==null?void 0:O.value.trim())||((E=document.getElementById("rfqLocation"))==null?void 0:E.value.trim())||"",w=((j=document.getElementById("rfqMachineSelect"))==null?void 0:j.value)||((V=document.getElementById("rfqSelectedMachine"))==null?void 0:V.value)||((G=document.getElementById("rfqMachine"))==null?void 0:G.value)||z,P=((Q=document.getElementById("rfqMaterial"))==null?void 0:Q.value)||"",b=((_=document.getElementById("rfqTolerance"))==null?void 0:_.value)||"",S=((U=document.getElementById("rfqTimeline"))==null?void 0:U.value)||"",k=((Z=document.getElementById("rfqNotes"))==null?void 0:Z.value.trim())||((Y=document.getElementById("rfqDetails"))==null?void 0:Y.value.trim())||"";if(!m||!g&&!f){alert("Please provide your Name and a valid Mobile/WhatsApp number or Email."),n&&o&&(o.style.display="none",o.classList.remove("active"),n.style.display="block",n.classList.add("active"),(K=document.getElementById("stepBadge2"))==null||K.classList.remove("active"),($=document.getElementById("stepBadge1"))==null||$.classList.add("active"));return}const B=l?l.textContent:"Submit Technical RFQ";l&&(l.textContent="Transmitting to Pune Engineering Desk...",l.disabled=!0),await H({_subject:`New Technical RFQ: ${w} from ${h||m}`,Client_Name:m,Company:h,Phone_WhatsApp:g,Email:f,City_Location:v,Machine_Model:w,Workpiece_Material:P,Required_Tolerance:b,Project_Timeline:S,Application_Notes:k,Source:"CyTOS RFQ Modal Portal"}),l&&(l.textContent=B,l.disabled=!1),n&&(n.style.display="none",n.classList.remove("active")),o&&(o.style.display="none",o.classList.remove("active"));const A=encodeURIComponent(`*New Technical RFQ for CyTOS Pune*
 
-• *Client Name:* ${p}
-• *Company:* ${g||"N/A"}
-• *Phone/WhatsApp:* ${m}
-• *Email:* ${y}
-• *Location:* ${h||"India"}
-• *Interested Model:* ${C}
-• *Workpiece/Material:* ${S||"N/A"}
+• *Client Name:* ${m}
+• *Company:* ${h||"N/A"}
+• *Phone/WhatsApp:* ${g}
+• *Email:* ${f}
+• *Location:* ${v||"India"}
+• *Interested Model:* ${w}
+• *Workpiece/Material:* ${P||"N/A"}
 • *Required Tolerance:* ${b||"Standard"}
-• *Application Notes:* ${P||"Standard quote request"}
+• *Application Notes:* ${k||"Standard quote request"}
 
 _Generated via cytos.in Technical RFQ Portal_`);u?(u.style.display="block",u.classList.add("active"),u.innerHTML=`
         <div style="width: 56px; height: 56px; border-radius: 50%; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
@@ -25,16 +25,16 @@ _Generated via cytos.in Technical RFQ Portal_`);u?(u.style.display="block",u.cla
         </div>
         <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-pure, #0f172a);">RFQ Transmitted to Engineering Desk!</h3>
         <p style="font-size: 0.92rem; color: var(--text-secondary, #475569); max-width: 460px; margin: 0 auto 1.25rem; line-height: 1.55;">
-          Thank you, <strong>${O(p)}</strong>! Your technical specifications for <strong>${O(C)}</strong> have been securely registered with the CyTOS Pune engineering team. An application engineer will review your specs and contact you within 2 business hours.
+          Thank you, <strong>${N(m)}</strong>! Your technical specifications for <strong>${N(w)}</strong> have been securely registered with the CyTOS Pune engineering team. An application engineer will review your specs and contact you within 2 business hours.
         </p>
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.85rem 1.15rem; margin-bottom: 1.25rem; text-align: left; font-size: 0.85rem; color: #334155;">
           <div style="display: flex; justify-content: space-between; margin-bottom: 0.35rem;">
             <span style="color: #64748b;">Machine:</span>
-            <strong>${O(C)}</strong>
+            <strong>${N(w)}</strong>
           </div>
           <div style="display: flex; justify-content: space-between; margin-bottom: 0.35rem;">
             <span style="color: #64748b;">Contact:</span>
-            <strong>${O(m||y)}</strong>
+            <strong>${N(g||f)}</strong>
           </div>
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #64748b;">Status:</span>
@@ -50,28 +50,28 @@ _Generated via cytos.in Technical RFQ Portal_`);u?(u.style.display="block",u.cla
             <span>Close Window</span>
           </button>
         </div>
-      `,(J=document.getElementById("rfqSuccessCloseBtn"))==null||J.addEventListener("click",q)):(alert(`Thank you, ${p}! Your Technical RFQ for "${C}" has been dispatched to CyTOS engineering desk (info@cytos.in). We will respond within 2 business hours.`),q()),c.forEach(se=>se.reset())};l&&(l.onclick=f),c.forEach(i=>{i.onsubmit=f}),d&&(d.onclick=i=>{var x,P,B,A,M,D,R,I,E,L;i.preventDefault();const p=((x=document.getElementById("rfqName"))==null?void 0:x.value.trim())||"Valued Client",g=((P=document.getElementById("rfqCompany"))==null?void 0:P.value.trim())||"",m=((B=document.getElementById("rfqPhone"))==null?void 0:B.value.trim())||"N/A",y=((A=document.getElementById("rfqCity"))==null?void 0:A.value.trim())||((M=document.getElementById("rfqLocation"))==null?void 0:M.value.trim())||"India",h=((D=document.getElementById("rfqMachineSelect"))==null?void 0:D.value)||((R=document.getElementById("rfqSelectedMachine"))==null?void 0:R.value)||z,C=((I=document.getElementById("rfqMaterial"))==null?void 0:I.value)||"Not specified",S=((E=document.getElementById("rfqNotes"))==null?void 0:E.value.trim())||((L=document.getElementById("rfqDetails"))==null?void 0:L.value.trim())||"Standard technical quotation request";H({_subject:`WhatsApp RFQ: ${h} from ${g||p}`,Client_Name:p,Company:g,Phone_WhatsApp:m,City_Location:y,Machine_Model:h,Workpiece_Material:C,Application_Notes:S,Source:"CyTOS RFQ Direct WhatsApp"});const b=encodeURIComponent(`*New Technical RFQ for CyTOS Pune*
+      `,(X=document.getElementById("rfqSuccessCloseBtn"))==null||X.addEventListener("click",q)):(alert(`Thank you, ${m}! Your Technical RFQ for "${w}" has been dispatched to CyTOS engineering desk (info@cytos.in). We will respond within 2 business hours.`),q()),c.forEach(se=>se.reset())};l&&(l.onclick=y),c.forEach(t=>{t.onsubmit=y}),p&&(p.onclick=t=>{var S,k,B,A,M,D,R,I,O,E;t.preventDefault();const m=((S=document.getElementById("rfqName"))==null?void 0:S.value.trim())||"Valued Client",h=((k=document.getElementById("rfqCompany"))==null?void 0:k.value.trim())||"",g=((B=document.getElementById("rfqPhone"))==null?void 0:B.value.trim())||"N/A",f=((A=document.getElementById("rfqCity"))==null?void 0:A.value.trim())||((M=document.getElementById("rfqLocation"))==null?void 0:M.value.trim())||"India",v=((D=document.getElementById("rfqMachineSelect"))==null?void 0:D.value)||((R=document.getElementById("rfqSelectedMachine"))==null?void 0:R.value)||z,w=((I=document.getElementById("rfqMaterial"))==null?void 0:I.value)||"Not specified",P=((O=document.getElementById("rfqNotes"))==null?void 0:O.value.trim())||((E=document.getElementById("rfqDetails"))==null?void 0:E.value.trim())||"Standard technical quotation request";H({_subject:`WhatsApp RFQ: ${v} from ${h||m}`,Client_Name:m,Company:h,Phone_WhatsApp:g,City_Location:f,Machine_Model:v,Workpiece_Material:w,Application_Notes:P,Source:"CyTOS RFQ Direct WhatsApp"});const b=encodeURIComponent(`*New Technical RFQ for CyTOS Pune*
 
-• *Client Name:* ${p}
-• *Company:* ${g||"N/A"}
-• *Phone/WhatsApp:* ${m}
-• *Location:* ${y}
-• *Interested Model:* ${h}
-• *Workpiece/Material:* ${C}
-• *Application Notes:* ${S}
+• *Client Name:* ${m}
+• *Company:* ${h||"N/A"}
+• *Phone/WhatsApp:* ${g}
+• *Location:* ${f}
+• *Interested Model:* ${v}
+• *Workpiece/Material:* ${w}
+• *Application Notes:* ${P}
 
-_Generated via cytos.in Technical RFQ Portal_`);window.open(`https://wa.me/919921381071?text=${b}`,"_blank"),q()})}function De(){const r=document.getElementById("contactPageForm");r&&(r.setAttribute("action","javascript:void(0);"),r.setAttribute("onsubmit","return false;"),r.onsubmit=async n=>{var y,h,C,S,b,x,P,B,A,M;n.preventDefault();const t=((y=document.getElementById("cpName"))==null?void 0:y.value.trim())||"",o=((h=document.getElementById("cpCompany"))==null?void 0:h.value.trim())||"",a=((C=document.getElementById("cpEmail"))==null?void 0:C.value.trim())||"",s=((S=document.getElementById("cpPhone"))==null?void 0:S.value.trim())||"",l=((b=document.getElementById("cpLocation"))==null?void 0:b.value.trim())||((x=document.getElementById("cpCity"))==null?void 0:x.value.trim())||"",d=((P=document.getElementById("cpMachine"))==null?void 0:P.value)||"General CNC Machinery",u=((B=document.getElementById("cpMaterial"))==null?void 0:B.value.trim())||"",c=((A=document.getElementById("cpWorkArea"))==null?void 0:A.value.trim())||"",f=((M=document.getElementById("cpMessage"))==null?void 0:M.value.trim())||"";if(!t||!a&&!s){alert("Please provide your Full Name and a valid Mobile/WhatsApp number or Email.");return}const i=r.querySelector('button[type="submit"]'),p=i?i.textContent:"Submit RFQ to Pune Engineering Desk";i&&(i.textContent="Transmitting to Pune Engineering Desk...",i.disabled=!0),await H({_subject:`CyTOS Contact Form: ${d} from ${o||t}`,Full_Name:t,Company:o,Email:a,Phone:s,City_Location:l,Machine_Category:d,Workpiece_Material:u,Work_Area_Dimensions:c,Detailed_Requirements:f,Source:"CyTOS Contact Us Page"}),i&&(i.textContent=p,i.disabled=!1);let g=document.getElementById("contactSuccessBanner");g||(g=document.createElement("div"),g.id="contactSuccessBanner",g.className="contact-success-banner",r.parentNode.insertBefore(g,r));const m=encodeURIComponent(`*New Contact Inquiry for CyTOS Pune*
+_Generated via cytos.in Technical RFQ Portal_`);window.open(`https://wa.me/919921381071?text=${b}`,"_blank"),q()})}function De(){const i=document.getElementById("contactPageForm");i&&(i.setAttribute("action","javascript:void(0);"),i.setAttribute("onsubmit","return false;"),i.onsubmit=async a=>{var f,v,w,P,b,S,k,B,A,M;a.preventDefault();const n=((f=document.getElementById("cpName"))==null?void 0:f.value.trim())||"",o=((v=document.getElementById("cpCompany"))==null?void 0:v.value.trim())||"",r=((w=document.getElementById("cpEmail"))==null?void 0:w.value.trim())||"",s=((P=document.getElementById("cpPhone"))==null?void 0:P.value.trim())||"",l=((b=document.getElementById("cpLocation"))==null?void 0:b.value.trim())||((S=document.getElementById("cpCity"))==null?void 0:S.value.trim())||"",p=((k=document.getElementById("cpMachine"))==null?void 0:k.value)||"General CNC Machinery",u=((B=document.getElementById("cpMaterial"))==null?void 0:B.value.trim())||"",c=((A=document.getElementById("cpWorkArea"))==null?void 0:A.value.trim())||"",y=((M=document.getElementById("cpMessage"))==null?void 0:M.value.trim())||"";if(!n||!r&&!s){alert("Please provide your Full Name and a valid Mobile/WhatsApp number or Email.");return}const t=i.querySelector('button[type="submit"]'),m=t?t.textContent:"Submit RFQ to Pune Engineering Desk";t&&(t.textContent="Transmitting to Pune Engineering Desk...",t.disabled=!0),await H({_subject:`CyTOS Contact Form: ${p} from ${o||n}`,Full_Name:n,Company:o,Email:r,Phone:s,City_Location:l,Machine_Category:p,Workpiece_Material:u,Work_Area_Dimensions:c,Detailed_Requirements:y,Source:"CyTOS Contact Us Page"}),t&&(t.textContent=m,t.disabled=!1);let h=document.getElementById("contactSuccessBanner");h||(h=document.createElement("div"),h.id="contactSuccessBanner",h.className="contact-success-banner",i.parentNode.insertBefore(h,i));const g=encodeURIComponent(`*New Contact Inquiry for CyTOS Pune*
 
-• *Client Name:* ${t}
+• *Client Name:* ${n}
 • *Company:* ${o||"N/A"}
 • *Phone/WhatsApp:* ${s}
-• *Email:* ${a}
+• *Email:* ${r}
 • *Location:* ${l||"India"}
-• *Equipment:* ${d}
+• *Equipment:* ${p}
 • *Material:* ${u||"N/A"}
-• *Requirements:* ${f||"Standard quote inquiry"}
+• *Requirements:* ${y||"Standard quote inquiry"}
 
-_Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=`
+_Transmitted via cytos.in Contact Portal_`);h.style.display="block",h.innerHTML=`
       <div style="display: flex; align-items: flex-start; gap: 1rem;">
         <div style="width: 44px; height: 44px; min-width: 44px; border-radius: 50%; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center;">
           <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -79,17 +79,17 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
         <div style="flex: 1;">
           <h4 style="font-size: 1.15rem; font-weight: 700; color: #065f46; margin-bottom: 0.35rem;">Inquiry Successfully Registered &amp; Dispatched!</h4>
           <p style="font-size: 0.92rem; color: #1e293b; line-height: 1.55; margin-bottom: 0.85rem;">
-            Thank you, <strong>${O(t)}</strong>! Your technical inquiry regarding <strong>${O(d)}</strong> has been vaulted and transmitted to the CyTOS Pune engineering desk. An engineer will review your specifications and contact you within 2 business hours.
+            Thank you, <strong>${N(n)}</strong>! Your technical inquiry regarding <strong>${N(p)}</strong> has been vaulted and transmitted to the CyTOS Pune engineering desk. An engineer will review your specifications and contact you within 2 business hours.
           </p>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <a href="https://wa.me/919921381071?text=${m}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1.15rem; font-size: 0.88rem;">
+            <a href="https://wa.me/919921381071?text=${g}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1.15rem; font-size: 0.88rem;">
               <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
               <span>Fast-Track: Connect on WhatsApp</span>
             </a>
           </div>
         </div>
       </div>
-    `,g.scrollIntoView({behavior:"smooth",block:"nearest"}),r.reset()})}function Re(){const r=document.querySelectorAll(".metric-number[data-count]");if(!r.length)return;const n=new IntersectionObserver((t,o)=>{t.forEach(a=>{if(a.isIntersecting){let i=function(p){const g=p-f,m=Math.min(g/c,1),y=m===1?1:1-Math.pow(2,-10*m),h=Math.floor(y*l);s.textContent=`${d}${h.toLocaleString()}${u}`,m<1?requestAnimationFrame(i):s.textContent=`${d}${l.toLocaleString()}${u}`};const s=a.target,l=parseInt(s.getAttribute("data-count"),10),d=s.getAttribute("data-prefix")||"",u=s.getAttribute("data-suffix")||"",c=1800,f=performance.now();requestAnimationFrame(i),o.unobserve(s)}})},{threshold:.3});r.forEach(t=>n.observe(t))}function Ie(){const r=document.querySelector(".main-header");r&&(window.onscroll=()=>{window.scrollY>40?r.classList.add("scrolled"):r.classList.remove("scrolled")})}function qe(){const r=document.getElementById("mobileMenuBtn"),n=document.querySelector(".nav-links");if(!r||!n)return;const t='<svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>',o='<svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';r.onclick=s=>{s.stopPropagation();const l=n.classList.toggle("active");r.setAttribute("aria-expanded",l?"true":"false"),document.body.style.overflow=l?"hidden":"",r.innerHTML=l?o:t},n.querySelectorAll(".dropdown-trigger").forEach(s=>{s.onclick=l=>{if(window.innerWidth<=768){l.preventDefault(),l.stopPropagation();const d=s.closest(".nav-item-dropdown");d&&(n.querySelectorAll(".nav-item-dropdown").forEach(u=>{u!==d&&u.classList.remove("open")}),d.classList.toggle("open"))}}}),n.querySelectorAll("a:not(.dropdown-trigger)").forEach(s=>{s.onclick=()=>{window.innerWidth<=768&&(n.classList.remove("active"),document.body.style.overflow="",r.innerHTML=t)}})}function Oe(){const r=document.getElementById("cookieConsentBanner");if(!r)return;if(localStorage.getItem("cytos_cookie_consent")){r.classList.add("consent-hidden");return}setTimeout(()=>{r.classList.remove("consent-hidden")},600);const t=document.getElementById("btnAcceptConsent"),o=document.getElementById("btnRejectConsent");t&&(t.onclick=()=>{localStorage.setItem("cytos_cookie_consent","accepted_all"),r.classList.add("consent-hidden")}),o&&(o.onclick=()=>{localStorage.setItem("cytos_cookie_consent","necessary_only"),r.classList.add("consent-hidden")})}function Ee(){const r=document.querySelectorAll(".filter-pill"),n=document.querySelectorAll(".blog-card"),t=document.querySelector(".featured-blog-card");!r.length||!n.length||r.forEach(o=>{o.onclick=()=>{r.forEach(s=>s.classList.remove("active")),o.classList.add("active");const a=o.getAttribute("data-category");if(t){const s=t.getAttribute("data-category");a==="all"||s===a?t.style.display="grid":t.style.display="none"}n.forEach(s=>{const l=s.getAttribute("data-category");a==="all"||l===a?s.style.display="flex":s.style.display="none"})}})}function Le(){const r=document.querySelectorAll(".terms-toc-link");if(!r.length)return;const n=document.querySelectorAll(".terms-section");window.addEventListener("scroll",()=>{let t="";const o=window.scrollY+140;n.forEach(a=>{const s=a.offsetTop,l=a.offsetHeight;o>=s&&o<s+l&&(t=a.getAttribute("id"))}),t&&r.forEach(a=>{a.getAttribute("href")===`#${t}`?a.classList.add("active"):a.classList.remove("active")})})}function k({htmlContent:r,title:n,description:t,canonical:o}){const a=T.useRef(null),s=le();return T.useEffect(()=>{if(n){document.title=n;let m=document.querySelector('meta[property="og:title"]');m&&m.setAttribute("content",n);let y=document.querySelector('meta[name="twitter:title"]');y&&y.setAttribute("content",n)}if(t){let m=document.querySelector('meta[name="description"]');m||(m=document.createElement("meta"),m.setAttribute("name","description"),document.head.appendChild(m)),m.setAttribute("content",t);let y=document.querySelector('meta[property="og:description"]');y&&y.setAttribute("content",t);let h=document.querySelector('meta[name="twitter:description"]');h&&h.setAttribute("content",t)}const l=window.location.pathname||"/",d=l==="/"?"/":l.replace(/\/$/,""),u=o||`https://www.cytos.in${d}`;let c=document.querySelector('link[rel="canonical"]');c||(c=document.createElement("link"),c.setAttribute("rel","canonical"),document.head.appendChild(c)),c.setAttribute("href",u);let f=document.querySelector('meta[property="og:url"]');f&&f.setAttribute("content",u),window.scrollTo(0,0);const i=a.current;if(!i)return;const p=m=>{const y=m.target.closest("a");if(!y)return;const h=y.getAttribute("href");if(!h||h.startsWith("#")||h.startsWith("tel:")||h.startsWith("mailto:")||h.includes("wa.me")||y.target==="_blank"||h.endsWith(".pdf")||h.endsWith(".xml")||h.startsWith("http://")||h.startsWith("https://"))return;let[C,S]=h.split("#"),b=C.replace(/\.html$/,"");b==="index"||b==="./index"||b==="/index"?b="/":b.startsWith("/")||(b="/"+b),m.preventDefault(),s(b),S?setTimeout(()=>{const x=document.getElementById(S);x&&x.scrollIntoView({behavior:"smooth"})},100):window.scrollTo(0,0)};i.addEventListener("click",p);const g=setTimeout(()=>{Ce()},50);return()=>{i.removeEventListener("click",p),clearTimeout(g)}},[r,n,t,s]),e.jsx("div",{ref:a,className:"page-html-content-root",dangerouslySetInnerHTML:{__html:r}})}const Fe=`\r
+    `,h.scrollIntoView({behavior:"smooth",block:"nearest"}),i.reset()})}function Re(){const i=document.querySelectorAll(".metric-number[data-count]");if(!i.length)return;const a=new IntersectionObserver((n,o)=>{n.forEach(r=>{if(r.isIntersecting){let t=function(m){const h=m-y,g=Math.min(h/c,1),f=g===1?1:1-Math.pow(2,-10*g),v=Math.floor(f*l);s.textContent=`${p}${v.toLocaleString()}${u}`,g<1?requestAnimationFrame(t):s.textContent=`${p}${l.toLocaleString()}${u}`};const s=r.target,l=parseInt(s.getAttribute("data-count"),10),p=s.getAttribute("data-prefix")||"",u=s.getAttribute("data-suffix")||"",c=1800,y=performance.now();requestAnimationFrame(t),o.unobserve(s)}})},{threshold:.3});i.forEach(n=>a.observe(n))}function Ie(){const i=document.querySelector(".main-header");i&&(window.onscroll=()=>{window.scrollY>40?i.classList.add("scrolled"):i.classList.remove("scrolled")})}function qe(){const i=document.getElementById("mobileMenuBtn"),a=document.querySelector(".nav-links");if(!i||!a)return;const n='<svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>',o='<svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';i.onclick=s=>{s.stopPropagation();const l=a.classList.toggle("active");i.setAttribute("aria-expanded",l?"true":"false"),document.body.style.overflow=l?"hidden":"",i.innerHTML=l?o:n},a.querySelectorAll(".dropdown-trigger").forEach(s=>{s.onclick=l=>{if(window.innerWidth<=768){l.preventDefault(),l.stopPropagation();const p=s.closest(".nav-item-dropdown");p&&(a.querySelectorAll(".nav-item-dropdown").forEach(u=>{u!==p&&u.classList.remove("open")}),p.classList.toggle("open"))}}}),a.querySelectorAll("a:not(.dropdown-trigger)").forEach(s=>{s.onclick=()=>{window.innerWidth<=768&&(a.classList.remove("active"),document.body.style.overflow="",i.innerHTML=n)}})}function Ne(){const i=document.getElementById("cookieConsentBanner");if(!i)return;if(localStorage.getItem("cytos_cookie_consent")){i.classList.add("consent-hidden");return}setTimeout(()=>{i.classList.remove("consent-hidden")},600);const n=document.getElementById("btnAcceptConsent"),o=document.getElementById("btnRejectConsent");n&&(n.onclick=()=>{localStorage.setItem("cytos_cookie_consent","accepted_all"),i.classList.add("consent-hidden")}),o&&(o.onclick=()=>{localStorage.setItem("cytos_cookie_consent","necessary_only"),i.classList.add("consent-hidden")})}function Oe(){const i=document.querySelectorAll(".filter-pill"),a=document.querySelectorAll(".blog-card"),n=document.querySelector(".featured-blog-card");!i.length||!a.length||i.forEach(o=>{o.onclick=()=>{i.forEach(s=>s.classList.remove("active")),o.classList.add("active");const r=o.getAttribute("data-category");if(n){const s=n.getAttribute("data-category");r==="all"||s===r?n.style.display="grid":n.style.display="none"}a.forEach(s=>{const l=s.getAttribute("data-category");r==="all"||l===r?s.style.display="flex":s.style.display="none"})}})}function Ee(){const i=document.querySelectorAll(".terms-toc-link");if(!i.length)return;const a=document.querySelectorAll(".terms-section");window.addEventListener("scroll",()=>{let n="";const o=window.scrollY+140;a.forEach(r=>{const s=r.offsetTop,l=r.offsetHeight;o>=s&&o<s+l&&(n=r.getAttribute("id"))}),n&&i.forEach(r=>{r.getAttribute("href")===`#${n}`?r.classList.add("active"):r.classList.remove("active")})})}function x({htmlContent:i,title:a,description:n,canonical:o}){const r=T.useRef(null),s=le();return T.useEffect(()=>{if(a){document.title=a;let g=document.querySelector('meta[property="og:title"]');g&&g.setAttribute("content",a);let f=document.querySelector('meta[name="twitter:title"]');f&&f.setAttribute("content",a)}if(n){let g=document.querySelector('meta[name="description"]');g||(g=document.createElement("meta"),g.setAttribute("name","description"),document.head.appendChild(g)),g.setAttribute("content",n);let f=document.querySelector('meta[property="og:description"]');f&&f.setAttribute("content",n);let v=document.querySelector('meta[name="twitter:description"]');v&&v.setAttribute("content",n)}const l=window.location.pathname||"/",p=l==="/"?"/":l.replace(/\/$/,""),u=o||`https://www.cytos.in${p}`;let c=document.querySelector('link[rel="canonical"]');c||(c=document.createElement("link"),c.setAttribute("rel","canonical"),document.head.appendChild(c)),c.setAttribute("href",u);let y=document.querySelector('meta[property="og:url"]');y&&y.setAttribute("content",u),window.scrollTo(0,0);const t=r.current;if(!t)return;const m=g=>{const f=g.target.closest("a");if(!f)return;const v=f.getAttribute("href");if(!v||v.startsWith("#")||v.startsWith("tel:")||v.startsWith("mailto:")||v.includes("wa.me")||f.target==="_blank"||v.endsWith(".pdf")||v.endsWith(".xml")||v.startsWith("http://")||v.startsWith("https://"))return;let[w,P]=v.split("#"),b=w.replace(/\.html$/,"");b==="index"||b==="./index"||b==="/index"?b="/":b.startsWith("/")||(b="/"+b),g.preventDefault(),s(b),P?setTimeout(()=>{const S=document.getElementById(P);S&&S.scrollIntoView({behavior:"smooth"})},100):window.scrollTo(0,0)};t.addEventListener("click",m);const h=setTimeout(()=>{Ce()},50);return()=>{t.removeEventListener("click",m),clearTimeout(h)}},[i,a,n,s]),e.jsx("div",{ref:r,className:"page-html-content-root",dangerouslySetInnerHTML:{__html:i}})}const Le=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -2361,7 +2361,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function Ne(){return e.jsx(k,{htmlContent:Fe,title:"CyTOS | Precision CNC PCB Drilling, Prototyping & Custom Automation Machines Pune",description:"CyTOS designs high-speed PCB drilling & routing machines, rapid chemical-free prototyping CNCs, heavy routers, and custom turnkey SPMs in Pune, India. Request a fast 2-hour technical quote."})}const He=`\r
+`;function Fe(){return e.jsx(x,{htmlContent:Le,title:"CNC Machines & Industrial Automation Manufacturer from Pune, India | CyTOS",description:"CyTOS Pune is a leading manufacturer of CNC PCB drilling machines, rapid PCB prototyping machines, industrial CNC routers, and custom SPM automation in Bhosari MIDC, Pune."})}const He=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -3002,7 +3002,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function ze(){return e.jsx(k,{htmlContent:He,title:"About CyTOS | Precision CNC & Automation Manufacturer Pune Since 2019",description:"Learn about CyTOS (Cycle Time Optimising Solutions), established in 2019 in Pune. 15+ engineering professionals, 3,000 sq. ft. production plant, in-house CNC controller development, and Factor of Safety 2.0 standard."})}const je=`\r
+`;function ze(){return e.jsx(x,{htmlContent:He,title:"About CyTOS | Precision CNC & Automation Manufacturer Pune Since 2019",description:"Learn about CyTOS (Cycle Time Optimising Solutions), established in 2019 in Pune. 15+ engineering professionals, 3,000 sq. ft. production plant, in-house CNC controller development, and Factor of Safety 2.0 standard."})}const We=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -3652,7 +3652,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function We(){return e.jsx(k,{htmlContent:je,title:"Material & Industrial Applications Guide | PCB, Aluminium, Composites | CyTOS Pune",description:"Technical application guide and cutting parameter matrix for FR4 PCBs, aluminium MCPCBs, aerospace 6061 aluminium, acrylic, carbon fiber composites, and automotive fixtures by CyTOS Pune."})}const Ge=`\r
+`;function je(){return e.jsx(x,{htmlContent:We,title:"Material & Industrial Applications Guide | PCB, Aluminium, Composites | CyTOS Pune",description:"Technical application guide and cutting parameter matrix for FR4 PCBs, aluminium MCPCBs, aerospace 6061 aluminium, acrylic, carbon fiber composites, and automotive fixtures by CyTOS Pune."})}const Ve=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -4277,7 +4277,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function Ve(){return e.jsx(k,{htmlContent:Ge,title:"Engineering Case Studies & Project Proof | CyTOS Pune",description:"Explore verified industrial case studies by CyTOS Pune: Automotive sunroof robotic dispensing, 90-degree weld-indexing fixtures, 3-spindle PCB drilling throughput, and rapid prototyping turnaround."})}const Qe=`\r
+`;function Ge(){return e.jsx(x,{htmlContent:Ve,title:"Engineering Case Studies & Project Proof | CyTOS Pune",description:"Explore verified industrial case studies by CyTOS Pune: Automotive sunroof robotic dispensing, 90-degree weld-indexing fixtures, 3-spindle PCB drilling throughput, and rapid prototyping turnaround."})}const Qe=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -5121,7 +5121,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function _e(){return e.jsx(k,{htmlContent:Qe,title:"Industrial CNC Routers & VDM Milling Machines | 4x4, 8x8 | CyTOS Pune",description:"Industrial CNC router machines (4x4, 8x8) and VDM heavy drilling/milling systems engineered in Pune by CyTOS. Factor of Safety 2.0, AC servo drives, multi-zone vacuum bed for aluminium, acrylic, composites, and wood."})}const Ue=`\r
+`;function _e(){return e.jsx(x,{htmlContent:Qe,title:"CNC Router Machine - Heavy Duty Industrial Gantry Routers Manufacturer from Pune | CyTOS",description:"CNC Router Machine Manufacturer from Pune, India. Heavy-duty 4x4, 8x4 and 8x8 industrial CNC routers for aluminium, acrylic, composites and wood. Factor of Safety 2.0, 24,000 RPM spindle & vacuum beds."})}const Ue=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -5813,7 +5813,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function Ze(){return e.jsx(k,{htmlContent:Ue,title:"Contact CyTOS Pune | Machine RFQ, Plant Visits & WhatsApp Support",description:"Contact CyTOS (Cycle Time Optimising Solutions) in Dhayari-Narhe Road, Pune. Request a 2-hour technical quote, schedule a factory visit, or connect directly with our application engineers on WhatsApp."})}const Ye=`\r
+`;function Ze(){return e.jsx(x,{htmlContent:Ue,title:"Contact CyTOS Pune | Machine RFQ, Plant Visits & WhatsApp Support",description:"Contact CyTOS (Cycle Time Optimising Solutions) in Dhayari-Narhe Road, Pune. Request a 2-hour technical quote, schedule a factory visit, or connect directly with our application engineers on WhatsApp."})}const Ye=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -6791,7 +6791,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function Ke(){return e.jsx(k,{htmlContent:Ye,title:"CNC PCB Drilling & Routing Machines | PCB30, PCB60, PCB12 | CyTOS Pune",description:"High-precision CNC PCB drilling and routing machines manufactured in Pune by CyTOS. Up to 60,000 RPM, 0.2mm micro-drilling, single to 3-spindle configurations for production and FR4/MCPCB."})}const $e=`\r
+`;function Ke(){return e.jsx(x,{htmlContent:Ye,title:"PCB Drilling Machine - 60,000 RPM CNC Multi-Spindle PCB Router Manufacturer from Pune | CyTOS",description:"PCB Drilling Machine Manufacturer from Pune, India. Up to 60,000 RPM, 0.2mm micro-drilling, single, dual & 3-spindle models for high-throughput PCB manufacturing. Direct factory price from CyTOS."})}const $e=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -7492,7 +7492,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function Je(){return e.jsx(k,{htmlContent:$e,title:"PCB Rapid Prototyping & Educational CNC Machines | PCBE3020 | CyTOS Pune",description:"Chemical-free PCB rapid prototyping machines and educational CNC systems manufactured in Pune by CyTOS. Turn Gerber files into working prototypes in 30 minutes. Safe for R&D labs and colleges."})}const Xe=`\r
+`;function Xe(){return e.jsx(x,{htmlContent:$e,title:"PCB Prototyping Machine - Chemical-Free Desktop CNC Circuit Prototyper Manufacturer from Pune | CyTOS",description:"PCB Prototyping Machine Manufacturer from Pune, India. Chemical-free desktop PCB rapid prototyping CNCs. Mill double-sided PCBs in 15 minutes with auto Z-leveling and 0.1mm isolation tracks."})}const Je=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -8210,7 +8210,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
   </div>\r
 \r
   \r
-`;function er(){return e.jsx(k,{htmlContent:Xe,title:"Industrial PLC Automation Control Panels | Siemens S7 & Delta | CyTOS Pune",description:"Custom turnkey PLC industrial control panels, Siemens S7-1200/1500 & Delta programming, VFD drive integration, and HMI touchscreens engineered in Pune by CyTOS. IP55 powder-coated enclosures, neat ferruled wiring, Category 3/4 safety circuits."})}const rr=`\r
+`;function ei(){return e.jsx(x,{htmlContent:Je,title:"PLC Control Panel - Industrial Automation & HMI Control Panels Manufacturer from Pune | CyTOS",description:"PLC Control Panel Manufacturer from Pune, India. Custom turnkey PLC industrial control panels, Siemens S7-1200/1500 & Delta programming, VFD drives, and HMI touchscreens. IP55 powder-coated enclosures."})}const ii=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -8928,7 +8928,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
   </div>\r
 \r
   \r
-`;function ir(){return e.jsx(k,{htmlContent:rr,title:"Pneumatic Welding Fixtures & 90° Rotary Indexing Jigs | CyTOS Pune",description:"Heavy-duty pneumatic welding fixtures, 90°/180° rotary turnover jigs, and robotic MIG/TIG welding tooling manufactured in Pune by CyTOS. Up to 15 kN clamping force, hardened tool steel locators, zero thermal distortion."})}const nr=`
+`;function ti(){return e.jsx(x,{htmlContent:ii,title:"Pneumatic Welding Fixture - Custom Jigs & 90° Rotary Indexing Manufacturer from Pune | CyTOS",description:"Pneumatic Welding Fixture Manufacturer from Pune, India. Heavy-duty pneumatic welding fixtures, 90°/180° rotary turnover jigs, and robotic MIG/TIG welding tooling. Up to 15 kN clamping force and zero distortion."})}const ai=`
 
   <!-- Top Telemetry Bar -->
     <!-- Top Telemetry Bar -->
@@ -9711,7 +9711,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>
   </div>
 
-`;function ar(){return e.jsx(k,{htmlContent:nr,title:"Privacy & Engineering Data Protection Policy | CyTOS Pune",description:"Official policy of CyTOS Engineering Solutions governing client CAD/Gerber file confidentiality, commercial quotation telemetry, DPDP Act 2023 compliance, and industrial data governance."})}const tr=`\r
+`;function ri(){return e.jsx(x,{htmlContent:ai,title:"Privacy & Engineering Data Protection Policy | CyTOS Pune",description:"Official policy of CyTOS Engineering Solutions governing client CAD/Gerber file confidentiality, commercial quotation telemetry, DPDP Act 2023 compliance, and industrial data governance."})}const ni=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -10435,7 +10435,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
   </div>\r
 \r
   \r
-`;function sr(){return e.jsx(k,{htmlContent:tr,title:"Automotive & Industrial Robotic Dispensing Cells | 3-Axis & Gantry | CyTOS Pune",description:"Precision 3-axis Cartesian and articulated robotic dispensing cells engineered in Pune by CyTOS. ±0.02 mm bead repeatability for RTV silicones, polyurethane sealants, thermal adhesives, and epoxy potting. Cut cycle time up to 70%."})}const or=`\r
+`;function si(){return e.jsx(x,{htmlContent:ni,title:"Robotic Dispensing Machine - 3-Axis Industrial Dispensing Cells Manufacturer from Pune | CyTOS",description:"Robotic Dispensing Machine Manufacturer from Pune, India. Precision 3-axis Cartesian and robotic dispensing cells for RTV silicones, polyurethane sealants, adhesives, and epoxy potting. ±0.02mm bead repeatability."})}const oi=`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
@@ -11157,7 +11157,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function lr(){return e.jsx(k,{htmlContent:or,title:"Special Purpose Machines (SPM), Robotics & Industrial Automation | CyTOS Pune",description:"Custom Special Purpose Machines (SPMs), pneumatic welding fixtures, robotic dispensing cells, and Siemens/Delta industrial control panels engineered in Pune by CyTOS. Turnkey concept-to-commissioning."})}const cr=`
+`;function li(){return e.jsx(x,{htmlContent:oi,title:"SPM Automation - Custom Special Purpose Machines Manufacturer from Pune | CyTOS",description:"SPM Automation Manufacturer from Pune, India. Custom special purpose machines, pneumatic welding fixtures, robotic dispensing cells, and Siemens/Delta industrial control panels. Turnkey concept-to-commissioning."})}const di=`
 
   <!-- Top Telemetry Bar -->
     <!-- Top Telemetry Bar -->
@@ -11806,7 +11806,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>
   </div>
 
-`;function dr(){return e.jsx(k,{htmlContent:cr,title:"Terms & Conditions of Machinery Supply | CyTOS Pune",description:"Commercial machinery supply terms, Factory Acceptance Testing (FAT), site readiness, 12-month warranty, and legal jurisdiction for CyTOS machine tools, Pune."})}const pr=`
+`;function ci(){return e.jsx(x,{htmlContent:di,title:"Terms & Conditions of Machinery Supply | CyTOS Pune",description:"Commercial machinery supply terms, Factory Acceptance Testing (FAT), site readiness, 12-month warranty, and legal jurisdiction for CyTOS machine tools, Pune."})}const pi=`
 
   <!-- Top Telemetry Bar -->
   <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
@@ -12476,7 +12476,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
   </div>
 
 
-`;function ur(){return e.jsx(k,{htmlContent:pr,title:"VDM Series Multi-Spindle Vertical Milling & Drilling Machine | CyTOS Pune",description:"CyTOS VDM Series multi-spindle rigid milling and drilling machines for switchboard plates, mild steel, and automotive components. Cut cycle times up to 65% with synchronized gantry spindles."})}const mr=`\r
+`;function mi(){return e.jsx(x,{htmlContent:pi,title:"VDM Milling Machine - Multi-Spindle Vertical Drilling & Milling SPM Manufacturer from Pune | CyTOS",description:"VDM Milling Machine Manufacturer from Pune, India. Multi-spindle vertical drilling & milling systems for switchboard plates, busbars and components. Cuts cycle times up to 65%."})}const ui=`\r
 \r
   <!-- Master Header -->\r
     <!-- ==========================================================================\r
@@ -13428,7 +13428,7 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
     </div>\r
   </div>\r
 \r
-`;function gr(){return e.jsx(k,{htmlContent:mr,title:"Engineering Blog & Technical Insights | CyTOS Pune",description:"Technical teardowns, cycle-time benchmarks, chemical-free prototyping analysis, and CNC machining guides from CyTOS engineering works in Pune, India."})}function hr(){const[r,n]=T.useState(!1),[t,o]=T.useState(!1),[a,s]=T.useState(!1),[l,d]=T.useState({necessary:!0,analytics:!0,functional:!0});T.useEffect(()=>{try{const i=localStorage.getItem("cytos_cookie_consent");if(i){s(!0);const p=JSON.parse(i);p&&typeof p=="object"&&d({necessary:!0,analytics:p.analytics!==!1,functional:p.functional!==!1})}else{const p=setTimeout(()=>{n(!0)},800);return()=>clearTimeout(p)}}catch{n(!0)}},[]);const u=()=>{const i={necessary:!0,analytics:!0,functional:!0,timestamp:new Date().toISOString()};try{localStorage.setItem("cytos_cookie_consent",JSON.stringify(i))}catch{}d(i),s(!0),n(!1),o(!1)},c=()=>{const i={necessary:!0,analytics:!1,functional:!1,timestamp:new Date().toISOString()};try{localStorage.setItem("cytos_cookie_consent",JSON.stringify(i))}catch{}d(i),s(!0),n(!1),o(!1)},f=()=>{const i={...l,necessary:!0,timestamp:new Date().toISOString()};try{localStorage.setItem("cytos_cookie_consent",JSON.stringify(i))}catch{}s(!0),n(!1),o(!1)};return e.jsxs(e.Fragment,{children:[!r&&e.jsx("div",{className:"cytos-cookie-widget",style:{position:"fixed",bottom:"24px",left:"24px",zIndex:99998},children:e.jsx("button",{type:"button",onClick:()=>n(!0),className:"cytos-cookie-float-btn","aria-label":"Cookie & Privacy Consent Preferences",title:"Cookie & Privacy Settings",style:{width:"46px",height:"46px",borderRadius:"50%",backgroundColor:"#d97706",color:"#ffffff",border:"2px solid rgba(255, 255, 255, 0.9)",boxShadow:"0 4px 14px rgba(217, 119, 6, 0.35)",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",transition:"all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",outline:"none"},onMouseEnter:i=>{i.currentTarget.style.transform="scale(1.1)",i.currentTarget.style.boxShadow="0 6px 20px rgba(217, 119, 6, 0.5)",i.currentTarget.style.backgroundColor="#d97706"},onMouseLeave:i=>{i.currentTarget.style.transform="scale(1)",i.currentTarget.style.boxShadow="0 4px 14px rgba(217, 119, 6, 0.35)",i.currentTarget.style.backgroundColor="#d97706"},children:e.jsxs("svg",{viewBox:"0 0 24 24",width:"24",height:"24",fill:"currentColor","aria-hidden":"true",children:[e.jsx("path",{d:"M21.598 11.064a1.006 1.006 0 0 0-.854-.172A3.993 3.993 0 0 1 15.6 6.353a1.006 1.006 0 0 0-.685-.945 4.025 4.025 0 0 1-2.613-3.804 1.006 1.006 0 0 0-.852-.99A10.038 10.038 0 0 0 2 10.5C2 16.299 6.701 21 12.5 21c5.441 0 9.943-4.135 10.088-9.553a1.004 1.004 0 0 0-.99-1.383zM12.5 19C7.813 19 4 15.187 4 10.5c0-3.32 1.91-6.19 4.68-7.61a6.035 6.035 0 0 0 1.91 3.5 5.992 5.992 0 0 0 5.46 4.79 6.002 6.002 0 0 0 4.95 4.67C19.78 17.58 16.42 19 12.5 19z"}),e.jsx("circle",{cx:"8.5",cy:"13.5",r:"1.5"}),e.jsx("circle",{cx:"12",cy:"16",r:"1.25"}),e.jsx("circle",{cx:"15.5",cy:"13.5",r:"1.25"}),e.jsx("circle",{cx:"10",cy:"9.5",r:"1"})]})})}),r&&e.jsxs("div",{role:"dialog","aria-modal":"true","aria-label":"Cookie & Privacy Consent",style:{position:"fixed",bottom:"24px",left:"24px",maxWidth:"480px",width:"calc(100% - 48px)",backgroundColor:"#ffffff",borderRadius:"12px",boxShadow:"0 20px 40px -10px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(15, 23, 42, 0.08)",zIndex:99999,overflow:"hidden",fontFamily:"'Roboto', sans-serif",animation:"cytosSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1)"},children:[e.jsxs("div",{style:{padding:"16px 20px",borderBottom:"1px solid #e2e8f0",display:"flex",alignItems:"center",justifyContent:"space-between",backgroundColor:"#f8fafc"},children:[e.jsxs("div",{style:{display:"flex",alignItems:"center",gap:"10px"},children:[e.jsx("span",{style:{fontSize:"20px"},children:"🍪"}),e.jsx("h3",{style:{margin:0,fontSize:"1.05rem",fontWeight:700,color:"#0f172a"},children:"Cookie & Privacy Preferences"})]}),e.jsx("button",{type:"button",onClick:()=>n(!1),"aria-label":"Close cookie consent box",style:{background:"none",border:"none",fontSize:"20px",color:"#64748b",cursor:"pointer",padding:"4px 8px",lineHeight:1},children:"×"})]}),e.jsxs("div",{style:{padding:"18px 20px",maxHeight:"340px",overflowY:"auto"},children:[e.jsxs("p",{style:{margin:"0 0 12px",fontSize:"0.88rem",color:"#475569",lineHeight:1.55},children:["CyTOS Machines uses cookies and local telemetry to deliver precision technical calculations, preserve machine RFQ quotes, and analyze traffic under India's ",e.jsx("strong",{children:"DPDP Act 2023"}),". We strictly do not sell your commercial data."]}),e.jsxs("div",{style:{fontSize:"0.82rem",color:"#64748b",marginBottom:"14px"},children:["Review our ",e.jsx(X,{to:"/privacy-policy",onClick:()=>n(!1),style:{color:"#b45309",fontWeight:600,textDecoration:"underline"},children:"Privacy Policy"})," and"," ",e.jsx(X,{to:"/terms-conditions",onClick:()=>n(!1),style:{color:"#b45309",fontWeight:600,textDecoration:"underline"},children:"Terms & Conditions"}),"."]}),e.jsx("div",{style:{marginBottom:"14px"},children:e.jsx("button",{type:"button",onClick:()=>o(!t),style:{background:"none",border:"none",color:"#d97706",fontWeight:600,fontSize:"0.84rem",cursor:"pointer",padding:0,display:"flex",alignItems:"center",gap:"5px"},children:e.jsx("span",{children:t?"▲ Hide Cookie Details":"▼ Customize Cookie Preferences"})})}),t&&e.jsxs("div",{style:{background:"#f1f5f9",padding:"12px",borderRadius:"8px",marginBottom:"14px",fontSize:"0.82rem"},children:[e.jsxs("div",{style:{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:"8px",paddingBottom:"8px",borderBottom:"1px solid #e2e8f0"},children:[e.jsxs("div",{children:[e.jsx("strong",{style:{color:"#0f172a"},children:"Essential & Security"}),e.jsx("div",{style:{color:"#64748b",fontSize:"0.75rem"},children:"Necessary for RFQ quotes, CAD uploads & security."})]}),e.jsx("span",{style:{fontSize:"0.75rem",fontWeight:700,color:"#059669",background:"#ecfdf5",padding:"2px 6px",borderRadius:"4px"},children:"Always Active"})]}),e.jsxs("div",{style:{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:"8px",paddingBottom:"8px",borderBottom:"1px solid #e2e8f0"},children:[e.jsxs("div",{children:[e.jsx("strong",{style:{color:"#0f172a"},children:"Performance & Analytics"}),e.jsx("div",{style:{color:"#64748b",fontSize:"0.75rem"},children:"Aggregated telemetry to measure page speed and catalog visits."})]}),e.jsx("input",{type:"checkbox",checked:l.analytics,onChange:i=>d({...l,analytics:i.target.checked}),style:{cursor:"pointer",width:"16px",height:"16px",accentColor:"#d97706"}})]}),e.jsxs("div",{style:{display:"flex",justifyContent:"space-between",alignItems:"center"},children:[e.jsxs("div",{children:[e.jsx("strong",{style:{color:"#0f172a"},children:"Functional & Preferences"}),e.jsx("div",{style:{color:"#64748b",fontSize:"0.75rem"},children:"Remembers machine filters, table units & chat history."})]}),e.jsx("input",{type:"checkbox",checked:l.functional,onChange:i=>d({...l,functional:i.target.checked}),style:{cursor:"pointer",width:"16px",height:"16px",accentColor:"#d97706"}})]})]})]}),e.jsxs("div",{style:{padding:"14px 20px",borderTop:"1px solid #e2e8f0",display:"flex",gap:"10px",justifyContent:"flex-end",flexWrap:"wrap",backgroundColor:"#f8fafc"},children:[t?e.jsx("button",{type:"button",onClick:f,style:{padding:"8px 16px",borderRadius:"6px",fontSize:"0.85rem",fontWeight:600,backgroundColor:"#d97706",color:"#ffffff",border:"none",cursor:"pointer"},children:"Save Preferences"}):null,e.jsx("button",{type:"button",onClick:c,style:{padding:"8px 16px",borderRadius:"6px",fontSize:"0.85rem",fontWeight:600,backgroundColor:"#ffffff",color:"#475569",border:"1px solid #cbd5e1",cursor:"pointer"},children:"Necessary Only"}),e.jsx("button",{type:"button",onClick:u,style:{padding:"8px 18px",borderRadius:"6px",fontSize:"0.85rem",fontWeight:700,backgroundColor:"#d97706",color:"#ffffff",border:"none",cursor:"pointer",boxShadow:"0 2px 6px rgba(217, 119, 6, 0.25)"},children:"Accept All"})]})]}),e.jsx("style",{children:`
+`;function gi(){return e.jsx(x,{htmlContent:ui,title:"Engineering Blog & Technical Insights | CyTOS Pune",description:"Technical teardowns, cycle-time benchmarks, chemical-free prototyping analysis, and CNC machining guides from CyTOS engineering works in Pune, India."})}function hi(){const[i,a]=T.useState(!1),[n,o]=T.useState(!1),[r,s]=T.useState(!1),[l,p]=T.useState({necessary:!0,analytics:!0,functional:!0});T.useEffect(()=>{try{const t=localStorage.getItem("cytos_cookie_consent");if(t){s(!0);const m=JSON.parse(t);m&&typeof m=="object"&&p({necessary:!0,analytics:m.analytics!==!1,functional:m.functional!==!1})}else{const m=setTimeout(()=>{a(!0)},800);return()=>clearTimeout(m)}}catch{a(!0)}},[]);const u=()=>{const t={necessary:!0,analytics:!0,functional:!0,timestamp:new Date().toISOString()};try{localStorage.setItem("cytos_cookie_consent",JSON.stringify(t))}catch{}p(t),s(!0),a(!1),o(!1)},c=()=>{const t={necessary:!0,analytics:!1,functional:!1,timestamp:new Date().toISOString()};try{localStorage.setItem("cytos_cookie_consent",JSON.stringify(t))}catch{}p(t),s(!0),a(!1),o(!1)},y=()=>{const t={...l,necessary:!0,timestamp:new Date().toISOString()};try{localStorage.setItem("cytos_cookie_consent",JSON.stringify(t))}catch{}s(!0),a(!1),o(!1)};return e.jsxs(e.Fragment,{children:[!i&&e.jsx("div",{className:"cytos-cookie-widget",style:{position:"fixed",bottom:"24px",left:"24px",zIndex:99998},children:e.jsx("button",{type:"button",onClick:()=>a(!0),className:"cytos-cookie-float-btn","aria-label":"Cookie & Privacy Consent Preferences",title:"Cookie & Privacy Settings",style:{width:"46px",height:"46px",borderRadius:"50%",backgroundColor:"#d97706",color:"#ffffff",border:"2px solid rgba(255, 255, 255, 0.9)",boxShadow:"0 4px 14px rgba(217, 119, 6, 0.35)",display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer",transition:"all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",outline:"none"},onMouseEnter:t=>{t.currentTarget.style.transform="scale(1.1)",t.currentTarget.style.boxShadow="0 6px 20px rgba(217, 119, 6, 0.5)",t.currentTarget.style.backgroundColor="#d97706"},onMouseLeave:t=>{t.currentTarget.style.transform="scale(1)",t.currentTarget.style.boxShadow="0 4px 14px rgba(217, 119, 6, 0.35)",t.currentTarget.style.backgroundColor="#d97706"},children:e.jsxs("svg",{viewBox:"0 0 24 24",width:"24",height:"24",fill:"currentColor","aria-hidden":"true",children:[e.jsx("path",{d:"M21.598 11.064a1.006 1.006 0 0 0-.854-.172A3.993 3.993 0 0 1 15.6 6.353a1.006 1.006 0 0 0-.685-.945 4.025 4.025 0 0 1-2.613-3.804 1.006 1.006 0 0 0-.852-.99A10.038 10.038 0 0 0 2 10.5C2 16.299 6.701 21 12.5 21c5.441 0 9.943-4.135 10.088-9.553a1.004 1.004 0 0 0-.99-1.383zM12.5 19C7.813 19 4 15.187 4 10.5c0-3.32 1.91-6.19 4.68-7.61a6.035 6.035 0 0 0 1.91 3.5 5.992 5.992 0 0 0 5.46 4.79 6.002 6.002 0 0 0 4.95 4.67C19.78 17.58 16.42 19 12.5 19z"}),e.jsx("circle",{cx:"8.5",cy:"13.5",r:"1.5"}),e.jsx("circle",{cx:"12",cy:"16",r:"1.25"}),e.jsx("circle",{cx:"15.5",cy:"13.5",r:"1.25"}),e.jsx("circle",{cx:"10",cy:"9.5",r:"1"})]})})}),i&&e.jsxs("div",{role:"dialog","aria-modal":"true","aria-label":"Cookie & Privacy Consent",style:{position:"fixed",bottom:"24px",left:"24px",maxWidth:"480px",width:"calc(100% - 48px)",backgroundColor:"#ffffff",borderRadius:"12px",boxShadow:"0 20px 40px -10px rgba(15, 23, 42, 0.25), 0 0 0 1px rgba(15, 23, 42, 0.08)",zIndex:99999,overflow:"hidden",fontFamily:"'Roboto', sans-serif",animation:"cytosSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1)"},children:[e.jsxs("div",{style:{padding:"16px 20px",borderBottom:"1px solid #e2e8f0",display:"flex",alignItems:"center",justifyContent:"space-between",backgroundColor:"#f8fafc"},children:[e.jsxs("div",{style:{display:"flex",alignItems:"center",gap:"10px"},children:[e.jsx("span",{style:{fontSize:"20px"},children:"🍪"}),e.jsx("h3",{style:{margin:0,fontSize:"1.05rem",fontWeight:700,color:"#0f172a"},children:"Cookie & Privacy Preferences"})]}),e.jsx("button",{type:"button",onClick:()=>a(!1),"aria-label":"Close cookie consent box",style:{background:"none",border:"none",fontSize:"20px",color:"#64748b",cursor:"pointer",padding:"4px 8px",lineHeight:1},children:"×"})]}),e.jsxs("div",{style:{padding:"18px 20px",maxHeight:"340px",overflowY:"auto"},children:[e.jsxs("p",{style:{margin:"0 0 12px",fontSize:"0.88rem",color:"#475569",lineHeight:1.55},children:["CyTOS Machines uses cookies and local telemetry to deliver precision technical calculations, preserve machine RFQ quotes, and analyze traffic under India's ",e.jsx("strong",{children:"DPDP Act 2023"}),". We strictly do not sell your commercial data."]}),e.jsxs("div",{style:{fontSize:"0.82rem",color:"#64748b",marginBottom:"14px"},children:["Review our ",e.jsx(J,{to:"/privacy-policy",onClick:()=>a(!1),style:{color:"#b45309",fontWeight:600,textDecoration:"underline"},children:"Privacy Policy"})," and"," ",e.jsx(J,{to:"/terms-conditions",onClick:()=>a(!1),style:{color:"#b45309",fontWeight:600,textDecoration:"underline"},children:"Terms & Conditions"}),"."]}),e.jsx("div",{style:{marginBottom:"14px"},children:e.jsx("button",{type:"button",onClick:()=>o(!n),style:{background:"none",border:"none",color:"#d97706",fontWeight:600,fontSize:"0.84rem",cursor:"pointer",padding:0,display:"flex",alignItems:"center",gap:"5px"},children:e.jsx("span",{children:n?"▲ Hide Cookie Details":"▼ Customize Cookie Preferences"})})}),n&&e.jsxs("div",{style:{background:"#f1f5f9",padding:"12px",borderRadius:"8px",marginBottom:"14px",fontSize:"0.82rem"},children:[e.jsxs("div",{style:{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:"8px",paddingBottom:"8px",borderBottom:"1px solid #e2e8f0"},children:[e.jsxs("div",{children:[e.jsx("strong",{style:{color:"#0f172a"},children:"Essential & Security"}),e.jsx("div",{style:{color:"#64748b",fontSize:"0.75rem"},children:"Necessary for RFQ quotes, CAD uploads & security."})]}),e.jsx("span",{style:{fontSize:"0.75rem",fontWeight:700,color:"#059669",background:"#ecfdf5",padding:"2px 6px",borderRadius:"4px"},children:"Always Active"})]}),e.jsxs("div",{style:{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:"8px",paddingBottom:"8px",borderBottom:"1px solid #e2e8f0"},children:[e.jsxs("div",{children:[e.jsx("strong",{style:{color:"#0f172a"},children:"Performance & Analytics"}),e.jsx("div",{style:{color:"#64748b",fontSize:"0.75rem"},children:"Aggregated telemetry to measure page speed and catalog visits."})]}),e.jsx("input",{type:"checkbox",checked:l.analytics,onChange:t=>p({...l,analytics:t.target.checked}),style:{cursor:"pointer",width:"16px",height:"16px",accentColor:"#d97706"}})]}),e.jsxs("div",{style:{display:"flex",justifyContent:"space-between",alignItems:"center"},children:[e.jsxs("div",{children:[e.jsx("strong",{style:{color:"#0f172a"},children:"Functional & Preferences"}),e.jsx("div",{style:{color:"#64748b",fontSize:"0.75rem"},children:"Remembers machine filters, table units & chat history."})]}),e.jsx("input",{type:"checkbox",checked:l.functional,onChange:t=>p({...l,functional:t.target.checked}),style:{cursor:"pointer",width:"16px",height:"16px",accentColor:"#d97706"}})]})]})]}),e.jsxs("div",{style:{padding:"14px 20px",borderTop:"1px solid #e2e8f0",display:"flex",gap:"10px",justifyContent:"flex-end",flexWrap:"wrap",backgroundColor:"#f8fafc"},children:[n?e.jsx("button",{type:"button",onClick:y,style:{padding:"8px 16px",borderRadius:"6px",fontSize:"0.85rem",fontWeight:600,backgroundColor:"#d97706",color:"#ffffff",border:"none",cursor:"pointer"},children:"Save Preferences"}):null,e.jsx("button",{type:"button",onClick:c,style:{padding:"8px 16px",borderRadius:"6px",fontSize:"0.85rem",fontWeight:600,backgroundColor:"#ffffff",color:"#475569",border:"1px solid #cbd5e1",cursor:"pointer"},children:"Necessary Only"}),e.jsx("button",{type:"button",onClick:u,style:{padding:"8px 18px",borderRadius:"6px",fontSize:"0.85rem",fontWeight:700,backgroundColor:"#d97706",color:"#ffffff",border:"none",cursor:"pointer",boxShadow:"0 2px 6px rgba(217, 119, 6, 0.25)"},children:"Accept All"})]})]}),e.jsx("style",{children:`
         @keyframes cytosSlideUp {
           from {
             opacity: 0;
@@ -13453,8 +13453,6869 @@ _Transmitted via cytos.in Contact Portal_`);g.style.display="block",g.innerHTML=
             height: 40px !important;
           }
         }
-      `})]})}const vr=[{slug:"60000-rpm-pcb-drilling-spindle-maintenance",title:"PCB Drilling Spindle Maintenance: 60,000 RPM Collet Runout & Thermal Calibration Protocol",metaDescription:"Master 60,000 RPM PCB drilling spindle maintenance. Learn collet taper cleaning, dynamic TIR runout calibration, air-bearing purge, and vibration analysis.",category:"Production",image:"/assets/images/blogs/pcb-spindle-maintenance-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Proper PCB drilling spindle maintenance for 60,000 RPM high-frequency electro-spindles requires daily collet taper cleaning with lint-free solvent swabs, weekly dynamic runout (TIR) measurement using a precision ground test arbor (<3µm limit), maintaining closed-loop liquid chiller temperatures at 22°C ±0.5°C to avoid thermal rotor expansion, and verifying continuous 1.5 bar dry air purge to prevent glass-fiber dust infiltration into the hybrid ceramic angular contact bearings.",excerpt:"In precision manufacturing, implementing a high-performance pcb drilling spindle maintenance is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In high-speed CNC board fabrication, the spindle is the heart of the machine. When operating at rotational speeds between 40,000 and 60,000 RPM, the kinetic energy stored in the rotor is immense. At these rotational velocities, a microscopic speck of FR4 glass-fiber swarf measuring just 5µm lodged inside the collet taper can generate severe centrifugal unbalance, leading to premature bearing failure and catastrophic tool breakage. A proactive air-bearing spindle calibration routine is the single most effective way to protect your capital equipment investment, ensure sub-10µm hole accuracy, and prevent unscheduled production downtime. Hybrid ceramic bearings operating at 60k RPM rely on micron-thin synthetic grease or oil-air lubrication films; any contamination, thermal shock, or improper tool insertion will compromise the precision assembly within weeks.",paragraphs:["In precision manufacturing, implementing a high-performance pcb drilling spindle maintenance is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In high-speed CNC board fabrication, the spindle is the heart of the machine. When operating at rotational speeds between 40,000 and 60,000 RPM, the kinetic energy stored in the rotor is immense. At these rotational velocities, a microscopic speck of FR4 glass-fiber swarf measuring just 5µm lodged inside the collet taper can generate severe centrifugal unbalance, leading to premature bearing failure and catastrophic tool breakage.","A proactive air-bearing spindle calibration routine is the single most effective way to protect your capital equipment investment, ensure sub-10µm hole accuracy, and prevent unscheduled production downtime. Hybrid ceramic bearings operating at 60k RPM rely on micron-thin synthetic grease or oil-air lubrication films; any contamination, thermal shock, or improper tool insertion will compromise the precision assembly within weeks.","CyTOS Engineering in Pune manufactures and services high-frequency spindles engineered with Factor of Safety 2.0. In this maintenance guide, our application engineers share our standardized preventive maintenance protocol used across defense and industrial EMS plants in India.","Every morning before starting production, remove the tool collet and clean both the collet exterior and the spindle internal female taper. Use lint-free optical cotton swabs dampened with reagent-grade isopropanol or specialized collet cleaner. Inspect the internal ground taper under magnification for fretting corrosion, galling, or scoring marks. Never blow raw shop air directly into an empty spindle nose, as moisture and oil mist will contaminate the ceramic bearings.","High-frequency electro-spindles generate substantial heat in the stator windings and bearing races. A closed-loop recirculating chiller must supply distilled water mixed with 15% corrosion inhibitor at a constant temperature of 20°C to 22°C (±0.5°C). Operating with insufficient coolant flow allows thermal rotor expansion, closing the internal bearing radial clearance and causing bearing seizure."],faqs:[],toc:[{id:"introduction-spindle-maintenance",title:"Introduction: Engineering Standards for a Pcb Drilling Spindle Maintenance"},{id:"four-pillar-maintenance-checklist",title:"The Four Pillars of Spindle Preventive Maintenance"},{id:"maintenance-schedule-table",title:"Comprehensive Preventive Maintenance Schedule for 60k RPM Spindles"},{id:"spindle-warm-up-protocol",title:"The Crucial Spindle Warm-Up Protocol"},{id:"quality-assurance-calibration-60000-rpm-pcb-d",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Drilling Spindle Maintenance"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"aluminium-composite-sheet-cnc-drilling-milling",title:"Aluminium Sheet CNC Drilling and Milling: Vacuum Bed Clamping & Chip Evacuation Guide",metaDescription:"Master aluminium sheet CNC drilling and milling. Learn single-flute carbide tool selection, cold-air vortex cooling, vacuum bed clamping, and mirror edge finishing.",category:"Production",image:"/assets/images/blogs/aluminum-sheet-cold-air-milling.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"Aluminium sheet CNC drilling and milling requires high peripheral cutting speeds (18,000 to 24,000 RPM), mirror-polished single-flute solid carbide end mills to prevent chip re-welding, high-flow vacuum matrix bed clamping to eliminate sheet fluttering, and cold-air vortex or micro-mist lubrication. By balancing chip load between 0.04 and 0.08 mm/tooth and utilizing climb milling toolpaths, industrial CNC routers execute burr-free slots, precision hole grids, and mirror-finished perimeter contours across 5052, 6061-T6, and 7075 aluminum alloys up to 25mm thick.",excerpt:"Aluminum is one of the most widely utilized engineering metals in modern manufacturing, prized for its high strength-to-weight ratio, superior thermal conductivity, and corrosion resistance. However, for CNC machine operators, aluminium sheet cnc drilling and milling presents unique metallurgical challenges. Unlike free-machining brass or rigid cast iron, wrought aluminum alloys (such as 5052, 6061-T6, and 7075) have a low melting point (660°C) and high ductility, causing chips to rapidly soften, smear, and weld themselves to tool cutting edges (a catastrophic failure known as Built-Up Edge or BUE). Furthermore, large aluminum sheets (typically 1.5mm to 8.0mm thick across 8x4 ft beds) lack structural rigidity. As the rotating cutting tool travels across an unsupported sheet, the metal sheet chatters violently against the bed, generating unbearable screeching noise, ragged burrs, and fractured carbide tools. Overcoming this requires an engineered synergy of high-vacuum bed clamping, single-flute tool geometry, and cold vortex chip evacuation.",paragraphs:["Aluminum is one of the most widely utilized engineering metals in modern manufacturing, prized for its high strength-to-weight ratio, superior thermal conductivity, and corrosion resistance. However, for CNC machine operators, aluminium sheet cnc drilling and milling presents unique metallurgical challenges. Unlike free-machining brass or rigid cast iron, wrought aluminum alloys (such as 5052, 6061-T6, and 7075) have a low melting point (660°C) and high ductility, causing chips to rapidly soften, smear, and weld themselves to tool cutting edges (a catastrophic failure known as Built-Up Edge or BUE).","Furthermore, large aluminum sheets (typically 1.5mm to 8.0mm thick across 8x4 ft beds) lack structural rigidity. As the rotating cutting tool travels across an unsupported sheet, the metal sheet chatters violently against the bed, generating unbearable screeching noise, ragged burrs, and fractured carbide tools. Overcoming this requires an engineered synergy of high-vacuum bed clamping, single-flute tool geometry, and cold vortex chip evacuation.","At CyTOS Engineering in Pune, our heavy gantry CNC routers are optimized specifically for high-speed aluminum plate and sheet processing. In this technical guide, our application engineers detail the exact feeds, speeds, tool geometries, and clamping strategies required for zero-defect aluminum machining.","In standard milling of steel, multi-flute end mills (3 or 4 flutes) are standard. However, when performing single-flute aluminum CNC machining at 20,000 RPM, using a 4-flute end mill is a recipe for instant tool disaster. At high rotational speeds, a 4-flute tool provides narrow, cramped flute valleys; hot aluminum chips cannot evacuate fast enough, packing the flutes within two seconds and snapping the tool.","The undisputed king of aluminum sheet routing is the Mirror-Polished Single-Flute Carbide Upcut End Mill (often termed an 'O-Flute' cutter):"],faqs:[],toc:[{id:"introduction-aluminum-sheet-machining",title:"Introduction: Engineering Standards for a Aluminium Sheet Cnc Drilling And Milling"},{id:"single-flute-carbide-geometry",title:"Tooling Geometry: Why Single-Flute End Mills Dominate Aluminum Routing"},{id:"cutting-parameters-table-aluminum",title:"Cutting Parameters Matrix: Feeds, Speeds, and Depths of Cut for Aluminum Alloys"},{id:"climb-milling-and-burr-elimination",title:"Climb Milling vs Conventional Milling: Achieving Mirror-Smooth Edges"},{id:"quality-assurance-calibration-aluminium-compo",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsSheet Cnc Drilling And Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"auto-surface-leveling-pcb-prototyping",title:"Auto-Surface Leveling PCB Prototyping: Achieving 0.1mm Precision Trace Isolation",metaDescription:"Master auto-surface leveling PCB prototyping. Learn how 2µm height probing compensates for board bow and ensures uniform 35µm copper isolation milling.",category:"Production",image:"/assets/images/blogs/auto-surface-leveling-16x9.jpg",readTime:"12 min read",date:"2026-03-20",aeoAnswer:"Auto-surface leveling in PCB rapid prototyping is a closed-loop sensing technique that maps the micro-topographical height variations of copper-clad laminates using high-precision electrical contact or optical touch probes prior to milling. By generating a multi-point spatial elevation mesh (accurate to ±2µm), the CNC controller dynamically adjusts the Z-axis cutting depth in real time during isolation milling, ensuring that a conical micro-cutter maintains an exact, uniform penetration depth of 40µm despite board bow, warpage, or bed unevenness.",excerpt:"In precision manufacturing, implementing a high-performance auto-surface leveling pcb prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In mechanical circuit board prototyping, the margin between a perfect circuit and an unusable board is measured in fractions of a human hair. Standard 1-ounce copper foil is precisely 35 micrometers (0.035mm) thick. To achieve clean electrical trace separation, a conical cutting tool must penetrate through the 35µm copper and enter the underlying dielectric fiberglass by no more than 5µm to 10µm (total cutting depth: 40µm to 45µm). However, industrial copper clad laminates are never perfectly flat. Due to internal laminate curing stresses, thermal warpage, and vacuum table variations, a typical FR4 sheet exhibits natural height variations ranging from 0.08mm to 0.25mm across its surface. This is where auto-surface leveling pcb prototyping becomes absolutely mandatory. Without dynamic Z-height compensation, a fixed-height cutting routine will cut 100µm too deep in high spots (destroying narrow traces) and plunge into thin air in low spots (leaving un-isolated copper shorts).",paragraphs:["In precision manufacturing, implementing a high-performance auto-surface leveling pcb prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In mechanical circuit board prototyping, the margin between a perfect circuit and an unusable board is measured in fractions of a human hair. Standard 1-ounce copper foil is precisely 35 micrometers (0.035mm) thick. To achieve clean electrical trace separation, a conical cutting tool must penetrate through the 35µm copper and enter the underlying dielectric fiberglass by no more than 5µm to 10µm (total cutting depth: 40µm to 45µm).","However, industrial copper clad laminates are never perfectly flat. Due to internal laminate curing stresses, thermal warpage, and vacuum table variations, a typical FR4 sheet exhibits natural height variations ranging from 0.08mm to 0.25mm across its surface. This is where auto-surface leveling pcb prototyping becomes absolutely mandatory. Without dynamic Z-height compensation, a fixed-height cutting routine will cut 100µm too deep in high spots (destroying narrow traces) and plunge into thin air in low spots (leaving un-isolated copper shorts).","CyTOS Engineering in Pune has perfected active Z-surface height mapping into our prototyping machine line, enabling effortless 0.1mm micro-pitch isolation milling on real-world, warped copper panels.","To grasp why Z-height accuracy is critical, examine the geometry of a standard V-shaped conical engraving tool. A conical tool with included angle $\\theta$ (e.g. 60°) and a tip flat width $W_{tip}$ (e.g. 0.10mm) cuts a channel width ($W_{cut}$) that expands as a function of depth ($D$):",`For a 60° conical tool with a 0.10mm tip: $\\tan(30^\\circ) \\approx 0.577$.\r
+      `})]})}const vi=[{slug:"60000-rpm-pcb-drilling-spindle-maintenance",title:"PCB Drilling Spindle Maintenance: 60,000 RPM Collet Runout & Thermal Calibration Protocol",metaDescription:"Master 60,000 RPM PCB drilling spindle maintenance. Learn collet taper cleaning, dynamic TIR runout calibration, air-bearing purge, and vibration analysis.",category:"Production",image:"/assets/images/blogs/pcb-spindle-maintenance-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Proper PCB drilling spindle maintenance for 60,000 RPM high-frequency electro-spindles requires daily collet taper cleaning with lint-free solvent swabs, weekly dynamic runout (TIR) measurement using a precision ground test arbor (<3µm limit), maintaining closed-loop liquid chiller temperatures at 22°C ±0.5°C to avoid thermal rotor expansion, and verifying continuous 1.5 bar dry air purge to prevent glass-fiber dust infiltration into the hybrid ceramic angular contact bearings.",excerpt:"In precision manufacturing, implementing a high-performance pcb drilling spindle maintenance is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In high-speed CNC board fabrication, the spindle is the heart of the machine. When operating at rotational speeds between 40,000 and 60,000 RPM, the kinetic energy stored in the rotor is immense. At these rotational velocities, a microscopic speck of FR4 glass-fiber swarf measuring just 5µm lodged inside the collet taper can generate severe centrifugal unbalance, leading to premature bearing failure and catastrophic tool breakage. A proactive air-bearing spindle calibration routine is the single most effective way to protect your capital equipment investment, ensure sub-10µm hole accuracy, and prevent unscheduled production downtime. Hybrid ceramic bearings operating at 60k RPM rely on micron-thin synthetic grease or oil-air lubrication films; any contamination, thermal shock, or improper tool insertion will compromise the precision assembly within weeks.",paragraphs:["In precision manufacturing, implementing a high-performance pcb drilling spindle maintenance is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In high-speed CNC board fabrication, the spindle is the heart of the machine. When operating at rotational speeds between 40,000 and 60,000 RPM, the kinetic energy stored in the rotor is immense. At these rotational velocities, a microscopic speck of FR4 glass-fiber swarf measuring just 5µm lodged inside the collet taper can generate severe centrifugal unbalance, leading to premature bearing failure and catastrophic tool breakage.","A proactive air-bearing spindle calibration routine is the single most effective way to protect your capital equipment investment, ensure sub-10µm hole accuracy, and prevent unscheduled production downtime. Hybrid ceramic bearings operating at 60k RPM rely on micron-thin synthetic grease or oil-air lubrication films; any contamination, thermal shock, or improper tool insertion will compromise the precision assembly within weeks.","CyTOS Engineering in Pune manufactures and services high-frequency spindles engineered with Factor of Safety 2.0. In this maintenance guide, our application engineers share our standardized preventive maintenance protocol used across defense and industrial EMS plants in India.","Every morning before starting production, remove the tool collet and clean both the collet exterior and the spindle internal female taper. Use lint-free optical cotton swabs dampened with reagent-grade isopropanol or specialized collet cleaner. Inspect the internal ground taper under magnification for fretting corrosion, galling, or scoring marks. Never blow raw shop air directly into an empty spindle nose, as moisture and oil mist will contaminate the ceramic bearings.","High-frequency electro-spindles generate substantial heat in the stator windings and bearing races. A closed-loop recirculating chiller must supply distilled water mixed with 15% corrosion inhibitor at a constant temperature of 20°C to 22°C (±0.5°C). Operating with insufficient coolant flow allows thermal rotor expansion, closing the internal bearing radial clearance and causing bearing seizure."],faqs:[],toc:[{id:"introduction-spindle-maintenance",title:"Introduction: Engineering Standards for a Pcb Drilling Spindle Maintenance"},{id:"four-pillar-maintenance-checklist",title:"The Four Pillars of Spindle Preventive Maintenance"},{id:"maintenance-schedule-table",title:"Comprehensive Preventive Maintenance Schedule for 60k RPM Spindles"},{id:"spindle-warm-up-protocol",title:"The Crucial Spindle Warm-Up Protocol"},{id:"quality-assurance-calibration-60000-rpm-pcb-d",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Drilling Spindle Maintenance"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"aluminium-composite-sheet-cnc-drilling-milling",title:"Aluminium Sheet CNC Drilling and Milling: Vacuum Bed Clamping & Chip Evacuation Guide",metaDescription:"Master aluminium sheet CNC drilling and milling. Learn single-flute carbide tool selection, cold-air vortex cooling, vacuum bed clamping, and mirror edge finishing.",category:"Production",image:"/assets/images/blogs/aluminum-sheet-cold-air-milling.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"Aluminium sheet CNC drilling and milling requires high peripheral cutting speeds (18,000 to 24,000 RPM), mirror-polished single-flute solid carbide end mills to prevent chip re-welding, high-flow vacuum matrix bed clamping to eliminate sheet fluttering, and cold-air vortex or micro-mist lubrication. By balancing chip load between 0.04 and 0.08 mm/tooth and utilizing climb milling toolpaths, industrial CNC routers execute burr-free slots, precision hole grids, and mirror-finished perimeter contours across 5052, 6061-T6, and 7075 aluminum alloys up to 25mm thick.",excerpt:"Aluminum is one of the most widely utilized engineering metals in modern manufacturing, prized for its high strength-to-weight ratio, superior thermal conductivity, and corrosion resistance. However, for CNC machine operators, aluminium sheet cnc drilling and milling presents unique metallurgical challenges. Unlike free-machining brass or rigid cast iron, wrought aluminum alloys (such as 5052, 6061-T6, and 7075) have a low melting point (660°C) and high ductility, causing chips to rapidly soften, smear, and weld themselves to tool cutting edges (a catastrophic failure known as Built-Up Edge or BUE). Furthermore, large aluminum sheets (typically 1.5mm to 8.0mm thick across 8x4 ft beds) lack structural rigidity. As the rotating cutting tool travels across an unsupported sheet, the metal sheet chatters violently against the bed, generating unbearable screeching noise, ragged burrs, and fractured carbide tools. Overcoming this requires an engineered synergy of high-vacuum bed clamping, single-flute tool geometry, and cold vortex chip evacuation.",paragraphs:["Aluminum is one of the most widely utilized engineering metals in modern manufacturing, prized for its high strength-to-weight ratio, superior thermal conductivity, and corrosion resistance. However, for CNC machine operators, aluminium sheet cnc drilling and milling presents unique metallurgical challenges. Unlike free-machining brass or rigid cast iron, wrought aluminum alloys (such as 5052, 6061-T6, and 7075) have a low melting point (660°C) and high ductility, causing chips to rapidly soften, smear, and weld themselves to tool cutting edges (a catastrophic failure known as Built-Up Edge or BUE).","Furthermore, large aluminum sheets (typically 1.5mm to 8.0mm thick across 8x4 ft beds) lack structural rigidity. As the rotating cutting tool travels across an unsupported sheet, the metal sheet chatters violently against the bed, generating unbearable screeching noise, ragged burrs, and fractured carbide tools. Overcoming this requires an engineered synergy of high-vacuum bed clamping, single-flute tool geometry, and cold vortex chip evacuation.","At CyTOS Engineering in Pune, our heavy gantry CNC routers are optimized specifically for high-speed aluminum plate and sheet processing. In this technical guide, our application engineers detail the exact feeds, speeds, tool geometries, and clamping strategies required for zero-defect aluminum machining.","In standard milling of steel, multi-flute end mills (3 or 4 flutes) are standard. However, when performing single-flute aluminum CNC machining at 20,000 RPM, using a 4-flute end mill is a recipe for instant tool disaster. At high rotational speeds, a 4-flute tool provides narrow, cramped flute valleys; hot aluminum chips cannot evacuate fast enough, packing the flutes within two seconds and snapping the tool.","The undisputed king of aluminum sheet routing is the Mirror-Polished Single-Flute Carbide Upcut End Mill (often termed an 'O-Flute' cutter):"],faqs:[],toc:[{id:"introduction-aluminum-sheet-machining",title:"Introduction: Engineering Standards for a Aluminium Sheet Cnc Drilling And Milling"},{id:"single-flute-carbide-geometry",title:"Tooling Geometry: Why Single-Flute End Mills Dominate Aluminum Routing"},{id:"cutting-parameters-table-aluminum",title:"Cutting Parameters Matrix: Feeds, Speeds, and Depths of Cut for Aluminum Alloys"},{id:"climb-milling-and-burr-elimination",title:"Climb Milling vs Conventional Milling: Achieving Mirror-Smooth Edges"},{id:"quality-assurance-calibration-aluminium-compo",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsSheet Cnc Drilling And Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"auto-surface-leveling-pcb-prototyping",title:"Auto-Surface Leveling PCB Prototyping: Achieving 0.1mm Precision Trace Isolation",metaDescription:"Master auto-surface leveling PCB prototyping. Learn how 2µm height probing compensates for board bow and ensures uniform 35µm copper isolation milling.",category:"Production",image:"/assets/images/blogs/auto-surface-leveling-16x9.jpg",readTime:"12 min read",date:"2026-03-20",aeoAnswer:"Auto-surface leveling in PCB rapid prototyping is a closed-loop sensing technique that maps the micro-topographical height variations of copper-clad laminates using high-precision electrical contact or optical touch probes prior to milling. By generating a multi-point spatial elevation mesh (accurate to ±2µm), the CNC controller dynamically adjusts the Z-axis cutting depth in real time during isolation milling, ensuring that a conical micro-cutter maintains an exact, uniform penetration depth of 40µm despite board bow, warpage, or bed unevenness.",excerpt:"In precision manufacturing, implementing a high-performance auto-surface leveling pcb prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In mechanical circuit board prototyping, the margin between a perfect circuit and an unusable board is measured in fractions of a human hair. Standard 1-ounce copper foil is precisely 35 micrometers (0.035mm) thick. To achieve clean electrical trace separation, a conical cutting tool must penetrate through the 35µm copper and enter the underlying dielectric fiberglass by no more than 5µm to 10µm (total cutting depth: 40µm to 45µm). However, industrial copper clad laminates are never perfectly flat. Due to internal laminate curing stresses, thermal warpage, and vacuum table variations, a typical FR4 sheet exhibits natural height variations ranging from 0.08mm to 0.25mm across its surface. This is where auto-surface leveling pcb prototyping becomes absolutely mandatory. Without dynamic Z-height compensation, a fixed-height cutting routine will cut 100µm too deep in high spots (destroying narrow traces) and plunge into thin air in low spots (leaving un-isolated copper shorts).",paragraphs:["In precision manufacturing, implementing a high-performance auto-surface leveling pcb prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In mechanical circuit board prototyping, the margin between a perfect circuit and an unusable board is measured in fractions of a human hair. Standard 1-ounce copper foil is precisely 35 micrometers (0.035mm) thick. To achieve clean electrical trace separation, a conical cutting tool must penetrate through the 35µm copper and enter the underlying dielectric fiberglass by no more than 5µm to 10µm (total cutting depth: 40µm to 45µm).","However, industrial copper clad laminates are never perfectly flat. Due to internal laminate curing stresses, thermal warpage, and vacuum table variations, a typical FR4 sheet exhibits natural height variations ranging from 0.08mm to 0.25mm across its surface. This is where auto-surface leveling pcb prototyping becomes absolutely mandatory. Without dynamic Z-height compensation, a fixed-height cutting routine will cut 100µm too deep in high spots (destroying narrow traces) and plunge into thin air in low spots (leaving un-isolated copper shorts).","CyTOS Engineering in Pune has perfected active Z-surface height mapping into our prototyping machine line, enabling effortless 0.1mm micro-pitch isolation milling on real-world, warped copper panels.","To grasp why Z-height accuracy is critical, examine the geometry of a standard V-shaped conical engraving tool. A conical tool with included angle $\\theta$ (e.g. 60°) and a tip flat width $W_{tip}$ (e.g. 0.10mm) cuts a channel width ($W_{cut}$) that expands as a function of depth ($D$):",`For a 60° conical tool with a 0.10mm tip: $\\tan(30^\\circ) \\approx 0.577$.\r
 At an optimal cut depth of 0.040mm (40µm):\r
 W_cut = 0.100 + 2 × (0.040) × 0.577 = 0.100 + 0.046 = 0.146 mm.`],faqs:[],toc:[{id:"introduction-surface-leveling",title:"Introduction: Engineering Standards for a Auto-Surface Leveling Pcb Prototyping"},{id:"conical-tool-trigonometry",title:"The Trigonometry of Conical Engravers: Why Depth Dictates Trace Width"},{id:"how-surface-mapping-works",title:"How CyTOS Multi-Point Surface Height Mapping Operates in Real Time"},{id:"quality-assurance-calibration-auto-surface-le",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Auto-Surface Leveling Pcb Prototyping"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"automotive-cycle-time-reduction-spm",title:"Automotive Cycle Time Reduction SPM: Real Shop-Floor Case Studies from Pune Tier-1 Plants",metaDescription:"Explore automotive cycle time reduction SPM case studies from Pune Tier-1 plants. Learn how multi-station automated indexing slashed takt times from 180s to 45s.",category:"Production",image:"/assets/images/blogs/automotive-spm-cycle-time-16x9.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"Automotive cycle time reduction SPM systems are custom-engineered turnkey automation cells designed specifically for Tier-1 and Tier-2 automotive component manufacturers in major industrial hubs like Pune to compress production takt times by 50% to 75%. By replacing sequential manual operations with multi-station rotary indexing tables, synchronized multi-spindle drilling/milling heads, automated pneumatic clamping, and in-line robotic handling, custom SPMs eliminate inter-station transfer delays and human variability while achieving zero-defect production under 24x7 continuous duty.",excerpt:"Pune, Maharashtra, is globally recognized as the automotive manufacturing capital of India. Housing major OEM vehicle assembly plants including Tata Motors, Bajaj Auto, Mahindra &amp; Mahindra, Mercedes-Benz, and Volkswagen across the Chakan, Bhosari, Talwade, and Ranjangaon industrial corridors, the region's Tier-1 and Tier-2 component suppliers face unrelenting pressure to deliver higher component volumes, reduce unit costs, and comply with zero-defect quality mandates. Achieving this requires dedicated automotive cycle time reduction spm systems. When an OEM increases vehicle production schedules, suppliers relying on manual drill presses, standalone manual hydraulic presses, and handheld welding torches face severe capacity constraints. Adding more manual labor increases factory floor congestion, employee ergonomic injuries, and human error rates. A dedicated high-speed automotive automation cells consolidates disconnected manual processes into a single automated, synchronized station that delivers predictable, high-speed part output every shift.",paragraphs:["Pune, Maharashtra, is globally recognized as the automotive manufacturing capital of India. Housing major OEM vehicle assembly plants including Tata Motors, Bajaj Auto, Mahindra &amp; Mahindra, Mercedes-Benz, and Volkswagen across the Chakan, Bhosari, Talwade, and Ranjangaon industrial corridors, the region's Tier-1 and Tier-2 component suppliers face unrelenting pressure to deliver higher component volumes, reduce unit costs, and comply with zero-defect quality mandates. Achieving this requires dedicated automotive cycle time reduction spm systems.","When an OEM increases vehicle production schedules, suppliers relying on manual drill presses, standalone manual hydraulic presses, and handheld welding torches face severe capacity constraints. Adding more manual labor increases factory floor congestion, employee ergonomic injuries, and human error rates. A dedicated high-speed automotive automation cells consolidates disconnected manual processes into a single automated, synchronized station that delivers predictable, high-speed part output every shift.","At CyTOS Engineering in Dhayari, Pune, our machine tool engineering team designs and manufactures turnkey special purpose machinery built to our foundational benchmark: Factor of Safety 2.0 and 24x7 Rated Continuous Duty. In this article, we share detailed shop-floor case studies demonstrating how custom SPMs slash takt times by up to 75%.","A Tier-1 supplier in Chakan was manufacturing cast iron exhaust manifold flanges requiring three precision bolt holes and one central exhaust aperture. Using two standard vertical machining centers (VMCs), the machining cycle time was 110 seconds per part, primarily due to slow part clamping and sequential single-spindle drilling and chamfering operations. The plant was struggling to meet a customer demand of 600 parts per day without working expensive Sunday overtime.","CyTOS designed a dedicated 3-Station Rotary Indexing cycle-time optimization SPM:"],faqs:[],toc:[{id:"introduction-automotive-spm",title:"Introduction: Engineering Standards for a Automotive Cycle Time Reduction Spm"},{id:"case-study-exhaust-flange",title:"Case Study 1: Automotive Exhaust Manifold Flange Machining Cell (Chakan MIDC)"},{id:"case-study-sunroof-dispensing",title:"Case Study 2: Automotive Sunroof Frame Adhesive Dispensing SPM (Talwade MIDC)"},{id:"financial-payback-metrics",title:"The Financial ROI of Automotive Cycle Time Reduction"},{id:"quality-assurance-calibration-automotive-cycl",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsCycle Time Reduction Spm"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"bt30-vs-bt40-cnc-drilling-and-milling",title:"BT30 vs BT40 CNC Drilling and Milling: Spindle Torque, Speed & Rigidity Analysis",metaDescription:"Compare BT30 vs BT40 CNC drilling and milling spindle torque curves, maximum RPM, tool taper stiffness, and optimal applications for sheet vs plate.",category:"Production",image:"/assets/images/blogs/bt30-vs-bt40-spindle-taper.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"In CNC drilling and milling machines, choosing between BT30 and BT40 spindle tapers dictates the machine's optimal balance between cutting velocity and heavy-duty torsional rigidity. BT30 spindles (featuring a 31.75mm gage diameter taper) excel at high-speed drilling and light milling (up to 12,000-24,000 RPM) for sheet metal enclosures and non-ferrous aluminum. BT40 spindles (featuring a massive 44.45mm gage diameter taper) provide over 2.5x higher bending stiffness and low-end torque, making them essential for drilling large holes (>25mm) and face-milling heavy structural steel plates.",excerpt:"When purchasing a heavy-duty vertical machining center or industrial gantry drill, one of the most critical structural specifications is spindle taper size: bt30 vs bt40 cnc drilling and milling. The tool taper is the sole mechanical interface responsible for transmitting rotational torque from the motor to the cutting tool while resisting massive radial and axial cutting bending moments. Selecting the incorrect taper leads to severe operational compromises. Choosing a BT30 spindle for heavy structural steel drilling leads to excessive tool deflection, chatter marks, and damaged pull studs under heavy chip loads. Conversely, selecting a heavy BT40 spindle for thin sheet metal routing adds unnecessary gantry mass, slows down Z-axis acceleration, and increases electrical power draw.",paragraphs:["When purchasing a heavy-duty vertical machining center or industrial gantry drill, one of the most critical structural specifications is spindle taper size: bt30 vs bt40 cnc drilling and milling. The tool taper is the sole mechanical interface responsible for transmitting rotational torque from the motor to the cutting tool while resisting massive radial and axial cutting bending moments.","Selecting the incorrect taper leads to severe operational compromises. Choosing a BT30 spindle for heavy structural steel drilling leads to excessive tool deflection, chatter marks, and damaged pull studs under heavy chip loads. Conversely, selecting a heavy BT40 spindle for thin sheet metal routing adds unnecessary gantry mass, slows down Z-axis acceleration, and increases electrical power draw.","At CyTOS Engineering in Pune, we offer both BT30 and BT40 spindle configurations across our VDM and heavy gantry lines. This engineering guide details the metallurgical, mechanical, and torque characteristics that determine the correct choice for your factory floor.",`Both BT30 and BT40 utilize the standard ISO 7/24 steep taper geometry (taper angle: 8° 17' 50"). However, the dimensional cross-section differs dramatically:`,`Under Euler-Bernoulli beam theory, the area moment of inertia of a solid circular shaft is proportional to the fourth power of its diameter: $I = \frac{\\pi \\cdot D^4}{64}$.\r
 Calculating the relative torsional and bending rigidity ratio:\r
-Rigidity Ratio = (44.45)^4 / (31.75)^4 = 3,903,962 / 1,016,162 ≈ 3.84.`],faqs:[],toc:[{id:"introduction-bt30-vs-bt40",title:"Introduction: Engineering Standards for a Bt30 Vs Bt40 Cnc Drilling And Milling"},{id:"taper-geometry-rigidity",title:"Taper Geometry and Bending Stiffness: The Mathematical Comparison"},{id:"technical-comparison-matrix",title:"Engineering Comparison: BT30 vs BT40 Spindle Specifications"},{id:"quality-assurance-calibration-bt30-vs-bt40-cn",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsBt40 Cnc Drilling And Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"chemical-free-pcb-rapid-prototyping-machine",title:"PCB Rapid Prototyping Machine: In-House Chemical-Free Milling in Under 40 Minutes",metaDescription:"Discover how a chemical-free PCB rapid prototyping machine turns Gerber files into working double-sided boards in under 40 minutes with zero acid etchants.",category:"Production",image:"/assets/images/blogs/pcb-rapid-prototyping-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A PCB rapid prototyping machine is a specialized CNC isolation milling system engineered for electronics R&D laboratories, academic engineering institutions, and defense research organizations to fabricate single-sided, double-sided, and multi-layer prototype circuit boards in under 40 minutes without toxic etching chemicals. Utilizing 60,000 RPM high-precision spindles, auto-surface height mapping (Z-leveling down to 2µm accuracy), and micro-conical isolation engraving bits, modern PCB rapid prototyping machines mill 0.1mm trace widths and clearances directly from standard Gerber RS-274X files.",excerpt:"In modern electronics hardware engineering, time-to-market and Intellectual Property (IP) security dictate commercial survival. Product development teams designing IoT edge devices, automotive engine control modules, electric vehicle (EV) battery management systems, and defense avionics cannot afford to wait 10 to 18 days every time a schematic revision or circuit tweak requires an updated prototype board. Deploying an in-house pcb rapid prototyping machine fundamentally transforms this workflow, slashing the turnaround cycle from two weeks down to just 40 minutes. Historically, in-house circuit prototyping was synonymous with messy, hazardous wet-chemical etching baths using ferric chloride or ammonium persulfate. These toxic chemicals produce dangerous acid fumes, require specialized ventilation and disposal protocols, and invariably undercut fine copper traces below 0.3mm due to isotropic chemical etching. A modern rapid prototyping mill eliminates all chemical acids completely, replacing hazardous baths with high-speed, mechanical isolation milling operating under automated dust-extraction vacuums.",paragraphs:["In modern electronics hardware engineering, time-to-market and Intellectual Property (IP) security dictate commercial survival. Product development teams designing IoT edge devices, automotive engine control modules, electric vehicle (EV) battery management systems, and defense avionics cannot afford to wait 10 to 18 days every time a schematic revision or circuit tweak requires an updated prototype board. Deploying an in-house pcb rapid prototyping machine fundamentally transforms this workflow, slashing the turnaround cycle from two weeks down to just 40 minutes.","Historically, in-house circuit prototyping was synonymous with messy, hazardous wet-chemical etching baths using ferric chloride or ammonium persulfate. These toxic chemicals produce dangerous acid fumes, require specialized ventilation and disposal protocols, and invariably undercut fine copper traces below 0.3mm due to isotropic chemical etching. A modern rapid prototyping mill eliminates all chemical acids completely, replacing hazardous baths with high-speed, mechanical isolation milling operating under automated dust-extraction vacuums.","At CyTOS Engineering in Pune, we have pioneered the PCBE3020 and PCB30 systems to deliver laboratory-grade cleanroom fabrication directly onto an engineer's workbench. Engineered with Factor of Safety 2.0 and micron-level surface height mapping, these machines empower Indian hardware teams to innovate faster, protect confidential Gerber designs, and slash physical validation costs.","To understand the profound operational benefits of an in-house benchtop PCB fabrication unit, consider the technical comparison below between legacy wet etching and dry CNC isolation milling:","The single greatest technical obstacle in mechanical PCB isolation milling is copper foil thickness and board warpage. Standard 1oz copper clad laminate has a copper thickness of exactly 35µm (0.035mm). Even a brand-new FR4 sheet exhibits natural surface bowing and thickness variations between 0.10mm and 0.25mm across a 200mm span. If a milling tool penetrates at a fixed Z-depth, it will cut too deep in high spots (destroying narrow 0.15mm traces) and miss the copper entirely in low spots (leaving electrical short-circuits)."],faqs:[],toc:[{id:"introduction-pcb-rapid-prototyping",title:"Introduction: Why Modern Hardware R&D Demands an In-House PCB Rapid Prototyping Machine"},{id:"chemical-etching-vs-mechanical-milling",title:"Wet-Chemical Etching vs Mechanical Isolation Milling: Technical Comparison"},{id:"auto-leveling-technology",title:"The Physics of Auto-Surface Leveling: Guaranteeing 0.1mm Trace Isolation"},{id:"double-sided-alignment-workflow",title:"Double-Sided PCB Prototyping: Precision Top-to-Bottom Layer Registration"},{id:"software-workflow-gerber-to-gcode",title:"Software Workflow: From CAD Gerber RS-274X to Finished Board in 4 Simple Steps"},{id:"financial-roi-rd-lab",title:"Financial ROI for Engineering Teams and Corporate R&D Departments"},{id:"quality-assurance-calibration-chemical-free-p",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Rapid Prototyping Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"cnc-drilling-and-milling-machine-guide",title:"CNC Drilling and Milling: High-Rigidity Vertical Machining for Electrical Panels",metaDescription:"Definitive guide to CNC drilling and milling machines for electrical switchboards and heavy plate fabrication. Compare multi-spindle throughput, BT30 vs BT40, and VDM beds.",category:"Production",image:"/assets/images/blogs/cnc-milling-heavy-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A CNC drilling and milling machine is a high-rigidity machine tool engineered to perform precision multi-hole pattern drilling, thread tapping, and contour milling across large metallic workpieces such as electrical switchgear enclosure doors, busbars, and steel plates. Utilizing high-torque BT30 or BT40 spindles, ground Meehanite cast iron beds, and multi-spindle synchronized gantry heads, modern CNC drilling and milling centers eliminate manual layout and drill-press operations, reducing cycle times by 60% while holding positional tolerances under ±0.020mm.",excerpt:"In modern industrial equipment manufacturing—particularly across electrical control panel building, switchgear fabrication, transformer tank production, and structural machinery manufacturing—fabricating large mild steel (MS), stainless steel (SS), and aluminum plates represents a massive production bottleneck. Traditional fabrication shops still rely on manual sheet metal marking, radial drill presses, and manual punch tooling. This workflow is labor-intensive, error-prone, and severely restricts production throughput. This is why leading manufacturers are transitioning to automated cnc drilling and milling systems. A dedicated precision vertical CNC machining machine combines the heavy material removal capacity of a vertical machining center with the expansive work envelope of an industrial gantry table. Whether drilling thousands of 22.5mm pushbutton and meter holes across a 2.5-meter switchboard door or face-milling heavy steel mounting pads, a dedicated CNC machining center delivers repeatable micron-level accuracy at fraction of the cycle time.",paragraphs:["In modern industrial equipment manufacturing—particularly across electrical control panel building, switchgear fabrication, transformer tank production, and structural machinery manufacturing—fabricating large mild steel (MS), stainless steel (SS), and aluminum plates represents a massive production bottleneck. Traditional fabrication shops still rely on manual sheet metal marking, radial drill presses, and manual punch tooling. This workflow is labor-intensive, error-prone, and severely restricts production throughput. This is why leading manufacturers are transitioning to automated cnc drilling and milling systems.","A dedicated precision vertical CNC machining machine combines the heavy material removal capacity of a vertical machining center with the expansive work envelope of an industrial gantry table. Whether drilling thousands of 22.5mm pushbutton and meter holes across a 2.5-meter switchboard door or face-milling heavy steel mounting pads, a dedicated CNC machining center delivers repeatable micron-level accuracy at fraction of the cycle time.","At CyTOS Engineering in Pune, Maharashtra, we have developed the flagship VDM (Vertical Drilling and Milling) series built to our uncompromising standard: Factor of Safety 2.0 and 24x7 Continuous Duty Rating. This comprehensive guide examines the mechanical architecture, spindle dynamics, and economic metrics of modern industrial heavy vertical milling centers.","To quantify the production gains of automating plate machining, compare traditional methods against modern automated panel machining:","Drilling large diameter holes (e.g. 25mm to 50mm) in structural steel generates immense axial thrust forces exceeding 1,500 kg (15 kN). If the machine frame lacks dynamic rigidity, these cutting forces deflect the gantry, causing severe tool chatter, broken carbide insert edges, and out-of-round holes."],faqs:[],toc:[{id:"introduction-cnc-drilling-milling",title:"Introduction: Why Heavy Plate and Panel Fabrication Requires Dedicated CNC Drilling and Milling"},{id:"vdm-vs-radial-drill-presses",title:"Technical Comparison: Traditional Radial Drill Presses vs CyTOS CNC Drilling and Milling"},{id:"meehanite-structural-rigidity",title:"Structural Rigidity: Why Meehanite Cast Iron Outperforms Fabricated Steel"},{id:"multi-spindle-vdm-productivity",title:"Multi-Spindle VDM Technology: Tripling Throughput for Switchgear Manufacturers"},{id:"quality-assurance-calibration-cnc-drilling-an",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsDrilling And Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"double-sided-pcb-rapid-prototyping-guide",title:"Double-Sided PCB Rapid Prototyping: Precision Top-to-Bottom Layer Registration",metaDescription:"Master double-sided PCB rapid prototyping alignment. Discover dual-pin registration, optical fiducial correction, and through-hole via riveting in under 45 mins.",category:"Production",image:"/assets/images/blogs/double-sided-pcb-prototyping-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Double-sided PCB rapid prototyping requires achieving sub-15µm registration accuracy between top and bottom copper layers when flipping the board on the CNC machine bed. By implementing a standardized dual-pin tooling dowel system, mirroring bottom-layer Gerber coordinates along a calibrated datum axis, and deploying optical fiducial verification, modern desktop CNC prototyping machines execute perfectly aligned double-sided circuit boards with concentric via pads and complete electrical continuity in under 45 minutes.",excerpt:"While single-sided circuit boards are suitable for simple sensor breadboards and low-frequency hobby projects, virtually all commercial, industrial, and automotive circuits require double-sided routing. A modern microcontroller board requires ground planes on the bottom layer to suppress electromagnetic interference (EMI) while routing high-speed signal traces on the top layer. Performing double-sided pcb rapid prototyping on a CNC mill, however, introduces a critical geometric challenge: front-to-back layer registration. When you drill a 0.3mm via through a double-sided board, the top copper pad and the bottom copper pad must align perfectly. If the panel shifts by as little as 0.05mm (50µm) when flipped over to mill the bottom side, the drilled through-hole will punch through the edge of the annular ring on the reverse side—causing open-circuit vias, breakout defects, and assembly failures.",paragraphs:["While single-sided circuit boards are suitable for simple sensor breadboards and low-frequency hobby projects, virtually all commercial, industrial, and automotive circuits require double-sided routing. A modern microcontroller board requires ground planes on the bottom layer to suppress electromagnetic interference (EMI) while routing high-speed signal traces on the top layer. Performing double-sided pcb rapid prototyping on a CNC mill, however, introduces a critical geometric challenge: front-to-back layer registration.","When you drill a 0.3mm via through a double-sided board, the top copper pad and the bottom copper pad must align perfectly. If the panel shifts by as little as 0.05mm (50µm) when flipped over to mill the bottom side, the drilled through-hole will punch through the edge of the annular ring on the reverse side—causing open-circuit vias, breakout defects, and assembly failures.","CyTOS Engineering in Pune has solved this alignment challenge by integrating aerospace-grade dual-pin dowel registration and optical fiducial calibration into our prototyping systems. This guide explains the step-by-step methodology to achieve flawless registration on every double-sided prototype.","The most robust, repeatable physical method for dual-sided PCB prototyping workflow is the precision ground dowel pin system:","The vacuum bed of the CyTOS prototyping machine incorporates precision-reamed hardened steel bushings located along a calibrated machine axis. Two 3.000mm ground dowel pins are inserted into these reference bushings."],faqs:[],toc:[{id:"introduction-double-sided-alignment",title:"The Geometric Challenge of Double-Sided PCB Rapid Prototyping"},{id:"dual-pin-registration-method",title:"The Dual-Pin Dowel Registration Methodology"},{id:"through-hole-via-connectivity",title:"Establishing Through-Hole Via Electrical Continuity"},{id:"quality-assurance-calibration-double-sided-pc",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Double-Sided Pcb Rapid Prototyping"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"gerber-to-pcb-isolation-milling-guide",title:"PCB Isolation Milling: Step-by-Step Gerber RS-274X to G-Code CNC Workflow",metaDescription:"Master PCB isolation milling. Learn the complete CAM workflow from Gerber RS-274X export to isolation rubout paths, auto-leveling, and contour cutouts.",category:"Production",image:"/assets/images/blogs/pcb-isolation-milling-traces.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"PCB isolation milling is a subtractive CNC machining process that converts electrical trace layouts into physical circuit boards by cutting narrow boundary channels through the copper foil, electrically separating conductive copper traces and ground planes from the surrounding substrate. By importing standard Gerber RS-274X files into dedicated CAM software, the system calculates offset isolation toolpaths, rub-out hatch patterns for copper clearance, and Excellon drill cycles, transferring optimized G-code to a 60,000 RPM CNC prototyping mill for fabrication in under 40 minutes.",excerpt:"In electronic computer-aided manufacturing (CAM), pcb isolation milling represents the dry, mechanical alternative to chemical photolithography. Rather than coating a copper panel with light-sensitive photoresist, exposing it through photoplotter film, and etching away unwanted copper in an acid bath, isolation milling uses a high-speed rotating cutting tool to carve thin isolation trenches along the perimeter of every trace, pad, and polygon pour. The beauty of pcb isolation milling lies in its computational efficiency: the machine does not need to mill away 100% of the non-circuit copper. By cutting narrow isolation contours (typically 0.15mm to 0.20mm wide), large areas of non-active copper remain as natural ground planes or shielding zones. This reduces cutting time by over 70%, allowing complex double-sided circuit layouts to be produced in 25 to 40 minutes.",paragraphs:["In electronic computer-aided manufacturing (CAM), pcb isolation milling represents the dry, mechanical alternative to chemical photolithography. Rather than coating a copper panel with light-sensitive photoresist, exposing it through photoplotter film, and etching away unwanted copper in an acid bath, isolation milling uses a high-speed rotating cutting tool to carve thin isolation trenches along the perimeter of every trace, pad, and polygon pour.","The beauty of pcb isolation milling lies in its computational efficiency: the machine does not need to mill away 100% of the non-circuit copper. By cutting narrow isolation contours (typically 0.15mm to 0.20mm wide), large areas of non-active copper remain as natural ground planes or shielding zones. This reduces cutting time by over 70%, allowing complex double-sided circuit layouts to be produced in 25 to 40 minutes.","This technical guide walks through the exact step-by-step workflow required to convert raw Gerber RS-274X files into optimized, burr-free G-code toolpaths ready for execution on a CyTOS precision prototyping mill.","When designing in Altium Designer, KiCad, Eagle, or EasyEDA, observe these design rules for optimal isolation milling:","Import the Gerber files into the CyTOS CAM processor. The software generates an isolation toolpath by calculating an outward offset vector equal to half the tool tip diameter ($D_{tip} / 2$). For high-voltage or RF circuits, configure the software to execute 2 or 3 overlapping offset passes (stepping outward by 50% tool diameter per pass) to increase physical clearance and prevent arc-over."],faqs:[],toc:[{id:"introduction-isolation-milling",title:"Introduction: Understanding the Mechanics of PCB Isolation Milling"},{id:"step-by-step-cam-workflow",title:"The 4-Step Technical Workflow: From Gerber to Finished Board"},{id:"burr-prevention-and-tool-geometry",title:"Tool Geometry and Burr-Free Edge Finishing"},{id:"quality-assurance-calibration-gerber-to-pcb-i",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Isolation Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"green-electronics-rapid-prototyping-lab",title:"Green Electronics Rapid Prototyping: Eliminating Acid Etchants & Chemical Waste in R&D Labs",metaDescription:"Transform your R&D lab with green electronics rapid prototyping. Eliminate toxic ferric chloride, comply with ISO 14001, and create a zero-effluent clean workspace.",category:"Production",image:"/assets/images/blogs/green-electronics-lab-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Green electronics rapid prototyping is an environmentally sustainable manufacturing paradigm that completely replaces wet-chemical acid etching (ferric chloride, ammonium persulfate, and cupric chloride) with dry, high-speed CNC mechanical isolation milling. By generating zero liquid chemical effluent, eliminating toxic acid fumes, and capturing 99.97% of dry swarf through HEPA filtration, green electronics rapid prototyping enables corporate R&D centers, academic institutions, and defense laboratories to comply with ISO 14001 and OSHA safety mandates while producing high-precision circuit boards in standard office environments.",excerpt:"In precision manufacturing, implementing a high-performance green electronics rapid prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. For decades, electronic engineers seeking to prototype circuit boards in-house were forced to interact with some of the most corrosive and environmentally toxic chemicals used in industry. Wet-chemical etching relies primarily on aqueous ferric chloride ($FeCl_3$) or ammonium persulfate ($[NH_4]_2S_2O_8$). In order to dissolve a microscopic 35µm layer of unwanted copper, these acid solutions generate toxic fumes, corrode nearby electronic equipment and optical microscopes, and create heavy-metal chemical effluent that cannot legally be discharged into municipal drains. Every liter of spent ferric chloride etchant contains high concentrations of dissolved ionic copper ($Cu^{2+}$), a potent environmental bio-toxin that severely damages aquatic ecosystems. For modern corporate R&D facilities striving for ISO 14001 environmental certification and university laboratories subject to stringent student safety regulations, maintaining chemical etching tanks is an unacceptable liability. This environmental imperative has catalyzed the global transition to green R&D prototyping.",paragraphs:["In precision manufacturing, implementing a high-performance green electronics rapid prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. For decades, electronic engineers seeking to prototype circuit boards in-house were forced to interact with some of the most corrosive and environmentally toxic chemicals used in industry. Wet-chemical etching relies primarily on aqueous ferric chloride ($FeCl_3$) or ammonium persulfate ($[NH_4]_2S_2O_8$). In order to dissolve a microscopic 35µm layer of unwanted copper, these acid solutions generate toxic fumes, corrode nearby electronic equipment and optical microscopes, and create heavy-metal chemical effluent that cannot legally be discharged into municipal drains.","Every liter of spent ferric chloride etchant contains high concentrations of dissolved ionic copper ($Cu^{2+}$), a potent environmental bio-toxin that severely damages aquatic ecosystems. For modern corporate R&D facilities striving for ISO 14001 environmental certification and university laboratories subject to stringent student safety regulations, maintaining chemical etching tanks is an unacceptable liability. This environmental imperative has catalyzed the global transition to green R&D prototyping.","CyTOS Engineering in Pune is proud to lead this green transition across India. Our dry mechanical prototyping machines completely eliminate chemical acids, neutralizing environmental footprint while delivering superior trace definition.","Adopting eco-friendly circuit prototyping is structured around four foundational engineering principles:","No acids, no chemical resists, no developer solutions, and no hazardous chemical rinse baths. Unwanted copper is removed strictly through high-speed mechanical shearing at 60,000 RPM using solid tungsten carbide micro-tools."],faqs:[],toc:[{id:"environmental-crisis-wet-etching",title:"The Toxic Reality of Traditional Wet-Chemical PCB Etching in R&D Labs"},{id:"pillars-of-green-prototyping",title:"The Core Principles of Green Electronics Rapid Prototyping"},{id:"compliance-and-workplace-safety",title:"Regulatory Compliance: OSHA, ISO 14001, and Pollution Control Board Mandates"},{id:"quality-assurance-calibration-green-electroni",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Green Electronics Rapid Prototyping"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"heavy-duty-cnc-router-machine-guide",title:"Heavy Duty CNC Router Machine: Ball Screw vs Rack & Pinion for Aluminum & Composites",metaDescription:"Selection guide for a heavy duty CNC router machine. Compare Class C3 ball screws vs helical rack-and-pinion, tubular steel gantries, and vacuum beds.",category:"Production",image:"/assets/images/blogs/cnc-gantry-router-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A heavy duty CNC router machine is an industrial gantry routing center engineered with a stress-relieved welded tubular steel frame (Factor of Safety 2.0) to machine non-ferrous metals (6061/7075 aluminum, brass), composites (carbon fiber, G10/FR4), and dense engineering plastics across bed sizes from 4x4 ft to 8x8 ft. When selecting drive kinematics, pre-loaded Class C3/C5 ball screws deliver superior positioning accuracy (±0.015mm) and zero backlash on beds up to 1,500mm, while precision ground helical rack-and-pinion systems deliver rapid traverse speeds up to 45 m/min without screw whipping on large 8x4 and 8x8 formats.",excerpt:"In the non-ferrous metal, signage, defense, and composite manufacturing sectors, buyers are frequently overwhelmed by conflicting marketing claims. Light-duty wood routers assembled from extruded aluminum profiles and V-groove wheels are marketed as 'industrial CNC routers.' When subjected to continuous machining of 12mm 6061-T6 aluminum sheets or abrasive glass-epoxy composites, these lightweight machines chatter severely, lose dimensional accuracy, and suffer premature mechanical failure within months. Surviving this workload requires an authentic heavy duty cnc router machine. A true industrial router is distinguished by mass, structural rigidity, and drive engineering. Operating a 9.0 kW high-frequency spindle at 24,000 RPM while pushing a 12mm solid carbide end mill at 6 meters per minute creates immense cutting reaction forces. Only a heavily ribbed, stress-relieved tubular steel gantry can absorb these forces without deflection.",paragraphs:["In the non-ferrous metal, signage, defense, and composite manufacturing sectors, buyers are frequently overwhelmed by conflicting marketing claims. Light-duty wood routers assembled from extruded aluminum profiles and V-groove wheels are marketed as 'industrial CNC routers.' When subjected to continuous machining of 12mm 6061-T6 aluminum sheets or abrasive glass-epoxy composites, these lightweight machines chatter severely, lose dimensional accuracy, and suffer premature mechanical failure within months. Surviving this workload requires an authentic heavy duty cnc router machine.","A true industrial router is distinguished by mass, structural rigidity, and drive engineering. Operating a 9.0 kW high-frequency spindle at 24,000 RPM while pushing a 12mm solid carbide end mill at 6 meters per minute creates immense cutting reaction forces. Only a heavily ribbed, stress-relieved tubular steel gantry can absorb these forces without deflection.","At CyTOS Engineering in Pune, we manufacture 4x4, 8x4, and 8x8 heavy gantry routers built around our signature standard: Factor of Safety 2.0 and 24x7 Rated Continuous Duty. This comprehensive guide details the critical drive selection criteria, frame physics, and vacuum hold-down parameters required to choose the optimal industrial router.","One of the most consequential decisions when configuring a heavy-duty sheet routing platform is the drive transmission mechanism:","Preloaded recirculating ball screws provide 100% mechanical preloading with near-zero backlash (&lt;0.005mm). They deliver unmatched positional accuracy and surface finish when milling tight-tolerance aluminum aircraft parts or intricate mold patterns. However, on long axes exceeding 2.0 meters, rotating a long, slender ball screw at high speed induces critical speed whipping (resonance where the screw bows outward like a jump rope). Therefore, ball screws are the premier choice for 4x4 ft (1,250mm x 1,250mm) machines, but must be paired with larger diameters or rotating nut designs on larger beds."],faqs:[],toc:[{id:"introduction-heavy-gantry-routers",title:"Introduction: Why Industrial Machining Demands a True Heavy Duty CNC Router Machine"},{id:"ball-screw-vs-rack-pinion",title:"Ball Screw vs Helical Rack-and-Pinion: Kinematic Comparison"},{id:"vacuum-matrix-bed-engineering",title:"High-Flow Vacuum Matrix Bed and Clamping Physics"},{id:"quality-assurance-calibration-heavy-duty-cnc-",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsCnc Router Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"in-house-pcb-rapid-prototyping-roi",title:"In-House PCB Rapid Prototyping: Financial ROI & Slashing R&D Turnaround from Weeks to Hours",metaDescription:"Calculate the true financial ROI of in-house PCB rapid prototyping. Quantify savings on courier delays, expedited fabrication fees, and IP security.",category:"Production",image:"/assets/images/blogs/pcb-rapid-prototyping-roi-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"In-house PCB rapid prototyping delivers a comprehensive financial return on investment (ROI) within 5 to 8 months by eliminating external quick-turn fabrication fees (saving ₹12,000 to ₹25,000 per board spin), recovering thousands of engineering work hours lost to project idle time, and safeguarding proprietary intellectual property against third-party design leaks. By compressing a 14-day prototype wait into a 45-minute lab milling cycle, electronics R&D teams launch products to market up to 2 months faster, capturing substantial first-mover market share.",excerpt:"When engineering directors and Chief Technology Officers evaluate the financial justification for in-house pcb rapid prototyping, they frequently look only at the line-item invoice for outsourced PCB prototypes. If a quick-turn board house charges ₹10,000 for a batch of five double-sided boards, purchasing a dedicated CNC machine tool may seem like a discretionary capital expense. However, this narrow comparison ignores the largest cost driver in hardware engineering: engineering idle time and project launch delays. Every time an R&D team completes a CAD schematic and sends Gerber files to an external vendor, a minimum 10 to 14-day waiting clock begins. During this fortnight, senior embedded hardware engineers—whose fully loaded compensation often exceeds ₹1,200 per hour—must either put their core firmware development on hold or context-switch to secondary tasks. If the prototype arrives with a single inverted pin on a microcontroller or an incorrect footprint, the entire 14-day cycle resets.",paragraphs:["When engineering directors and Chief Technology Officers evaluate the financial justification for in-house pcb rapid prototyping, they frequently look only at the line-item invoice for outsourced PCB prototypes. If a quick-turn board house charges ₹10,000 for a batch of five double-sided boards, purchasing a dedicated CNC machine tool may seem like a discretionary capital expense. However, this narrow comparison ignores the largest cost driver in hardware engineering: engineering idle time and project launch delays.","Every time an R&D team completes a CAD schematic and sends Gerber files to an external vendor, a minimum 10 to 14-day waiting clock begins. During this fortnight, senior embedded hardware engineers—whose fully loaded compensation often exceeds ₹1,200 per hour—must either put their core firmware development on hold or context-switch to secondary tasks. If the prototype arrives with a single inverted pin on a microcontroller or an incorrect footprint, the entire 14-day cycle resets.","At CyTOS Engineering in Pune, we have conducted detailed operational audits across dozens of engineering departments. This guide provides a quantitative, spreadsheet-ready ROI model demonstrating why investing in an internal PCB rapid iteration system pays for itself in less than eight months.","Consider an electronics design company conducting 24 prototype board spins per year (an average of two revisions per month across various projects). The table below contrasts annual costs:","With net operational savings exceeding ₹6.6 Lakhs annually, a complete CyTOS PCBE3020 prototyping machine package (typically priced between ₹3.5L and ₹5.5L depending on tooling options) delivers complete capital payback in approximately 6.5 to 9.8 months."],faqs:[],toc:[{id:"introduction-in-house-roi",title:"Introduction: Engineering Standards for a In-House Pcb Rapid Prototyping"},{id:"financial-breakdown-model",title:"Quantitative Financial Model: In-House Prototyping vs External Quick-Turn Sourcing"},{id:"unquantified-strategic-advantages",title:"Strategic ROI: Intellectual Property Protection and First-to-Market Advantage"},{id:"academic-and-defense-roi",title:"ROI in Educational Institutions and Defense Research Facilities"},{id:"quality-assurance-calibration-in-house-pcb-ra",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for In-House Pcb Rapid Prototyping"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"mechanical-pcb-drilling-vs-laser-drilling",title:"Mechanical PCB Drilling vs Laser Drilling: Cost, Throughput & Aspect Ratio Comparison",metaDescription:"Compare mechanical PCB drilling vs UV/CO2 laser drilling. Discover the cost crossover threshold, blind micro-via limitations, and thick FR4 processing.",category:"Production",image:"/assets/images/blogs/pcb-drilling-laser-comparison-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Mechanical PCB drilling remains the most cost-effective and structurally superior method for through-hole vias down to 0.15mm diameter, capable of penetrating thick multi-layer board stacks up to 6.4mm with aspect ratios exceeding 10:1 to 12:1. In contrast, UV and CO2 laser drilling excels exclusively at blind micro-vias (<0.10mm) in thin dielectric build-up layers (<0.15mm deep) with aspect ratios limited to 1:1. For standard FR4, Rogers, and thick copper power electronics, mechanical PCB drilling delivers over 80% lower capital and maintenance costs per drilled hole.",excerpt:"In modern printed circuit board manufacturing, engineers frequently debate whether laser micro-via ablation will completely supplant mechanical pcb drilling. While UV and CO2 lasers dominate ultra-high-density interconnect (HDI) smartphones where blind micro-vias must measure below 75µm in single-ply prepreg, mechanical pcb drilling remains the undisputed backbone of 90% of global PCB production. The physics of material removal explain this reality. Lasers ablate dielectric resin and copper foil through intense photon thermal absorption or photochemical bond-breaking. However, when penetrating multi-layer FR4 boards thicker than 1.0mm containing alternating layers of woven glass fiber and 2oz copper planes, lasers suffer from severe beam divergence, plasma shielding, and heavy glass melt re-deposition. Only high-speed rotary spindle drilling provides perfectly cylindrical, vertical hole barrels with constant diameter across multi-layer board cores up to 6.4mm thick.",paragraphs:["In modern printed circuit board manufacturing, engineers frequently debate whether laser micro-via ablation will completely supplant mechanical pcb drilling. While UV and CO2 lasers dominate ultra-high-density interconnect (HDI) smartphones where blind micro-vias must measure below 75µm in single-ply prepreg, mechanical pcb drilling remains the undisputed backbone of 90% of global PCB production.","The physics of material removal explain this reality. Lasers ablate dielectric resin and copper foil through intense photon thermal absorption or photochemical bond-breaking. However, when penetrating multi-layer FR4 boards thicker than 1.0mm containing alternating layers of woven glass fiber and 2oz copper planes, lasers suffer from severe beam divergence, plasma shielding, and heavy glass melt re-deposition. Only high-speed rotary spindle drilling provides perfectly cylindrical, vertical hole barrels with constant diameter across multi-layer board cores up to 6.4mm thick.","At CyTOS Engineering in Pune, we manufacture specialized mechanical through-hole machining systems capable of executing 0.15mm to 6.5mm through-holes at 60,000 RPM. This guide provides an objective engineering comparison between mechanical CNC drilling and laser systems to help factory managers optimize capital equipment investments.","The aspect ratio of a drilled hole is defined as the ratio of total board thickness ($T$) to the finished hole diameter ($D$): AR = T / D. Maintaining vertical, non-tapered barrel walls at high aspect ratios is essential for continuous copper electroplating.","In carbide mechanical drilling process, solid micrograin tungsten carbide drills maintain rigid axial stability when supported by proper pressure foot clamping and specialized aluminum entry sheets. A 0.25mm mechanical drill can easily penetrate a 2.4mm thick 8-layer board (aspect ratio 9.6:1) or even a 3.0mm thick board (12:1) with less than 8µm barrel wall taper from top entry to bottom exit."],faqs:[],toc:[{id:"introduction-mechanical-vs-laser",title:"Introduction: The Continuing Hegemony of Mechanical PCB Drilling"},{id:"aspect-ratio-physics",title:"Aspect Ratio and Hole Geometry: Cylindrical vs Tapered Walls"},{id:"cost-and-throughput-comparison",title:"Comprehensive Benchmark: Mechanical vs Laser Drilling Technologies"},{id:"barrel-wall-metallurgy",title:"Barrel Wall Morphology and Plating Adhesion"},{id:"hybrid-fabrication-strategy",title:"The Modern Shop Strategy: Hybrid Mechanical + Laser Workflows"},{id:"quality-assurance-calibration-mechanical-pcb-",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Mechanical Pcb Drilling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"multi-spindle-pcb-drilling-machine",title:"Multi-Spindle PCB Drilling Machine: Slashing Cycle Times by 65% in High-Volume Production",metaDescription:"Discover how a multi-spindle PCB drilling machine triples panel throughput while holding ±10µm hole registration on 6-spindle gantry lines.",category:"Production",image:"/assets/images/blogs/multi-spindle-drilling-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A multi-spindle PCB drilling machine utilizes two, three, or four mechanically synchronized, high-frequency spindles mounted on a unified precision gantry to drill identical hole patterns across multiple panels simultaneously. By replicating the exact Z-axis plunge and X-Y motion across all stations at 60,000 RPM, a multi-spindle PCB drilling machine achieves 200% to 300% higher panel throughput per operator hour while cutting floor footprint, electrical power consumption, and capital equipment costs compared to purchasing separate single-spindle machines.",excerpt:"When high-volume commercial board houses and Electronics Manufacturing Service (EMS) facilities reach production volumes exceeding 1,000 panels per week, relying solely on single-spindle machines creates crippling operational bottlenecks. A multi-spindle pcb drilling machine solves this scalability ceiling by multiplying drilling capacity directly on a single machine footprint, allowing one operator to produce two or three times the output without proportional labor or real estate expenditures. In electronic manufacturing, through-hole and micro-via drilling represents the slowest sequential process step in the front-end fabrication line. An 8-layer automotive sensor panel requiring 8,500 holes takes roughly 47 minutes on a single 60,000 RPM spindle. By deploying a dual-spindle or 3-spindle multi-spindle CNC station, two or three identical panels (or multi-panel stacks) are drilled concurrently in the exact same 47-minute window, effectively reducing the per-panel cycle time to under 16 minutes.",paragraphs:["When high-volume commercial board houses and Electronics Manufacturing Service (EMS) facilities reach production volumes exceeding 1,000 panels per week, relying solely on single-spindle machines creates crippling operational bottlenecks. A multi-spindle pcb drilling machine solves this scalability ceiling by multiplying drilling capacity directly on a single machine footprint, allowing one operator to produce two or three times the output without proportional labor or real estate expenditures.","In electronic manufacturing, through-hole and micro-via drilling represents the slowest sequential process step in the front-end fabrication line. An 8-layer automotive sensor panel requiring 8,500 holes takes roughly 47 minutes on a single 60,000 RPM spindle. By deploying a dual-spindle or 3-spindle multi-spindle CNC station, two or three identical panels (or multi-panel stacks) are drilled concurrently in the exact same 47-minute window, effectively reducing the per-panel cycle time to under 16 minutes.","CyTOS Engineering in Pune developed the PCB12 series specifically to meet this demanding requirement for tier-1 automotive and industrial electronics suppliers across India. Designed with Factor of Safety 2.0, ground Meehanite cast iron gantry bridges, and dual synchronous drives, the PCB12 delivers industrial-scale throughput with unmatched micro-hole registration.","The primary engineering challenge in constructing a high-throughput drilling platform lies in spindle-to-spindle distance repeatability and dynamic mass management. As additional spindles, pneumatic pressure feet, and tool-change changers are added to the crossbeam, the moving mass of the gantry increases significantly.","CyTOS multi-spindle machines feature micrometer-adjustable or fixed-pitch precision ground spindle mounting saddles. Using calibrated optical alignment reticles, the center-to-center distance between Spindle 1 and Spindle 2 is calibrated within ±0.005mm (5µm). This ensures that Gerber coordinates sent by the CNC controller replicate identically across both work zones without positional offset drift."],faqs:[],toc:[{id:"introduction-multi-spindle-pcb-drilling",title:"The Industrial Case for a Multi-Spindle PCB Drilling Machine in EMS Manufacturing"},{id:"kinematics-of-multi-spindle-synchronization",title:"Spindle Synchronization and Gantry Dynamics"},{id:"single-vs-multi-spindle-comparison",title:"Throughput and Economic Comparison: Single-Spindle vs Multi-Spindle Machine"},{id:"workholding-pin-registration",title:"Workholding, Tooling Pins, and Sub-Panel Registration"},{id:"tool-breakage-and-cassette-management",title:"Synchronized Tool Changing and Laser Breakage Detection"},{id:"factory-roi-multi-spindle",title:"Commercial ROI Case Study: Tier-1 Automotive Electronics Supplier in Chakan, Pune"},{id:"quality-assurance-calibration-multi-spindle-p",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Multi-Spindle Pcb Drilling Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"multilayer-fr4-rogers-pcb-drilling",title:"Multilayer PCB Drilling Parameters: Optimizing Feeds for FR4, Rogers & MCPCB",metaDescription:"Optimize multilayer PCB drilling feeds, speeds, and peck cycles for FR4, Rogers 4350, and metal-core substrates. Eliminate resin smear and fiber pullout.",category:"Production",image:"/assets/images/blogs/multilayer-fr4-rogers-drilling-16x9.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"Multilayer PCB drilling requires tailoring spindle speeds (40,000 to 60,000 RPM), infeed rates, and retract cycles to the specific glass-transition temperature (Tg), resin chemistry, and filler content of the substrate. While standard multi-layer FR4 (Tg 140°C-170°C) drills cleanly at chip loads of 0.018-0.025 mm/rev, ceramic-filled hydrocarbon Rogers laminates (e.g. RO4350B) require lower surface velocities and 30% reduced infeed to prevent ceramic abrasive tool wear. Metal Core PCBs (MCPCB) demand specialized parabolic flute geometry and mist lubrication to clear gummy aluminum chips.",excerpt:"As electronic systems shrink in volume and increase in computational power, circuit board designs have transitioned from simple 2-layer layouts to dense 8-layer, 16-layer, and 32-layer multi-layer stacks. Performing multilayer pcb drilling is vastly more challenging than drilling single-sided boards: the drill bit must cleanly pierce through alternating layers of high-shear copper foil, abrasive E-glass cloth, cured epoxy resin, and specialized core dielectrics without generating thermal resin smear. When drilling a 16-layer board, frictional heat generated at the drill tip can easily spike above 200°C. If this temperature exceeds the glass transition temperature ($T_g$) of the prepreg matrix, the epoxy resin melts into a viscous liquid. As the drill flutes rotate, they wipe this melted resin across the exposed internal copper pad interfaces—a catastrophic defect known as dielectric smear. In subsequent chemical copper plating, this smear blocks electrical connectivity between the plated through-hole barrel and the internal circuit trace, leading to unrepairable board scrap.",paragraphs:["As electronic systems shrink in volume and increase in computational power, circuit board designs have transitioned from simple 2-layer layouts to dense 8-layer, 16-layer, and 32-layer multi-layer stacks. Performing multilayer pcb drilling is vastly more challenging than drilling single-sided boards: the drill bit must cleanly pierce through alternating layers of high-shear copper foil, abrasive E-glass cloth, cured epoxy resin, and specialized core dielectrics without generating thermal resin smear.","When drilling a 16-layer board, frictional heat generated at the drill tip can easily spike above 200°C. If this temperature exceeds the glass transition temperature ($T_g$) of the prepreg matrix, the epoxy resin melts into a viscous liquid. As the drill flutes rotate, they wipe this melted resin across the exposed internal copper pad interfaces—a catastrophic defect known as dielectric smear. In subsequent chemical copper plating, this smear blocks electrical connectivity between the plated through-hole barrel and the internal circuit trace, leading to unrepairable board scrap.","At CyTOS Engineering in Pune, our CNC applications laboratory has developed optimized cutting recipes for standard FR4, high-frequency Rogers laminates, and heavy-copper MCPCBs. This guide provides exact feeds, speeds, and tooling parameters to ensure flawless hole quality across every substrate family.","The cutting parameters below represent empirical production benchmarks established on CyTOS PCB60 drilling machines equipped with 60,000 RPM high-frequency spindles:","To eliminate dielectric resin smear and nail-heading (burring of internal copper planes), the cutting action must be sharp and rapid. When multilayer pcb drilling, observe the following rules:"],faqs:[],toc:[{id:"introduction-multilayer-drilling",title:"The Challenge of Multilayer PCB Drilling in Modern Electronics"},{id:"cutting-parameters-matrix",title:"Master Machining Matrix: Parameters for FR4, Rogers, and Metal Core PCBs"},{id:"preventing-resin-smear",title:"Preventing Resin Smear and Nail-Heading in Multilayer FR4"},{id:"rogers-rf-microwave-drilling",title:"Specific Considerations for Rogers RF and Microwave Substrates"},{id:"mcpcb-aluminum-drilling",title:"Metal Core PCB (MCPCB) Drilling Protocols"},{id:"quality-assurance-calibration-multilayer-fr4-",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Multilayer Pcb Drilling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"pcb-drilling-machine-guide",title:"PCB Drilling Machine: The Definitive 2026 High-Speed Industrial Selection Guide",metaDescription:"Comprehensive guide to selecting an industrial PCB drilling machine. Compare 60,000 RPM air-bearing vs mechanical spindles, TIR runout, and IPC-2221 tolerances.",category:"Production",image:"/assets/images/blogs/pcb-micro-drilling-featured.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A high-performance PCB drilling machine is a precision Computer Numerical Control (CNC) system engineered to execute burr-free micro-vias, through-holes, and blind/buried vias in rigid FR4, Rogers, polyimide, and metal-core PCBs (MCPCB). Operating at spindle speeds between 40,000 and 60,000 RPM with total dynamic runout (TIR) under 3µm, modern PCB drilling machines integrate pneumatic pressure feet, high-rigidity Meehanite cast iron beds, and precision optical linear encoders to achieve hole-positioning accuracy of ±10µm and aspect ratios up to 12:1 without drill wander or bit breakage.",excerpt:"Selecting the right pcb drilling machine represents one of the most critical capital expenditure decisions for electronics manufacturing service (EMS) providers, commercial board houses, and aerospace R&D laboratories. As surface mount component pitches shrink to 0.4mm BGA packages and multi-layer board layer counts reach 16 to 32 layers, conventional CNC routers and milling systems can no longer satisfy the stringent positional tolerances and drill-breakage constraints required for micro-via fabrication. Every commercial precision micro-drilling system must operate at the intersection of high angular velocity, ultra-low dynamic runout, and rapid Z-axis acceleration. A standard circuit board panel may require between 15,000 and 45,000 individual hole penetrations, ranging from 0.15mm micro-vias up to 3.2mm mounting holes. At an average production volume of 200 panels per 8-hour shift, any machine deficiency in plunge velocity, backing sheet clamping, or spindle thermal drift cascades into catastrophic tool breakage, hole misregistration, and scrap costs.",paragraphs:["Selecting the right pcb drilling machine represents one of the most critical capital expenditure decisions for electronics manufacturing service (EMS) providers, commercial board houses, and aerospace R&D laboratories. As surface mount component pitches shrink to 0.4mm BGA packages and multi-layer board layer counts reach 16 to 32 layers, conventional CNC routers and milling systems can no longer satisfy the stringent positional tolerances and drill-breakage constraints required for micro-via fabrication.","Every commercial precision micro-drilling system must operate at the intersection of high angular velocity, ultra-low dynamic runout, and rapid Z-axis acceleration. A standard circuit board panel may require between 15,000 and 45,000 individual hole penetrations, ranging from 0.15mm micro-vias up to 3.2mm mounting holes. At an average production volume of 200 panels per 8-hour shift, any machine deficiency in plunge velocity, backing sheet clamping, or spindle thermal drift cascades into catastrophic tool breakage, hole misregistration, and scrap costs.","At CyTOS Engineering in Pune, Maharashtra, our machine tool design group has engineered the PCB30, PCB60, and multi-spindle PCB12 series around a foundational standard: Factor of Safety 2.0 and 24x7 Rated Continuous Duty. This comprehensive guide details the structural dynamics, spindle engineering, motion kinematics, and economic calculations that differentiate an entry-level CNC router from an industrial-grade spindle drilling center designed for zero-defect yield.","Unlike light-duty hobby routers or repurposed wood engraving tables, an authentic industrial micro-drilling equipment requires a massive vibration-damping frame, high-resolution closed-loop servos, and specialized vacuum-assisted hold-down mechanisms. When drilling with 0.2mm solid tungsten carbide drill bits, even a 4µm lateral deflection of the gantry during plunge will instantly snap the tool flute.","Dynamic structural stiffness is non-negotiable. CyTOS automated circuit board drilling centers incorporate stress-relieved Meehanite Grade 250 cast iron or Grade 00 precision granite bases. Cast iron possesses up to ten times the internal vibration-damping coefficient of fabricated steel weldments, eliminating harmonic resonance frequencies generated when the spindle hits 60,000 RPM."],faqs:[],toc:[{id:"introduction-pcb-drilling-machine",title:"Introduction: Why Modern PCB Fabrication Demands a Dedicated PCB Drilling Machine"},{id:"key-architectural-pillars",title:"Core Architecture of an Industrial PCB Drilling Machine"},{id:"technical-comparison-table",title:"Technical Benchmark: PCB Drilling Machine Specifications vs General CNC Routers"},{id:"drilling-parameters-and-formulas",title:"Optimal Feeds, Speeds, and Cutting Formulas for PCB Micro-Drilling"},{id:"ipc-standards-and-quality-assurance",title:"Adhering to IPC-2221 and IPC-A-600 Hole Quality Standards"},{id:"roi-and-cycle-time-calculation",title:"Factory Financial ROI: Calculating Capital Payback for a Production PCB Drilling Machine"},{id:"quality-assurance-calibration-pcb-drilling-ma",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Drilling Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"pcb-drilling-tool-breakage-prevention",title:"PCB Drilling Tool Breakage: 7 Proven Engineering Rules to Eliminate Bit Snapping at 60,000 RPM",metaDescription:"Eliminate PCB drilling tool breakage at 60,000 RPM. Master dynamic TIR runout, pressure foot clamping, and optimal entry sheets for zero bit snapping.",category:"Production",image:"/assets/images/blogs/micro-drill-bit-breakage-prevention.jpg",readTime:"12 min read",date:"2026-03-20",aeoAnswer:"Preventing PCB drilling tool breakage when operating micro-drills below 0.35mm at 60,000 RPM requires maintaining total indicated runout (TIR) under 3µm, establishing precise pneumatic pressure foot clamping (minimum 0.05 bar local downforce) before the drill tip contacts the entry foil, optimizing chip load between 0.012 and 0.022 mm/rev, and utilizing high-velocity vacuum swarf extraction to clear glass-fiber dust. Eliminating mechanical vibration through Meehanite cast iron machine beds and replacing worn collets every 500 operating hours prevents bending moment fractures.",excerpt:"For PCB production managers and CNC machine operators, nothing disrupts daily output and profit margins faster than premature pcb drilling tool breakage. When drilling thousands of 0.2mm to 0.4mm micro-vias, a broken drill bit embedded inside a multi-layer board stack ruins the entire batch, damages expensive internal copper layers, and risks shattering adjacent tooling. Solid tungsten carbide micro-drills are metallurgical marvels: possessing extreme hardness (Rockwell C 92-94) and immense compressive strength, they can cleanly shear abrasive woven E-glass fibers and copper foil for thousands of cycles. However, their ultra-fine web thickness and high hardness make them exceptionally brittle under tensile and bending shear stresses. Even a microscopic 4µm lateral whip at 60,000 RPM induces cyclic fatigue that snaps the tool shank instantly.",paragraphs:["For PCB production managers and CNC machine operators, nothing disrupts daily output and profit margins faster than premature pcb drilling tool breakage. When drilling thousands of 0.2mm to 0.4mm micro-vias, a broken drill bit embedded inside a multi-layer board stack ruins the entire batch, damages expensive internal copper layers, and risks shattering adjacent tooling.","Solid tungsten carbide micro-drills are metallurgical marvels: possessing extreme hardness (Rockwell C 92-94) and immense compressive strength, they can cleanly shear abrasive woven E-glass fibers and copper foil for thousands of cycles. However, their ultra-fine web thickness and high hardness make them exceptionally brittle under tensile and bending shear stresses. Even a microscopic 4µm lateral whip at 60,000 RPM induces cyclic fatigue that snaps the tool shank instantly.","Based on over seven years of machine tool manufacturing and application engineering at CyTOS in Pune, we have codified the 7 golden rules of eliminating micro-tool fracture across industrial production lines.","Dynamic runout is the primary killer of micro-drills. If the collet, tool taper, or spindle bearing exhibits total indicated runout (TIR) exceeding 0.003mm, the cutting flutes experience asymmetric radial cutting forces. One flute takes 80% of the chip load while the other rubs, creating cyclic bending moments that snap bits under 0.3mm within 50 strokes. Check collet runout weekly using a 3.175mm precision ground test pin and calibrated dial indicator.","The pneumatic pressure foot must clamp the entry foil and board stack firmly against the vacuum table before the drill bit tip breaks the surface plane. If the Z-axis plunges while the board retains any microscopic air gap or spring-back bow, the drill bit enters an unsupported, vibrating sheet. The resulting vibration induces lateral deflection that fractures the carbide web. Set controller pressure foot advance lead to at least 40 milliseconds."],faqs:[],toc:[{id:"introduction-tool-breakage",title:"Introduction: Engineering Standards for a Pcb Drilling Tool Breakage"},{id:"seven-golden-rules",title:"The 7 Golden Rules for Eliminating PCB Micro-Drill Breakage"},{id:"troubleshooting-breakage-modes",title:"Diagnostic Matrix: Identifying Breakage Modes Under the Microscope"},{id:"machine-design-features-cytos",title:"Machine Design Mitigations Engineered into CyTOS PCB Drilling Centers"},{id:"quality-assurance-calibration-pcb-drilling-to",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Drilling Tool Breakage"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"plc-control-panel-automation-spm-safety",title:"PLC Control Panel SPM Automation: Integrating Siemens & Delta Systems with Safety Interlocks",metaDescription:"Design high-reliability PLC control panel SPM automation systems. Master Siemens S7-1200 architectures, Category 4 safety circuits, and CE compliance.",category:"Production",image:"/assets/images/blogs/plc-control-panel-automation.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A PLC control panel for SPM automation is an engineered industrial enclosure that houses programmable logic controllers (PLCs), variable frequency drives (VFDs), servo drives, power supplies, and Category 4 safety relays to coordinate all sensors, actuators, and motors on a custom machine tool. By standardizing on Siemens S7-1200 or Delta PLC platforms, integrating dual-channel safety interlocks, and separating high-voltage 415V power distribution from 24V DC logic wiring, custom PLC control panels guarantee 24x7 operating uptime, complete operator protection, and Industry 4.0 data connectivity.",excerpt:"No matter how flawlessly an automated machine tool is fabricated from structural steel and precision bearings, its operational intelligence, cycle speed, and operator safety depend entirely on its electrical brain: the plc control panel spm automation enclosure. In harsh factory environments characterized by electromagnetic noise, voltage surges, ambient humidity, and airborne metallic dust, an electrical panel must deliver uncompromising 24x7 reliability. Poorly engineered control panels—plagued by messy wiring, unshielded sensor cables, inadequate thermal ventilation, and substandard safety loops—are the leading cause of intermittent machine lockups, mysterious sensor faults, and catastrophic safety failures. Conversely, an industrial-grade control panel built to international electrical standards (IEC 60204-1 and UL 508A) ensures decades of continuous production with zero uncommanded machine movements.",paragraphs:["No matter how flawlessly an automated machine tool is fabricated from structural steel and precision bearings, its operational intelligence, cycle speed, and operator safety depend entirely on its electrical brain: the plc control panel spm automation enclosure. In harsh factory environments characterized by electromagnetic noise, voltage surges, ambient humidity, and airborne metallic dust, an electrical panel must deliver uncompromising 24x7 reliability.","Poorly engineered control panels—plagued by messy wiring, unshielded sensor cables, inadequate thermal ventilation, and substandard safety loops—are the leading cause of intermittent machine lockups, mysterious sensor faults, and catastrophic safety failures. Conversely, an industrial-grade control panel built to international electrical standards (IEC 60204-1 and UL 508A) ensures decades of continuous production with zero uncommanded machine movements.","At CyTOS Engineering in Pune, we manufacture turnkey control panels for all our CNC systems and custom special purpose machines. This guide breaks down the engineering principles behind panel layout, noise suppression, Siemens vs Delta PLC architecture, and Category 4 safety design.","The primary rule of robust plc control panel spm automation design is physical segregation between high-voltage AC power lines and low-voltage DC logic signals. High-current motor cables switching at high frequencies (PWM switching in servo drives and VFDs) emit intense electromagnetic interference (EMI) that can corrupt micro-volt analog sensor signals.","CyTOS offers turnkey panel architectures tailored to our clients' corporate automation standards:"],faqs:[],toc:[{id:"introduction-plc-control-panels",title:"Introduction: Engineering Standards for a Plc Control Panel Spm Automation"},{id:"panel-layout-emi-suppression",title:"Panel Layout Philosophy: Physical Segregation and Noise Suppression"},{id:"siemens-vs-delta-comparison",title:"Controller Platform Comparison: Siemens S7-1200 vs Delta Industrial Systems"},{id:"category-4-safety-architecture",title:"Category 4 Safety Architecture and Poka-Yoke Interlocking"},{id:"quality-assurance-calibration-plc-control-pan",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsPanel Spm Automation"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"pneumatic-welding-fixtures-spm-design",title:"Pneumatic Welding Fixtures SPM: Engineering 90° Rotary Indexing Jigs for Robotics",metaDescription:"Engineer high-durability pneumatic welding fixtures SPM systems for robotic welding cells. Learn 90° rotary indexing, spatter shielding, and cycle optimization.",category:"Production",image:"/assets/images/blogs/pneumatic-welding-fixtures-16x9.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"Pneumatic welding fixtures for special purpose machines (SPM) are heavy-duty, pneumatically clamped workholding jigs engineered to hold complex sheet metal and tubular automotive assemblies in precise spatial alignment during manual MIG/TIG or robotic arc welding. Featuring 90° or 180° rotary indexing positioners, copper-chromium (CuCrZr) spatter shields, pneumatic toggle clamps with sensor feedback, and hardened locating pins, custom pneumatic welding fixtures eliminate thermal welding distortion, hold sub-millimeter tolerances, and reduce cycle times by over 50%.",excerpt:"In high-speed automotive and heavy-fabrication production lines, robotic arc welding arms move with blistering speed and repeatability. However, a welding robot is only as accurate as the workholding jig that presents the parts to its torch. If a tubular sub-frame or chassis bracket moves by even 0.8mm due to weld thermal expansion or insufficient clamping pressure, the weld seam wanders off-joint, causing cold laps, burn-through, and structural failure. This is why automated production lines rely on high-precision pneumatic welding fixtures spm. Traditional manual clamping fixtures using mechanical toggle clamps or screw vises are slow, ergonomically fatiguing for operators, and prone to inconsistent clamping force. A modern pneumatic welding fixtures spm integrates pneumatic power clamps that lock dozens of clamps simultaneously with exact, calibrated force at the push of a dual-palm button, slashing load/unload cycle times from minutes down to seconds.",paragraphs:["In high-speed automotive and heavy-fabrication production lines, robotic arc welding arms move with blistering speed and repeatability. However, a welding robot is only as accurate as the workholding jig that presents the parts to its torch. If a tubular sub-frame or chassis bracket moves by even 0.8mm due to weld thermal expansion or insufficient clamping pressure, the weld seam wanders off-joint, causing cold laps, burn-through, and structural failure. This is why automated production lines rely on high-precision pneumatic welding fixtures spm.","Traditional manual clamping fixtures using mechanical toggle clamps or screw vises are slow, ergonomically fatiguing for operators, and prone to inconsistent clamping force. A modern pneumatic welding fixtures spm integrates pneumatic power clamps that lock dozens of clamps simultaneously with exact, calibrated force at the push of a dual-palm button, slashing load/unload cycle times from minutes down to seconds.","At CyTOS Engineering in Pune, we design and manufacture custom pneumatic welding fixtures and 90°/180° indexing jigs engineered with Factor of Safety 2.0. This guide details the metallurgy, clamp sequence logic, and spatter shielding required to build indestructible fixtures that survive millions of welding cycles.","Welding environments subject fixtures to intense radiant heat, extreme thermal shock, and molten steel spatter droplets ejected at velocities over 20 m/s. Constructing durable pneumatic welding fixtures spm requires specialized material selection:","Areas in close proximity to the weld seam (within 50mm of the torch arc) are fitted with CuCrZr alloy or pure electrolytic copper inserts. Copper's exceptional thermal conductivity rapidly cools molten spatter before it can fuse to the surface. Spatter droplets simply wipe away with a light brush without adhering."],faqs:[],toc:[{id:"introduction-welding-fixtures",title:"Introduction: Engineering Standards for a Pneumatic Welding Fixtures Spm"},{id:"metallurgy-spatter-shielding",title:"Materials and Metallurgy: Resisting 1,400°C Weld Heat and Spatter"},{id:"rotary-indexing-kinematics",title:"90° and 180° Rotary Indexing Architecture"},{id:"pneumatic-sequencing-safety",title:"Pneumatic Sequencing, Clamp Sensors, and Safety Interlocks"},{id:"quality-assurance-calibration-pneumatic-weldi",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsWelding Fixtures Spm"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"robotic-adhesive-dispensing-spm-systems",title:"Robotic Adhesive Dispensing SPM: Achieving Repeatable 0.05ml Bead Accuracy",metaDescription:"Master robotic adhesive dispensing SPM engineering. Learn 3-axis volumetric micro-dispensing, automated vision bead tracking, and cycle time optimization.",category:"Production",image:"/assets/images/blogs/robotic-dispensing-spm-featured.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A robotic adhesive dispensing SPM is a specialized 3-axis or 6-axis automated machine tool engineered to apply precise, repeatable beads of single-component (1K) or two-component (2K) adhesives, sealants, silicones, and thermal potting resins onto automotive and electronic assemblies. Utilizing positive displacement progressive cavity pumps, high-speed closed-loop Cartesian gantries, and automated vision inspection systems, robotic adhesive dispensing SPMs achieve volumetric bead accuracy down to ±0.05ml, eliminate adhesive waste, and reduce dispensing cycle times by up to 65%.",excerpt:"In precision manufacturing, implementing a high-performance robotic adhesive dispensing spm is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In the assembly of automotive headlamps, electric vehicle (EV) battery packs, electronic control unit (ECU) enclosures, and aerospace sensor housings, structural adhesives and fluid sealants perform mission-critical sealing and bonding functions. However, manual application using hand-held pneumatic dispensing guns is plagued by severe quality defects: uneven bead widths, start/stop stringing, air pockets, and excessive sealant overflow that requires costly manual clean-up. A dedicated robotic adhesive dispensing spm replaces manual inconsistency with sub-millimeter Cartesian motion and precision volumetric metering. Whether applying room-temperature vulcanizing (RTV) silicone, polyurethane structural adhesives, or 2-part epoxies, an automated dispensing cell tracks complex 3D contour paths at linear speeds up to 500 mm/s while maintaining an unbroken, uniform bead cross-section.",paragraphs:["In precision manufacturing, implementing a high-performance robotic adhesive dispensing spm is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In the assembly of automotive headlamps, electric vehicle (EV) battery packs, electronic control unit (ECU) enclosures, and aerospace sensor housings, structural adhesives and fluid sealants perform mission-critical sealing and bonding functions. However, manual application using hand-held pneumatic dispensing guns is plagued by severe quality defects: uneven bead widths, start/stop stringing, air pockets, and excessive sealant overflow that requires costly manual clean-up.","A dedicated robotic adhesive dispensing spm replaces manual inconsistency with sub-millimeter Cartesian motion and precision volumetric metering. Whether applying room-temperature vulcanizing (RTV) silicone, polyurethane structural adhesives, or 2-part epoxies, an automated dispensing cell tracks complex 3D contour paths at linear speeds up to 500 mm/s while maintaining an unbroken, uniform bead cross-section.","At CyTOS Engineering in Pune, we manufacture custom robotic dispensing cells engineered with Factor of Safety 2.0. This guide details the pump technologies, motion control synchronization, and vision inspection systems required to achieve zero-defect fluid application.","The core of any robotic sealant application units is the fluid metering system. Choosing the correct dispensing pump dictates whether bead volume remains consistent under fluctuating shop ambient temperatures:","CyTOS dispensing cells integrate continuous volumetric progressive cavity pumps. A precision ground stainless steel eccentric rotor turns inside a compliant elastomer stator, creating moving sealed chambers that deliver an exact volume of fluid per degree of motor rotation. Flow rate is 100% independent of adhesive viscosity fluctuations, air bubbles, or container pressure changes, holding volumetric dispensing tolerance within ±1%."],faqs:[],toc:[{id:"introduction-robotic-dispensing",title:"Introduction: Engineering Standards for a Robotic Adhesive Dispensing Spm"},{id:"volumetric-pump-technologies",title:"Fluid Metering: Time-Pressure vs Progressive Cavity Pumps"},{id:"motion-fluid-synchronization",title:"Velocity-Proportional Dispensing: Synchronizing Robot Speed with Pump RPM"},{id:"quality-assurance-calibration-robotic-adhesiv",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsAdhesive Dispensing Spm"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"special-purpose-machines-spm-guide",title:"Special Purpose Machines (SPM): How Custom Industrial Automation Cuts Cycle Time 60%",metaDescription:"Discover how custom special purpose machines (SPM) engineered in Pune slash manufacturing cycle time by 60%, integrate robotics, and eliminate manual assembly bottlenecks.",category:"Production",image:"/assets/images/blogs/spm-welding-automation-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"Special purpose machines (SPM) are custom-engineered, single-purpose automated production systems designed to perform dedicated manufacturing, assembly, inspection, or machining operations that cannot be handled efficiently by standard general-purpose machine tools. By integrating multi-station rotary indexing tables, synchronized pneumatic/hydraulic clamping fixtures, Cartesian or articulated robotics, and Siemens/Delta PLC control architectures, custom special purpose machines reduce cycle times by 40% to 70%, achieve micron-level repeatability, and eliminate manual operator error in high-volume automotive and industrial production lines.",excerpt:"In modern industrial manufacturing—particularly across the automotive, electrical switchgear, defense, and white-goods sectors—standard catalog machine tools frequently hit an efficiency ceiling. While general-purpose CNC machining centers and standard drill presses offer programming flexibility, their generic architecture requires extensive manual loading, awkward multi-step part re-clamping, and long non-cutting tool changes that drag down plant productivity. This is why forward-thinking manufacturing leaders invest in special purpose machines (SPM). A custom special purpose machine is designed around the exact geometry, cycle-time target, and quality parameters of a single specific component or sub-assembly. By combining multiple operations—such as multi-angle drilling, automated pressing, sealant dispensing, robotic pick-and-place, and in-line vision inspection—into a single compact station, an SPM eliminates intermediate part handling and slashes manufacturing cycle time by 40% to 70%.",paragraphs:["In modern industrial manufacturing—particularly across the automotive, electrical switchgear, defense, and white-goods sectors—standard catalog machine tools frequently hit an efficiency ceiling. While general-purpose CNC machining centers and standard drill presses offer programming flexibility, their generic architecture requires extensive manual loading, awkward multi-step part re-clamping, and long non-cutting tool changes that drag down plant productivity. This is why forward-thinking manufacturing leaders invest in special purpose machines (SPM).","A custom special purpose machine is designed around the exact geometry, cycle-time target, and quality parameters of a single specific component or sub-assembly. By combining multiple operations—such as multi-angle drilling, automated pressing, sealant dispensing, robotic pick-and-place, and in-line vision inspection—into a single compact station, an SPM eliminates intermediate part handling and slashes manufacturing cycle time by 40% to 70%.","At CyTOS Engineering in Pune, Maharashtra, we specialize in turnkey special purpose machines engineered to our foundational benchmark: Factor of Safety 2.0 and 24x7 Continuous Duty Rating. From pneumatic robotic welding jigs to 4-axis adhesive dispensing cells, our machines are designed from the ground up to solve complex shop-floor bottlenecks across India's premier industrial hubs.","To evaluate whether an automation challenge requires a standard CNC or a customized special purpose machine, examine the core differences summarized below:","Every industrial special purpose machine designed by CyTOS incorporates modular, heavy-duty sub-systems configured for maximum reliability under 24x7 continuous duty:"],faqs:[],toc:[{id:"introduction-spm-machines",title:"Introduction: Why High-Volume Manufacturing Requires Special Purpose Machines (SPM)"},{id:"general-cnc-vs-spm",title:"General Purpose Machine Tools vs Dedicated Special Purpose Machines: Key Differences"},{id:"core-architectural-modules",title:"Core Engineering Modules of an Industrial SPM"},{id:"plc-control-and-industry-4",title:"PLC Architecture, Safety Interlocks, and Industry 4.0 Telemetry"},{id:"pune-case-study-cycle-reduction",title:"Shop-Floor Case Study: Slashing Automotive Assembly Cycle Time from 120s to 32s"},{id:"quality-assurance-calibration-special-purpose",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsPurpose Machines"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"vertical-drilling-and-milling-machine-guide",title:"Vertical Drilling and Milling Machine: High-Throughput Multi-Spindle Solutions for Enclosures",metaDescription:"Boost electrical switchboard throughput with a vertical drilling and milling machine. Eliminate sheet handling bottlenecks and cut cycle time by 68%.",category:"Production",image:"/assets/images/blogs/vdm-switchboard-milling-featured.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A vertical drilling and milling machine (VDM) is a heavy-duty industrial CNC gantry center engineered specifically for the electrical switchboard, automation enclosure, and power distribution manufacturing sectors. Equipped with synchronized dual or triple BT30/BT40 spindles, precision ball-screw drives, and an expansive work envelope (up to 3.0m x 1.5m), a vertical drilling and milling machine executes meter cutouts, door hinge pockets, and pushbutton hole grids in a single automated setup, cutting enclosure fabrication cycle times by over 68%.",excerpt:"In precision manufacturing, implementing a high-performance vertical drilling and milling machine is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. Electrical control panel builders and switchgear OEMs (such as manufacturers producing Motor Control Centers - MCC, Power Control Centers - PCC, and distribution boards) face severe fabrication challenges. A standard 2.0-meter floor-standing enclosure door requires dozens of circular pushbutton holes, rectangular digital meter windows, rectangular gland plate openings, and perimeter hinge screw holes. Fabricating these on manual turret punch presses or drill presses requires repeated sheet repositioning, costly custom tooling dies, and extensive manual deburring. A specialized VDM machining center (VDM) solves this entire problem in a single integrated CNC workstation. The operator clamps the full-size enclosure sheet onto the vacuum table, loads the DXF drawing into the controller, and the machine executes all drilling, circular pocketing, and rectangular aperture milling in a single automated cycle.",paragraphs:["In precision manufacturing, implementing a high-performance vertical drilling and milling machine is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. Electrical control panel builders and switchgear OEMs (such as manufacturers producing Motor Control Centers - MCC, Power Control Centers - PCC, and distribution boards) face severe fabrication challenges. A standard 2.0-meter floor-standing enclosure door requires dozens of circular pushbutton holes, rectangular digital meter windows, rectangular gland plate openings, and perimeter hinge screw holes. Fabricating these on manual turret punch presses or drill presses requires repeated sheet repositioning, costly custom tooling dies, and extensive manual deburring.","A specialized VDM machining center (VDM) solves this entire problem in a single integrated CNC workstation. The operator clamps the full-size enclosure sheet onto the vacuum table, loads the DXF drawing into the controller, and the machine executes all drilling, circular pocketing, and rectangular aperture milling in a single automated cycle.","At CyTOS Engineering in Pune, our VDM series is purpose-built for the electrical panel industry with Factor of Safety 2.0 and heavy cast iron beds. This guide explains how electrical OEMs achieve 3x throughput expansion by deploying VDM technology on their shop floors.","To quantify the commercial payback of a dedicated heavy-duty gantry milling unit, examine the production comparison below for a standard batch of 20 switchboard enclosure doors (each containing 32 holes and 2 meter cutouts):","Milling thin sheet steel (1.2mm to 2.5mm CRCA mild steel) presents a notorious vibration problem: when a rotating end mill bites into an unsupported sheet, the metal resonates like a drum, creating terrifying chatter, jagged burrs, and rapid tool chipping."],faqs:[],toc:[{id:"introduction-vdm-switchboards",title:"Introduction: Engineering Standards for a Vertical Drilling And Milling Machine"},{id:"single-vs-multi-spindle-vdm",title:"Throughput Benchmark: Single-Spindle VMC vs CyTOS Multi-Spindle VDM"},{id:"workholding-thin-sheet-damping",title:"Solving Sheet Metal Vibration: Vacuum Damping & Clean Edge Finishes"},{id:"quality-assurance-calibration-vertical-drilli",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsDrilling And Milling Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]}],ie=T.lazy(()=>be(()=>import("./BlogPostPage-DI7AfcLw.js"),__vite__mapDeps([0,1])));function yr(){return e.jsxs("div",{style:{minHeight:"60vh",display:"flex",alignItems:"center",justifyContent:"center"},children:[e.jsx("div",{style:{width:"40px",height:"40px",border:"3px solid #e2e8f0",borderTopColor:"#0a369d",borderRadius:"50%",animation:"spin 0.8s linear infinite"}}),e.jsx("style",{children:"@keyframes spin { to { transform: rotate(360deg); } }"})]})}function fr(){return e.jsxs(T.Suspense,{fallback:e.jsx(yr,{}),children:[e.jsxs(ce,{children:[e.jsx(v,{path:"/",element:e.jsx(Ne,{})}),e.jsx(v,{path:"/about",element:e.jsx(ze,{})}),e.jsx(v,{path:"/applications",element:e.jsx(We,{})}),e.jsx(v,{path:"/case-studies",element:e.jsx(Ve,{})}),e.jsx(v,{path:"/cnc-routers-milling",element:e.jsx(_e,{})}),e.jsx(v,{path:"/contact",element:e.jsx(Ze,{})}),e.jsx(v,{path:"/pcb-drilling-routing",element:e.jsx(Ke,{})}),e.jsx(v,{path:"/pcb-prototyping",element:e.jsx(Je,{})}),e.jsx(v,{path:"/plc-control-panels",element:e.jsx(er,{})}),e.jsx(v,{path:"/pneumatic-welding-fixtures",element:e.jsx(ir,{})}),e.jsx(v,{path:"/privacy-policy",element:e.jsx(ar,{})}),e.jsx(v,{path:"/robotic-dispensing-cells",element:e.jsx(sr,{})}),e.jsx(v,{path:"/spm-automation",element:e.jsx(lr,{})}),e.jsx(v,{path:"/terms-conditions",element:e.jsx(dr,{})}),e.jsx(v,{path:"/vdm-milling",element:e.jsx(ur,{})}),e.jsx(v,{path:"/blog",element:e.jsx(gr,{})}),e.jsx(v,{path:"/blog/:slug",element:e.jsx(ie,{})}),e.jsx(v,{path:"/blog/:slug.html",element:e.jsx(ie,{})}),vr.map(r=>e.jsxs(ne.Fragment,{children:[e.jsx(v,{path:`/${r.slug}`,element:e.jsx(w,{to:`/blog/${r.slug}`,replace:!0})}),e.jsx(v,{path:`/${r.slug}.html`,element:e.jsx(w,{to:`/blog/${r.slug}`,replace:!0})})]},r.slug)),e.jsx(v,{path:"/index.html",element:e.jsx(w,{to:"/",replace:!0})}),e.jsx(v,{path:"/about.html",element:e.jsx(w,{to:"/about",replace:!0})}),e.jsx(v,{path:"/applications.html",element:e.jsx(w,{to:"/applications",replace:!0})}),e.jsx(v,{path:"/case-studies.html",element:e.jsx(w,{to:"/case-studies",replace:!0})}),e.jsx(v,{path:"/cnc-routers-milling.html",element:e.jsx(w,{to:"/cnc-routers-milling",replace:!0})}),e.jsx(v,{path:"/contact.html",element:e.jsx(w,{to:"/contact",replace:!0})}),e.jsx(v,{path:"/pcb-drilling-routing.html",element:e.jsx(w,{to:"/pcb-drilling-routing",replace:!0})}),e.jsx(v,{path:"/pcb-prototyping.html",element:e.jsx(w,{to:"/pcb-prototyping",replace:!0})}),e.jsx(v,{path:"/plc-control-panels.html",element:e.jsx(w,{to:"/plc-control-panels",replace:!0})}),e.jsx(v,{path:"/pneumatic-welding-fixtures.html",element:e.jsx(w,{to:"/pneumatic-welding-fixtures",replace:!0})}),e.jsx(v,{path:"/privacy-policy.html",element:e.jsx(w,{to:"/privacy-policy",replace:!0})}),e.jsx(v,{path:"/robotic-dispensing-cells.html",element:e.jsx(w,{to:"/robotic-dispensing-cells",replace:!0})}),e.jsx(v,{path:"/spm-automation.html",element:e.jsx(w,{to:"/spm-automation",replace:!0})}),e.jsx(v,{path:"/terms-conditions.html",element:e.jsx(w,{to:"/terms-conditions",replace:!0})}),e.jsx(v,{path:"/vdm-milling.html",element:e.jsx(w,{to:"/vdm-milling",replace:!0})}),e.jsx(v,{path:"/blog.html",element:e.jsx(w,{to:"/blog",replace:!0})}),e.jsx(v,{path:"*",element:e.jsx(w,{to:"/",replace:!0})})]}),e.jsx(hr,{})]})}N.createRoot(document.getElementById("root")).render(e.jsx(ne.StrictMode,{children:e.jsx(de,{children:e.jsx(fr,{})})}));export{k as H,e as j};
+Rigidity Ratio = (44.45)^4 / (31.75)^4 = 3,903,962 / 1,016,162 ≈ 3.84.`],faqs:[],toc:[{id:"introduction-bt30-vs-bt40",title:"Introduction: Engineering Standards for a Bt30 Vs Bt40 Cnc Drilling And Milling"},{id:"taper-geometry-rigidity",title:"Taper Geometry and Bending Stiffness: The Mathematical Comparison"},{id:"technical-comparison-matrix",title:"Engineering Comparison: BT30 vs BT40 Spindle Specifications"},{id:"quality-assurance-calibration-bt30-vs-bt40-cn",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsBt40 Cnc Drilling And Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"chemical-free-pcb-rapid-prototyping-machine",title:"PCB Rapid Prototyping Machine: In-House Chemical-Free Milling in Under 40 Minutes",metaDescription:"Discover how a chemical-free PCB rapid prototyping machine turns Gerber files into working double-sided boards in under 40 minutes with zero acid etchants.",category:"Production",image:"/assets/images/blogs/pcb-rapid-prototyping-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A PCB rapid prototyping machine is a specialized CNC isolation milling system engineered for electronics R&D laboratories, academic engineering institutions, and defense research organizations to fabricate single-sided, double-sided, and multi-layer prototype circuit boards in under 40 minutes without toxic etching chemicals. Utilizing 60,000 RPM high-precision spindles, auto-surface height mapping (Z-leveling down to 2µm accuracy), and micro-conical isolation engraving bits, modern PCB rapid prototyping machines mill 0.1mm trace widths and clearances directly from standard Gerber RS-274X files.",excerpt:"In modern electronics hardware engineering, time-to-market and Intellectual Property (IP) security dictate commercial survival. Product development teams designing IoT edge devices, automotive engine control modules, electric vehicle (EV) battery management systems, and defense avionics cannot afford to wait 10 to 18 days every time a schematic revision or circuit tweak requires an updated prototype board. Deploying an in-house pcb rapid prototyping machine fundamentally transforms this workflow, slashing the turnaround cycle from two weeks down to just 40 minutes. Historically, in-house circuit prototyping was synonymous with messy, hazardous wet-chemical etching baths using ferric chloride or ammonium persulfate. These toxic chemicals produce dangerous acid fumes, require specialized ventilation and disposal protocols, and invariably undercut fine copper traces below 0.3mm due to isotropic chemical etching. A modern rapid prototyping mill eliminates all chemical acids completely, replacing hazardous baths with high-speed, mechanical isolation milling operating under automated dust-extraction vacuums.",paragraphs:["In modern electronics hardware engineering, time-to-market and Intellectual Property (IP) security dictate commercial survival. Product development teams designing IoT edge devices, automotive engine control modules, electric vehicle (EV) battery management systems, and defense avionics cannot afford to wait 10 to 18 days every time a schematic revision or circuit tweak requires an updated prototype board. Deploying an in-house pcb rapid prototyping machine fundamentally transforms this workflow, slashing the turnaround cycle from two weeks down to just 40 minutes.","Historically, in-house circuit prototyping was synonymous with messy, hazardous wet-chemical etching baths using ferric chloride or ammonium persulfate. These toxic chemicals produce dangerous acid fumes, require specialized ventilation and disposal protocols, and invariably undercut fine copper traces below 0.3mm due to isotropic chemical etching. A modern rapid prototyping mill eliminates all chemical acids completely, replacing hazardous baths with high-speed, mechanical isolation milling operating under automated dust-extraction vacuums.","At CyTOS Engineering in Pune, we have pioneered the PCBE3020 and PCB30 systems to deliver laboratory-grade cleanroom fabrication directly onto an engineer's workbench. Engineered with Factor of Safety 2.0 and micron-level surface height mapping, these machines empower Indian hardware teams to innovate faster, protect confidential Gerber designs, and slash physical validation costs.","To understand the profound operational benefits of an in-house benchtop PCB fabrication unit, consider the technical comparison below between legacy wet etching and dry CNC isolation milling:","The single greatest technical obstacle in mechanical PCB isolation milling is copper foil thickness and board warpage. Standard 1oz copper clad laminate has a copper thickness of exactly 35µm (0.035mm). Even a brand-new FR4 sheet exhibits natural surface bowing and thickness variations between 0.10mm and 0.25mm across a 200mm span. If a milling tool penetrates at a fixed Z-depth, it will cut too deep in high spots (destroying narrow 0.15mm traces) and miss the copper entirely in low spots (leaving electrical short-circuits)."],faqs:[],toc:[{id:"introduction-pcb-rapid-prototyping",title:"Introduction: Why Modern Hardware R&D Demands an In-House PCB Rapid Prototyping Machine"},{id:"chemical-etching-vs-mechanical-milling",title:"Wet-Chemical Etching vs Mechanical Isolation Milling: Technical Comparison"},{id:"auto-leveling-technology",title:"The Physics of Auto-Surface Leveling: Guaranteeing 0.1mm Trace Isolation"},{id:"double-sided-alignment-workflow",title:"Double-Sided PCB Prototyping: Precision Top-to-Bottom Layer Registration"},{id:"software-workflow-gerber-to-gcode",title:"Software Workflow: From CAD Gerber RS-274X to Finished Board in 4 Simple Steps"},{id:"financial-roi-rd-lab",title:"Financial ROI for Engineering Teams and Corporate R&D Departments"},{id:"quality-assurance-calibration-chemical-free-p",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Rapid Prototyping Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"cnc-drilling-and-milling-machine-guide",title:"CNC Drilling and Milling: High-Rigidity Vertical Machining for Electrical Panels",metaDescription:"Definitive guide to CNC drilling and milling machines for electrical switchboards and heavy plate fabrication. Compare multi-spindle throughput, BT30 vs BT40, and VDM beds.",category:"Production",image:"/assets/images/blogs/cnc-milling-heavy-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A CNC drilling and milling machine is a high-rigidity machine tool engineered to perform precision multi-hole pattern drilling, thread tapping, and contour milling across large metallic workpieces such as electrical switchgear enclosure doors, busbars, and steel plates. Utilizing high-torque BT30 or BT40 spindles, ground Meehanite cast iron beds, and multi-spindle synchronized gantry heads, modern CNC drilling and milling centers eliminate manual layout and drill-press operations, reducing cycle times by 60% while holding positional tolerances under ±0.020mm.",excerpt:"In modern industrial equipment manufacturing—particularly across electrical control panel building, switchgear fabrication, transformer tank production, and structural machinery manufacturing—fabricating large mild steel (MS), stainless steel (SS), and aluminum plates represents a massive production bottleneck. Traditional fabrication shops still rely on manual sheet metal marking, radial drill presses, and manual punch tooling. This workflow is labor-intensive, error-prone, and severely restricts production throughput. This is why leading manufacturers are transitioning to automated cnc drilling and milling systems. A dedicated precision vertical CNC machining machine combines the heavy material removal capacity of a vertical machining center with the expansive work envelope of an industrial gantry table. Whether drilling thousands of 22.5mm pushbutton and meter holes across a 2.5-meter switchboard door or face-milling heavy steel mounting pads, a dedicated CNC machining center delivers repeatable micron-level accuracy at fraction of the cycle time.",paragraphs:["In modern industrial equipment manufacturing—particularly across electrical control panel building, switchgear fabrication, transformer tank production, and structural machinery manufacturing—fabricating large mild steel (MS), stainless steel (SS), and aluminum plates represents a massive production bottleneck. Traditional fabrication shops still rely on manual sheet metal marking, radial drill presses, and manual punch tooling. This workflow is labor-intensive, error-prone, and severely restricts production throughput. This is why leading manufacturers are transitioning to automated cnc drilling and milling systems.","A dedicated precision vertical CNC machining machine combines the heavy material removal capacity of a vertical machining center with the expansive work envelope of an industrial gantry table. Whether drilling thousands of 22.5mm pushbutton and meter holes across a 2.5-meter switchboard door or face-milling heavy steel mounting pads, a dedicated CNC machining center delivers repeatable micron-level accuracy at fraction of the cycle time.","At CyTOS Engineering in Pune, Maharashtra, we have developed the flagship VDM (Vertical Drilling and Milling) series built to our uncompromising standard: Factor of Safety 2.0 and 24x7 Continuous Duty Rating. This comprehensive guide examines the mechanical architecture, spindle dynamics, and economic metrics of modern industrial heavy vertical milling centers.","To quantify the production gains of automating plate machining, compare traditional methods against modern automated panel machining:","Drilling large diameter holes (e.g. 25mm to 50mm) in structural steel generates immense axial thrust forces exceeding 1,500 kg (15 kN). If the machine frame lacks dynamic rigidity, these cutting forces deflect the gantry, causing severe tool chatter, broken carbide insert edges, and out-of-round holes."],faqs:[],toc:[{id:"introduction-cnc-drilling-milling",title:"Introduction: Why Heavy Plate and Panel Fabrication Requires Dedicated CNC Drilling and Milling"},{id:"vdm-vs-radial-drill-presses",title:"Technical Comparison: Traditional Radial Drill Presses vs CyTOS CNC Drilling and Milling"},{id:"meehanite-structural-rigidity",title:"Structural Rigidity: Why Meehanite Cast Iron Outperforms Fabricated Steel"},{id:"multi-spindle-vdm-productivity",title:"Multi-Spindle VDM Technology: Tripling Throughput for Switchgear Manufacturers"},{id:"quality-assurance-calibration-cnc-drilling-an",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsDrilling And Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"double-sided-pcb-rapid-prototyping-guide",title:"Double-Sided PCB Rapid Prototyping: Precision Top-to-Bottom Layer Registration",metaDescription:"Master double-sided PCB rapid prototyping alignment. Discover dual-pin registration, optical fiducial correction, and through-hole via riveting in under 45 mins.",category:"Production",image:"/assets/images/blogs/double-sided-pcb-prototyping-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Double-sided PCB rapid prototyping requires achieving sub-15µm registration accuracy between top and bottom copper layers when flipping the board on the CNC machine bed. By implementing a standardized dual-pin tooling dowel system, mirroring bottom-layer Gerber coordinates along a calibrated datum axis, and deploying optical fiducial verification, modern desktop CNC prototyping machines execute perfectly aligned double-sided circuit boards with concentric via pads and complete electrical continuity in under 45 minutes.",excerpt:"While single-sided circuit boards are suitable for simple sensor breadboards and low-frequency hobby projects, virtually all commercial, industrial, and automotive circuits require double-sided routing. A modern microcontroller board requires ground planes on the bottom layer to suppress electromagnetic interference (EMI) while routing high-speed signal traces on the top layer. Performing double-sided pcb rapid prototyping on a CNC mill, however, introduces a critical geometric challenge: front-to-back layer registration. When you drill a 0.3mm via through a double-sided board, the top copper pad and the bottom copper pad must align perfectly. If the panel shifts by as little as 0.05mm (50µm) when flipped over to mill the bottom side, the drilled through-hole will punch through the edge of the annular ring on the reverse side—causing open-circuit vias, breakout defects, and assembly failures.",paragraphs:["While single-sided circuit boards are suitable for simple sensor breadboards and low-frequency hobby projects, virtually all commercial, industrial, and automotive circuits require double-sided routing. A modern microcontroller board requires ground planes on the bottom layer to suppress electromagnetic interference (EMI) while routing high-speed signal traces on the top layer. Performing double-sided pcb rapid prototyping on a CNC mill, however, introduces a critical geometric challenge: front-to-back layer registration.","When you drill a 0.3mm via through a double-sided board, the top copper pad and the bottom copper pad must align perfectly. If the panel shifts by as little as 0.05mm (50µm) when flipped over to mill the bottom side, the drilled through-hole will punch through the edge of the annular ring on the reverse side—causing open-circuit vias, breakout defects, and assembly failures.","CyTOS Engineering in Pune has solved this alignment challenge by integrating aerospace-grade dual-pin dowel registration and optical fiducial calibration into our prototyping systems. This guide explains the step-by-step methodology to achieve flawless registration on every double-sided prototype.","The most robust, repeatable physical method for dual-sided PCB prototyping workflow is the precision ground dowel pin system:","The vacuum bed of the CyTOS prototyping machine incorporates precision-reamed hardened steel bushings located along a calibrated machine axis. Two 3.000mm ground dowel pins are inserted into these reference bushings."],faqs:[],toc:[{id:"introduction-double-sided-alignment",title:"The Geometric Challenge of Double-Sided PCB Rapid Prototyping"},{id:"dual-pin-registration-method",title:"The Dual-Pin Dowel Registration Methodology"},{id:"through-hole-via-connectivity",title:"Establishing Through-Hole Via Electrical Continuity"},{id:"quality-assurance-calibration-double-sided-pc",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Double-Sided Pcb Rapid Prototyping"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"gerber-to-pcb-isolation-milling-guide",title:"PCB Isolation Milling: Step-by-Step Gerber RS-274X to G-Code CNC Workflow",metaDescription:"Master PCB isolation milling. Learn the complete CAM workflow from Gerber RS-274X export to isolation rubout paths, auto-leveling, and contour cutouts.",category:"Production",image:"/assets/images/blogs/pcb-isolation-milling-traces.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"PCB isolation milling is a subtractive CNC machining process that converts electrical trace layouts into physical circuit boards by cutting narrow boundary channels through the copper foil, electrically separating conductive copper traces and ground planes from the surrounding substrate. By importing standard Gerber RS-274X files into dedicated CAM software, the system calculates offset isolation toolpaths, rub-out hatch patterns for copper clearance, and Excellon drill cycles, transferring optimized G-code to a 60,000 RPM CNC prototyping mill for fabrication in under 40 minutes.",excerpt:"In electronic computer-aided manufacturing (CAM), pcb isolation milling represents the dry, mechanical alternative to chemical photolithography. Rather than coating a copper panel with light-sensitive photoresist, exposing it through photoplotter film, and etching away unwanted copper in an acid bath, isolation milling uses a high-speed rotating cutting tool to carve thin isolation trenches along the perimeter of every trace, pad, and polygon pour. The beauty of pcb isolation milling lies in its computational efficiency: the machine does not need to mill away 100% of the non-circuit copper. By cutting narrow isolation contours (typically 0.15mm to 0.20mm wide), large areas of non-active copper remain as natural ground planes or shielding zones. This reduces cutting time by over 70%, allowing complex double-sided circuit layouts to be produced in 25 to 40 minutes.",paragraphs:["In electronic computer-aided manufacturing (CAM), pcb isolation milling represents the dry, mechanical alternative to chemical photolithography. Rather than coating a copper panel with light-sensitive photoresist, exposing it through photoplotter film, and etching away unwanted copper in an acid bath, isolation milling uses a high-speed rotating cutting tool to carve thin isolation trenches along the perimeter of every trace, pad, and polygon pour.","The beauty of pcb isolation milling lies in its computational efficiency: the machine does not need to mill away 100% of the non-circuit copper. By cutting narrow isolation contours (typically 0.15mm to 0.20mm wide), large areas of non-active copper remain as natural ground planes or shielding zones. This reduces cutting time by over 70%, allowing complex double-sided circuit layouts to be produced in 25 to 40 minutes.","This technical guide walks through the exact step-by-step workflow required to convert raw Gerber RS-274X files into optimized, burr-free G-code toolpaths ready for execution on a CyTOS precision prototyping mill.","When designing in Altium Designer, KiCad, Eagle, or EasyEDA, observe these design rules for optimal isolation milling:","Import the Gerber files into the CyTOS CAM processor. The software generates an isolation toolpath by calculating an outward offset vector equal to half the tool tip diameter ($D_{tip} / 2$). For high-voltage or RF circuits, configure the software to execute 2 or 3 overlapping offset passes (stepping outward by 50% tool diameter per pass) to increase physical clearance and prevent arc-over."],faqs:[],toc:[{id:"introduction-isolation-milling",title:"Introduction: Understanding the Mechanics of PCB Isolation Milling"},{id:"step-by-step-cam-workflow",title:"The 4-Step Technical Workflow: From Gerber to Finished Board"},{id:"burr-prevention-and-tool-geometry",title:"Tool Geometry and Burr-Free Edge Finishing"},{id:"quality-assurance-calibration-gerber-to-pcb-i",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Isolation Milling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"green-electronics-rapid-prototyping-lab",title:"Green Electronics Rapid Prototyping: Eliminating Acid Etchants & Chemical Waste in R&D Labs",metaDescription:"Transform your R&D lab with green electronics rapid prototyping. Eliminate toxic ferric chloride, comply with ISO 14001, and create a zero-effluent clean workspace.",category:"Production",image:"/assets/images/blogs/green-electronics-lab-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Green electronics rapid prototyping is an environmentally sustainable manufacturing paradigm that completely replaces wet-chemical acid etching (ferric chloride, ammonium persulfate, and cupric chloride) with dry, high-speed CNC mechanical isolation milling. By generating zero liquid chemical effluent, eliminating toxic acid fumes, and capturing 99.97% of dry swarf through HEPA filtration, green electronics rapid prototyping enables corporate R&D centers, academic institutions, and defense laboratories to comply with ISO 14001 and OSHA safety mandates while producing high-precision circuit boards in standard office environments.",excerpt:"In precision manufacturing, implementing a high-performance green electronics rapid prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. For decades, electronic engineers seeking to prototype circuit boards in-house were forced to interact with some of the most corrosive and environmentally toxic chemicals used in industry. Wet-chemical etching relies primarily on aqueous ferric chloride ($FeCl_3$) or ammonium persulfate ($[NH_4]_2S_2O_8$). In order to dissolve a microscopic 35µm layer of unwanted copper, these acid solutions generate toxic fumes, corrode nearby electronic equipment and optical microscopes, and create heavy-metal chemical effluent that cannot legally be discharged into municipal drains. Every liter of spent ferric chloride etchant contains high concentrations of dissolved ionic copper ($Cu^{2+}$), a potent environmental bio-toxin that severely damages aquatic ecosystems. For modern corporate R&D facilities striving for ISO 14001 environmental certification and university laboratories subject to stringent student safety regulations, maintaining chemical etching tanks is an unacceptable liability. This environmental imperative has catalyzed the global transition to green R&D prototyping.",paragraphs:["In precision manufacturing, implementing a high-performance green electronics rapid prototyping is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. For decades, electronic engineers seeking to prototype circuit boards in-house were forced to interact with some of the most corrosive and environmentally toxic chemicals used in industry. Wet-chemical etching relies primarily on aqueous ferric chloride ($FeCl_3$) or ammonium persulfate ($[NH_4]_2S_2O_8$). In order to dissolve a microscopic 35µm layer of unwanted copper, these acid solutions generate toxic fumes, corrode nearby electronic equipment and optical microscopes, and create heavy-metal chemical effluent that cannot legally be discharged into municipal drains.","Every liter of spent ferric chloride etchant contains high concentrations of dissolved ionic copper ($Cu^{2+}$), a potent environmental bio-toxin that severely damages aquatic ecosystems. For modern corporate R&D facilities striving for ISO 14001 environmental certification and university laboratories subject to stringent student safety regulations, maintaining chemical etching tanks is an unacceptable liability. This environmental imperative has catalyzed the global transition to green R&D prototyping.","CyTOS Engineering in Pune is proud to lead this green transition across India. Our dry mechanical prototyping machines completely eliminate chemical acids, neutralizing environmental footprint while delivering superior trace definition.","Adopting eco-friendly circuit prototyping is structured around four foundational engineering principles:","No acids, no chemical resists, no developer solutions, and no hazardous chemical rinse baths. Unwanted copper is removed strictly through high-speed mechanical shearing at 60,000 RPM using solid tungsten carbide micro-tools."],faqs:[],toc:[{id:"environmental-crisis-wet-etching",title:"The Toxic Reality of Traditional Wet-Chemical PCB Etching in R&D Labs"},{id:"pillars-of-green-prototyping",title:"The Core Principles of Green Electronics Rapid Prototyping"},{id:"compliance-and-workplace-safety",title:"Regulatory Compliance: OSHA, ISO 14001, and Pollution Control Board Mandates"},{id:"quality-assurance-calibration-green-electroni",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Green Electronics Rapid Prototyping"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"heavy-duty-cnc-router-machine-guide",title:"Heavy Duty CNC Router Machine: Ball Screw vs Rack & Pinion for Aluminum & Composites",metaDescription:"Selection guide for a heavy duty CNC router machine. Compare Class C3 ball screws vs helical rack-and-pinion, tubular steel gantries, and vacuum beds.",category:"Production",image:"/assets/images/blogs/cnc-gantry-router-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A heavy duty CNC router machine is an industrial gantry routing center engineered with a stress-relieved welded tubular steel frame (Factor of Safety 2.0) to machine non-ferrous metals (6061/7075 aluminum, brass), composites (carbon fiber, G10/FR4), and dense engineering plastics across bed sizes from 4x4 ft to 8x8 ft. When selecting drive kinematics, pre-loaded Class C3/C5 ball screws deliver superior positioning accuracy (±0.015mm) and zero backlash on beds up to 1,500mm, while precision ground helical rack-and-pinion systems deliver rapid traverse speeds up to 45 m/min without screw whipping on large 8x4 and 8x8 formats.",excerpt:"In the non-ferrous metal, signage, defense, and composite manufacturing sectors, buyers are frequently overwhelmed by conflicting marketing claims. Light-duty wood routers assembled from extruded aluminum profiles and V-groove wheels are marketed as 'industrial CNC routers.' When subjected to continuous machining of 12mm 6061-T6 aluminum sheets or abrasive glass-epoxy composites, these lightweight machines chatter severely, lose dimensional accuracy, and suffer premature mechanical failure within months. Surviving this workload requires an authentic heavy duty cnc router machine. A true industrial router is distinguished by mass, structural rigidity, and drive engineering. Operating a 9.0 kW high-frequency spindle at 24,000 RPM while pushing a 12mm solid carbide end mill at 6 meters per minute creates immense cutting reaction forces. Only a heavily ribbed, stress-relieved tubular steel gantry can absorb these forces without deflection.",paragraphs:["In the non-ferrous metal, signage, defense, and composite manufacturing sectors, buyers are frequently overwhelmed by conflicting marketing claims. Light-duty wood routers assembled from extruded aluminum profiles and V-groove wheels are marketed as 'industrial CNC routers.' When subjected to continuous machining of 12mm 6061-T6 aluminum sheets or abrasive glass-epoxy composites, these lightweight machines chatter severely, lose dimensional accuracy, and suffer premature mechanical failure within months. Surviving this workload requires an authentic heavy duty cnc router machine.","A true industrial router is distinguished by mass, structural rigidity, and drive engineering. Operating a 9.0 kW high-frequency spindle at 24,000 RPM while pushing a 12mm solid carbide end mill at 6 meters per minute creates immense cutting reaction forces. Only a heavily ribbed, stress-relieved tubular steel gantry can absorb these forces without deflection.","At CyTOS Engineering in Pune, we manufacture 4x4, 8x4, and 8x8 heavy gantry routers built around our signature standard: Factor of Safety 2.0 and 24x7 Rated Continuous Duty. This comprehensive guide details the critical drive selection criteria, frame physics, and vacuum hold-down parameters required to choose the optimal industrial router.","One of the most consequential decisions when configuring a heavy-duty sheet routing platform is the drive transmission mechanism:","Preloaded recirculating ball screws provide 100% mechanical preloading with near-zero backlash (&lt;0.005mm). They deliver unmatched positional accuracy and surface finish when milling tight-tolerance aluminum aircraft parts or intricate mold patterns. However, on long axes exceeding 2.0 meters, rotating a long, slender ball screw at high speed induces critical speed whipping (resonance where the screw bows outward like a jump rope). Therefore, ball screws are the premier choice for 4x4 ft (1,250mm x 1,250mm) machines, but must be paired with larger diameters or rotating nut designs on larger beds."],faqs:[],toc:[{id:"introduction-heavy-gantry-routers",title:"Introduction: Why Industrial Machining Demands a True Heavy Duty CNC Router Machine"},{id:"ball-screw-vs-rack-pinion",title:"Ball Screw vs Helical Rack-and-Pinion: Kinematic Comparison"},{id:"vacuum-matrix-bed-engineering",title:"High-Flow Vacuum Matrix Bed and Clamping Physics"},{id:"quality-assurance-calibration-heavy-duty-cnc-",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsCnc Router Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"in-house-pcb-rapid-prototyping-roi",title:"In-House PCB Rapid Prototyping: Financial ROI & Slashing R&D Turnaround from Weeks to Hours",metaDescription:"Calculate the true financial ROI of in-house PCB rapid prototyping. Quantify savings on courier delays, expedited fabrication fees, and IP security.",category:"Production",image:"/assets/images/blogs/pcb-rapid-prototyping-roi-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"In-house PCB rapid prototyping delivers a comprehensive financial return on investment (ROI) within 5 to 8 months by eliminating external quick-turn fabrication fees (saving ₹12,000 to ₹25,000 per board spin), recovering thousands of engineering work hours lost to project idle time, and safeguarding proprietary intellectual property against third-party design leaks. By compressing a 14-day prototype wait into a 45-minute lab milling cycle, electronics R&D teams launch products to market up to 2 months faster, capturing substantial first-mover market share.",excerpt:"When engineering directors and Chief Technology Officers evaluate the financial justification for in-house pcb rapid prototyping, they frequently look only at the line-item invoice for outsourced PCB prototypes. If a quick-turn board house charges ₹10,000 for a batch of five double-sided boards, purchasing a dedicated CNC machine tool may seem like a discretionary capital expense. However, this narrow comparison ignores the largest cost driver in hardware engineering: engineering idle time and project launch delays. Every time an R&D team completes a CAD schematic and sends Gerber files to an external vendor, a minimum 10 to 14-day waiting clock begins. During this fortnight, senior embedded hardware engineers—whose fully loaded compensation often exceeds ₹1,200 per hour—must either put their core firmware development on hold or context-switch to secondary tasks. If the prototype arrives with a single inverted pin on a microcontroller or an incorrect footprint, the entire 14-day cycle resets.",paragraphs:["When engineering directors and Chief Technology Officers evaluate the financial justification for in-house pcb rapid prototyping, they frequently look only at the line-item invoice for outsourced PCB prototypes. If a quick-turn board house charges ₹10,000 for a batch of five double-sided boards, purchasing a dedicated CNC machine tool may seem like a discretionary capital expense. However, this narrow comparison ignores the largest cost driver in hardware engineering: engineering idle time and project launch delays.","Every time an R&D team completes a CAD schematic and sends Gerber files to an external vendor, a minimum 10 to 14-day waiting clock begins. During this fortnight, senior embedded hardware engineers—whose fully loaded compensation often exceeds ₹1,200 per hour—must either put their core firmware development on hold or context-switch to secondary tasks. If the prototype arrives with a single inverted pin on a microcontroller or an incorrect footprint, the entire 14-day cycle resets.","At CyTOS Engineering in Pune, we have conducted detailed operational audits across dozens of engineering departments. This guide provides a quantitative, spreadsheet-ready ROI model demonstrating why investing in an internal PCB rapid iteration system pays for itself in less than eight months.","Consider an electronics design company conducting 24 prototype board spins per year (an average of two revisions per month across various projects). The table below contrasts annual costs:","With net operational savings exceeding ₹6.6 Lakhs annually, a complete CyTOS PCBE3020 prototyping machine package (typically priced between ₹3.5L and ₹5.5L depending on tooling options) delivers complete capital payback in approximately 6.5 to 9.8 months."],faqs:[],toc:[{id:"introduction-in-house-roi",title:"Introduction: Engineering Standards for a In-House Pcb Rapid Prototyping"},{id:"financial-breakdown-model",title:"Quantitative Financial Model: In-House Prototyping vs External Quick-Turn Sourcing"},{id:"unquantified-strategic-advantages",title:"Strategic ROI: Intellectual Property Protection and First-to-Market Advantage"},{id:"academic-and-defense-roi",title:"ROI in Educational Institutions and Defense Research Facilities"},{id:"quality-assurance-calibration-in-house-pcb-ra",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for In-House Pcb Rapid Prototyping"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"mechanical-pcb-drilling-vs-laser-drilling",title:"Mechanical PCB Drilling vs Laser Drilling: Cost, Throughput & Aspect Ratio Comparison",metaDescription:"Compare mechanical PCB drilling vs UV/CO2 laser drilling. Discover the cost crossover threshold, blind micro-via limitations, and thick FR4 processing.",category:"Production",image:"/assets/images/blogs/pcb-drilling-laser-comparison-16x9.jpg",readTime:"13 min read",date:"2026-03-20",aeoAnswer:"Mechanical PCB drilling remains the most cost-effective and structurally superior method for through-hole vias down to 0.15mm diameter, capable of penetrating thick multi-layer board stacks up to 6.4mm with aspect ratios exceeding 10:1 to 12:1. In contrast, UV and CO2 laser drilling excels exclusively at blind micro-vias (<0.10mm) in thin dielectric build-up layers (<0.15mm deep) with aspect ratios limited to 1:1. For standard FR4, Rogers, and thick copper power electronics, mechanical PCB drilling delivers over 80% lower capital and maintenance costs per drilled hole.",excerpt:"In modern printed circuit board manufacturing, engineers frequently debate whether laser micro-via ablation will completely supplant mechanical pcb drilling. While UV and CO2 lasers dominate ultra-high-density interconnect (HDI) smartphones where blind micro-vias must measure below 75µm in single-ply prepreg, mechanical pcb drilling remains the undisputed backbone of 90% of global PCB production. The physics of material removal explain this reality. Lasers ablate dielectric resin and copper foil through intense photon thermal absorption or photochemical bond-breaking. However, when penetrating multi-layer FR4 boards thicker than 1.0mm containing alternating layers of woven glass fiber and 2oz copper planes, lasers suffer from severe beam divergence, plasma shielding, and heavy glass melt re-deposition. Only high-speed rotary spindle drilling provides perfectly cylindrical, vertical hole barrels with constant diameter across multi-layer board cores up to 6.4mm thick.",paragraphs:["In modern printed circuit board manufacturing, engineers frequently debate whether laser micro-via ablation will completely supplant mechanical pcb drilling. While UV and CO2 lasers dominate ultra-high-density interconnect (HDI) smartphones where blind micro-vias must measure below 75µm in single-ply prepreg, mechanical pcb drilling remains the undisputed backbone of 90% of global PCB production.","The physics of material removal explain this reality. Lasers ablate dielectric resin and copper foil through intense photon thermal absorption or photochemical bond-breaking. However, when penetrating multi-layer FR4 boards thicker than 1.0mm containing alternating layers of woven glass fiber and 2oz copper planes, lasers suffer from severe beam divergence, plasma shielding, and heavy glass melt re-deposition. Only high-speed rotary spindle drilling provides perfectly cylindrical, vertical hole barrels with constant diameter across multi-layer board cores up to 6.4mm thick.","At CyTOS Engineering in Pune, we manufacture specialized mechanical through-hole machining systems capable of executing 0.15mm to 6.5mm through-holes at 60,000 RPM. This guide provides an objective engineering comparison between mechanical CNC drilling and laser systems to help factory managers optimize capital equipment investments.","The aspect ratio of a drilled hole is defined as the ratio of total board thickness ($T$) to the finished hole diameter ($D$): AR = T / D. Maintaining vertical, non-tapered barrel walls at high aspect ratios is essential for continuous copper electroplating.","In carbide mechanical drilling process, solid micrograin tungsten carbide drills maintain rigid axial stability when supported by proper pressure foot clamping and specialized aluminum entry sheets. A 0.25mm mechanical drill can easily penetrate a 2.4mm thick 8-layer board (aspect ratio 9.6:1) or even a 3.0mm thick board (12:1) with less than 8µm barrel wall taper from top entry to bottom exit."],faqs:[],toc:[{id:"introduction-mechanical-vs-laser",title:"Introduction: The Continuing Hegemony of Mechanical PCB Drilling"},{id:"aspect-ratio-physics",title:"Aspect Ratio and Hole Geometry: Cylindrical vs Tapered Walls"},{id:"cost-and-throughput-comparison",title:"Comprehensive Benchmark: Mechanical vs Laser Drilling Technologies"},{id:"barrel-wall-metallurgy",title:"Barrel Wall Morphology and Plating Adhesion"},{id:"hybrid-fabrication-strategy",title:"The Modern Shop Strategy: Hybrid Mechanical + Laser Workflows"},{id:"quality-assurance-calibration-mechanical-pcb-",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Mechanical Pcb Drilling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"multi-spindle-pcb-drilling-machine",title:"Multi-Spindle PCB Drilling Machine: Slashing Cycle Times by 65% in High-Volume Production",metaDescription:"Discover how a multi-spindle PCB drilling machine triples panel throughput while holding ±10µm hole registration on 6-spindle gantry lines.",category:"Production",image:"/assets/images/blogs/multi-spindle-drilling-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"A multi-spindle PCB drilling machine utilizes two, three, or four mechanically synchronized, high-frequency spindles mounted on a unified precision gantry to drill identical hole patterns across multiple panels simultaneously. By replicating the exact Z-axis plunge and X-Y motion across all stations at 60,000 RPM, a multi-spindle PCB drilling machine achieves 200% to 300% higher panel throughput per operator hour while cutting floor footprint, electrical power consumption, and capital equipment costs compared to purchasing separate single-spindle machines.",excerpt:"When high-volume commercial board houses and Electronics Manufacturing Service (EMS) facilities reach production volumes exceeding 1,000 panels per week, relying solely on single-spindle machines creates crippling operational bottlenecks. A multi-spindle pcb drilling machine solves this scalability ceiling by multiplying drilling capacity directly on a single machine footprint, allowing one operator to produce two or three times the output without proportional labor or real estate expenditures. In electronic manufacturing, through-hole and micro-via drilling represents the slowest sequential process step in the front-end fabrication line. An 8-layer automotive sensor panel requiring 8,500 holes takes roughly 47 minutes on a single 60,000 RPM spindle. By deploying a dual-spindle or 3-spindle multi-spindle CNC station, two or three identical panels (or multi-panel stacks) are drilled concurrently in the exact same 47-minute window, effectively reducing the per-panel cycle time to under 16 minutes.",paragraphs:["When high-volume commercial board houses and Electronics Manufacturing Service (EMS) facilities reach production volumes exceeding 1,000 panels per week, relying solely on single-spindle machines creates crippling operational bottlenecks. A multi-spindle pcb drilling machine solves this scalability ceiling by multiplying drilling capacity directly on a single machine footprint, allowing one operator to produce two or three times the output without proportional labor or real estate expenditures.","In electronic manufacturing, through-hole and micro-via drilling represents the slowest sequential process step in the front-end fabrication line. An 8-layer automotive sensor panel requiring 8,500 holes takes roughly 47 minutes on a single 60,000 RPM spindle. By deploying a dual-spindle or 3-spindle multi-spindle CNC station, two or three identical panels (or multi-panel stacks) are drilled concurrently in the exact same 47-minute window, effectively reducing the per-panel cycle time to under 16 minutes.","CyTOS Engineering in Pune developed the PCB12 series specifically to meet this demanding requirement for tier-1 automotive and industrial electronics suppliers across India. Designed with Factor of Safety 2.0, ground Meehanite cast iron gantry bridges, and dual synchronous drives, the PCB12 delivers industrial-scale throughput with unmatched micro-hole registration.","The primary engineering challenge in constructing a high-throughput drilling platform lies in spindle-to-spindle distance repeatability and dynamic mass management. As additional spindles, pneumatic pressure feet, and tool-change changers are added to the crossbeam, the moving mass of the gantry increases significantly.","CyTOS multi-spindle machines feature micrometer-adjustable or fixed-pitch precision ground spindle mounting saddles. Using calibrated optical alignment reticles, the center-to-center distance between Spindle 1 and Spindle 2 is calibrated within ±0.005mm (5µm). This ensures that Gerber coordinates sent by the CNC controller replicate identically across both work zones without positional offset drift."],faqs:[],toc:[{id:"introduction-multi-spindle-pcb-drilling",title:"The Industrial Case for a Multi-Spindle PCB Drilling Machine in EMS Manufacturing"},{id:"kinematics-of-multi-spindle-synchronization",title:"Spindle Synchronization and Gantry Dynamics"},{id:"single-vs-multi-spindle-comparison",title:"Throughput and Economic Comparison: Single-Spindle vs Multi-Spindle Machine"},{id:"workholding-pin-registration",title:"Workholding, Tooling Pins, and Sub-Panel Registration"},{id:"tool-breakage-and-cassette-management",title:"Synchronized Tool Changing and Laser Breakage Detection"},{id:"factory-roi-multi-spindle",title:"Commercial ROI Case Study: Tier-1 Automotive Electronics Supplier in Chakan, Pune"},{id:"quality-assurance-calibration-multi-spindle-p",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Multi-Spindle Pcb Drilling Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"multilayer-fr4-rogers-pcb-drilling",title:"Multilayer PCB Drilling Parameters: Optimizing Feeds for FR4, Rogers & MCPCB",metaDescription:"Optimize multilayer PCB drilling feeds, speeds, and peck cycles for FR4, Rogers 4350, and metal-core substrates. Eliminate resin smear and fiber pullout.",category:"Production",image:"/assets/images/blogs/multilayer-fr4-rogers-drilling-16x9.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"Multilayer PCB drilling requires tailoring spindle speeds (40,000 to 60,000 RPM), infeed rates, and retract cycles to the specific glass-transition temperature (Tg), resin chemistry, and filler content of the substrate. While standard multi-layer FR4 (Tg 140°C-170°C) drills cleanly at chip loads of 0.018-0.025 mm/rev, ceramic-filled hydrocarbon Rogers laminates (e.g. RO4350B) require lower surface velocities and 30% reduced infeed to prevent ceramic abrasive tool wear. Metal Core PCBs (MCPCB) demand specialized parabolic flute geometry and mist lubrication to clear gummy aluminum chips.",excerpt:"As electronic systems shrink in volume and increase in computational power, circuit board designs have transitioned from simple 2-layer layouts to dense 8-layer, 16-layer, and 32-layer multi-layer stacks. Performing multilayer pcb drilling is vastly more challenging than drilling single-sided boards: the drill bit must cleanly pierce through alternating layers of high-shear copper foil, abrasive E-glass cloth, cured epoxy resin, and specialized core dielectrics without generating thermal resin smear. When drilling a 16-layer board, frictional heat generated at the drill tip can easily spike above 200°C. If this temperature exceeds the glass transition temperature ($T_g$) of the prepreg matrix, the epoxy resin melts into a viscous liquid. As the drill flutes rotate, they wipe this melted resin across the exposed internal copper pad interfaces—a catastrophic defect known as dielectric smear. In subsequent chemical copper plating, this smear blocks electrical connectivity between the plated through-hole barrel and the internal circuit trace, leading to unrepairable board scrap.",paragraphs:["As electronic systems shrink in volume and increase in computational power, circuit board designs have transitioned from simple 2-layer layouts to dense 8-layer, 16-layer, and 32-layer multi-layer stacks. Performing multilayer pcb drilling is vastly more challenging than drilling single-sided boards: the drill bit must cleanly pierce through alternating layers of high-shear copper foil, abrasive E-glass cloth, cured epoxy resin, and specialized core dielectrics without generating thermal resin smear.","When drilling a 16-layer board, frictional heat generated at the drill tip can easily spike above 200°C. If this temperature exceeds the glass transition temperature ($T_g$) of the prepreg matrix, the epoxy resin melts into a viscous liquid. As the drill flutes rotate, they wipe this melted resin across the exposed internal copper pad interfaces—a catastrophic defect known as dielectric smear. In subsequent chemical copper plating, this smear blocks electrical connectivity between the plated through-hole barrel and the internal circuit trace, leading to unrepairable board scrap.","At CyTOS Engineering in Pune, our CNC applications laboratory has developed optimized cutting recipes for standard FR4, high-frequency Rogers laminates, and heavy-copper MCPCBs. This guide provides exact feeds, speeds, and tooling parameters to ensure flawless hole quality across every substrate family.","The cutting parameters below represent empirical production benchmarks established on CyTOS PCB60 drilling machines equipped with 60,000 RPM high-frequency spindles:","To eliminate dielectric resin smear and nail-heading (burring of internal copper planes), the cutting action must be sharp and rapid. When multilayer pcb drilling, observe the following rules:"],faqs:[],toc:[{id:"introduction-multilayer-drilling",title:"The Challenge of Multilayer PCB Drilling in Modern Electronics"},{id:"cutting-parameters-matrix",title:"Master Machining Matrix: Parameters for FR4, Rogers, and Metal Core PCBs"},{id:"preventing-resin-smear",title:"Preventing Resin Smear and Nail-Heading in Multilayer FR4"},{id:"rogers-rf-microwave-drilling",title:"Specific Considerations for Rogers RF and Microwave Substrates"},{id:"mcpcb-aluminum-drilling",title:"Metal Core PCB (MCPCB) Drilling Protocols"},{id:"quality-assurance-calibration-multilayer-fr4-",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Multilayer Pcb Drilling"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"pcb-drilling-machine-guide",title:"PCB Drilling Machine: The Definitive 2026 High-Speed Industrial Selection Guide",metaDescription:"Comprehensive guide to selecting an industrial PCB drilling machine. Compare 60,000 RPM air-bearing vs mechanical spindles, TIR runout, and IPC-2221 tolerances.",category:"Production",image:"/assets/images/blogs/pcb-micro-drilling-featured.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A high-performance PCB drilling machine is a precision Computer Numerical Control (CNC) system engineered to execute burr-free micro-vias, through-holes, and blind/buried vias in rigid FR4, Rogers, polyimide, and metal-core PCBs (MCPCB). Operating at spindle speeds between 40,000 and 60,000 RPM with total dynamic runout (TIR) under 3µm, modern PCB drilling machines integrate pneumatic pressure feet, high-rigidity Meehanite cast iron beds, and precision optical linear encoders to achieve hole-positioning accuracy of ±10µm and aspect ratios up to 12:1 without drill wander or bit breakage.",excerpt:"Selecting the right pcb drilling machine represents one of the most critical capital expenditure decisions for electronics manufacturing service (EMS) providers, commercial board houses, and aerospace R&D laboratories. As surface mount component pitches shrink to 0.4mm BGA packages and multi-layer board layer counts reach 16 to 32 layers, conventional CNC routers and milling systems can no longer satisfy the stringent positional tolerances and drill-breakage constraints required for micro-via fabrication. Every commercial precision micro-drilling system must operate at the intersection of high angular velocity, ultra-low dynamic runout, and rapid Z-axis acceleration. A standard circuit board panel may require between 15,000 and 45,000 individual hole penetrations, ranging from 0.15mm micro-vias up to 3.2mm mounting holes. At an average production volume of 200 panels per 8-hour shift, any machine deficiency in plunge velocity, backing sheet clamping, or spindle thermal drift cascades into catastrophic tool breakage, hole misregistration, and scrap costs.",paragraphs:["Selecting the right pcb drilling machine represents one of the most critical capital expenditure decisions for electronics manufacturing service (EMS) providers, commercial board houses, and aerospace R&D laboratories. As surface mount component pitches shrink to 0.4mm BGA packages and multi-layer board layer counts reach 16 to 32 layers, conventional CNC routers and milling systems can no longer satisfy the stringent positional tolerances and drill-breakage constraints required for micro-via fabrication.","Every commercial precision micro-drilling system must operate at the intersection of high angular velocity, ultra-low dynamic runout, and rapid Z-axis acceleration. A standard circuit board panel may require between 15,000 and 45,000 individual hole penetrations, ranging from 0.15mm micro-vias up to 3.2mm mounting holes. At an average production volume of 200 panels per 8-hour shift, any machine deficiency in plunge velocity, backing sheet clamping, or spindle thermal drift cascades into catastrophic tool breakage, hole misregistration, and scrap costs.","At CyTOS Engineering in Pune, Maharashtra, our machine tool design group has engineered the PCB30, PCB60, and multi-spindle PCB12 series around a foundational standard: Factor of Safety 2.0 and 24x7 Rated Continuous Duty. This comprehensive guide details the structural dynamics, spindle engineering, motion kinematics, and economic calculations that differentiate an entry-level CNC router from an industrial-grade spindle drilling center designed for zero-defect yield.","Unlike light-duty hobby routers or repurposed wood engraving tables, an authentic industrial micro-drilling equipment requires a massive vibration-damping frame, high-resolution closed-loop servos, and specialized vacuum-assisted hold-down mechanisms. When drilling with 0.2mm solid tungsten carbide drill bits, even a 4µm lateral deflection of the gantry during plunge will instantly snap the tool flute.","Dynamic structural stiffness is non-negotiable. CyTOS automated circuit board drilling centers incorporate stress-relieved Meehanite Grade 250 cast iron or Grade 00 precision granite bases. Cast iron possesses up to ten times the internal vibration-damping coefficient of fabricated steel weldments, eliminating harmonic resonance frequencies generated when the spindle hits 60,000 RPM."],faqs:[],toc:[{id:"introduction-pcb-drilling-machine",title:"Introduction: Why Modern PCB Fabrication Demands a Dedicated PCB Drilling Machine"},{id:"key-architectural-pillars",title:"Core Architecture of an Industrial PCB Drilling Machine"},{id:"technical-comparison-table",title:"Technical Benchmark: PCB Drilling Machine Specifications vs General CNC Routers"},{id:"drilling-parameters-and-formulas",title:"Optimal Feeds, Speeds, and Cutting Formulas for PCB Micro-Drilling"},{id:"ipc-standards-and-quality-assurance",title:"Adhering to IPC-2221 and IPC-A-600 Hole Quality Standards"},{id:"roi-and-cycle-time-calculation",title:"Factory Financial ROI: Calculating Capital Payback for a Production PCB Drilling Machine"},{id:"quality-assurance-calibration-pcb-drilling-ma",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Drilling Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"pcb-drilling-tool-breakage-prevention",title:"PCB Drilling Tool Breakage: 7 Proven Engineering Rules to Eliminate Bit Snapping at 60,000 RPM",metaDescription:"Eliminate PCB drilling tool breakage at 60,000 RPM. Master dynamic TIR runout, pressure foot clamping, and optimal entry sheets for zero bit snapping.",category:"Production",image:"/assets/images/blogs/micro-drill-bit-breakage-prevention.jpg",readTime:"12 min read",date:"2026-03-20",aeoAnswer:"Preventing PCB drilling tool breakage when operating micro-drills below 0.35mm at 60,000 RPM requires maintaining total indicated runout (TIR) under 3µm, establishing precise pneumatic pressure foot clamping (minimum 0.05 bar local downforce) before the drill tip contacts the entry foil, optimizing chip load between 0.012 and 0.022 mm/rev, and utilizing high-velocity vacuum swarf extraction to clear glass-fiber dust. Eliminating mechanical vibration through Meehanite cast iron machine beds and replacing worn collets every 500 operating hours prevents bending moment fractures.",excerpt:"For PCB production managers and CNC machine operators, nothing disrupts daily output and profit margins faster than premature pcb drilling tool breakage. When drilling thousands of 0.2mm to 0.4mm micro-vias, a broken drill bit embedded inside a multi-layer board stack ruins the entire batch, damages expensive internal copper layers, and risks shattering adjacent tooling. Solid tungsten carbide micro-drills are metallurgical marvels: possessing extreme hardness (Rockwell C 92-94) and immense compressive strength, they can cleanly shear abrasive woven E-glass fibers and copper foil for thousands of cycles. However, their ultra-fine web thickness and high hardness make them exceptionally brittle under tensile and bending shear stresses. Even a microscopic 4µm lateral whip at 60,000 RPM induces cyclic fatigue that snaps the tool shank instantly.",paragraphs:["For PCB production managers and CNC machine operators, nothing disrupts daily output and profit margins faster than premature pcb drilling tool breakage. When drilling thousands of 0.2mm to 0.4mm micro-vias, a broken drill bit embedded inside a multi-layer board stack ruins the entire batch, damages expensive internal copper layers, and risks shattering adjacent tooling.","Solid tungsten carbide micro-drills are metallurgical marvels: possessing extreme hardness (Rockwell C 92-94) and immense compressive strength, they can cleanly shear abrasive woven E-glass fibers and copper foil for thousands of cycles. However, their ultra-fine web thickness and high hardness make them exceptionally brittle under tensile and bending shear stresses. Even a microscopic 4µm lateral whip at 60,000 RPM induces cyclic fatigue that snaps the tool shank instantly.","Based on over seven years of machine tool manufacturing and application engineering at CyTOS in Pune, we have codified the 7 golden rules of eliminating micro-tool fracture across industrial production lines.","Dynamic runout is the primary killer of micro-drills. If the collet, tool taper, or spindle bearing exhibits total indicated runout (TIR) exceeding 0.003mm, the cutting flutes experience asymmetric radial cutting forces. One flute takes 80% of the chip load while the other rubs, creating cyclic bending moments that snap bits under 0.3mm within 50 strokes. Check collet runout weekly using a 3.175mm precision ground test pin and calibrated dial indicator.","The pneumatic pressure foot must clamp the entry foil and board stack firmly against the vacuum table before the drill bit tip breaks the surface plane. If the Z-axis plunges while the board retains any microscopic air gap or spring-back bow, the drill bit enters an unsupported, vibrating sheet. The resulting vibration induces lateral deflection that fractures the carbide web. Set controller pressure foot advance lead to at least 40 milliseconds."],faqs:[],toc:[{id:"introduction-tool-breakage",title:"Introduction: Engineering Standards for a Pcb Drilling Tool Breakage"},{id:"seven-golden-rules",title:"The 7 Golden Rules for Eliminating PCB Micro-Drill Breakage"},{id:"troubleshooting-breakage-modes",title:"Diagnostic Matrix: Identifying Breakage Modes Under the Microscope"},{id:"machine-design-features-cytos",title:"Machine Design Mitigations Engineered into CyTOS PCB Drilling Centers"},{id:"quality-assurance-calibration-pcb-drilling-to",title:"Quality Assurance, Metrology & Preventative Maintenance Protocol for Pcb Drilling Tool Breakage"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"plc-control-panel-automation-spm-safety",title:"PLC Control Panel SPM Automation: Integrating Siemens & Delta Systems with Safety Interlocks",metaDescription:"Design high-reliability PLC control panel SPM automation systems. Master Siemens S7-1200 architectures, Category 4 safety circuits, and CE compliance.",category:"Production",image:"/assets/images/blogs/plc-control-panel-automation.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A PLC control panel for SPM automation is an engineered industrial enclosure that houses programmable logic controllers (PLCs), variable frequency drives (VFDs), servo drives, power supplies, and Category 4 safety relays to coordinate all sensors, actuators, and motors on a custom machine tool. By standardizing on Siemens S7-1200 or Delta PLC platforms, integrating dual-channel safety interlocks, and separating high-voltage 415V power distribution from 24V DC logic wiring, custom PLC control panels guarantee 24x7 operating uptime, complete operator protection, and Industry 4.0 data connectivity.",excerpt:"No matter how flawlessly an automated machine tool is fabricated from structural steel and precision bearings, its operational intelligence, cycle speed, and operator safety depend entirely on its electrical brain: the plc control panel spm automation enclosure. In harsh factory environments characterized by electromagnetic noise, voltage surges, ambient humidity, and airborne metallic dust, an electrical panel must deliver uncompromising 24x7 reliability. Poorly engineered control panels—plagued by messy wiring, unshielded sensor cables, inadequate thermal ventilation, and substandard safety loops—are the leading cause of intermittent machine lockups, mysterious sensor faults, and catastrophic safety failures. Conversely, an industrial-grade control panel built to international electrical standards (IEC 60204-1 and UL 508A) ensures decades of continuous production with zero uncommanded machine movements.",paragraphs:["No matter how flawlessly an automated machine tool is fabricated from structural steel and precision bearings, its operational intelligence, cycle speed, and operator safety depend entirely on its electrical brain: the plc control panel spm automation enclosure. In harsh factory environments characterized by electromagnetic noise, voltage surges, ambient humidity, and airborne metallic dust, an electrical panel must deliver uncompromising 24x7 reliability.","Poorly engineered control panels—plagued by messy wiring, unshielded sensor cables, inadequate thermal ventilation, and substandard safety loops—are the leading cause of intermittent machine lockups, mysterious sensor faults, and catastrophic safety failures. Conversely, an industrial-grade control panel built to international electrical standards (IEC 60204-1 and UL 508A) ensures decades of continuous production with zero uncommanded machine movements.","At CyTOS Engineering in Pune, we manufacture turnkey control panels for all our CNC systems and custom special purpose machines. This guide breaks down the engineering principles behind panel layout, noise suppression, Siemens vs Delta PLC architecture, and Category 4 safety design.","The primary rule of robust plc control panel spm automation design is physical segregation between high-voltage AC power lines and low-voltage DC logic signals. High-current motor cables switching at high frequencies (PWM switching in servo drives and VFDs) emit intense electromagnetic interference (EMI) that can corrupt micro-volt analog sensor signals.","CyTOS offers turnkey panel architectures tailored to our clients' corporate automation standards:"],faqs:[],toc:[{id:"introduction-plc-control-panels",title:"Introduction: Engineering Standards for a Plc Control Panel Spm Automation"},{id:"panel-layout-emi-suppression",title:"Panel Layout Philosophy: Physical Segregation and Noise Suppression"},{id:"siemens-vs-delta-comparison",title:"Controller Platform Comparison: Siemens S7-1200 vs Delta Industrial Systems"},{id:"category-4-safety-architecture",title:"Category 4 Safety Architecture and Poka-Yoke Interlocking"},{id:"quality-assurance-calibration-plc-control-pan",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsPanel Spm Automation"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"pneumatic-welding-fixtures-spm-design",title:"Pneumatic Welding Fixtures SPM: Engineering 90° Rotary Indexing Jigs for Robotics",metaDescription:"Engineer high-durability pneumatic welding fixtures SPM systems for robotic welding cells. Learn 90° rotary indexing, spatter shielding, and cycle optimization.",category:"Production",image:"/assets/images/blogs/pneumatic-welding-fixtures-16x9.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"Pneumatic welding fixtures for special purpose machines (SPM) are heavy-duty, pneumatically clamped workholding jigs engineered to hold complex sheet metal and tubular automotive assemblies in precise spatial alignment during manual MIG/TIG or robotic arc welding. Featuring 90° or 180° rotary indexing positioners, copper-chromium (CuCrZr) spatter shields, pneumatic toggle clamps with sensor feedback, and hardened locating pins, custom pneumatic welding fixtures eliminate thermal welding distortion, hold sub-millimeter tolerances, and reduce cycle times by over 50%.",excerpt:"In high-speed automotive and heavy-fabrication production lines, robotic arc welding arms move with blistering speed and repeatability. However, a welding robot is only as accurate as the workholding jig that presents the parts to its torch. If a tubular sub-frame or chassis bracket moves by even 0.8mm due to weld thermal expansion or insufficient clamping pressure, the weld seam wanders off-joint, causing cold laps, burn-through, and structural failure. This is why automated production lines rely on high-precision pneumatic welding fixtures spm. Traditional manual clamping fixtures using mechanical toggle clamps or screw vises are slow, ergonomically fatiguing for operators, and prone to inconsistent clamping force. A modern pneumatic welding fixtures spm integrates pneumatic power clamps that lock dozens of clamps simultaneously with exact, calibrated force at the push of a dual-palm button, slashing load/unload cycle times from minutes down to seconds.",paragraphs:["In high-speed automotive and heavy-fabrication production lines, robotic arc welding arms move with blistering speed and repeatability. However, a welding robot is only as accurate as the workholding jig that presents the parts to its torch. If a tubular sub-frame or chassis bracket moves by even 0.8mm due to weld thermal expansion or insufficient clamping pressure, the weld seam wanders off-joint, causing cold laps, burn-through, and structural failure. This is why automated production lines rely on high-precision pneumatic welding fixtures spm.","Traditional manual clamping fixtures using mechanical toggle clamps or screw vises are slow, ergonomically fatiguing for operators, and prone to inconsistent clamping force. A modern pneumatic welding fixtures spm integrates pneumatic power clamps that lock dozens of clamps simultaneously with exact, calibrated force at the push of a dual-palm button, slashing load/unload cycle times from minutes down to seconds.","At CyTOS Engineering in Pune, we design and manufacture custom pneumatic welding fixtures and 90°/180° indexing jigs engineered with Factor of Safety 2.0. This guide details the metallurgy, clamp sequence logic, and spatter shielding required to build indestructible fixtures that survive millions of welding cycles.","Welding environments subject fixtures to intense radiant heat, extreme thermal shock, and molten steel spatter droplets ejected at velocities over 20 m/s. Constructing durable pneumatic welding fixtures spm requires specialized material selection:","Areas in close proximity to the weld seam (within 50mm of the torch arc) are fitted with CuCrZr alloy or pure electrolytic copper inserts. Copper's exceptional thermal conductivity rapidly cools molten spatter before it can fuse to the surface. Spatter droplets simply wipe away with a light brush without adhering."],faqs:[],toc:[{id:"introduction-welding-fixtures",title:"Introduction: Engineering Standards for a Pneumatic Welding Fixtures Spm"},{id:"metallurgy-spatter-shielding",title:"Materials and Metallurgy: Resisting 1,400°C Weld Heat and Spatter"},{id:"rotary-indexing-kinematics",title:"90° and 180° Rotary Indexing Architecture"},{id:"pneumatic-sequencing-safety",title:"Pneumatic Sequencing, Clamp Sensors, and Safety Interlocks"},{id:"quality-assurance-calibration-pneumatic-weldi",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsWelding Fixtures Spm"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"robotic-adhesive-dispensing-spm-systems",title:"Robotic Adhesive Dispensing SPM: Achieving Repeatable 0.05ml Bead Accuracy",metaDescription:"Master robotic adhesive dispensing SPM engineering. Learn 3-axis volumetric micro-dispensing, automated vision bead tracking, and cycle time optimization.",category:"Production",image:"/assets/images/blogs/robotic-dispensing-spm-featured.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A robotic adhesive dispensing SPM is a specialized 3-axis or 6-axis automated machine tool engineered to apply precise, repeatable beads of single-component (1K) or two-component (2K) adhesives, sealants, silicones, and thermal potting resins onto automotive and electronic assemblies. Utilizing positive displacement progressive cavity pumps, high-speed closed-loop Cartesian gantries, and automated vision inspection systems, robotic adhesive dispensing SPMs achieve volumetric bead accuracy down to ±0.05ml, eliminate adhesive waste, and reduce dispensing cycle times by up to 65%.",excerpt:"In precision manufacturing, implementing a high-performance robotic adhesive dispensing spm is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In the assembly of automotive headlamps, electric vehicle (EV) battery packs, electronic control unit (ECU) enclosures, and aerospace sensor housings, structural adhesives and fluid sealants perform mission-critical sealing and bonding functions. However, manual application using hand-held pneumatic dispensing guns is plagued by severe quality defects: uneven bead widths, start/stop stringing, air pockets, and excessive sealant overflow that requires costly manual clean-up. A dedicated robotic adhesive dispensing spm replaces manual inconsistency with sub-millimeter Cartesian motion and precision volumetric metering. Whether applying room-temperature vulcanizing (RTV) silicone, polyurethane structural adhesives, or 2-part epoxies, an automated dispensing cell tracks complex 3D contour paths at linear speeds up to 500 mm/s while maintaining an unbroken, uniform bead cross-section.",paragraphs:["In precision manufacturing, implementing a high-performance robotic adhesive dispensing spm is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. In the assembly of automotive headlamps, electric vehicle (EV) battery packs, electronic control unit (ECU) enclosures, and aerospace sensor housings, structural adhesives and fluid sealants perform mission-critical sealing and bonding functions. However, manual application using hand-held pneumatic dispensing guns is plagued by severe quality defects: uneven bead widths, start/stop stringing, air pockets, and excessive sealant overflow that requires costly manual clean-up.","A dedicated robotic adhesive dispensing spm replaces manual inconsistency with sub-millimeter Cartesian motion and precision volumetric metering. Whether applying room-temperature vulcanizing (RTV) silicone, polyurethane structural adhesives, or 2-part epoxies, an automated dispensing cell tracks complex 3D contour paths at linear speeds up to 500 mm/s while maintaining an unbroken, uniform bead cross-section.","At CyTOS Engineering in Pune, we manufacture custom robotic dispensing cells engineered with Factor of Safety 2.0. This guide details the pump technologies, motion control synchronization, and vision inspection systems required to achieve zero-defect fluid application.","The core of any robotic sealant application units is the fluid metering system. Choosing the correct dispensing pump dictates whether bead volume remains consistent under fluctuating shop ambient temperatures:","CyTOS dispensing cells integrate continuous volumetric progressive cavity pumps. A precision ground stainless steel eccentric rotor turns inside a compliant elastomer stator, creating moving sealed chambers that deliver an exact volume of fluid per degree of motor rotation. Flow rate is 100% independent of adhesive viscosity fluctuations, air bubbles, or container pressure changes, holding volumetric dispensing tolerance within ±1%."],faqs:[],toc:[{id:"introduction-robotic-dispensing",title:"Introduction: Engineering Standards for a Robotic Adhesive Dispensing Spm"},{id:"volumetric-pump-technologies",title:"Fluid Metering: Time-Pressure vs Progressive Cavity Pumps"},{id:"motion-fluid-synchronization",title:"Velocity-Proportional Dispensing: Synchronizing Robot Speed with Pump RPM"},{id:"quality-assurance-calibration-robotic-adhesiv",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsAdhesive Dispensing Spm"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"special-purpose-machines-spm-guide",title:"Special Purpose Machines (SPM): How Custom Industrial Automation Cuts Cycle Time 60%",metaDescription:"Discover how custom special purpose machines (SPM) engineered in Pune slash manufacturing cycle time by 60%, integrate robotics, and eliminate manual assembly bottlenecks.",category:"Production",image:"/assets/images/blogs/spm-welding-automation-featured.jpg",readTime:"15 min read",date:"2026-03-20",aeoAnswer:"Special purpose machines (SPM) are custom-engineered, single-purpose automated production systems designed to perform dedicated manufacturing, assembly, inspection, or machining operations that cannot be handled efficiently by standard general-purpose machine tools. By integrating multi-station rotary indexing tables, synchronized pneumatic/hydraulic clamping fixtures, Cartesian or articulated robotics, and Siemens/Delta PLC control architectures, custom special purpose machines reduce cycle times by 40% to 70%, achieve micron-level repeatability, and eliminate manual operator error in high-volume automotive and industrial production lines.",excerpt:"In modern industrial manufacturing—particularly across the automotive, electrical switchgear, defense, and white-goods sectors—standard catalog machine tools frequently hit an efficiency ceiling. While general-purpose CNC machining centers and standard drill presses offer programming flexibility, their generic architecture requires extensive manual loading, awkward multi-step part re-clamping, and long non-cutting tool changes that drag down plant productivity. This is why forward-thinking manufacturing leaders invest in special purpose machines (SPM). A custom special purpose machine is designed around the exact geometry, cycle-time target, and quality parameters of a single specific component or sub-assembly. By combining multiple operations—such as multi-angle drilling, automated pressing, sealant dispensing, robotic pick-and-place, and in-line vision inspection—into a single compact station, an SPM eliminates intermediate part handling and slashes manufacturing cycle time by 40% to 70%.",paragraphs:["In modern industrial manufacturing—particularly across the automotive, electrical switchgear, defense, and white-goods sectors—standard catalog machine tools frequently hit an efficiency ceiling. While general-purpose CNC machining centers and standard drill presses offer programming flexibility, their generic architecture requires extensive manual loading, awkward multi-step part re-clamping, and long non-cutting tool changes that drag down plant productivity. This is why forward-thinking manufacturing leaders invest in special purpose machines (SPM).","A custom special purpose machine is designed around the exact geometry, cycle-time target, and quality parameters of a single specific component or sub-assembly. By combining multiple operations—such as multi-angle drilling, automated pressing, sealant dispensing, robotic pick-and-place, and in-line vision inspection—into a single compact station, an SPM eliminates intermediate part handling and slashes manufacturing cycle time by 40% to 70%.","At CyTOS Engineering in Pune, Maharashtra, we specialize in turnkey special purpose machines engineered to our foundational benchmark: Factor of Safety 2.0 and 24x7 Continuous Duty Rating. From pneumatic robotic welding jigs to 4-axis adhesive dispensing cells, our machines are designed from the ground up to solve complex shop-floor bottlenecks across India's premier industrial hubs.","To evaluate whether an automation challenge requires a standard CNC or a customized special purpose machine, examine the core differences summarized below:","Every industrial special purpose machine designed by CyTOS incorporates modular, heavy-duty sub-systems configured for maximum reliability under 24x7 continuous duty:"],faqs:[],toc:[{id:"introduction-spm-machines",title:"Introduction: Why High-Volume Manufacturing Requires Special Purpose Machines (SPM)"},{id:"general-cnc-vs-spm",title:"General Purpose Machine Tools vs Dedicated Special Purpose Machines: Key Differences"},{id:"core-architectural-modules",title:"Core Engineering Modules of an Industrial SPM"},{id:"plc-control-and-industry-4",title:"PLC Architecture, Safety Interlocks, and Industry 4.0 Telemetry"},{id:"pune-case-study-cycle-reduction",title:"Shop-Floor Case Study: Slashing Automotive Assembly Cycle Time from 120s to 32s"},{id:"quality-assurance-calibration-special-purpose",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsPurpose Machines"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]},{slug:"vertical-drilling-and-milling-machine-guide",title:"Vertical Drilling and Milling Machine: High-Throughput Multi-Spindle Solutions for Enclosures",metaDescription:"Boost electrical switchboard throughput with a vertical drilling and milling machine. Eliminate sheet handling bottlenecks and cut cycle time by 68%.",category:"Production",image:"/assets/images/blogs/vdm-switchboard-milling-featured.jpg",readTime:"14 min read",date:"2026-03-20",aeoAnswer:"A vertical drilling and milling machine (VDM) is a heavy-duty industrial CNC gantry center engineered specifically for the electrical switchboard, automation enclosure, and power distribution manufacturing sectors. Equipped with synchronized dual or triple BT30/BT40 spindles, precision ball-screw drives, and an expansive work envelope (up to 3.0m x 1.5m), a vertical drilling and milling machine executes meter cutouts, door hinge pockets, and pushbutton hole grids in a single automated setup, cutting enclosure fabrication cycle times by over 68%.",excerpt:"In precision manufacturing, implementing a high-performance vertical drilling and milling machine is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. Electrical control panel builders and switchgear OEMs (such as manufacturers producing Motor Control Centers - MCC, Power Control Centers - PCC, and distribution boards) face severe fabrication challenges. A standard 2.0-meter floor-standing enclosure door requires dozens of circular pushbutton holes, rectangular digital meter windows, rectangular gland plate openings, and perimeter hinge screw holes. Fabricating these on manual turret punch presses or drill presses requires repeated sheet repositioning, costly custom tooling dies, and extensive manual deburring. A specialized VDM machining center (VDM) solves this entire problem in a single integrated CNC workstation. The operator clamps the full-size enclosure sheet onto the vacuum table, loads the DXF drawing into the controller, and the machine executes all drilling, circular pocketing, and rectangular aperture milling in a single automated cycle.",paragraphs:["In precision manufacturing, implementing a high-performance vertical drilling and milling machine is essential for achieving superior production throughput, micron-level positional accuracy, and maximum operational reliability. Electrical control panel builders and switchgear OEMs (such as manufacturers producing Motor Control Centers - MCC, Power Control Centers - PCC, and distribution boards) face severe fabrication challenges. A standard 2.0-meter floor-standing enclosure door requires dozens of circular pushbutton holes, rectangular digital meter windows, rectangular gland plate openings, and perimeter hinge screw holes. Fabricating these on manual turret punch presses or drill presses requires repeated sheet repositioning, costly custom tooling dies, and extensive manual deburring.","A specialized VDM machining center (VDM) solves this entire problem in a single integrated CNC workstation. The operator clamps the full-size enclosure sheet onto the vacuum table, loads the DXF drawing into the controller, and the machine executes all drilling, circular pocketing, and rectangular aperture milling in a single automated cycle.","At CyTOS Engineering in Pune, our VDM series is purpose-built for the electrical panel industry with Factor of Safety 2.0 and heavy cast iron beds. This guide explains how electrical OEMs achieve 3x throughput expansion by deploying VDM technology on their shop floors.","To quantify the commercial payback of a dedicated heavy-duty gantry milling unit, examine the production comparison below for a standard batch of 20 switchboard enclosure doors (each containing 32 holes and 2 meter cutouts):","Milling thin sheet steel (1.2mm to 2.5mm CRCA mild steel) presents a notorious vibration problem: when a rotating end mill bites into an unsupported sheet, the metal resonates like a drum, creating terrifying chatter, jagged burrs, and rapid tool chipping."],faqs:[],toc:[{id:"introduction-vdm-switchboards",title:"Introduction: Engineering Standards for a Vertical Drilling And Milling Machine"},{id:"single-vs-multi-spindle-vdm",title:"Throughput Benchmark: Single-Spindle VMC vs CyTOS Multi-Spindle VDM"},{id:"workholding-thin-sheet-damping",title:"Solving Sheet Metal Vibration: Vacuum Damping & Clean Edge Finishes"},{id:"quality-assurance-calibration-vertical-drilli",title:"Quality Assurance, Metrology & Preventative Maintenance ProtocolsDrilling And Milling Machine"},{id:"frequently-asked-questions",title:"Frequently Asked Questions"},{id:"engineering-consultation",title:"Engineering Consultation &amp; Next Steps"}]}],fi=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "CNC 6060 PCB Drilling & Routing Machine", "model": "CyTOS CNC 6060", "description": "Manufacturer of CNC 6060 PCB Drilling & Routing Machine - 18,000 to 100,000 RPM spindle, 0.2mm micro-drilling, multi-spindle & pneumatic ATC options. Direct factory price from CyTOS Pune, Maharashtra.", "image": ["https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png", "https://www.cytos.in/assets/images/machines/pcb-cnc-cabinet.png", "https://www.cytos.in/assets/images/machines/precision-machining-parts.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "PCB Drilling & Routing Machines", "offers": {"@type": "Offer", "url": "https://www.cytos.in/cnc-6060-pcb-drilling-routing-machine", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "CNC 6060 PCB Drilling & Routing Machine", "item": "https://www.cytos.in/cnc-6060-pcb-drilling-routing-machine"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the smallest hole diameter the CNC 6060 can drill in production?", "acceptedAnswer": {"@type": "Answer", "text": "The CyTOS CNC 6060 reliably drills holes down to 0.2 mm (200 microns) in standard FR4 and multilayer circuit boards. Combined with 60,000 to 100,000 RPM spindles and controlled micro-pecking cycles, drill bit breakage is minimized even during continuous batch runs."}}, {"@type": "Question", "name": "Can the CNC 6060 handle both drilling and edge routing in a single job?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The CNC 6060 is a full dual-purpose machine. It performs all high-speed through-hole and via drilling, followed immediately by outer board contour routing, slotting, V-grooving, and panel tab de-paneling without removing the workpiece from the fixture."}}, {"@type": "Question", "name": "How does the multi-spindle configuration benefit our manufacturing line?", "acceptedAnswer": {"@type": "Answer", "text": "With multi-spindle setups (up to 5 spindles), the machine operates synchronously across multiple panels mounted on the table. A 3-spindle machine produces 3 complete panels in the same cycle time as a single spindle, effectively tripling production capacity without tripling floor space or operator costs."}}, {"@type": "Question", "name": "What file formats does the machine accept from EDA software like Altium or KiCad?", "acceptedAnswer": {"@type": "Answer", "text": "The machine accepts standard Excellon drill files (.drl, .txt) and Gerber RS-274X files (.gbr) directly. Our in-house CAM software automatically parses tool diameters, optimizes toolpath travel to reduce cycle times, and assigns spindle speeds."}}, {"@type": "Question", "name": "What after-sales service and spare parts support is available?", "acceptedAnswer": {"@type": "Answer", "text": "All machines are manufactured at our Bhosari MIDC facility in Pune. We maintain a full inventory of spindles, collets, ball screws, stepper/servo drives, and controllers. Our field engineers provide direct on-site installation, commissioning, operator training, and annual maintenance contracts (AMC) across India."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">CNC 6060 PCB Drilling & Routing Machine</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>100,000 RPM ULTRA-HIGH SPEED</span>
+          </div>
+          <h1 class="page-hero-title">CNC 6060 PCB Drilling &amp; Routing Machine</h1>
+          <p class="page-hero-subtitle">
+            Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pin and vacuum bed clamping, and 1 to 5 spindle synchronized configurations for continuous 24/7 manufacturing shifts.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS CNC 6060 is our flagship commercial PCB drilling and routing workhorse, manufactured at our Bhosari MIDC facility in Pune. Designed for medium to large production volumes, it delivers 0.2 mm micro-drilling and high-speed contour routing across multilayer FR4, CEM-1, CEM-3, and aluminium-backed MCPCB panels with ±0.03 mm repeatability and optional pneumatic tool changing.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20CNC 6060 PCB Drilling & Routing Machine.%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> CNC 6060 PCB Drilling & Routing Machine • CyTOS CNC 6060 • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">100,000 RPM</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Max Spindle RPM</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">0.2 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Min Micro-Drill Dia</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">600 × 600 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Single Working Area</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">1 to 5</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Spindle Configurations</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Heavy floor-mounted structural steel frame normalized against internal stresses for vibration-free 24/7 continuous operation</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Ultra-high-speed hybrid ceramic bearing electro-spindle achieving up to 100,000 RPM with dynamic runout (TIR) under 3 microns</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Multi-spindle modular configuration allowing 1 to 5 synchronized heads to drill multiple identical PCB panels simultaneously</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Integrated optical / touch surface height probing that compensates for PCB panel warp and guarantees uniform Z-depth across the entire 600x600mm bed</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Proprietary CyTOS CAM software supporting native Excellon drill and Gerber RS-274X contour files without third-party converter licenses</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Architecture</strong></td>
+              <td>Heavy Floor Mounted Welded Steel & Cast Structure</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Working Area (Single Spindle)</strong></td>
+              <td>X: 600 mm × Y: 600 mm × Z: 100 mm</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle RPM Range</strong></td>
+              <td>18,000 RPM to 100,000 RPM Variable Inverter Drive</td>
+              <td><span class="badge-std">High Frequency</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Power Rating</strong></td>
+              <td>1.2 kW to 4.5 kW Water/Air Cooled</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Number of Spindles</strong></td>
+              <td>1 to 5 Synchronized Spindles (Custom Configurable)</td>
+              <td><span class="badge-std">Configurable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Drilling Diameter Range</strong></td>
+              <td>0.2 mm to 3.0 mm Micro-Drill Bits</td>
+              <td><span class="badge-std">Tested Metric</span></td>
+            </tr>
+            <tr>
+              <td><strong>Routing Diameter Range</strong></td>
+              <td>1.0 mm to 4.0 mm Contour Cutters</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Rapid Traverse Speed</strong></td>
+              <td>6,000 mm/min to 15,000 mm/min</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Positional Accuracy</strong></td>
+              <td>0.05 mm (50 Microns)</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Repeatability</strong></td>
+              <td>±0.03 mm to ±0.05 mm</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Axis Drive Motors</strong></td>
+              <td>Easy Servo / Digital AC Servo Axis Motors</td>
+              <td><span class="badge-std">Industrial Grade</span></td>
+            </tr>
+            <tr>
+              <td><strong>Motion Mechanism</strong></td>
+              <td>C5 Precision Ground Ball Screws + HIWIN Linear Guide Rails</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Workpiece Clamping</strong></td>
+              <td>Dowel Pin Fixture / T-Slot Aluminium Bed + Vacuum Hold-Down</td>
+              <td><span class="badge-std">Dual System</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tool Changing</strong></td>
+              <td>Manual Quick Collet / Pneumatic Automatic Tool Changer (ATC)</td>
+              <td><span class="badge-std">Optional ATC</span></td>
+            </tr>
+            <tr>
+              <td><strong>Collet Size</strong></td>
+              <td>3 mm to 6 mm Precision Collets</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Controller Hardware</strong></td>
+              <td>CyTOS PC-Based CNC Controller with High-Speed USB 2.0 Interface</td>
+              <td><span class="badge-std">In-House System</span></td>
+            </tr>
+            <tr>
+              <td><strong>Programming Standard</strong></td>
+              <td>Standard NC Language (G-Code, M-Code), Direct Excellon (.drl) & Gerber Import</td>
+              <td><span class="badge-std">Universal</span></td>
+            </tr>
+            <tr>
+              <td><strong>Power Supply Requirements</strong></td>
+              <td>230V – 240V AC, 16A, 50Hz (Single Phase or 3-Phase available)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Accessories Included</strong></td>
+              <td>Coolant Tank, Dust Collection Hood, Operator Console with Monitor & CPU</td>
+              <td><span class="badge-std">Complete Turnkey</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Standard FR4 (Single / Double Sided)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>40,000 – 60,000 RPM</td>
+              <td>Clean burr-free entry/exit holes down to 0.2mm</td>
+            </tr>
+            <tr>
+              <td><strong>Multilayer FR4 (4 to 12 Layers)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>50,000 – 80,000 RPM</td>
+              <td>No pad tear or inner-layer delamination with pecking cycles</td>
+            </tr>
+            <tr>
+              <td><strong>Aluminium-Core MCPCB (LED Boards)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>28,000 – 40,000 RPM</td>
+              <td>Mist coolant prevents aluminium chip welding</td>
+            </tr>
+            <tr>
+              <td><strong>CEM-1 & CEM-3 Composite Laminates</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>35,000 – 50,000 RPM</td>
+              <td>High feed rate and long tool life for consumer electronics</td>
+            </tr>
+            <tr>
+              <td><strong>Rogers & PTFE High-Frequency Substrates</strong></td>
+              <td><span class="matrix-status-cell optimal">● Capable</span></td>
+              <td>60,000 – 100,000 RPM</td>
+              <td>Special micro-grain carbide bits prevent PTFE smear</td>
+            </tr>
+            <tr>
+              <td><strong>Bakelite & Phenolic Paper Boards</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>30,000 – 45,000 RPM</td>
+              <td>Dry cutting with dual-bag vacuum extraction</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Complete PC-Based CNC Controller with Color LED Display & Keyboard Console</li>
+            <li style="margin-bottom: 0.6rem;">✓ High-Efficiency Dual-Bag Dust Collector & Vacuum Suction Shroud</li>
+            <li style="margin-bottom: 0.6rem;">✓ Coolant Recirculation Tank with Submersible Pump & Filtration Mesh</li>
+            <li style="margin-bottom: 0.6rem;">✓ Universal T-Slot Aluminium Clamping Bed with Dowel Pin Alignment Holes</li>
+            <li style="margin-bottom: 0.6rem;">✓ Pre-loaded CyTOS CAM & Motion Studio Software with G-Code Interpreter</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Comprehensive Factory Warranty & On-Site Installation in India</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ Pneumatic Automatic Tool Changer (ATC) with 6 to 12 Tool Station Rack</li>
+            <li style="margin-bottom: 0.6rem;">+ Optical CCD Vision Camera for Fiducial Registration & Panel Skew Correction</li>
+            <li style="margin-bottom: 0.6rem;">+ Closed-Loop Water Chiller for High-Duty Spindle Temperature Stabilization</li>
+            <li style="margin-bottom: 0.6rem;">+ Multi-Zone High-Flow Vacuum Clamping Bed with Rotary Vane Vacuum Pump</li>
+            <li style="margin-bottom: 0.6rem;">+ Additional Spindle Heads (up to 5 Synchronized Spindles per Gantry)</li>
+            <li style="margin-bottom: 0.6rem;">+ Automated Tool Length Sensor & Micro-Drill Breakage Laser Detector</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/pcb-cnc-cabinet.png" alt="CyTOS CNC Industrial Electrical Cabinet and Servo Drives, Pune" title="CyTOS CNC Industrial Electrical Cabinet and Servo Drives, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">CyTOS CNC Industrial Electrical Cabinet and Servo Drives, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Precision motion controller cabinet with segregated AC servo drives and noise-immune industrial wiring.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/precision-machining-parts.png" alt="Burr-free 0.2mm Micro-hole PCB Drilling Sample, Pune" title="Burr-free 0.2mm Micro-hole PCB Drilling Sample, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Burr-free 0.2mm Micro-hole PCB Drilling Sample, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Microscopic cross-section of 0.2mm drill via walls in multilayer FR4 panel processed on CyTOS CNC 6060.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the CNC 6060 PCB Drilling & Routing Machine
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20CNC 6060 PCB Drilling & Routing Machine." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the CNC 6060 PCB Drilling & Routing Machine.
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What is the smallest hole diameter the CNC 6060 can drill in production?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">The CyTOS CNC 6060 reliably drills holes down to 0.2 mm (200 microns) in standard FR4 and multilayer circuit boards. Combined with 60,000 to 100,000 RPM spindles and controlled micro-pecking cycles, drill bit breakage is minimized even during continuous batch runs.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can the CNC 6060 handle both drilling and edge routing in a single job?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. The CNC 6060 is a full dual-purpose machine. It performs all high-speed through-hole and via drilling, followed immediately by outer board contour routing, slotting, V-grooving, and panel tab de-paneling without removing the workpiece from the fixture.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does the multi-spindle configuration benefit our manufacturing line?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">With multi-spindle setups (up to 5 spindles), the machine operates synchronously across multiple panels mounted on the table. A 3-spindle machine produces 3 complete panels in the same cycle time as a single spindle, effectively tripling production capacity without tripling floor space or operator costs.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What file formats does the machine accept from EDA software like Altium or KiCad?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">The machine accepts standard Excellon drill files (.drl, .txt) and Gerber RS-274X files (.gbr) directly. Our in-house CAM software automatically parses tool diameters, optimizes toolpath travel to reduce cycle times, and assigns spindle speeds.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What after-sales service and spare parts support is available?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">All machines are manufactured at our Bhosari MIDC facility in Pune. We maintain a full inventory of spindles, collets, ball screws, stepper/servo drives, and controllers. Our field engineers provide direct on-site installation, commissioning, operator training, and annual maintenance contracts (AMC) across India.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 PCB Rapid Prototyping Machine" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100% CHEMICAL-FREE PROTOTYPING</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3020-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3020 PCB Rapid Prototyping Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3020-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3030 High Precision PCB Drilling & Routing Machine" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">60,000 RPM HIGH PRECISION</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3030-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3030 High Precision PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3030-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb12-multi-spindle.png" alt="CyTOS PCB12 3-Spindle High Throughput PCB Machine" title="CyTOS PCB12 Three-Spindle High-Throughput PCB Production Drilling Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">3X MASS PRODUCTION THROUGHPUT</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/pcb12-multi-spindle-drilling-machine" style="text-decoration: none; color: inherit;">CyTOS PCB12 3-Spindle High Throughput PCB Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Large-format 1,200 × 1,200 mm multi-spindle CNC drilling and routing machine equipped with three synchronized 40,000 to 60,000 RPM high-freq...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/pcb12-multi-spindle-drilling-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CyTOS PCB12 3-Spindle High Throughput PCB Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function yi(){return e.jsx(x,{htmlContent:fi,title:"CNC 6060 PCB Drilling & Routing Machine - 60,000 to 100,000 RPM Spindle Manufacturer from Pune | CyTOS",description:"Manufacturer of CNC 6060 PCB Drilling & Routing Machine - 18,000 to 100,000 RPM spindle, 0.2mm micro-drilling, multi-spindle & pneumatic ATC options. Direct factory price from CyTOS Pune, Maharashtra.",canonical:"https://www.cytos.in/cnc-6060-pcb-drilling-routing-machine"})}const bi=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "CNC 3020 PCB Rapid Prototyping Machine", "model": "CyTOS CNC 3020", "description": "Manufacturer of CNC 3020 PCB Rapid Prototyping Machine - Chemical-free isolation milling, 40,000 RPM spindle, auto-leveling & visual camera for R&D labs and colleges. CyTOS Pune, Maharashtra.", "image": ["https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png", "https://www.cytos.in/assets/images/machines/educational-cnc-lab.png", "https://www.cytos.in/assets/images/machines/precision-machining-parts.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "PCB Prototyping & R&D Machines", "offers": {"@type": "Offer", "url": "https://www.cytos.in/cnc-3020-pcb-prototyping-machine", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "CNC 3020 PCB Rapid Prototyping Machine", "item": "https://www.cytos.in/cnc-3020-pcb-prototyping-machine"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does chemical-free PCB prototyping compare with traditional wet etching?", "acceptedAnswer": {"@type": "Answer", "text": "Wet etching requires acid handling, photoresist printing, UV exposure, chemical etching tanks, neutralizing baths, and hazardous waste disposal — taking several hours and posing safety hazards. The CyTOS CNC 3020 mechanically mills the copper isolation channels directly using a carbide V-bit in 15 to 30 minutes with zero chemicals, zero fumes, and zero hazardous waste."}}, {"@type": "Question", "name": "How does the machine handle warped or uneven PCB boards?", "acceptedAnswer": {"@type": "Answer", "text": "The CNC 3020 features an automated surface leveling probe. Before milling, the tool lightly touches the copper board at 50 to 100 points across the surface, generating an exact 3D height map. During isolation milling, the Z-axis dynamically interpolates to follow the board curvature, guaranteeing constant 0.05 mm trace depth."}}, {"@type": "Question", "name": "Can students or junior technicians operate this machine safely?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The CNC 3020 is designed specifically for academic institutions and prototyping labs. It features a fully interlocked polycarbonate safety enclosure, emergency stop button, low noise levels under 65 dB, and an intuitive graphical user interface that imports Gerber files with one click."}}, {"@type": "Question", "name": "Can we make double-sided circuit boards with via alignment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The machine includes a precision optical camera and hardened dowel pin alignment block. After milling side A, the board is flipped along the reference dowel pins, and the optical camera confirms pad coordinates, ensuring exact via hole alignment between top and bottom layers."}}, {"@type": "Question", "name": "What is the typical turnaround time from CAD schematic to physical prototype?", "acceptedAnswer": {"@type": "Answer", "text": "Once your schematic and layout are completed in Altium, KiCad, or Eagle, exporting the Gerber files and milling a standard 100 × 80 mm double-sided prototype board typically takes just 20 to 25 minutes on the CyTOS CNC 3020."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">CNC 3020 PCB Rapid Prototyping Machine</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>100% CHEMICAL-FREE PROTOTYPING</span>
+          </div>
+          <h1 class="page-hero-title">CNC 3020 PCB Rapid Prototyping Machine</h1>
+          <p class="page-hero-subtitle">
+            Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges. Features 18,000 to 40,000 RPM spindle, dynamic auto-surface leveling, optical camera alignment, and 100% dry mechanical processing with zero toxic wet chemicals.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS CNC 3020 allows electronics design engineers to convert CAD Gerber files into physical working double-sided circuit prototypes in under 30 minutes right in their lab. Manufactured in Pune, it completely replaces slow, toxic ferric chloride acid etching with clean, high-precision mechanical isolation milling.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20CNC 3020 PCB Rapid Prototyping Machine.%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> CNC 3020 PCB Rapid Prototyping Machine • CyTOS CNC 3020 • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">40,000 RPM</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">High-Speed Spindle</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">300 × 200 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">A4 Working Area</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">0.1 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Min Track / Gap</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">0% Acid</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Green Lab Safe</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">100% chemical-free mechanical isolation milling — completely eliminates toxic ferric chloride (FeCl3) acid handling, fumes, and hazardous chemical disposal</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Automated multi-point capacitive surface probing creates a digital height map to compensate for PCB board warpage and maintain exact trace depth</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">High-resolution optical camera overlay allows real-time visual inspection of pad alignment and zero-point calibration directly on the monitor</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Precision dowel pin registration system makes double-sided PCB fabrication straightforward with exact top-to-bottom pad alignment</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Compact, fully enclosed tabletop design with interlocked transparent safety shield suitable for cleanroom, university, or corporate lab deployment</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Category</strong></td>
+              <td>Compact Tabletop Precision PCB Prototyper</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Working Envelope (X × Y × Z)</strong></td>
+              <td>X: 300 mm × Y: 200 mm × Z: 60 mm (A4 Format)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Overall Machine Dimensions</strong></td>
+              <td>3 ft × 4 ft × 5 ft (Compact Benchtop Footprint)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Machine Weight</strong></td>
+              <td>60 kg to 80 kg (Solid Vibration-Resistant Structure)</td>
+              <td><span class="badge-std">Benchtop</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Motor Power</strong></td>
+              <td>0.8 kW to 1.2 kW Precision Spindle Motor</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Speed Range</strong></td>
+              <td>18,000 RPM to 40,000 RPM Continuous Variable</td>
+              <td><span class="badge-std">High Frequency</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Cooling Options</strong></td>
+              <td>Air Cooled & Water Cooled Both Available</td>
+              <td><span class="badge-std">Configurable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Min Drill Diameter</strong></td>
+              <td>0.4 mm to 3.0 mm Carbide Drills</td>
+              <td><span class="badge-std">Tested Metric</span></td>
+            </tr>
+            <tr>
+              <td><strong>Min Routing Diameter</strong></td>
+              <td>1.0 mm to 3.0 mm End Mills</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Min Track Pitch / Isolation</strong></td>
+              <td>0.1 mm (4 mil) Minimum Trace & Clearance Width</td>
+              <td><span class="badge-std">High Precision</span></td>
+            </tr>
+            <tr>
+              <td><strong>Travel Speed</strong></td>
+              <td>Up to 6,000 mm/min Rapid Traverse</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Positional Accuracy</strong></td>
+              <td>0.05 mm (50 Microns)</td>
+              <td><span class="badge-std">Laser Calibrated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Repeatability (99%)</strong></td>
+              <td>±0.05 mm Consistent Positioning</td>
+              <td><span class="badge-std">Laser Calibrated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tool Changing Mechanism</strong></td>
+              <td>Manual Quick-Clamp / Pneumatic Button Press ATC</td>
+              <td><span class="badge-std">Standard/Opt</span></td>
+            </tr>
+            <tr>
+              <td><strong>PCB Clamping Mechanism</strong></td>
+              <td>Precision Dowel Pin Fixture / T-Slot Aluminium Bed</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Surface Leveling System</strong></td>
+              <td>Automated Dynamic Surface Height Matrix Probing</td>
+              <td><span class="badge-std">Included</span></td>
+            </tr>
+            <tr>
+              <td><strong>Optical Inspection</strong></td>
+              <td>Integrated Optical USB Camera for Visual Alignment</td>
+              <td><span class="badge-std">Included</span></td>
+            </tr>
+            <tr>
+              <td><strong>Safety & Environment</strong></td>
+              <td>Transparent Polycarbonate Protective Enclosure</td>
+              <td><span class="badge-std">Included</span></td>
+            </tr>
+            <tr>
+              <td><strong>Control System</strong></td>
+              <td>PC-Based CyTOS Studio with USB 2.0 Interface & G-Code Support</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Single & Double Sided FR4 Copper Clad</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>30,000 – 40,000 RPM</td>
+              <td>Clean 0.1mm isolation tracks and 0.4mm vias in minutes</td>
+            </tr>
+            <tr>
+              <td><strong>Rogers High-Frequency RF Laminates</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>35,000 – 40,000 RPM</td>
+              <td>Ideal for 2.4GHz and 5GHz antenna and filter prototyping</td>
+            </tr>
+            <tr>
+              <td><strong>Flexible PCB Substrates (Polyimide)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Capable</span></td>
+              <td>25,000 – 35,000 RPM</td>
+              <td>Requires vacuum hold-down bed to prevent membrane flutter</td>
+            </tr>
+            <tr>
+              <td><strong>Aluminium-Core MCPCBs</strong></td>
+              <td><span class="matrix-status-cell optimal">● Capable</span></td>
+              <td>20,000 – 30,000 RPM</td>
+              <td>Excellent for high-power LED driver board prototyping</td>
+            </tr>
+            <tr>
+              <td><strong>Acrylic & Soft Plastic Enclosures</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>18,000 – 25,000 RPM</td>
+              <td>Faceplate cutouts, engraving, and LED lens machining</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Fully Enclosed Tabletop Safety Cabinet with Transparent Viewing Window</li>
+            <li style="margin-bottom: 0.6rem;">✓ Automatic Surface Height Probing Probe and Ground Clip</li>
+            <li style="margin-bottom: 0.6rem;">✓ High-Resolution Visual Alignment Camera with On-Screen Crosshairs</li>
+            <li style="margin-bottom: 0.6rem;">✓ Starter Tooling Kit: 10x Isolation V-Bits, 10x Micro-Drills, 5x End Mills</li>
+            <li style="margin-bottom: 0.6rem;">✓ CyTOS CAM Pro Software License with Gerber RS-274X & Excellon Importer</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Comprehensive Warranty and Factory Operator Video Training</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ Pneumatic Button-Press Automatic Tool Changing (ATC) Collet System</li>
+            <li style="margin-bottom: 0.6rem;">+ Micro Vacuum Hold-Down Table with Low-Noise Oil-Free Diaphragm Pump</li>
+            <li style="margin-bottom: 0.6rem;">+ Fine Dust Evacuation Shroud with Compact HEPA Laboratory Filter</li>
+            <li style="margin-bottom: 0.6rem;">+ Double-Sided PCB Riveting Press for Metallized Through-Hole Vias</li>
+            <li style="margin-bottom: 0.6rem;">+ Educational Curriculum Package with 20 Student Lab Workbooks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/educational-cnc-lab.png" alt="Educational PCB CNC Prototyping Laboratory Setup, Pune" title="Educational PCB CNC Prototyping Laboratory Setup, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Educational PCB CNC Prototyping Laboratory Setup, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Fully enclosed chemical-free PCB prototyping workcell installed in academic research laboratory.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/precision-machining-parts.png" alt="Fine Track Isolation Milling Sample 0.1mm Pitch, Pune" title="Fine Track Isolation Milling Sample 0.1mm Pitch, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Fine Track Isolation Milling Sample 0.1mm Pitch, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Clean mechanical isolation milling traces and micro-via pads on double-sided FR4 circuit board.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the CNC 3020 PCB Rapid Prototyping Machine
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20CNC 3020 PCB Rapid Prototyping Machine." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the CNC 3020 PCB Rapid Prototyping Machine.
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does chemical-free PCB prototyping compare with traditional wet etching?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Wet etching requires acid handling, photoresist printing, UV exposure, chemical etching tanks, neutralizing baths, and hazardous waste disposal — taking several hours and posing safety hazards. The CyTOS CNC 3020 mechanically mills the copper isolation channels directly using a carbide V-bit in 15 to 30 minutes with zero chemicals, zero fumes, and zero hazardous waste.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does the machine handle warped or uneven PCB boards?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">The CNC 3020 features an automated surface leveling probe. Before milling, the tool lightly touches the copper board at 50 to 100 points across the surface, generating an exact 3D height map. During isolation milling, the Z-axis dynamically interpolates to follow the board curvature, guaranteeing constant 0.05 mm trace depth.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can students or junior technicians operate this machine safely?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. The CNC 3020 is designed specifically for academic institutions and prototyping labs. It features a fully interlocked polycarbonate safety enclosure, emergency stop button, low noise levels under 65 dB, and an intuitive graphical user interface that imports Gerber files with one click.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can we make double-sided circuit boards with via alignment?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. The machine includes a precision optical camera and hardened dowel pin alignment block. After milling side A, the board is flipped along the reference dowel pins, and the optical camera confirms pad coordinates, ensuring exact via hole alignment between top and bottom layers.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What is the typical turnaround time from CAD schematic to physical prototype?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Once your schematic and layout are completed in Altium, KiCad, or Eagle, exporting the Gerber files and milling a standard 100 × 80 mm double-sided prototype board typically takes just 20 to 25 minutes on the CyTOS CNC 3020.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling & Routing Machine" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100,000 RPM ULTRA-HIGH SPEED</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-6060-pcb-drilling-routing-machine" style="text-decoration: none; color: inherit;">CNC 6060 PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pi...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-6060-pcb-drilling-routing-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3030 High Precision PCB Drilling & Routing Machine" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">60,000 RPM HIGH PRECISION</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3030-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3030 High Precision PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3030-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb12-multi-spindle.png" alt="CyTOS PCB12 3-Spindle High Throughput PCB Machine" title="CyTOS PCB12 Three-Spindle High-Throughput PCB Production Drilling Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">3X MASS PRODUCTION THROUGHPUT</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/pcb12-multi-spindle-drilling-machine" style="text-decoration: none; color: inherit;">CyTOS PCB12 3-Spindle High Throughput PCB Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Large-format 1,200 × 1,200 mm multi-spindle CNC drilling and routing machine equipped with three synchronized 40,000 to 60,000 RPM high-freq...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/pcb12-multi-spindle-drilling-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CyTOS PCB12 3-Spindle High Throughput PCB Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function Ci(){return e.jsx(x,{htmlContent:bi,title:"CNC 3020 PCB Rapid Prototyping Machine - Chemical-Free Desktop Milling Machine Manufacturer from Pune | CyTOS",description:"Manufacturer of CNC 3020 PCB Rapid Prototyping Machine - Chemical-free isolation milling, 40,000 RPM spindle, auto-leveling & visual camera for R&D labs and colleges. CyTOS Pune, Maharashtra.",canonical:"https://www.cytos.in/cnc-3020-pcb-prototyping-machine"})}const wi=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "CNC 3030 High Precision PCB Drilling & Routing Machine", "model": "CyTOS CNC 3030", "description": "Manufacturer of CNC 3030 PCB Drilling and Routing Machine - 60,000 RPM spindle, 0.3mm track isolation, pneumatic ATC & T-slot bed. Benchtop precision from CyTOS Pune.", "image": ["https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png", "https://www.cytos.in/assets/images/machines/precision-machining-parts.png", "https://www.cytos.in/assets/images/machines/pcb-cnc-cabinet.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "High Speed PCB Prototyping", "offers": {"@type": "Offer", "url": "https://www.cytos.in/cnc-3030-pcb-prototyping-machine", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "CNC 3030 High Precision PCB Drilling & Routing Machine", "item": "https://www.cytos.in/cnc-3030-pcb-prototyping-machine"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What makes the CNC 3030 different from the desktop CNC 3020?", "acceptedAnswer": {"@type": "Answer", "text": "While the CNC 3020 is a lightweight 60 kg desktop machine designed for lab prototyping, the CNC 3030 is a heavy-duty 250 to 370 kg industrial benchtop system. It features faster travel speeds (166 mm/sec vs 100 mm/sec), higher-power spindles (1.5 kW up to 60,000 RPM), and AC servo motor options, making it capable of both prototyping and small-batch production."}}, {"@type": "Question", "name": "Can the CNC 3030 machine aluminium and brass plates?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Thanks to its heavy structural steel frame and rigid C5 ball screws, the CNC 3030 easily machines non-ferrous soft metals such as aluminium, brass, and copper busbars for electrical panels and heat sinks using appropriate feed rates and mist coolant."}}, {"@type": "Question", "name": "What spindle options are available on the CNC 3030?", "acceptedAnswer": {"@type": "Answer", "text": "We offer three primary configurations: 28,000 RPM 800W air-cooled spindle (Stepper drive), 40,000 RPM 1.5 kW water-cooled spindle (Easy Servo), and 60,000 RPM 1.5 kW high-frequency electro-spindle with pneumatic ATC (Digital AC Servo)."}}, {"@type": "Question", "name": "How does the pneumatic tool change function?", "acceptedAnswer": {"@type": "Answer", "text": "With the pneumatic button-press ATC collet option, the operator presses a quick-release push button on the spindle head to release the tool collet pneumatically in 2 seconds, eliminating wrench slippage and collet runout errors."}}, {"@type": "Question", "name": "Where can we see a live demonstration of the CNC 3030?", "acceptedAnswer": {"@type": "Answer", "text": "You are welcome to visit our manufacturing works at J-153, MIDC Bhosari in Pune. You can bring your component drawings or sample PCB material for a live trial run and cycle time test."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">CNC 3030 High Precision PCB Drilling & Routing Machine</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>60,000 RPM HIGH PRECISION</span>
+          </div>
+          <h1 class="page-hero-title">CNC 3030 High Precision PCB Drilling &amp; Routing Machine</h1>
+          <p class="page-hero-subtitle">
+            Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC servo drives, pneumatic button-press ATC, and 300 × 300 mm working envelope for demanding R&D labs and fast-turnaround batch pilot runs.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS CNC 3030 bridges the gap between desktop rapid prototyping and high-throughput production. With a rigid 250 to 370 kg frame, precision ball screws, and high-frequency electro-spindles up to 60,000 RPM, it easily achieves 0.3 mm track isolation, fine-pitch micro-via drilling, and high-speed PCB outer contour routing.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20CNC 3030 High Precision PCB Drilling & Routing Machine.%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> CNC 3030 High Precision PCB Drilling & Routing Machine • CyTOS CNC 3030 • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">60,000 RPM</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Water-Cooled Spindle</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">300 × 300 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Square Working Bed</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">166 mm/sec</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Rapid Travel Speed</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">AC Servo</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Closed-Loop Motion</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Vibration-absorbing heavy steel frame weighing up to 370 kg for zero-resonance cutting at 60,000 RPM</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">High-frequency 1.5 kW electro-spindle offering extreme dynamic stiffness and long bearing life during continuous milling</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Closed-loop AC digital servo motors delivering rapid positioning speeds up to 166 mm/sec with zero lost steps</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Pneumatic button-press quick tool change reduces cutter swap time to less than 5 seconds without wrench hassle</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Comprehensive dust collection shroud and chip vacuum arrangement keeping sensitive optical scales and bearings clean</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Model</strong></td>
+              <td>CyTOS CNC 3030 Heavy Benchtop Precision</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Working Area (X × Y × Z)</strong></td>
+              <td>X: 300 mm × Y: 300 mm × Z: 60 mm</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Travel Speed</strong></td>
+              <td>166 mm/sec (10,000 mm/min) High Speed Traverse</td>
+              <td><span class="badge-std">High Velocity</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Configuration Options</strong></td>
+              <td>28k RPM (800W) / 40k RPM (1.5kW) / 60k RPM (1.5kW)</td>
+              <td><span class="badge-std">Configurable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Cooling</strong></td>
+              <td>Water Cooled with Closed-Loop Circulator</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Drive System Options</strong></td>
+              <td>Easy Servo / AC Digital Servo Axis Motors</td>
+              <td><span class="badge-std">Standard/Opt</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tool Change System</strong></td>
+              <td>Manual Quick Collet / Pneumatic (Button Press) ATC</td>
+              <td><span class="badge-std">Configurable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Machine Net Weight</strong></td>
+              <td>250 kg (Stepper) / 300 kg (Easy Servo) / 370 kg (AC Servo ATC)</td>
+              <td><span class="badge-std">Heavy Duty</span></td>
+            </tr>
+            <tr>
+              <td><strong>Workpiece Clamping</strong></td>
+              <td>Dowel Pin Reference Holes + T-Slot Aluminium Bed</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Min Track Width / Isolation</strong></td>
+              <td>0.3 mm (Engraving & Rapid Prototyping)</td>
+              <td><span class="badge-std">Tested Metric</span></td>
+            </tr>
+            <tr>
+              <td><strong>Collet Size Compatibility</strong></td>
+              <td>3 mm to 6 mm Industrial Collets</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Positional Accuracy</strong></td>
+              <td>0.05 mm (50 Microns)</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Repeatability</strong></td>
+              <td>±0.05 mm Repeatability</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Control System</strong></td>
+              <td>CyTOS PC-Based Industrial System with Monitor, Keyboard & CPU</td>
+              <td><span class="badge-std">Included</span></td>
+            </tr>
+            <tr>
+              <td><strong>Power Supply</strong></td>
+              <td>230V – 240V AC, 16A, 50Hz Standard Workshop Supply</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Standard Accessories</strong></td>
+              <td>Coolant Tank, Dust Collection Shroud, PC Controller & Stand</td>
+              <td><span class="badge-std">Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>FR4 Double Sided Copper Clad</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>40,000 – 60,000 RPM</td>
+              <td>Rapid 166 mm/sec routing and clean micro-via drilling</td>
+            </tr>
+            <tr>
+              <td><strong>High-Tg Multilayer FR4 Boards</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>45,000 – 60,000 RPM</td>
+              <td>No resin smear or delamination under high feed rates</td>
+            </tr>
+            <tr>
+              <td><strong>Aluminium Sheet & MCPCB Plates</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>24,000 – 35,000 RPM</td>
+              <td>Rigid machine frame enables smooth aluminium plate routing</td>
+            </tr>
+            <tr>
+              <td><strong>Brass & Copper Soft Metal Plates</strong></td>
+              <td><span class="matrix-status-cell optimal">● Capable</span></td>
+              <td>18,000 – 28,000 RPM</td>
+              <td>Light face milling and engraving with flood/mist coolant</td>
+            </tr>
+            <tr>
+              <td><strong>Acrylic & Polycarbonate Panels</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>20,000 – 30,000 RPM</td>
+              <td>Crystal-clear routed edges with single-flute spiral cutters</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Complete Industrial PC Operator Console with High-Resolution Monitor & CPU</li>
+            <li style="margin-bottom: 0.6rem;">✓ Coolant Recirculation Tank with Submersible Pump and Flexible Nozzles</li>
+            <li style="margin-bottom: 0.6rem;">✓ High-Flow Dust Collection Shroud with Industrial Suction Vacuum Hose</li>
+            <li style="margin-bottom: 0.6rem;">✓ Heavy-Duty Machined T-Slot Aluminium Base with Dowel Locating Pins</li>
+            <li style="margin-bottom: 0.6rem;">✓ Precision Tool Height Touch Plate and Automatic Z-Zero Setting Sensor</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Comprehensive On-Site Warranty Across Maharashtra and India</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ Pneumatic Button-Press Collet Clamping System with Rapid Tool Release</li>
+            <li style="margin-bottom: 0.6rem;">+ Closed-Loop Refrigerated Spindle Water Chiller with Digital Temperature Display</li>
+            <li style="margin-bottom: 0.6rem;">+ Optical CCD Vision Camera for Board Edge & Fiducial Alignment</li>
+            <li style="margin-bottom: 0.6rem;">+ Rotary 4th Axis Attachment for Cylindrical Component Engraving</li>
+            <li style="margin-bottom: 0.6rem;">+ Full Soundproof Protective Enclosure with Safety Interlock Doors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/precision-machining-parts.png" alt="Precision PCB Drilling and Milling Components, Pune" title="Precision PCB Drilling and Milling Components, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Precision PCB Drilling and Milling Components, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Close-up of fine-pitch SMD pads and contour routed edges produced on the CNC 3030.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/pcb-cnc-cabinet.png" alt="Digital AC Servo Drive Integration for CNC 3030, Pune" title="Digital AC Servo Drive Integration for CNC 3030, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Digital AC Servo Drive Integration for CNC 3030, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">High-torque closed-loop servo drive configuration delivering 166 mm/sec rapid travel speeds.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the CNC 3030 High Precision PCB Drilling & Routing Machine
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20CNC 3030 High Precision PCB Drilling & Routing Machine." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the CNC 3030 High Precision PCB Drilling & Routing Machine.
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What makes the CNC 3030 different from the desktop CNC 3020?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">While the CNC 3020 is a lightweight 60 kg desktop machine designed for lab prototyping, the CNC 3030 is a heavy-duty 250 to 370 kg industrial benchtop system. It features faster travel speeds (166 mm/sec vs 100 mm/sec), higher-power spindles (1.5 kW up to 60,000 RPM), and AC servo motor options, making it capable of both prototyping and small-batch production.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can the CNC 3030 machine aluminium and brass plates?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. Thanks to its heavy structural steel frame and rigid C5 ball screws, the CNC 3030 easily machines non-ferrous soft metals such as aluminium, brass, and copper busbars for electrical panels and heat sinks using appropriate feed rates and mist coolant.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What spindle options are available on the CNC 3030?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">We offer three primary configurations: 28,000 RPM 800W air-cooled spindle (Stepper drive), 40,000 RPM 1.5 kW water-cooled spindle (Easy Servo), and 60,000 RPM 1.5 kW high-frequency electro-spindle with pneumatic ATC (Digital AC Servo).</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does the pneumatic tool change function?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">With the pneumatic button-press ATC collet option, the operator presses a quick-release push button on the spindle head to release the tool collet pneumatically in 2 seconds, eliminating wrench slippage and collet runout errors.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Where can we see a live demonstration of the CNC 3030?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">You are welcome to visit our manufacturing works at J-153, MIDC Bhosari in Pune. You can bring your component drawings or sample PCB material for a live trial run and cycle time test.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling & Routing Machine" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100,000 RPM ULTRA-HIGH SPEED</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-6060-pcb-drilling-routing-machine" style="text-decoration: none; color: inherit;">CNC 6060 PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pi...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-6060-pcb-drilling-routing-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 PCB Rapid Prototyping Machine" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100% CHEMICAL-FREE PROTOTYPING</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3020-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3020 PCB Rapid Prototyping Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3020-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb12-multi-spindle.png" alt="CyTOS PCB12 3-Spindle High Throughput PCB Machine" title="CyTOS PCB12 Three-Spindle High-Throughput PCB Production Drilling Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">3X MASS PRODUCTION THROUGHPUT</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/pcb12-multi-spindle-drilling-machine" style="text-decoration: none; color: inherit;">CyTOS PCB12 3-Spindle High Throughput PCB Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Large-format 1,200 × 1,200 mm multi-spindle CNC drilling and routing machine equipped with three synchronized 40,000 to 60,000 RPM high-freq...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/pcb12-multi-spindle-drilling-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CyTOS PCB12 3-Spindle High Throughput PCB Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function xi(){return e.jsx(x,{htmlContent:wi,title:"CNC 3030 PCB Drilling & Routing Machine - 60,000 RPM High Precision Prototyping Machine Manufacturer from Pune | CyTOS",description:"Manufacturer of CNC 3030 PCB Drilling and Routing Machine - 60,000 RPM spindle, 0.3mm track isolation, pneumatic ATC & T-slot bed. Benchtop precision from CyTOS Pune.",canonical:"https://www.cytos.in/cnc-3030-pcb-prototyping-machine"})}const Pi=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "CyTOS PCB12 3-Spindle High Throughput PCB Machine", "model": "CyTOS PCB12 Multi-Spindle", "description": "Manufacturer of Three Spindle PCB Drilling Machine (PCB12) - 1200x1200mm working area, 3x synchronized 60,000 RPM spindles for mass production. CyTOS Pune, Maharashtra.", "image": ["https://www.cytos.in/assets/images/machines/pcb12-multi-spindle.png", "https://www.cytos.in/assets/images/machines/pcb-drilling-pcb60.png", "https://www.cytos.in/assets/images/machines/pcb-cnc-cabinet.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "Multi-Spindle PCB Manufacturing", "offers": {"@type": "Offer", "url": "https://www.cytos.in/pcb12-multi-spindle-drilling-machine", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "CyTOS PCB12 3-Spindle High Throughput PCB Machine", "item": "https://www.cytos.in/pcb12-multi-spindle-drilling-machine"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does the three-spindle synchronization work on the CyTOS PCB12?", "acceptedAnswer": {"@type": "Answer", "text": "All three spindles are mounted on a shared rigid gantry and move synchronously along the X and Y axes, while each spindle features independent fine Z-axis depth adjustment. When drilling panel arrays, all three spindles hit identical coordinates at the same time, producing 3 panels in the time of 1."}}, {"@type": "Question", "name": "Can the distance (pitch) between the three spindles be adjusted?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The spindle pitch is mechanically adjustable across precision locating pins, allowing you to configure spindle spacing to match your standard panel dimensions (e.g., 300 mm, 350 mm, or 400 mm panel widths)."}}, {"@type": "Question", "name": "What is the combined drilling hit rate of the PCB12?", "acceptedAnswer": {"@type": "Answer", "text": "At full production speed, each spindle achieves up to 160 hits/min on standard FR4 panels, resulting in a combined hit rate of up to 480 hits/min across the three active panels."}}, {"@type": "Question", "name": "What power and air utilities are needed at our facility?", "acceptedAnswer": {"@type": "Answer", "text": "The PCB12 requires a 415V AC, 3-Phase, 50Hz electrical supply (7.5 kW connected load) and a dry, oil-free pneumatic air supply at 6 to 7 bar for the collet clamping and swarf pressure foot."}}, {"@type": "Question", "name": "How quickly can CyTOS deliver and commission the PCB12 in India?", "acceptedAnswer": {"@type": "Answer", "text": "Manufacturing lead time is typically 6 to 8 weeks from our Pune works. Our factory installation team conducts on-site laser leveling, optical camera calibration, test panel drilling, and complete operator training at your plant."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">CyTOS PCB12 3-Spindle High Throughput PCB Machine</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>3X MASS PRODUCTION THROUGHPUT</span>
+          </div>
+          <h1 class="page-hero-title">CyTOS PCB12 3-Spindle High Throughput PCB Machine</h1>
+          <p class="page-hero-subtitle">
+            Large-format 1,200 × 1,200 mm multi-spindle CNC drilling and routing machine equipped with three synchronized 40,000 to 60,000 RPM high-frequency electro-spindles with independent pitch control, delivering 300% throughput scaling for high-volume commercial PCB fabrication plants.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS PCB12 is designed for commercial circuit board manufacturers seeking maximum output per square foot of factory floor. By synchronizing three precision spindles across an expansive 1,200 × 1,200 mm granite/cast-iron bed, the machine drills three identical panels concurrently, slashing per-panel cycle times by 66%.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CyTOS PCB12 3-Spindle High Throughput PCB Machine">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20CyTOS PCB12 3-Spindle High Throughput PCB Machine.%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/pcb12-multi-spindle.png" alt="CyTOS PCB12 Three-Spindle High-Throughput PCB Production Drilling Machine, Pune" title="CyTOS PCB12 Three-Spindle High-Throughput PCB Production Drilling Machine, Pune" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> CyTOS PCB12 3-Spindle High Throughput PCB Machine • CyTOS PCB12 Multi-Spindle • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">3 Spindles</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Synchronized Heads</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">1200 × 1200 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Large-Format Bed</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">60,000 RPM</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Per Spindle Speed</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">300%</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Throughput Scaling</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Triple-spindle synchronized motion cuts batch processing time by 66% compared to conventional single-head CNC machines</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Independent Z-axis depth offsets and dynamic surface touch probing ensure consistent hole wall quality across all three panels</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Heavy stress-relieved steel and cast iron structure dampens all harmonic vibrations generated at 60,000 RPM</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Multi-camera optical fiducial recognition automatically detects board stretch, shrinkage, and rotation across all three stations</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">High-capacity vacuum hold-down bed securely clamps warped or thin copper laminates without mechanical distortion</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Architecture</strong></td>
+              <td>Heavy-Duty Floor Gantry with Cast Iron / Granite Vibration Base</td>
+              <td><span class="badge-std">Massive Rigidity</span></td>
+            </tr>
+            <tr>
+              <td><strong>Overall Working Envelope</strong></td>
+              <td>1,200 mm × 1,200 mm (Accommodates Multiple Standard Panels)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Configuration</strong></td>
+              <td>3 Synchronized Electro-Spindles with Independent Pitch Spacing</td>
+              <td><span class="badge-std">3-Spindle Sync</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle RPM Range</strong></td>
+              <td>40,000 RPM to 60,000 RPM High Frequency Inverter Cont.</td>
+              <td><span class="badge-std">High Velocity</span></td>
+            </tr>
+            <tr>
+              <td><strong>Minimum Micro-Drill Dia</strong></td>
+              <td>0.25 mm Micro-Hole Drilling in Multilayer FR4</td>
+              <td><span class="badge-std">Tested Metric</span></td>
+            </tr>
+            <tr>
+              <td><strong>Maximum Routing Collet</strong></td>
+              <td>3.175 mm (1/8") and 4.0 mm ER11 Precision Collets</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Rapid Traverse Velocity</strong></td>
+              <td>Up to 15,000 mm/min High Speed Axis Motion</td>
+              <td><span class="badge-std">High Velocity</span></td>
+            </tr>
+            <tr>
+              <td><strong>Drilling Hit Rate</strong></td>
+              <td>Up to 3 × 160 hits/min (480 hits/min combined rate)</td>
+              <td><span class="badge-std">Mass Production</span></td>
+            </tr>
+            <tr>
+              <td><strong>Positional Accuracy</strong></td>
+              <td>±0.015 mm over 1,200 mm Stroke (Laser Interferometer Verified)</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Repeatability</strong></td>
+              <td>±0.008 mm (8 Microns)</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Drive System</strong></td>
+              <td>High-Torque Delta / Yaskawa AC Servo Motors on All Axes</td>
+              <td><span class="badge-std">Industrial Grade</span></td>
+            </tr>
+            <tr>
+              <td><strong>Guideway System</strong></td>
+              <td>Heavy-Duty THK / HIWIN Ground Linear Motion Guides</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tool Clamping</strong></td>
+              <td>Multi-Head Pneumatic Quick Clamp with Safety Pressure Sensors</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Registration Alignment</strong></td>
+              <td>Multi-Camera CCD Fiducial Vision Alignment System</td>
+              <td><span class="badge-std">Optical Vision</span></td>
+            </tr>
+            <tr>
+              <td><strong>Workpiece Hold-Down</strong></td>
+              <td>High-Pressure Multi-Zone Vacuum Bed with Independent Clamps</td>
+              <td><span class="badge-std">Dual System</span></td>
+            </tr>
+            <tr>
+              <td><strong>CNC Controller</strong></td>
+              <td>CyTOS Industrial Multi-Axis Synchronized CNC Core with Dual Core DSP</td>
+              <td><span class="badge-std">Proprietary</span></td>
+            </tr>
+            <tr>
+              <td><strong>Electrical Power</strong></td>
+              <td>415V AC, 3-Phase, 50Hz, 7.5 kW Connected Load</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Standard FR4 Panels (Single/Double Sided)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>45,000 – 60,000 RPM</td>
+              <td>3x panels drilled concurrently with zero burr</td>
+            </tr>
+            <tr>
+              <td><strong>High-Layer Count Multilayer FR4 (up to 16L)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>50,000 – 60,000 RPM</td>
+              <td>Precise pecking depth prevents drill wander in thick boards</td>
+            </tr>
+            <tr>
+              <td><strong>Aluminium Core MCPCB Panels (LED Lighting)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>30,000 – 40,000 RPM</td>
+              <td>Simultaneous 3-panel routing with mist cooling</td>
+            </tr>
+            <tr>
+              <td><strong>Comber Board & Heavy Industrial Boards</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>35,000 – 50,000 RPM</td>
+              <td>High hit rate and rigid spindle taper for thick industrial sheets</td>
+            </tr>
+            <tr>
+              <td><strong>CEM-1 & Paper Phenolic Laminates</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>40,000 – 55,000 RPM</td>
+              <td>Extreme cost-per-hole efficiency in high-volume runs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Industrial 3-Spindle CNC Operator Workstation with Touchscreen & CAM Software</li>
+            <li style="margin-bottom: 0.6rem;">✓ Heavy-Duty Multi-Zone High Vacuum Clamping Bed with Rotary Vane Pump</li>
+            <li style="margin-bottom: 0.6rem;">✓ Dedicated Closed-Loop Industrial Spindle Refrigeration Chiller Unit</li>
+            <li style="margin-bottom: 0.6rem;">✓ Triple-Channel High-Volume Swarf Evacuation & Dust Collection Shroud</li>
+            <li style="margin-bottom: 0.6rem;">✓ Optical CCD Vision Camera System with Multi-Fiducial Recognition</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Comprehensive Pan-India Warranty and Operator Training in Pune</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ Independent Spindle Pitch Adjustment Servo Mechanism</li>
+            <li style="margin-bottom: 0.6rem;">+ Automated Optical Tool Breakage Detection with High-Speed Laser Beams</li>
+            <li style="margin-bottom: 0.6rem;">+ HEPA Fine Particulate Air Exhaust Filtration System for Cleanrooms</li>
+            <li style="margin-bottom: 0.6rem;">+ Annual Comprehensive Maintenance Contract (AMC) with Guaranteed 4-Hour Response</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="Industrial Touch Console and Spindle Chiller Unit, Pune" title="Industrial Touch Console and Spindle Chiller Unit, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Industrial Touch Console and Spindle Chiller Unit, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Precision multi-axis synchronization controller with independent Z-axis depth calibration.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/pcb-cnc-cabinet.png" alt="Multi-Spindle Servo Inverter Drive Cabinet, Pune" title="Multi-Spindle Servo Inverter Drive Cabinet, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Multi-Spindle Servo Inverter Drive Cabinet, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Independent inverter drives for each high-frequency electro-spindle with optical sync.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the CyTOS PCB12 3-Spindle High Throughput PCB Machine
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="CyTOS PCB12 3-Spindle High Throughput PCB Machine Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20CyTOS PCB12 3-Spindle High Throughput PCB Machine." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the CyTOS PCB12 3-Spindle High Throughput PCB Machine.
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does the three-spindle synchronization work on the CyTOS PCB12?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">All three spindles are mounted on a shared rigid gantry and move synchronously along the X and Y axes, while each spindle features independent fine Z-axis depth adjustment. When drilling panel arrays, all three spindles hit identical coordinates at the same time, producing 3 panels in the time of 1.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can the distance (pitch) between the three spindles be adjusted?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. The spindle pitch is mechanically adjustable across precision locating pins, allowing you to configure spindle spacing to match your standard panel dimensions (e.g., 300 mm, 350 mm, or 400 mm panel widths).</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What is the combined drilling hit rate of the PCB12?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">At full production speed, each spindle achieves up to 160 hits/min on standard FR4 panels, resulting in a combined hit rate of up to 480 hits/min across the three active panels.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What power and air utilities are needed at our facility?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">The PCB12 requires a 415V AC, 3-Phase, 50Hz electrical supply (7.5 kW connected load) and a dry, oil-free pneumatic air supply at 6 to 7 bar for the collet clamping and swarf pressure foot.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How quickly can CyTOS deliver and commission the PCB12 in India?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Manufacturing lead time is typically 6 to 8 weeks from our Pune works. Our factory installation team conducts on-site laser leveling, optical camera calibration, test panel drilling, and complete operator training at your plant.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling & Routing Machine" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100,000 RPM ULTRA-HIGH SPEED</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-6060-pcb-drilling-routing-machine" style="text-decoration: none; color: inherit;">CNC 6060 PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pi...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-6060-pcb-drilling-routing-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 PCB Rapid Prototyping Machine" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100% CHEMICAL-FREE PROTOTYPING</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3020-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3020 PCB Rapid Prototyping Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3020-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3030 High Precision PCB Drilling & Routing Machine" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">60,000 RPM HIGH PRECISION</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3030-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3030 High Precision PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3030-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function Si(){return e.jsx(x,{htmlContent:Pi,title:"Multi Spindle PCB Drilling Machine - Three Spindle High Volume PCB Production Machine Manufacturer from Pune | CyTOS",description:"Manufacturer of Three Spindle PCB Drilling Machine (PCB12) - 1200x1200mm working area, 3x synchronized 60,000 RPM spindles for mass production. CyTOS Pune, Maharashtra.",canonical:"https://www.cytos.in/pcb12-multi-spindle-drilling-machine"})}const ki=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium)", "model": "CyTOS Heavy Router Series", "description": "Manufacturer of Heavy-Duty CNC Router Machine for Wood, Acrylic, Aluminium & Soft Metals - 4x4, 8x4, 10x5 ft beds, multi-spindle & vacuum table. CyTOS Pune, Maharashtra.", "image": ["https://www.cytos.in/assets/images/machines/cnc-router-gantry.png", "https://www.cytos.in/assets/images/machines/cnc-router-workshop.png", "https://www.cytos.in/assets/images/machines/cnc-router-acrylic.jpg"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "Industrial CNC Routers & Milling", "offers": {"@type": "Offer", "url": "https://www.cytos.in/cnc-wood-acrylic-aluminium-router-machine", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium)", "item": "https://www.cytos.in/cnc-wood-acrylic-aluminium-router-machine"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can the CyTOS CNC Router cut aluminium plates and profiles cleanly?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. CyTOS CNC routers are specially engineered with rigid stress-relieved steel gantries and high-torque spindles to handle aluminium alloys (such as 6061, 5052, and 7075), brass, and copper. Using our mist coolant or vortex cold air attachment, it produces clean, mirror-like edges with zero burr."}}, {"@type": "Question", "name": "What bed sizes are available?", "acceptedAnswer": {"@type": "Answer", "text": "Standard bed sizes include 4×4 ft (1200×1200 mm), 8×4 ft (1300×2500 mm), and 10×5 ft (1500×3000 mm). Because we manufacture all machine frames in-house in Pune, we also build custom envelope sizes up to 2000 × 4000 mm upon request."}}, {"@type": "Question", "name": "How does the multi-spindle configuration benefit high-volume production?", "acceptedAnswer": {"@type": "Answer", "text": "With 2, 3, or more spindles mounted on the same gantry, you can process multiple identical sheets simultaneously. For example, a 3-spindle router produces three 600×2500 mm parts at once, tripling throughput with a single operator."}}, {"@type": "Question", "name": "What vacuum pump is supplied with the vacuum bed?", "acceptedAnswer": {"@type": "Answer", "text": "We provide heavy-duty oil-free or water-ring vacuum pumps (typically 5.5 kW to 7.5 kW) connected to a multi-zone vacuum manifold with individual toggle valves, allowing you to activate vacuum suction only under your active workpiece."}}, {"@type": "Question", "name": "What design and CAM software can we use with this machine?", "acceptedAnswer": {"@type": "Answer", "text": "Our PC-based controller accepts standard G-code and M-code generated by any leading CAD/CAM software including Vectric Aspire, ArtCAM, Mastercam, Fusion 360, RhinoCAM, and SolidWorks CAM."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>HEAVY STRESS-RELIEVED STEEL GANTRY</span>
+          </div>
+          <h1 class="page-hero-title">High Accuracy CNC Router Machine (Wood, Acrylic &amp; Aluminium)</h1>
+          <p class="page-hero-subtitle">
+            Industrial heavy-duty gantry CNC routers engineered with normalized tubular steel frames, 24,000 RPM high-torque spindles up to 6.5 kW / 9 kW HSD, multi-zone vacuum beds, and bed sizes from 4×4 ft to 10×10 ft (1 to 5 spindles) for non-stop routing of aluminium, brass, wood, acrylic, and composite sheets.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS High Accuracy Router Machine is built for manufacturers demanding vibration-free, heavy-duty cutting across wood, acrylic, PVC, bakelite, composites, and soft metals like aluminium and brass. Featuring a stress-relieved tubular steel frame, precision ball screws, helical rack-and-pinion drives, and multi-spindle options, it delivers high dimensional repeatability year after year.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium)">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium).%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/cnc-router-gantry.png" alt="Heavy-Duty Industrial CNC Gantry Router for Aluminium and Wood, Pune, India" title="Heavy-Duty Industrial CNC Gantry Router for Aluminium and Wood, Pune, India" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium) • CyTOS Heavy Router Series • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">24,000 RPM</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">High-Torque Spindle</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">8×4 / 10×5 ft</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Standard Bed Sizes</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">1 to 5</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Spindle Heads (Custom)</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">±0.02 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Repeatability</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Heavy mild steel tubular gantry normalized and stress-relieved to absorb cutting harmonics and eliminate chatter marks</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Multi-zone high-vacuum clamping bed securely holds full 8×4 ft sheets as well as smaller offcuts without mechanical clamps</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Precision helical rack and pinion drive on X and Y axes coupled with digital AC servos for smooth, high-speed 25,000 mm/min rapid traverse</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Centralized automated lubrication pump continuously oils all linear guideways and ball screws to prevent premature wear</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Modular multi-spindle capability (1 to 5 spindles) allowing simultaneous parallel production on multiple identical workpieces</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Frame Structure</strong></td>
+              <td>Rigid Stress-Relieved Welded Mild Steel Tubular Gantry</td>
+              <td><span class="badge-std">Heavy Duty</span></td>
+            </tr>
+            <tr>
+              <td><strong>Standard Table Sizes</strong></td>
+              <td>4ft × 4ft (1200×1200mm) / 8ft × 4ft (1300×2500mm) / 10ft × 5ft (1500×3000mm)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Z-Axis Clearance & Travel</strong></td>
+              <td>250 mm to 300 mm Z-Axis Clearance (Customizable to 400 mm)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Number of Spindles</strong></td>
+              <td>1 to 5 Spindles (Single or Multi-Spindle Custom Configurable)</td>
+              <td><span class="badge-std">Configurable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Motor Power</strong></td>
+              <td>3.5 kW to 6.5 kW (Optional 9.0 kW HSD / Italian High-Torque Spindle)</td>
+              <td><span class="badge-std">High Torque</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle RPM Range</strong></td>
+              <td>6,000 RPM to 24,000 RPM Continuous Variable Inverter Drive</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Cooling Type</strong></td>
+              <td>Water Cooled with Circulator / High-Flow Air Cooled</td>
+              <td><span class="badge-std">Configurable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Motion Drive System</strong></td>
+              <td>Precision Helical Rack & Pinion (X/Y) + C5 Ground Ball Screw (Z)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Motors & Drives</strong></td>
+              <td>Leadshine Easy Servo / Delta Digital AC Servo Drives on All Axes</td>
+              <td><span class="badge-std">Servo Upgrade</span></td>
+            </tr>
+            <tr>
+              <td><strong>Traverse & Cutting Speeds</strong></td>
+              <td>Rapid: Up to 25,000 mm/min | Cutting: 4,000 to 10,000 mm/min</td>
+              <td><span class="badge-std">High Speed</span></td>
+            </tr>
+            <tr>
+              <td><strong>Table Clamping Surface</strong></td>
+              <td>Heavy T-Slot Aluminium + Multi-Zone High Flow Vacuum Matrix Bed</td>
+              <td><span class="badge-std">Dual System</span></td>
+            </tr>
+            <tr>
+              <td><strong>Positional Accuracy</strong></td>
+              <td>0.1 mm / 1,000 mm</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Repeatability</strong></td>
+              <td>±0.05 mm (50 Microns)</td>
+              <td><span class="badge-std">Laser Verified</span></td>
+            </tr>
+            <tr>
+              <td><strong>Tool Collet Size</strong></td>
+              <td>3 mm to 10 mm (ER20 / ER25 / ER32 Precision Collets)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Controller Interface</strong></td>
+              <td>PC-Based CyTOS CNC Studio / DSP Handheld / Syntec CNC</td>
+              <td><span class="badge-std">Industrial</span></td>
+            </tr>
+            <tr>
+              <td><strong>Machine Total Weight</strong></td>
+              <td>800 kg to 1,050 kg (Heavy Vibration-Absorbing Mass)</td>
+              <td><span class="badge-std">Solid Mass</span></td>
+            </tr>
+            <tr>
+              <td><strong>Power Supply Requirements</strong></td>
+              <td>230V – 240V AC, 16A Single Phase or 415V 3-Phase</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Turnkey Inclusions</strong></td>
+              <td>Coolant Pump & Tank, Dual-Bag Dust Collector, Industrial PC & Stand</td>
+              <td><span class="badge-std">Complete</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Aluminium (6061, 5052, 7075) & Brass Plates</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>18,000 – 24,000 RPM</td>
+              <td>Burr-free routing with cold-air mist lubrication</td>
+            </tr>
+            <tr>
+              <td><strong>Acrylic (Cast & Extruded) & Polycarbonate</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>18,000 – 22,000 RPM</td>
+              <td>Flame-polish finish edges with single flute spiral cutters</td>
+            </tr>
+            <tr>
+              <td><strong>Hardwood, Teak, MDF, Plywood & Solid Wood</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>18,000 – 24,000 RPM</td>
+              <td>Deep 3D carving, furniture profiling, and sign making</td>
+            </tr>
+            <tr>
+              <td><strong>Bakelite, FR4 Sheet & Electrical Composites</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>16,000 – 20,000 RPM</td>
+              <td>Dry cutting with dual-bag dust extraction</td>
+            </tr>
+            <tr>
+              <td><strong>Aluminium Composite Panels (ACP) & Foam Sheets</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>20,000 – 24,000 RPM</td>
+              <td>V-grooving and folding profiles for architectural cladding</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Complete Industrial Operator Console with PC Controller & Monitor</li>
+            <li style="margin-bottom: 0.6rem;">✓ Multi-Zone High Vacuum Bed with Heavy-Duty Rotary Vane Vacuum Pump</li>
+            <li style="margin-bottom: 0.6rem;">✓ High-Efficiency Dual-Bag Industrial Dust Extraction Collector & Shroud</li>
+            <li style="margin-bottom: 0.6rem;">✓ Automatic Tool Length Touch Sensor and Reference Setting Probe</li>
+            <li style="margin-bottom: 0.6rem;">✓ Mist Coolant Lubrication System for Aluminium and Non-Ferrous Metal Cutting</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Comprehensive Warranty with Pan-India Factory Support</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ Automatic Tool Changer (ATC) with Linear or Carousel Tool Rack</li>
+            <li style="margin-bottom: 0.6rem;">+ Italian High-Torque HSD Air-Cooled Spindle (6.5 kW / 9.0 kW)</li>
+            <li style="margin-bottom: 0.6rem;">+ Multi-Spindle Configuration (2, 3, 4, or 5 Synchronized Spindles)</li>
+            <li style="margin-bottom: 0.6rem;">+ Vortex Cold Air Gun for Chemical-Free Dry Aluminium Machining</li>
+            <li style="margin-bottom: 0.6rem;">+ Rotary 4th Axis Lathe Chuck for Columns and Cylindrical 3D Carving</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/cnc-router-workshop.png" alt="CyTOS CNC Router Production Floor Bhosari MIDC, Pune" title="CyTOS CNC Router Production Floor Bhosari MIDC, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">CyTOS CNC Router Production Floor Bhosari MIDC, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Precision assembly and laser alignment of large-format 8x4 and 10x5 ft router frames.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/cnc-router-acrylic.jpg" alt="Clean Acrylic and Aluminium CNC Profile Machining, Pune" title="Clean Acrylic and Aluminium CNC Profile Machining, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Clean Acrylic and Aluminium CNC Profile Machining, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Vibration-free 3D engraving and burr-free edge finish on heavy composite and soft metal sheets.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium)
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium) Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium)." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the High Accuracy CNC Router Machine (Wood, Acrylic & Aluminium).
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can the CyTOS CNC Router cut aluminium plates and profiles cleanly?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. CyTOS CNC routers are specially engineered with rigid stress-relieved steel gantries and high-torque spindles to handle aluminium alloys (such as 6061, 5052, and 7075), brass, and copper. Using our mist coolant or vortex cold air attachment, it produces clean, mirror-like edges with zero burr.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What bed sizes are available?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Standard bed sizes include 4×4 ft (1200×1200 mm), 8×4 ft (1300×2500 mm), and 10×5 ft (1500×3000 mm). Because we manufacture all machine frames in-house in Pune, we also build custom envelope sizes up to 2000 × 4000 mm upon request.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does the multi-spindle configuration benefit high-volume production?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">With 2, 3, or more spindles mounted on the same gantry, you can process multiple identical sheets simultaneously. For example, a 3-spindle router produces three 600×2500 mm parts at once, tripling throughput with a single operator.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What vacuum pump is supplied with the vacuum bed?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">We provide heavy-duty oil-free or water-ring vacuum pumps (typically 5.5 kW to 7.5 kW) connected to a multi-zone vacuum manifold with individual toggle valves, allowing you to activate vacuum suction only under your active workpiece.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What design and CAM software can we use with this machine?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Our PC-based controller accepts standard G-code and M-code generated by any leading CAD/CAM software including Vectric Aspire, ArtCAM, Mastercam, Fusion 360, RhinoCAM, and SolidWorks CAM.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling & Routing Machine" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100,000 RPM ULTRA-HIGH SPEED</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-6060-pcb-drilling-routing-machine" style="text-decoration: none; color: inherit;">CNC 6060 PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pi...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-6060-pcb-drilling-routing-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 PCB Rapid Prototyping Machine" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100% CHEMICAL-FREE PROTOTYPING</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3020-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3020 PCB Rapid Prototyping Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3020-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3030 High Precision PCB Drilling & Routing Machine" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">60,000 RPM HIGH PRECISION</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3030-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3030 High Precision PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3030-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function Mi(){return e.jsx(x,{htmlContent:ki,title:"CNC Router Machine - Heavy Duty Industrial Router for Aluminium, Acrylic & Wood Manufacturer from Pune | CyTOS",description:"Manufacturer of Heavy-Duty CNC Router Machine for Wood, Acrylic, Aluminium & Soft Metals - 4x4, 8x4, 10x5 ft beds, multi-spindle & vacuum table. CyTOS Pune, Maharashtra.",canonical:"https://www.cytos.in/cnc-wood-acrylic-aluminium-router-machine"})}const Ti=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M)", "model": "CyTOS VDM Series", "description": "Manufacturer of VDM Heavy Vertical Drilling & Milling Machine (VDM30M, VDM50M, VDM100M) - 1mm to 50mm drilling, BT30/BT40 taper, Delta CNC controller. CyTOS Pune.", "image": ["https://www.cytos.in/assets/images/machines/vdm-milling-machine.png", "https://www.cytos.in/assets/images/machines/precision-machining-parts.png", "https://www.cytos.in/assets/images/machines/cytos-assembly-floor.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "Heavy Industrial Metal Machining", "offers": {"@type": "Offer", "url": "https://www.cytos.in/vdm-heavy-vertical-drilling-milling-machine", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M)", "item": "https://www.cytos.in/vdm-heavy-vertical-drilling-milling-machine"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What industries typically use the CyTOS VDM machine series?", "acceptedAnswer": {"@type": "Answer", "text": "The VDM series is widely used by electrical switchgear manufacturers, control panel builders, fabrication shops, and automotive toolrooms. It is ideal for milling rectangular meter cutouts, drilling hundreds of terminal holes in enclosure doors, and tapping copper busbars."}}, {"@type": "Question", "name": "What is the difference between VDM30M, VDM50M, and VDM100M?", "acceptedAnswer": {"@type": "Answer", "text": "VDM30M is a compact tabletop machine with 300×300 mm bed and 12 mm max drill. VDM50M is a floor-mounted production machine with 500×500 mm bed, 25 mm max drill, and full enclosure. VDM100M is our largest machine with 1000×1000 mm bed, 50 mm max drill, and 3.5 kW AC servo spindle for heavy plates."}}, {"@type": "Question", "name": "Can the VDM series perform rigid tapping without a floating tap holder?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The VDM50M and VDM100M feature synchronized spindle and Z-axis servo interpolation, allowing rigid tapping from M3 up to M20 threads with standard solid collet holders without requiring expensive tension-compression floating tap heads."}}, {"@type": "Question", "name": "How does cast iron construction compare with fabricated sheet frames?", "acceptedAnswer": {"@type": "Answer", "text": "Meehanite cast iron has over 10 times the natural vibration dampening capacity of fabricated sheet steel. This prevents chatter during heavy milling, extends cutting tool life, and maintains positional accuracy across years of heavy use."}}, {"@type": "Question", "name": "What controller is used on the VDM series?", "acceptedAnswer": {"@type": "Answer", "text": "The VDM50M and VDM100M are powered by industrial Delta CNC controllers with dedicated digital servo drives, electronic handwheels (MPG), and conversational canned drilling/tapping cycles."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>HEAVY CAST IRON VIBRATION DAMPENING</span>
+          </div>
+          <h1 class="page-hero-title">VDM Heavy Vertical Drilling &amp; Milling Machine</h1>
+          <p class="page-hero-subtitle">
+            Rigid cast iron base and square column vertical machining center engineered for electrical control panel builders, switchgear manufacturers, and heavy toolrooms. Models VDM30M, VDM50M, and VDM100M feature 1 mm to 50 mm drilling capacity, rigid tapping (M3 to M20), BT30/BT40 spindles, and Delta CNC controllers.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS VDM Series is purpose-built to handle tough metal machining on mild steel (MS), stainless steel (SS304), cast iron, brass, and copper busbars. Featuring heavy cast iron Meehanite structures that absorb cutting vibrations, preloaded HIWIN linear roller rails, and Delta CNC controls, it is the ideal machine for switchboard door cutouts, plate drilling, and deep tapping.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M)">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M).%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/vdm-milling-machine.png" alt="CyTOS VDM Heavy Vertical Drilling and Milling Machine for MS, SS and Switchboards, Pune" title="CyTOS VDM Heavy Vertical Drilling and Milling Machine for MS, SS and Switchboards, Pune" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M) • CyTOS VDM Series • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">1 to 50 mm</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Drilling Capacity</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">BT30 / BT40</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Spindle Taper</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">M3 to M20</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Rigid Tapping</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">Cast Iron</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Meehanite Structure</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Heavy Meehanite cast iron structural base engineered to channel and dissipate cutting forces directly into the foundation</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">High-torque servo spindle drive delivers full torque down to low RPM for heavy 50 mm hole drilling and clean thread tapping up to M20</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Precision ground square guideways and HIWIN linear motion rails ensure maximum rigidity under side-load milling operations</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Integrated high-pressure flood coolant system with magnetic chip separator keeps cutting edges sharp and components cool</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Industrial Delta CNC controller with full conversational programming and G-code execution for rapid setup of cutout arrays</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Frame Structure</strong></td>
+              <td>Heavy High-Grade Cast Iron Base & Square Column Assembly</td>
+              <td><span class="badge-std">Vibration Absorbing</span></td>
+            </tr>
+            <tr>
+              <td><strong>Models in Series</strong></td>
+              <td>VDM30M (Compact) | VDM50M (Production) | VDM100M (Heavy Capacity)</td>
+              <td><span class="badge-std">3 Model Tiers</span></td>
+            </tr>
+            <tr>
+              <td><strong>Max Drilling Diameter</strong></td>
+              <td>VDM30M: 1-12 mm | VDM50M: 1-25 mm | VDM100M: 1-50 mm</td>
+              <td><span class="badge-std">Heavy Duty</span></td>
+            </tr>
+            <tr>
+              <td><strong>Machining Processes</strong></td>
+              <td>Precision Drilling, Rigid Tapping (M3-M20), Boring, Face & End Milling</td>
+              <td><span class="badge-std">Multi-Function</span></td>
+            </tr>
+            <tr>
+              <td><strong>Standard Bed Sizes</strong></td>
+              <td>VDM30M: 300×300mm | VDM50M: 500×500mm | VDM100M: 1000×1000mm</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Nose Taper</strong></td>
+              <td>BT30 / BT40 Mechanical Taper with Mechanical Drawbar</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Motor Power</strong></td>
+              <td>VDM30M: 1.5 kW (2 HP) | VDM50M: 2.5 kW (3.3 HP) | VDM100M: 3.5 kW (5 HP) Servo</td>
+              <td><span class="badge-std">High Torque</span></td>
+            </tr>
+            <tr>
+              <td><strong>Axis Motor Technology</strong></td>
+              <td>Stepper/Easy Servo (VDM30M) | Digital AC Servo Motors (VDM50M / VDM100M)</td>
+              <td><span class="badge-std">Standard/Servo</span></td>
+            </tr>
+            <tr>
+              <td><strong>Guideway System</strong></td>
+              <td>Heavy-Duty HIWIN / THK Linear Guideways on All 3 Axes</td>
+              <td><span class="badge-std">High Precision</span></td>
+            </tr>
+            <tr>
+              <td><strong>Foundation Type</strong></td>
+              <td>Tabletop (VDM30M) | Heavy Base Floor Mounted (VDM50M & VDM100M)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Positional Accuracy</strong></td>
+              <td>0.05 mm (50 Microns)</td>
+              <td><span class="badge-std">Laser Calibrated</span></td>
+            </tr>
+            <tr>
+              <td><strong>Coolant System</strong></td>
+              <td>High-Pressure Coolant Pump & Sump Tank with Chip Filter (50M & 100M)</td>
+              <td><span class="badge-std">Included</span></td>
+            </tr>
+            <tr>
+              <td><strong>Machine Enclosure</strong></td>
+              <td>Open (VDM30M) | Sheet Metal Guarding with Sliding Door (50M & 100M)</td>
+              <td><span class="badge-std">Enclosed</span></td>
+            </tr>
+            <tr>
+              <td><strong>CNC Controller</strong></td>
+              <td>PC-Based System (VDM30M) | Delta CNC Industrial Controller (50M & 100M)</td>
+              <td><span class="badge-std">Industrial Grade</span></td>
+            </tr>
+            <tr>
+              <td><strong>Power Supply Requirements</strong></td>
+              <td>415V AC, 3-Phase, 50Hz Standard Industrial Connection</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mild Steel (MS) Plates & Enclosure Panels</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>800 – 3,000 RPM</td>
+              <td>Heavy slotting, meter cutouts, and hinge mounting holes</td>
+            </tr>
+            <tr>
+              <td><strong>Stainless Steel (SS304, SS316)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>600 – 2,200 RPM</td>
+              <td>Rigid tapping with high-pressure coolant prevents work hardening</td>
+            </tr>
+            <tr>
+              <td><strong>Cast Iron Blocks & Machine Castings</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>1,000 – 3,500 RPM</td>
+              <td>Heavy drilling and boring with superior surface finish</td>
+            </tr>
+            <tr>
+              <td><strong>Copper & Aluminium Busbars</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>2,500 – 6,000 RPM</td>
+              <td>Fast multi-hole drilling for electrical power distribution panels</td>
+            </tr>
+            <tr>
+              <td><strong>Die-Cast Aluminium Enclosures</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>3,000 – 8,000 RPM</td>
+              <td>High speed profiling and cable gland hole tapping</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Delta CNC Industrial Controller with Handwheel (MPG) & Color Screen</li>
+            <li style="margin-bottom: 0.6rem;">✓ High-Pressure Flood Coolant Pump, Tank & Adjustable Dual Nozzles</li>
+            <li style="margin-bottom: 0.6rem;">✓ Centralized Automatic Pulse Lubrication System for Guideways</li>
+            <li style="margin-bottom: 0.6rem;">✓ T-Slot Heavy Cast Iron Machining Bed with Perimeter Coolant Trough</li>
+            <li style="margin-bottom: 0.6rem;">✓ Full Sheet Metal Protective Enclosure with Interlocked Safety Door</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Comprehensive Warranty and Factory Commissioning in India</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ BT40 Heavy Spindle Taper Upgrade for Face Milling up to 80 mm Cutters</li>
+            <li style="margin-bottom: 0.6rem;">+ Rotary 4th Axis CNC Indexing Table for Multi-Faceted Part Machining</li>
+            <li style="margin-bottom: 0.6rem;">+ Air Blast Chip Clearing Nozzle for Dry Cast Iron Machining</li>
+            <li style="margin-bottom: 0.6rem;">+ Renishaw Workpiece Touch Probe for Automated Part Alignment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/precision-machining-parts.png" alt="Rigid Tapped Holes and Enclosure Cutouts, Pune" title="Rigid Tapped Holes and Enclosure Cutouts, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Rigid Tapped Holes and Enclosure Cutouts, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Precision milled rectangular cutouts, deep drilled holes, and rigid tapped threads in mild steel and copper busbars.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/cytos-assembly-floor.png" alt="CyTOS Precision Cast Iron Scraping and Assembly, Pune" title="CyTOS Precision Cast Iron Scraping and Assembly, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">CyTOS Precision Cast Iron Scraping and Assembly, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Hand scraping and laser interferometer alignment of heavy cast iron slideways at Bhosari facility.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M)
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M) Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M)." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the VDM Heavy Vertical Drilling & Milling Machine (VDM30M / 50M / 100M).
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What industries typically use the CyTOS VDM machine series?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">The VDM series is widely used by electrical switchgear manufacturers, control panel builders, fabrication shops, and automotive toolrooms. It is ideal for milling rectangular meter cutouts, drilling hundreds of terminal holes in enclosure doors, and tapping copper busbars.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What is the difference between VDM30M, VDM50M, and VDM100M?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">VDM30M is a compact tabletop machine with 300×300 mm bed and 12 mm max drill. VDM50M is a floor-mounted production machine with 500×500 mm bed, 25 mm max drill, and full enclosure. VDM100M is our largest machine with 1000×1000 mm bed, 50 mm max drill, and 3.5 kW AC servo spindle for heavy plates.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can the VDM series perform rigid tapping without a floating tap holder?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. The VDM50M and VDM100M feature synchronized spindle and Z-axis servo interpolation, allowing rigid tapping from M3 up to M20 threads with standard solid collet holders without requiring expensive tension-compression floating tap heads.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does cast iron construction compare with fabricated sheet frames?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Meehanite cast iron has over 10 times the natural vibration dampening capacity of fabricated sheet steel. This prevents chatter during heavy milling, extends cutting tool life, and maintains positional accuracy across years of heavy use.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What controller is used on the VDM series?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">The VDM50M and VDM100M are powered by industrial Delta CNC controllers with dedicated digital servo drives, electronic handwheels (MPG), and conversational canned drilling/tapping cycles.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling & Routing Machine" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100,000 RPM ULTRA-HIGH SPEED</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-6060-pcb-drilling-routing-machine" style="text-decoration: none; color: inherit;">CNC 6060 PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pi...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-6060-pcb-drilling-routing-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 PCB Rapid Prototyping Machine" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100% CHEMICAL-FREE PROTOTYPING</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3020-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3020 PCB Rapid Prototyping Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3020-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3030 High Precision PCB Drilling & Routing Machine" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">60,000 RPM HIGH PRECISION</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3030-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3030 High Precision PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3030-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function Bi(){return e.jsx(x,{htmlContent:Ti,title:"VDM Vertical Drilling & Milling Machine - Cast Iron Heavy Metal CNC Machine Manufacturer from Pune | CyTOS",description:"Manufacturer of VDM Heavy Vertical Drilling & Milling Machine (VDM30M, VDM50M, VDM100M) - 1mm to 50mm drilling, BT30/BT40 taper, Delta CNC controller. CyTOS Pune.",canonical:"https://www.cytos.in/vdm-heavy-vertical-drilling-milling-machine"})}const Ai=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Automatic Thermal Foam Welding Machine", "model": "CyTOS Foam Welder", "description": "Manufacturer of Automatic Foam Welding Machine - High speed automated thermal welding for packaging and industrial foam fabrication. Direct factory from CyTOS Pune.", "image": ["https://www.cytos.in/assets/images/machines/foam-welding-machine.png", "https://www.cytos.in/assets/images/machines/cytos-assembly-floor.png", "https://www.cytos.in/assets/images/machines/spm-automation-cell.jpg"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "Packaging & Foam Automation", "offers": {"@type": "Offer", "url": "https://www.cytos.in/foam-welding-machine", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "Automatic Thermal Foam Welding Machine", "item": "https://www.cytos.in/foam-welding-machine"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What types of foam can be welded on this machine?", "acceptedAnswer": {"@type": "Answer", "text": "The CyTOS Foam Welding Machine handles EPE (Expanded Polyethylene), EVA, XLPE (Cross-Linked Polyethylene), and polyurethane foams commonly used in electronics cushioning, tool trays, returnable automotive dunnage, and medical packaging."}}, {"@type": "Question", "name": "How does thermal welding compare with hot-melt glue?", "acceptedAnswer": {"@type": "Answer", "text": "Thermal welding melts the contact surfaces of the foam slightly and presses them together to create a permanent molecular bond that is as strong as the virgin material. Unlike glue, it costs zero rupees in consumables, eliminates glue strings, avoids toxic solvent smells, and is 100% recyclable."}}, {"@type": "Question", "name": "Can the platen size be customized for our specific packaging boxes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. While our standard platen is 600 × 400 mm, we custom engineer platen sizes up to 1,500 × 1,000 mm with multi-zone heating elements to fit your largest packaging formats."}}, {"@type": "Question", "name": "What is the typical production speed?", "acceptedAnswer": {"@type": "Answer", "text": "A typical welding cycle takes between 5 to 15 seconds depending on the foam density and thickness, allowing an operator to produce 200 to 400 finished welded foam assemblies per hour."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Automatic Thermal Foam Welding Machine</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>MASS PRODUCTION FOAM AUTOMATION</span>
+          </div>
+          <h1 class="page-hero-title">Automatic Thermal Foam Welding Machine</h1>
+          <p class="page-hero-subtitle">
+            Specialized high-speed automated thermal foam welding system engineered for packaging converters, automotive cushioning, and industrial foam fabrication. Features digital temperature control, automated pneumatic platen stroke, precision ball screws, and custom sizing options.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS Foam Welding Machine is purpose-built for the packaging and foam handling industry. Replacing slow, toxic adhesive gluing and manual hot-air guns, it uses precision thermal heating elements and automatic stroke timing to thermally fuse PE, EPE, EVA, and polyurethane foam inserts in seconds with unbreakable seams.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="Automatic Thermal Foam Welding Machine">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20Automatic Thermal Foam Welding Machine.%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/foam-welding-machine.png" alt="Automatic Thermal Foam Welding Machine for Industrial Packaging, Pune, India" title="Automatic Thermal Foam Welding Machine for Industrial Packaging, Pune, India" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> Automatic Thermal Foam Welding Machine • CyTOS Foam Welder • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">5 to 15 s</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Fast Cycle Time</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">Digital PID</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Temp Control</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">Zero Glue</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Thermal Fusion</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">100% Bond</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Weld Strength</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Eliminates expensive hot-melt glues, solvent-based adhesives, and toxic VOC emissions from your packaging assembly floor</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Digital closed-loop PID temperature controller guarantees uniform heat distribution across the entire welding platen surface</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Synchronized pneumatic stroke actuation ensures uniform contact pressure and prevents foam crushing or uneven seams</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Two-hand safety start control and light curtain option ensure complete operator hand safety during downward platen stroke</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Custom-engineered heating platen profiles and interchangeable locating nests allow rapid retooling between different box designs</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Category</strong></td>
+              <td>Automatic Industrial Thermal Foam Welding Machine</td>
+              <td><span class="badge-std">Turnkey</span></td>
+            </tr>
+            <tr>
+              <td><strong>Frame Construction</strong></td>
+              <td>High-Grade Aluminium & Structural Steel Tubular Frame</td>
+              <td><span class="badge-std">Rigid Structure</span></td>
+            </tr>
+            <tr>
+              <td><strong>Motion Mechanism</strong></td>
+              <td>Precision Linear Guideways & Ball Screw Platen Actuation</td>
+              <td><span class="badge-std">Smooth Motion</span></td>
+            </tr>
+            <tr>
+              <td><strong>Platen Heating System</strong></td>
+              <td>Uniform PID-Controlled Thermal Heating Plate / Wire Array</td>
+              <td><span class="badge-std">Precision Heating</span></td>
+            </tr>
+            <tr>
+              <td><strong>Temperature Range</strong></td>
+              <td>50°C to 300°C Digital Closed-Loop Control</td>
+              <td><span class="badge-std">Variable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Platen Size</strong></td>
+              <td>Standard 600×400 mm (Customizable up to 1500×1000 mm)</td>
+              <td><span class="badge-std">Customizable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Actuation & Clamping</strong></td>
+              <td>Pneumatic Cylinders with Dual Pressure Regulators</td>
+              <td><span class="badge-std">Pneumatic</span></td>
+            </tr>
+            <tr>
+              <td><strong>Cycle Time Target</strong></td>
+              <td>Typically 5 to 15 seconds per completed weld cycle</td>
+              <td><span class="badge-std">High Throughput</span></td>
+            </tr>
+            <tr>
+              <td><strong>Control Interface</strong></td>
+              <td>Touchscreen HMI / Digital Timer & Temperature Console</td>
+              <td><span class="badge-std">Easy Operation</span></td>
+            </tr>
+            <tr>
+              <td><strong>Safety Interlocks</strong></td>
+              <td>Dual-Hand Safety Anti-Tie-Down Buttons & Emergency Stop</td>
+              <td><span class="badge-std">CE Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Power Supply</strong></td>
+              <td>230V AC Single Phase or 415V 3-Phase (4 to 8 kW Heating)</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>EPE (Expanded Polyethylene) Foam Sheets</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>5 – 10 sec cycle</td>
+              <td>Permanent molecular bond without glue residue</td>
+            </tr>
+            <tr>
+              <td><strong>EVA (Ethylene Vinyl Acetate) Tool Trays</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>8 – 15 sec cycle</td>
+              <td>Clean multi-layer laminated tool & instrument inserts</td>
+            </tr>
+            <tr>
+              <td><strong>XLPE (Cross-Linked Polyethylene) Foam</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>10 – 15 sec cycle</td>
+              <td>High aesthetic finish for luxury packaging & medical boxes</td>
+            </tr>
+            <tr>
+              <td><strong>Polyurethane (PU) Cushioning Inserts</strong></td>
+              <td><span class="matrix-status-cell optimal">● Capable</span></td>
+              <td>10 – 18 sec cycle</td>
+              <td>Thermal fusing of complex geometric corners and partitions</td>
+            </tr>
+            <tr>
+              <td><strong>Foam-to-Corrugated Plastic (PP Bubble Guard)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Capable</span></td>
+              <td>8 – 14 sec cycle</td>
+              <td>Thermal bonding for reusable returnable dunnage boxes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Complete Automatic Foam Welding Machine Unit with Digital HMI Console</li>
+            <li style="margin-bottom: 0.6rem;">✓ Pneumatic Air Filter-Regulator-Lubricator (FRL) Unit with Pressure Gauge</li>
+            <li style="margin-bottom: 0.6rem;">✓ Interchangeable Heat-Resistant Non-Stick Teflon Platen Cover</li>
+            <li style="margin-bottom: 0.6rem;">✓ Two-Hand Safety Anti-Tie-Down Operator Trigger Panel</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Comprehensive Factory Warranty from CyTOS Pune</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ Custom CNC-Machined Locating Jigs for Complex Foam Contours</li>
+            <li style="margin-bottom: 0.6rem;">+ Optical Safety Light Curtains for Automated Cycle Triggering</li>
+            <li style="margin-bottom: 0.6rem;">+ Extended Bed Platen Sizes (up to 1500 × 1000 mm for Large Boxes)</li>
+            <li style="margin-bottom: 0.6rem;">+ Automated Pneumatic Slide-Out Drawer Table for Fast Loading/Unloading</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/cytos-assembly-floor.png" alt="CyTOS Packaging Automation Machine Assembly Floor, Pune" title="CyTOS Packaging Automation Machine Assembly Floor, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">CyTOS Packaging Automation Machine Assembly Floor, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Precision assembly and thermal calibration of mass production foam welding fixtures.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/spm-automation-cell.jpg" alt="Automated Pneumatic Actuation and Safety Interlocks, Pune" title="Automated Pneumatic Actuation and Safety Interlocks, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Automated Pneumatic Actuation and Safety Interlocks, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Integrated PLC stroke timing and safety light curtains for high-speed cycle times.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the Automatic Thermal Foam Welding Machine
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="Automatic Thermal Foam Welding Machine Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20Automatic Thermal Foam Welding Machine." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the Automatic Thermal Foam Welding Machine.
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What types of foam can be welded on this machine?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">The CyTOS Foam Welding Machine handles EPE (Expanded Polyethylene), EVA, XLPE (Cross-Linked Polyethylene), and polyurethane foams commonly used in electronics cushioning, tool trays, returnable automotive dunnage, and medical packaging.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">How does thermal welding compare with hot-melt glue?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Thermal welding melts the contact surfaces of the foam slightly and presses them together to create a permanent molecular bond that is as strong as the virgin material. Unlike glue, it costs zero rupees in consumables, eliminates glue strings, avoids toxic solvent smells, and is 100% recyclable.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can the platen size be customized for our specific packaging boxes?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. While our standard platen is 600 × 400 mm, we custom engineer platen sizes up to 1,500 × 1,000 mm with multi-zone heating elements to fit your largest packaging formats.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What is the typical production speed?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">A typical welding cycle takes between 5 to 15 seconds depending on the foam density and thickness, allowing an operator to produce 200 to 400 finished welded foam assemblies per hour.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling & Routing Machine" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100,000 RPM ULTRA-HIGH SPEED</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-6060-pcb-drilling-routing-machine" style="text-decoration: none; color: inherit;">CNC 6060 PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pi...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-6060-pcb-drilling-routing-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 PCB Rapid Prototyping Machine" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100% CHEMICAL-FREE PROTOTYPING</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3020-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3020 PCB Rapid Prototyping Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3020-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3030 High Precision PCB Drilling & Routing Machine" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">60,000 RPM HIGH PRECISION</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3030-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3030 High Precision PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3030-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function Di(){return e.jsx(x,{htmlContent:Ai,title:"Automatic Foam Welding Machine - Thermal Packaging & Foam Fabrication Machine Manufacturer from Pune | CyTOS",description:"Manufacturer of Automatic Foam Welding Machine - High speed automated thermal welding for packaging and industrial foam fabrication. Direct factory from CyTOS Pune.",canonical:"https://www.cytos.in/foam-welding-machine"})}const Ri=`
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Educational & Training CNC Machines", "model": "CyTOS EduCNC Series", "description": "Manufacturer of Educational CNC Machines - Compact training CNC milling, router, and PCB machines with safety enclosures for engineering colleges and labs. CyTOS Pune.", "image": ["https://www.cytos.in/assets/images/machines/educational-cnc-lab.png", "https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png", "https://www.cytos.in/assets/images/machines/precision-machining-parts.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "Educational & Institutional CNC", "offers": {"@type": "Offer", "url": "https://www.cytos.in/educational-cnc-machines", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "Educational & Training CNC Machines", "item": "https://www.cytos.in/educational-cnc-machines"}]}<\/script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why should colleges invest in CyTOS Educational CNC machines over consumer CNC kits?", "acceptedAnswer": {"@type": "Answer", "text": "Consumer hobby kits use weak 3D-printed parts, belt drives, and unstable open-source controllers that break quickly under student use. CyTOS Educational machines are built with genuine industrial ball screws, linear guides, and steel frames, offering real industrial reliability, accuracy, and Fanuc/Siemens-compatible G-code syntax."}}, {"@type": "Question", "name": "What training is provided for faculty and lab assistants?", "acceptedAnswer": {"@type": "Answer", "text": "We conduct an extensive hands-on faculty training program upon installation. Our engineers guide instructors through machine operation, safety protocols, CAD-to-CAM workflow, tooling selection, and troubleshooting so faculty can confidently teach student batches."}}, {"@type": "Question", "name": "Is special three-phase power or compressed air needed in the lab?", "acceptedAnswer": {"@type": "Answer", "text": "No. The CyTOS Educational CNC machine runs on standard 230V AC single-phase power from a regular domestic socket, requiring no special electrical substation or high-pressure plant air."}}, {"@type": "Question", "name": "Can students use standard CAD/CAM software like Fusion 360 or SolidWorks?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. CyTOS EduCAM accepts standard G-code exported from Autodesk Fusion 360, SolidWorks, Mastercam, Creo, NX, and EDA packages like Altium, KiCad, and Eagle."}}]}<\/script>
+
+  <!-- Top Telemetry Bar -->
+  <aside class="top-telemetry-bar" aria-label="Facility Status and Quick Contact">
+    <div class="top-bar-inner">
+      <div class="telemetry-item">
+        <span class="status-dot"></span>
+        <span style="background: rgba(37,99,235,0.12); color: #1d4ed8; font-weight: 800; font-size: 0.76rem; padding: 2px 7px; border-radius: 4px; margin-right: 6px;">🇮🇳 PAN-INDIA DISPATCH</span>
+        <span><strong>Direct Factory Delivery Across India:</strong> On-Site Commissioning &amp; Service in Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR &amp; All States</span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="tel:+919921381071" id="topPhoneLink" title="Direct Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" id="topWhatsappLink" title="Chat on WhatsApp">
+          <svg class="whatsapp-icon-svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="nav-container">
+      <a href="/" class="logo-wrapper" title="CyTOS - Precision CNC &amp; Industrial Automation">
+        <img src="/CyTOS New Logo.png" alt="CyTOS - Cycle Time Optimising Solutions" class="brand-logo-img" width="130" height="72" style="height: 72px; width: auto; object-fit: contain;">
+      </a>
+
+      <!-- Streamlined Desktop Navigation with Submenus -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+
+        <!-- Machines Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/pcb-drilling-routing" class="nav-link dropdown-trigger active">
+            <span>Machines</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/cnc-6060-pcb-drilling-routing-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 6060 PCB Drilling &amp; Routing</span>
+                <span class="badge-mini">100k RPM</span>
+              </div>
+              <span class="dropdown-item-desc">High-speed 18,000-100,000 RPM 0.2mm micro-drilling system (1-5 Spindles)</span>
+            </a>
+            <a href="/cnc-3020-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3020 Rapid Prototyper</span>
+                <span class="badge-mini">Tabletop</span>
+              </div>
+              <span class="dropdown-item-desc">Chemical-free instant lab PCB isolation milling with auto-leveling &amp; camera</span>
+            </a>
+            <a href="/cnc-3030-pcb-prototyping-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>CNC 3030 High Precision PCB</span>
+                <span class="badge-mini">Pneumatic ATC</span>
+              </div>
+              <span class="dropdown-item-desc">60,000 RPM precision benchtop routing with 0.3mm isolation &amp; ATC option</span>
+            </a>
+            <a href="/pcb12-multi-spindle-drilling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PCB12 Multi-Spindle Gantry</span>
+                <span class="badge-mini">3-Spindle</span>
+              </div>
+              <span class="dropdown-item-desc">1,200x1,200mm high throughput 3-spindle synchronized mass production</span>
+            </a>
+            <a href="/cnc-wood-acrylic-aluminium-router-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Industrial CNC Routers</span>
+                <span class="badge-mini">4x4 to 10x5 ft</span>
+              </div>
+              <span class="dropdown-item-desc">Heavy mild steel gantry router for aluminium, brass, acrylic &amp; composites</span>
+            </a>
+            <a href="/vdm-heavy-vertical-drilling-milling-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>VDM Heavy Drilling &amp; Milling</span>
+                <span class="badge-mini">Cast Iron</span>
+              </div>
+              <span class="dropdown-item-desc">VDM30M / 50M / 100M BT30/BT40 rigid milling for MS, SS &amp; switchboards</span>
+            </a>
+            <a href="/foam-welding-machine" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Foam Welding Machine</span>
+                <span class="badge-mini">Packaging</span>
+              </div>
+              <span class="dropdown-item-desc">Automatic thermal packaging foam welding machine for mass production</span>
+            </a>
+            <a href="/educational-cnc-machines" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Educational CNC Machines</span>
+                <span class="badge-mini">Colleges/Labs</span>
+              </div>
+              <span class="dropdown-item-desc">Compact enclosed training CNC routers &amp; PCB machines for academic institutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Automation & SPM Dropdown Submenu -->
+        <div class="nav-item-dropdown">
+          <a href="/spm-automation" class="nav-link dropdown-trigger">
+            <span>Automation &amp; SPM</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/spm-automation" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Custom Turnkey SPMs</span>
+                <span class="badge-mini">Turnkey</span>
+              </div>
+              <span class="dropdown-item-desc">Custom single-purpose machinery engineered to cut cycle time up to 60%</span>
+            </a>
+            <a href="/robotic-dispensing-cells" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Robotic Dispensing Cells</span>
+                <span class="badge-mini">Automotive</span>
+              </div>
+              <span class="dropdown-item-desc">3-Axis high-speed dispensing cells for sealants, adhesives &amp; potting</span>
+            </a>
+            <a href="/pneumatic-welding-fixtures" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Pneumatic Welding Fixtures</span>
+                <span class="badge-mini">Pneumatic</span>
+              </div>
+              <span class="dropdown-item-desc">90° indexing &amp; heavy-clamping jigs for automotive robotic welding lines</span>
+            </a>
+            <a href="/plc-control-panels" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>PLC Industrial Control Panels</span>
+                <span class="badge-mini">Siemens / Delta</span>
+              </div>
+              <span class="dropdown-item-desc">Turnkey PLC/HMI automation control enclosures with safety interlocks</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/applications" class="nav-link">Applications</a>
+        <a href="/case-studies" class="nav-link">Case Studies</a>
+
+        <!-- About Dropdown Submenu with Blog -->
+        <div class="nav-item-dropdown">
+          <a href="/about" class="nav-link dropdown-trigger">
+            <span>About</span>
+            <svg class="dropdown-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M2 4.5l4 4 4-4"/>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>About CyTOS</span>
+                <span class="badge-mini">Company</span>
+              </div>
+              <span class="dropdown-item-desc">Our Pune manufacturing plant, engineering heritage &amp; track record</span>
+            </a>
+            <a href="/blog" class="dropdown-item">
+              <div class="dropdown-item-title">
+                <span>Engineering Blog &amp; Insights</span>
+                <span class="badge-mini">Articles</span>
+              </div>
+              <span class="dropdown-item-desc">Technical articles on PCB drilling, CNC milling, chemical-free prototyping &amp; SPMs</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action CTAs: WhatsApp & Quote -->
+      <div class="nav-actions">
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20technical%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="navWhatsappBtn" title="Chat on WhatsApp">
+          <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-primary" data-open-rfq data-machine="General CNC Application" id="navQuoteBtn">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Request Quote</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs Bar -->
+  <div class="breadcrumbs-bar">
+    <div class="container">
+      <div class="breadcrumbs-list">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/#pillars">Machines</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Educational & Training CNC Machines</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Page Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-grid">
+        <div class="page-hero-content">
+          <div class="hero-badge">
+            <span>COLLEGE & INSTITUTIONAL TRAINER</span>
+          </div>
+          <h1 class="page-hero-title">Educational &amp; Training CNC Machines</h1>
+          <p class="page-hero-subtitle">
+            Compact, robust, and safe CNC machine tools engineered specifically for engineering colleges, polytechnics, ITIs, and skill development centres. Features full transparent safety enclosures, door interlocks, PC-based CNC simulation software, and curriculum packages for teaching G-code programming, 3D routing, and PCB fabrication.
+          </p>
+          
+          <!-- Answer-First Box for Search & Direct Buyers -->
+          <div class="answer-first-callout">
+            <strong>In brief:</strong> The CyTOS Educational CNC Series bridges academic theory and real-world industrial practice. Built with the same precision ball screws, linear guides, and controllers as our factory production machines, it provides students with hands-on machining experience in a safe, quiet, and clean laboratory environment.
+          </div>
+
+          <div class="slide-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="Educational & Training CNC Machines">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 12h6"></path><path d="M9 16h6"></path></svg> <span>Request Technical Quote</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20am%20interested%20in%20Educational & Training CNC Machines.%20Please%20send%20pricing%20and%20proposal." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg> <span>Chat with Pune Engineer</span>
+            </a>
+            <a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="margin-top: 0.5rem; width: 100%; justify-content: center;">
+              <span>Download 2026 Machine Catalog (PDF)</span>
+            </a>
+          </div>
+
+          <div class="engineering-signoff-bar">
+            <span class="signoff-icon"><svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span><strong>Technical Specification Verified:</strong> Reviewed by CyTOS Lead CNC Controls &amp; Spindle Specialist • Revision v4.2 (2026)</span>
+          </div>
+        </div>
+
+        <div class="page-hero-media">
+          <img src="/assets/images/machines/educational-cnc-lab.png" alt="Educational & Training CNC Machine Lab Workcell for Engineering Colleges, Pune" title="Educational & Training CNC Machine Lab Workcell for Engineering Colleges, Pune" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
+          <div class="page-hero-caption">
+            <strong>Featured Model:</strong> Educational & Training CNC Machines • CyTOS EduCNC Series • Manufactured at Bhosari MIDC, Pune
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Highlights Grid -->
+  <section class="section" style="background: #ffffff; padding: 2.5rem 0;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">100% Safe</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Enclosed Design</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">G & M Code</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Standard NC Control</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">PC Based</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Simulation & CAM</div>
+          </div>
+          <div class="spec-cell" style="background: var(--bg-surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center;">
+            <div class="spec-value" style="font-size: 1.8rem; font-weight: 800; color: var(--brand-primary); margin-bottom: 0.25rem;">Turnkey</div>
+            <div class="spec-label" style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-secondary);">Lab Curriculum</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Depth Engineering Features -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div class="hero-badge" style="margin: 0 0 0.75rem;">
+          <span>ENGINEERING EXCELLENCE</span>
+        </div>
+        <h2 class="section-title">Core Machine Design &amp; Architectural Features</h2>
+        <p class="section-subtitle">
+          Built from the ground up at our Pune works with stress-relieved structures, premium motion hardware, and in-house proprietary controls.
+        </p>
+      </div>
+
+      <div style="background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Complete physical safety with transparent shatterproof polycarbonate enclosure and emergency interlock that cuts spindle power if doors open</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Real-world industrial controller interface teaching students authentic G-code, tool offsets, work coordinates (G54-G59), and feed rate overrides</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">3D graphic toolpath preview and virtual collision simulation before cutting, eliminating accidental tool crashes and student mistakes</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Versatile multi-material machining capability: students can prototype electronics PCBs, 3D wood sculptures, acrylic signs, and aluminium brackets</span>
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 0.85rem; align-items: flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--brand-gold)" stroke-width="2.5" style="flex-shrink: 0; margin-top: 2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span style="color: var(--text-primary); font-size: 0.95rem; line-height: 1.6;">Comprehensive turnkey delivery: includes student lab exercises, faculty training workshops, and ongoing curriculum support</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Technical Specifications Table -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Factory Verified Technical Specifications</h2>
+        <p class="section-subtitle">
+          Transparent, factory-tested parameters from the 2026 CyTOS Machine Catalog.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 35%;">Specification Parameter</th>
+              <th style="width: 45%;">Engineering Value / Standard</th>
+              <th style="width: 20%;">Classification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Machine Category</strong></td>
+              <td>Educational Benchtop CNC Machining & Prototyping Trainer</td>
+              <td><span class="badge-std">Academic</span></td>
+            </tr>
+            <tr>
+              <td><strong>Working Envelope</strong></td>
+              <td>300 × 200 × 60 mm / 300 × 300 × 80 mm</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Safety Housing</strong></td>
+              <td>360° Transparent Polycarbonate Enclosure with Door Safety Interlock</td>
+              <td><span class="badge-std">100% Safe</span></td>
+            </tr>
+            <tr>
+              <td><strong>Spindle Motor</strong></td>
+              <td>800W to 1.5 kW Precision High-Speed Spindle (up to 40,000 RPM)</td>
+              <td><span class="badge-std">Variable</span></td>
+            </tr>
+            <tr>
+              <td><strong>Motion Mechanisms</strong></td>
+              <td>Hardened Linear Guideways & C7 Precision Ball Screws</td>
+              <td><span class="badge-std">Industrial Grade</span></td>
+            </tr>
+            <tr>
+              <td><strong>Drive Motors</strong></td>
+              <td>Micro-Step Stepper Motors / Easy Servo Closed-Loop Drives</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Accuracy & Repeatability</strong></td>
+              <td>±0.05 mm (Demonstrates Real Industrial Tolerances)</td>
+              <td><span class="badge-std">Precision</span></td>
+            </tr>
+            <tr>
+              <td><strong>Operating Software</strong></td>
+              <td>CyTOS EduCAM Studio with Real-Time 3D Toolpath Simulation</td>
+              <td><span class="badge-std">Included</span></td>
+            </tr>
+            <tr>
+              <td><strong>Supported Languages</strong></td>
+              <td>Standard ISO G-Code and M-Code (Fanuc & Siemens compatible syntax)</td>
+              <td><span class="badge-std">Universal</span></td>
+            </tr>
+            <tr>
+              <td><strong>Workpiece Clamping</strong></td>
+              <td>T-Slot Aluminium Bed with Quick-Action Mechanical Clamps</td>
+              <td><span class="badge-std">Standard</span></td>
+            </tr>
+            <tr>
+              <td><strong>Noise Level</strong></td>
+              <td>Under 65 dB (Classroom Friendly Operation)</td>
+              <td><span class="badge-std">Quiet</span></td>
+            </tr>
+            <tr>
+              <td><strong>Power Supply</strong></td>
+              <td>Standard 230V AC Single Phase Domestic Wall Plug (No Industrial 3-Phase Required)</td>
+              <td><span class="badge-std">Plug & Play</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material Compatibility Matrix -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tested Substrate &amp; Material Compatibility</h2>
+        <p class="section-subtitle">
+          Recommended cutting speeds, feeds, and application performance validated on CyTOS test beds.
+        </p>
+      </div>
+
+      <div class="spec-table-container">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Material Substrate</th>
+              <th style="width: 15%;">Suitability</th>
+              <th style="width: 25%;">Recommended Spindle Speed</th>
+              <th style="width: 30%;">Application Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>PCB Copper-Clad Laminates (FR4)</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>24,000 – 40,000 RPM</td>
+              <td>Chemical-free student circuit design and fabrication</td>
+            </tr>
+            <tr>
+              <td><strong>Aluminium (6061) & Brass Ingots</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>18,000 – 24,000 RPM</td>
+              <td>Teaches metal cutting speeds, chip loads, and feeds</td>
+            </tr>
+            <tr>
+              <td><strong>Acrylic & Polycarbonate Sheets</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>16,000 – 22,000 RPM</td>
+              <td>Engraving, optical lens machining, and light guide signs</td>
+            </tr>
+            <tr>
+              <td><strong>Wood, MDF & Modeling Foam</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>18,000 – 24,000 RPM</td>
+              <td>Rapid 3D surface contouring and industrial design models</td>
+            </tr>
+            <tr>
+              <td><strong>Delrin, Nylon & Engineering Plastics</strong></td>
+              <td><span class="matrix-status-cell optimal">● Optimal</span></td>
+              <td>16,000 – 20,000 RPM</td>
+              <td>Mechanical gears, robot chassis, and mechanical parts</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Equipment vs Optional Upgrades -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Standard Package &amp; Factory Custom Options</h2>
+        <p class="section-subtitle">
+          Configure your machine according to specific production volumes, panel formats, and cycle times.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-subtle);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Standard Factory Package</h3>
+            <span class="badge-std" style="background: #10b981; color: #fff;">INCLUDED</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">✓ Complete Benchtop CNC Machine with Safety Enclosure and E-Stop</li>
+            <li style="margin-bottom: 0.6rem;">✓ Pre-Configured Operator PC with CyTOS EduCAM Software & Simulation</li>
+            <li style="margin-bottom: 0.6rem;">✓ Starter Tooling Package (End Mills, V-Carve Bits, Ball Nose, Micro-Drills)</li>
+            <li style="margin-bottom: 0.6rem;">✓ Mechanical Clamping Kit, T-Nuts, and Precision Workpiece Vise</li>
+            <li style="margin-bottom: 0.6rem;">✓ Faculty Training Session Conducted by CyTOS Application Engineers</li>
+            <li style="margin-bottom: 0.6rem;">✓ 12-Month Institutional Warranty and Technical Phone/Email Support</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: 10px; border: 1px solid var(--brand-gold-border); box-shadow: var(--shadow-sm);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+            <h3 style="margin: 0; color: var(--text-pure); font-size: 1.25rem;">Optional Factory Upgrades</h3>
+            <span class="badge-std" style="background: var(--brand-gold); color: #fff;">CUSTOMIZABLE</span>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
+            <li style="margin-bottom: 0.6rem;">+ Rotary 4th Axis Attachment for Teaching 4-Axis Simultaneous Machining</li>
+            <li style="margin-bottom: 0.6rem;">+ Automated Surface Touch Probe for Auto Z-Zero Leveling Demonstration</li>
+            <li style="margin-bottom: 0.6rem;">+ Compact Laboratory HEPA Dust Extractor with Anti-Static Hose</li>
+            <li style="margin-bottom: 0.6rem;">+ Annual Institutional Maintenance & Faculty Refresher Training Contract</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Image Gallery for Image SEO -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Machine Gallery &amp; Detail Views</h2>
+        <p class="section-subtitle">
+          High-resolution engineering views of components, spindle tapers, and electronic control architecture.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="Chemical-Free Student PCB Prototyping Trainer, Pune" title="Chemical-Free Student PCB Prototyping Trainer, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Chemical-Free Student PCB Prototyping Trainer, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">Safe tabletop isolation milling and circuit fabrication workstation designed for student electronics labs.</p>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 260px; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <img src="/assets/images/machines/precision-machining-parts.png" alt="Student CNC Milling Project Samples, Pune" title="Student CNC Milling Project Samples, Pune" loading="lazy" style="width: 100%; height: 220px; object-fit: cover; display: block;">
+            <div style="padding: 1rem;">
+              <strong style="color: var(--text-pure); font-size: 0.9rem; display: block; margin-bottom: 0.35rem;">Student CNC Milling Project Samples, Pune</strong>
+              <p style="color: var(--text-secondary); font-size: 0.82rem; margin: 0; line-height: 1.5;">3D engraved badges, nameplates, aluminium components, and circuit boards fabricated by students.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Cutting Trial Banner -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="sample-trial-banner" style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); border: 2px solid var(--brand-gold-border); padding: 2.5rem; border-radius: 12px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <div class="hero-badge" style="margin-bottom: 0.75rem;">
+            <span>ZERO-RISK TECHNICAL EVALUATION</span>
+          </div>
+          <h2 style="font-size: 1.85rem; color: var(--text-pure); margin-bottom: 1rem;">
+            Schedule a Live Cutting Trial on the Educational & Training CNC Machines
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" data-open-rfq data-machine="Educational & Training CNC Machines Live Trial">
+              <span>Book Live Trial at Pune Works</span>
+            </button>
+            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20Educational & Training CNC Machines." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Send Drawing on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+          <h4 style="color: var(--text-pure); margin-bottom: 0.75rem;">Trial Execution Protocol:</h4>
+          <ol style="padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            <li>Share DXF/Gerber or courier sample stock to Pune.</li>
+            <li>Application engineer calculates optimal feed &amp; speed.</li>
+            <li>Trial executed live with video recording.</li>
+            <li>Finished parts &amp; cycle analysis returned in 48 hours.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Direct engineering answers about specifications, tooling, delivery, and support for the Educational & Training CNC Machines.
+        </p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Why should colleges invest in CyTOS Educational CNC machines over consumer CNC kits?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Consumer hobby kits use weak 3D-printed parts, belt drives, and unstable open-source controllers that break quickly under student use. CyTOS Educational machines are built with genuine industrial ball screws, linear guides, and steel frames, offering real industrial reliability, accuracy, and Fanuc/Siemens-compatible G-code syntax.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">What training is provided for faculty and lab assistants?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">We conduct an extensive hands-on faculty training program upon installation. Our engineers guide instructors through machine operation, safety protocols, CAD-to-CAM workflow, tooling selection, and troubleshooting so faculty can confidently teach student batches.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Is special three-phase power or compressed air needed in the lab?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">No. The CyTOS Educational CNC machine runs on standard 230V AC single-phase power from a regular domestic socket, requiring no special electrical substation or high-pressure plant air.</p>
+        </details>
+        <details class="faq-item" style="background: #ffffff; padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border-subtle); margin-bottom: 0.85rem;">
+          <summary style="font-weight: 700; color: var(--text-pure); cursor: pointer; font-size: 1.05rem;">Can students use standard CAD/CAM software like Fusion 360 or SolidWorks?</summary>
+          <p style="margin-top: 0.75rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">Yes. CyTOS EduCAM accepts standard G-code exported from Autodesk Fusion 360, SolidWorks, Mastercam, Creo, NX, and EDA packages like Altium, KiCad, and Eagle.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Precision Machines -->
+  <section class="section" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explore Related Precision Machines</h2>
+        <p class="section-subtitle">
+          Discover other industrial CNC routers, PCB machines, and automation cells manufactured by CyTOS in Pune.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-drilling-pcb60.png" alt="CNC 6060 PCB Drilling & Routing Machine" title="CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100,000 RPM ULTRA-HIGH SPEED</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-6060-pcb-drilling-routing-machine" style="text-decoration: none; color: inherit;">CNC 6060 PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pi...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-6060-pcb-drilling-routing-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 6060 PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3020 PCB Rapid Prototyping Machine" title="CNC 3020 Chemical-Free Desktop PCB Rapid Prototyping Machine, Pune, India" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">100% CHEMICAL-FREE PROTOTYPING</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3020-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3020 PCB Rapid Prototyping Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Compact tabletop PCB isolation milling machine engineered specifically for corporate R&D departments, defense labs, and engineering colleges...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3020-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3020 PCB Rapid Prototyping Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+          <article class="machine-card" style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+            <div class="machine-img-box" style="height: 220px; overflow: hidden; background: #f8fafc; position: relative;">
+              <img src="/assets/images/machines/pcb-prototyping-pcb30.png" alt="CNC 3030 High Precision PCB Drilling & Routing Machine" title="CyTOS CNC 3030 Heavy-Duty High-Precision PCB Drilling & Routing Machine, Pune" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
+              <div class="machine-badge-tag" style="position: absolute; top: 10px; left: 10px; background: rgba(15,23,42,0.85); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; font-weight: 700;">60,000 RPM HIGH PRECISION</div>
+            </div>
+            <div class="machine-body" style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
+              <h3 class="machine-name" style="font-size: 1.15rem; color: var(--text-pure); margin-bottom: 0.5rem;"><a href="/cnc-3030-pcb-prototyping-machine" style="text-decoration: none; color: inherit;">CNC 3030 High Precision PCB Drilling & Routing Machine</a></h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); flex: 1; margin-bottom: 1.25rem;">Heavy-duty benchtop CNC machine with travel speeds up to 166 mm/sec (10,000 mm/min), spindle options up to 60,000 RPM 1.5 kW, closed-loop AC...</p>
+              <div style="display: flex; gap: 0.5rem;">
+                <a href="/cnc-3030-pcb-prototyping-machine" class="btn btn-outline btn-block" style="text-align: center; text-decoration: none;">View Model ❯</a>
+                <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine">Quote</button>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Engineering Hotline Conversion Bar -->
+  <aside class="sticky-rfq-bar" aria-label="Engineering Hotline">
+    <div class="sticky-rfq-container">
+      <div class="sticky-rfq-info">
+        <div class="hotline-icon-badge">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="rfq-highlight">CyTOS Engineering Hotline:</span>
+          <span class="rfq-desc">Need custom spindle speed, table sizing, or multi-head configuration? Speak directly with a Pune application specialist.</span>
+        </div>
+      </div>
+      <div class="sticky-rfq-buttons">
+        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+          <span>+91 99213 81071</span>
+        </a>
+        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+          <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
+          <span>Quick WhatsApp RFQ</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Complete Site Footer -->
+  <footer class="site-footer-main" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Credentials -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-logo">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-brand-desc">
+            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          </p>
+          <div class="footer-badges-list">
+            <span class="badge-mini">ISO 9001:2015</span>
+            <span class="badge-mini">Make In India</span>
+            <span class="badge-mini">Bhosari MIDC Plant</span>
+            <span class="badge-mini">CE / IEC 61439</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Machine Solutions -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Precision CNC Machines</h4>
+          <ul class="footer-links-list">
+            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
+            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
+            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
+            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
+            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
+            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
+            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
+            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Automation & Resources -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="/spm-automation">Custom SPM Automation</a></li>
+            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
+            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
+            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
+            <li><a href="/applications">Industry Applications</a></li>
+            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
+            <li><a href="/blog">Engineering Knowledge Base</a></li>
+            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Pune Works & Direct Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 99213 81071 / +91 76204 14165</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cytos.ltd@gmail.com</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
+                <span>Request Machine Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pan-India Delivery Bar -->
+      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
+        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
+        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
+      </div>
+
+      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
+        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
+          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
+    </svg>
+    <span class="whatsapp-float-label">Chat with Us</span>
+  </a>
+
+  <!-- RFQ Quote Modal -->
+  <div class="rfq-modal-overlay" id="rfqModal" role="dialog" aria-modal="true" aria-label="Machine Quote Request">
+    <div class="rfq-modal-dialog">
+      <div class="rfq-modal-header">
+        <div class="rfq-modal-title-group">
+          <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
+          <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+        </div>
+        <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
+      </div>
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+        <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqName">Full Name *</label>
+            <input type="text" id="rfqName" required placeholder="e.g. Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label for="rfqCompany">Company / Institution *</label>
+            <input type="text" id="rfqCompany" required placeholder="e.g. Precision Electronics Ltd">
+          </div>
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="rfqPhone">Phone / WhatsApp *</label>
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+          </div>
+          <div class="form-group">
+            <label for="rfqEmail">Work Email *</label>
+            <input type="email" id="rfqEmail" required placeholder="e.g. rahul@company.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="rfqRequirements">Workpiece Material &amp; Target Specifications</label>
+          <textarea id="rfqRequirements" rows="3" placeholder="Tell us about your panel/part size, material (FR4, MS, Aluminium), required tolerances, or monthly production volume..."></textarea>
+        </div>
+        <div class="form-actions-row">
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send RFQ on WhatsApp (Instant Reply)</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+`;function Ii(){return e.jsx(x,{htmlContent:Ri,title:"Educational CNC Machines - Desktop & Benchtop Training CNC Machine Manufacturer from Pune | CyTOS",description:"Manufacturer of Educational CNC Machines - Compact training CNC milling, router, and PCB machines with safety enclosures for engineering colleges and labs. CyTOS Pune.",canonical:"https://www.cytos.in/educational-cnc-machines"})}const te=T.lazy(()=>be(()=>import("./BlogPostPage-CEFOK_05.js"),__vite__mapDeps([0,1])));function qi(){return e.jsxs("div",{style:{minHeight:"60vh",display:"flex",alignItems:"center",justifyContent:"center"},children:[e.jsx("div",{style:{width:"40px",height:"40px",border:"3px solid #e2e8f0",borderTopColor:"#0a369d",borderRadius:"50%",animation:"spin 0.8s linear infinite"}}),e.jsx("style",{children:"@keyframes spin { to { transform: rotate(360deg); } }"})]})}function Ni(){return e.jsxs(T.Suspense,{fallback:e.jsx(qi,{}),children:[e.jsxs(de,{children:[e.jsx(d,{path:"/",element:e.jsx(Fe,{})}),e.jsx(d,{path:"/about",element:e.jsx(ze,{})}),e.jsx(d,{path:"/applications",element:e.jsx(je,{})}),e.jsx(d,{path:"/case-studies",element:e.jsx(Ge,{})}),e.jsx(d,{path:"/contact",element:e.jsx(Ze,{})}),e.jsx(d,{path:"/privacy-policy",element:e.jsx(ri,{})}),e.jsx(d,{path:"/terms-conditions",element:e.jsx(ci,{})}),e.jsx(d,{path:"/pcb-drilling-routing",element:e.jsx(Ke,{})}),e.jsx(d,{path:"/pcb-prototyping",element:e.jsx(Xe,{})}),e.jsx(d,{path:"/cnc-routers-milling",element:e.jsx(_e,{})}),e.jsx(d,{path:"/vdm-milling",element:e.jsx(mi,{})}),e.jsx(d,{path:"/robotic-dispensing-cells",element:e.jsx(si,{})}),e.jsx(d,{path:"/pneumatic-welding-fixtures",element:e.jsx(ti,{})}),e.jsx(d,{path:"/plc-control-panels",element:e.jsx(ei,{})}),e.jsx(d,{path:"/spm-automation",element:e.jsx(li,{})}),e.jsx(d,{path:"/cnc-6060-pcb-drilling-routing-machine",element:e.jsx(yi,{})}),e.jsx(d,{path:"/cnc-3020-pcb-prototyping-machine",element:e.jsx(Ci,{})}),e.jsx(d,{path:"/cnc-3030-pcb-prototyping-machine",element:e.jsx(xi,{})}),e.jsx(d,{path:"/pcb12-multi-spindle-drilling-machine",element:e.jsx(Si,{})}),e.jsx(d,{path:"/cnc-wood-acrylic-aluminium-router-machine",element:e.jsx(Mi,{})}),e.jsx(d,{path:"/vdm-heavy-vertical-drilling-milling-machine",element:e.jsx(Bi,{})}),e.jsx(d,{path:"/foam-welding-machine",element:e.jsx(Di,{})}),e.jsx(d,{path:"/educational-cnc-machines",element:e.jsx(Ii,{})}),e.jsx(d,{path:"/blog",element:e.jsx(gi,{})}),e.jsx(d,{path:"/blog/:slug",element:e.jsx(te,{})}),e.jsx(d,{path:"/blog/:slug.html",element:e.jsx(te,{})}),vi.map(i=>e.jsxs(ae.Fragment,{children:[e.jsx(d,{path:`/${i.slug}`,element:e.jsx(C,{to:`/blog/${i.slug}`,replace:!0})}),e.jsx(d,{path:`/${i.slug}.html`,element:e.jsx(C,{to:`/blog/${i.slug}`,replace:!0})})]},i.slug)),e.jsx(d,{path:"/index.html",element:e.jsx(C,{to:"/",replace:!0})}),e.jsx(d,{path:"/about.html",element:e.jsx(C,{to:"/about",replace:!0})}),e.jsx(d,{path:"/applications.html",element:e.jsx(C,{to:"/applications",replace:!0})}),e.jsx(d,{path:"/case-studies.html",element:e.jsx(C,{to:"/case-studies",replace:!0})}),e.jsx(d,{path:"/contact.html",element:e.jsx(C,{to:"/contact",replace:!0})}),e.jsx(d,{path:"/privacy-policy.html",element:e.jsx(C,{to:"/privacy-policy",replace:!0})}),e.jsx(d,{path:"/terms-conditions.html",element:e.jsx(C,{to:"/terms-conditions",replace:!0})}),e.jsx(d,{path:"/blog.html",element:e.jsx(C,{to:"/blog",replace:!0})}),e.jsx(d,{path:"/pcb-drilling-routing.html",element:e.jsx(C,{to:"/pcb-drilling-routing",replace:!0})}),e.jsx(d,{path:"/pcb-prototyping.html",element:e.jsx(C,{to:"/pcb-prototyping",replace:!0})}),e.jsx(d,{path:"/cnc-routers-milling.html",element:e.jsx(C,{to:"/cnc-routers-milling",replace:!0})}),e.jsx(d,{path:"/vdm-milling.html",element:e.jsx(C,{to:"/vdm-milling",replace:!0})}),e.jsx(d,{path:"/robotic-dispensing-cells.html",element:e.jsx(C,{to:"/robotic-dispensing-cells",replace:!0})}),e.jsx(d,{path:"/pneumatic-welding-fixtures.html",element:e.jsx(C,{to:"/pneumatic-welding-fixtures",replace:!0})}),e.jsx(d,{path:"/plc-control-panels.html",element:e.jsx(C,{to:"/plc-control-panels",replace:!0})}),e.jsx(d,{path:"/spm-automation.html",element:e.jsx(C,{to:"/spm-automation",replace:!0})}),e.jsx(d,{path:"/cnc-6060-pcb-drilling-routing-machine.html",element:e.jsx(C,{to:"/cnc-6060-pcb-drilling-routing-machine",replace:!0})}),e.jsx(d,{path:"/cnc-3020-pcb-prototyping-machine.html",element:e.jsx(C,{to:"/cnc-3020-pcb-prototyping-machine",replace:!0})}),e.jsx(d,{path:"/cnc-3030-pcb-prototyping-machine.html",element:e.jsx(C,{to:"/cnc-3030-pcb-prototyping-machine",replace:!0})}),e.jsx(d,{path:"/pcb12-multi-spindle-drilling-machine.html",element:e.jsx(C,{to:"/pcb12-multi-spindle-drilling-machine",replace:!0})}),e.jsx(d,{path:"/cnc-wood-acrylic-aluminium-router-machine.html",element:e.jsx(C,{to:"/cnc-wood-acrylic-aluminium-router-machine",replace:!0})}),e.jsx(d,{path:"/vdm-heavy-vertical-drilling-milling-machine.html",element:e.jsx(C,{to:"/vdm-heavy-vertical-drilling-milling-machine",replace:!0})}),e.jsx(d,{path:"/foam-welding-machine.html",element:e.jsx(C,{to:"/foam-welding-machine",replace:!0})}),e.jsx(d,{path:"/educational-cnc-machines.html",element:e.jsx(C,{to:"/educational-cnc-machines",replace:!0})}),e.jsx(d,{path:"*",element:e.jsx(C,{to:"/",replace:!0})})]}),e.jsx(hi,{})]})}F.createRoot(document.getElementById("root")).render(e.jsx(ae.StrictMode,{children:e.jsx(ce,{children:e.jsx(Ni,{})})}));export{x as H,e as j};

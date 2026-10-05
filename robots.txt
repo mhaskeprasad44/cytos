@@ -1,8 +1,9 @@
-# robots.txt for CyTOS (https://cytos.in)
+# robots.txt for CyTOS (https://www.cytos.in)
 # Pune Machine Tools & Industrial Automation Engineering
 
 User-agent: *
 Allow: /
+Allow: /llms.txt
 
 # Explicitly allow major AI and LLM search agents for AEO/GEO indexing
 User-agent: Google-Extended
@@ -28,3 +29,4 @@ Allow: /
 
 # XML Sitemap and LLM AI Knowledge File
 Sitemap: https://www.cytos.in/sitemap.xml
+

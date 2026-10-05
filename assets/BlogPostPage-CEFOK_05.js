@@ -1,4 +1,4 @@
-import{j as e,H as i}from"./index-DYMvM5nh.js";import{d as t,N as a}from"./vendor-6BnBuTEh.js";const o={"60000-rpm-pcb-drilling-spindle-maintenance":{title:"PCB Drilling Spindle Maintenance: 60,000 RPM Collet Runout & Thermal Calibration Protocol",description:"Master 60,000 RPM PCB drilling spindle maintenance. Learn collet taper cleaning, dynamic TIR runout calibration, air-bearing purge, and vibration analysis.",html:`\r
+import{j as e,H as i}from"./index-DRSeb5kS.js";import{d as t,N as a}from"./vendor-6BnBuTEh.js";const o={"60000-rpm-pcb-drilling-spindle-maintenance":{title:"PCB Drilling Spindle Maintenance: 60,000 RPM Collet Runout & Thermal Calibration Protocol",description:"Master 60,000 RPM PCB drilling spindle maintenance. Learn collet taper cleaning, dynamic TIR runout calibration, air-bearing purge, and vibration analysis.",html:`\r
   <!-- Google Tag Manager (noscript) -->\r
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"\r
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\r
