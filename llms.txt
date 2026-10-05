@@ -1,0 +1,63 @@
+# CyTOS — Precision CNC Machine Tools & Turnkey Industrial Automation
+
+> CyTOS (Cycle Time Optimising Solutions) is an Indian precision machine tool manufacturer and industrial automation engineering company founded in December 2019, headquartered in Pune, Maharashtra, India. CyTOS specializes in high-speed CNC PCB drilling and routing machines (up to 60,000 RPM), chemical-free green PCB rapid prototyping systems, heavy-duty CNC gantry routers, vertical drilling-milling (VDM) machines, and custom Special Purpose Machines (SPMs) for automotive tier-1 suppliers, aerospace, defense, and electronics manufacturing plants across India.
+
+## Core Machine Lines & Hardware Systems
+
+- [CNC PCB Drilling & Routing Machines](https://cytos.in/pcb-drilling-routing): High-speed single, dual, and triple-spindle CNC PCB production drilling systems equipped with 24,000 to 60,000 RPM high-frequency electric and air-bearing spindles, sub-0.2 mm micro-via capability, granite base construction, and dynamic runout (TIR) under 3 µm. Flagship models: PCB30, PCB60, PCB12.
+- [Chemical-Free PCB Rapid Prototyping Machines](https://cytos.in/pcb-prototyping): In-house desktop and lab-scale mechanical PCB isolation milling systems. Replaces hazardous chemical wet-etching acid baths with dry mechanical milling, automatic surface-leveling height compensation, and same-day prototype turnaround for FR4, Rogers RF, and metal core boards. Flagship models: PCBE3020, PCB30.
+- [Industrial CNC Routers & Gantry Milling](https://cytos.in/cnc-routers-milling): Heavy-duty stress-relieved steel gantry CNC routers engineered for non-ferrous metals (aluminium, brass, copper) and industrial composite sheets (FR4, bakelite, acrylic, nylon, ACP). Features vacuum hold-down matrix beds, high-torque spindles, and vortex cold air mist cooling. Available sizes: 4×4 ft, 8×4 ft, 8×8 ft.
+- [Vertical Drilling & Milling (VDM) Machines](https://cytos.in/vdm-milling): Multi-spindle heavy-duty vertical drilling and milling systems designed specifically for electrical switchgear manufacturers, switchboard door cutouts, busbar fabrication, and automotive plate machining with BT30/BT40 taper rigidity.
+- [Custom Special Purpose Machines (SPM)](https://cytos.in/spm-automation): Bespoke turnkey automation machinery built from mathematical cycle time analysis and 3D simulation to reduce factory cycle times by 30% to 60%. Incorporates mechanical fabrication, pneumatic/hydraulic actuation, servo motion, and safety interlocks.
+- [Robotic Dispensing Cells](https://cytos.in/robotic-dispensing-cells): Automated 3-axis Cartesian and 6-axis articulated robotic fluid dispensing cells engineered for 1-part RTV silicone, 2-part polyurethane, thermal interface paste, and epoxy potting with zero-drip suck-back valves and ±0.02 mm path repeatability.
+- [Pneumatic Welding Fixtures & Indexing Jigs](https://cytos.in/pneumatic-welding-fixtures): High-clamping-force pneumatic fixtures with 90° and 180° rotary turnover tables, hardened D2 locating pins (58–62 HRC), anti-spatter copper-chromium backing blocks, and magnetic reed sensor interlocks for robotic and manual welding lines.
+- [Industrial PLC Control Panels & SCADA](https://cytos.in/plc-control-panels): Turnkey electrical automation panels built to IEC 61439 standards using Siemens S7-1200/1500, Mitsubishi, and Delta PLCs, touchscreens (HMI), servo drives, VFDs, ferruled wiring, and segregated noise-immune DC channels.
+
+## Engineering Infrastructure & Manufacturing Plant
+
+- **Plant Location**: Pune, Maharashtra, India — India's premier automotive and engineering manufacturing hub.
+- **Delivery & Service Coverage**: Direct turnkey doorstep delivery, uncrating, precision laser alignment, and operator training across Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR, and all industrial clusters nationwide.
+- **Engineering Heritage**: Founded by machine tool veterans with over 12 years of hands-on mechanical and electronics design experience.
+- **Testing & Quality Assurance**: Granite surface metrology, dial-indicator spindle runout validation (<3 µm), laser interferometer axis pitch calibration, and 72-hour continuous burn-in testing.
+
+## Technical Knowledge Base & Engineering Guides
+
+### Pillar 1: High-Speed PCB Drilling Systems
+- [Complete PCB Drilling Machine Engineering Guide](https://cytos.in/blog/pcb-drilling-machine-guide): Comprehensive reference covering granite beds, collet runout, peck-drilling algorithms, and micro-via accuracy.
+- [Multi-Spindle PCB Drilling Machines](https://cytos.in/blog/multi-spindle-pcb-drilling-machine): Throughput scaling, independent Z-axis servo synchronization, and parallel panel production.
+- [Mechanical PCB Drilling vs. Laser Drilling](https://cytos.in/blog/mechanical-pcb-drilling-vs-laser-drilling): Comparative analysis of hole-wall quality, thermal smear, aspect ratio limits, and total cost per 1,000 holes.
+- [PCB Drilling Micro-Tool Breakage Prevention](https://cytos.in/blog/pcb-drilling-tool-breakage-prevention): Dynamic runout mitigation, pressure foot alignment, chip evacuation, and vibration dampening.
+- [60,000 RPM PCB Spindle Maintenance](https://cytos.in/blog/60000-rpm-pcb-drilling-spindle-maintenance): Ceramic hybrid bearing lubrication, collet cleaning protocols, chiller telemetry, and TIR calibration.
+- [Multilayer FR4 & Rogers High-Frequency PCB Drilling](https://cytos.in/blog/multilayer-fr4-rogers-pcb-drilling): Parameters for PTFE glass weaves, backing materials, entry foils, and zero-smear resin management.
+
+### Pillar 2: Chemical-Free PCB Rapid Prototyping
+- [Chemical-Free PCB Prototyping Machines](https://cytos.in/blog/chemical-free-pcb-rapid-prototyping-machine): Mechanical isolation routing, zero wastewater discharge, and lab safety benefits.
+- [In-House PCB Rapid Prototyping ROI Analysis](https://cytos.in/blog/in-house-pcb-rapid-prototyping-roi): Financial payback models comparing outsourced fab delays against same-day in-house iteration.
+- [Gerber to PCB Isolation Milling Guide](https://cytos.in/blog/gerber-to-pcb-isolation-milling-guide): CAM software workflow, RS-274X contour generation, rubout passes, and tool diameter compensation.
+- [Auto-Surface Leveling in PCB Prototyping](https://cytos.in/blog/auto-surface-leveling-pcb-prototyping): Real-time capacitive/touch height-matrix mapping and Z-axis interpolation for warpage compensation.
+- [Green Electronics Lab Setup](https://cytos.in/blog/green-electronics-rapid-prototyping-lab): Zero-chemical electronics R&D infrastructure, HEPA dust extraction, and eco-friendly prototyping.
+- [Double-Sided PCB Rapid Prototyping](https://cytos.in/blog/double-sided-pcb-rapid-prototyping-guide): Hardened dowel pin registration, flip-alignment, via-riveting, and ground plane clearance.
+
+### Pillar 3: Special Purpose Machines & Industrial Automation
+- [Turnkey Special Purpose Machines (SPM) Guide](https://cytos.in/blog/special-purpose-machines-spm-guide): Concept-to-commissioning architecture, cycle time modeling, and automotive assembly cells.
+- [Pneumatic Welding Fixture Design](https://cytos.in/blog/pneumatic-welding-fixtures-spm-design): 90° turnover fixtures, weld distortion control, toggle clamping calculations, and anti-spatter shrouds.
+- [Robotic Adhesive Dispensing SPM Systems](https://cytos.in/blog/robotic-adhesive-dispensing-spm-systems): Progressive cavity pump control, Cartesian path interpolation, and automated sealant application.
+- [PLC Control Panel Automation & Machine Safety](https://cytos.in/blog/plc-control-panel-automation-spm-safety): Category 4 emergency stops, optical light curtain integration, and IEC 61439 electrical panel engineering.
+- [Automotive Cycle Time Reduction Case Study](https://cytos.in/blog/automotive-cycle-time-reduction-spm): 60% cycle time reduction achieved on tier-1 robotic automotive bracket welding and inspection line.
+
+### Pillar 4: Industrial CNC Routers & VDM Milling
+- [Heavy CNC Drilling & Milling Machine Guide](https://cytos.in/blog/cnc-drilling-and-milling-machine-guide): Cast iron gantry rigidity, linear guideway preloading, and high-feed metal milling.
+- [Vertical Drilling & Milling (VDM) Machines](https://cytos.in/blog/vertical-drilling-and-milling-machine-guide): Switchgear enclosure door milling, rectangular meter cutouts, and busbar multi-drilling.
+- [BT30 vs. BT40 Spindle Taper Comparison](https://cytos.in/blog/bt30-vs-bt40-cnc-drilling-and-milling): High-RPM light alloy milling vs. high-torque face milling rigidity trade-offs.
+- [Heavy-Duty Industrial CNC Router Guide](https://cytos.in/blog/heavy-duty-cnc-router-machine-guide): 8×4 ft and 8×8 ft router construction, multi-zone vacuum beds, and non-ferrous sheet routing.
+- [Aluminium Composite Sheet CNC Milling & Drilling](https://cytos.in/blog/aluminium-composite-sheet-cnc-drilling-milling): Single-flute polished carbide tool geometry, vortex cold air cooling, and burr-free edge finishing.
+
+## Company & Contact Details
+
+- **Company Name**: CyTOS (Cycle Time Optimising Solutions)
+- **Founded**: December 2019
+- **Headquarters**: Pune, Maharashtra, India
+- **Website**: https://cytos.in
+- **Email**: info@cytos.co.in
+- **Phone / WhatsApp**: +91 9921381071 / +91 7620414165
+- **RFQ Desk**: https://cytos.in/contact
