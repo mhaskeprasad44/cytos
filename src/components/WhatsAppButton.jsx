@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function WhatsAppButton() {
-  const whatsappUrl = "https://wa.me/919422035109?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20details.";
+  const whatsappUrl = "https://wa.me/917620414165?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20details.";
 
   return (
     <a

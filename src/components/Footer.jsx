@@ -22,7 +22,7 @@ export default function Footer({ onOpenQuote }) {
           </div>
           <div className="footer-direct-call">
             <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Factory Direct Support:</span>
-            <a href="tel:+919422035109" className="footer-phone-highlight">+91 94220 35109</a>
+            <a href="tel:+917620414165" className="footer-phone-highlight">+91 76204 14165</a>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export default function Footer({ onOpenQuote }) {
             </p>
             <p className="footer-contact-item">
               <strong>Sales & Consultation:</strong><br />
-              <a href="tel:+919422035109">+91 94220 35109</a> / <a href="tel:+919850983637">+91 98509 83637</a>
+              <a href="tel:+917620414165">+91 76204 14165</a>
             </p>
             <p className="footer-contact-item">
               <strong>Technical Inquiries:</strong><br />

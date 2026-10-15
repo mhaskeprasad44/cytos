@@ -148,8 +148,8 @@ export default function ProductDetailPage({ machineId, onOpenQuote }) {
                   <button className="btn btn-primary" onClick={() => onOpenQuote(machine.name)}>
                     Request Trial & Quote
                   </button>
-                  <a href="tel:+919422035109" className="btn btn-outline">
-                    Call: +91 94220 35109
+                  <a href="tel:+917620414165" className="btn btn-outline">
+                    Call: +91 76204 14165
                   </a>
                 </div>
               </div>

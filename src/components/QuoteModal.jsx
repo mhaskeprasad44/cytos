@@ -27,7 +27,7 @@ export default function QuoteModal({ isOpen, onClose, defaultMachine = '' }) {
     
     // Redirect to WhatsApp after 1.5s
     setTimeout(() => {
-      window.open(`https://wa.me/919422035109?text=${message}`, '_blank');
+      window.open(`https://wa.me/917620414165?text=${message}`, '_blank');
       setTimeout(() => {
         setSubmitted(false);
         onClose();
