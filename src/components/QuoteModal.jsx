@@ -22,6 +22,25 @@ export default function QuoteModal({ isOpen, onClose, defaultMachine = '' }) {
     e.preventDefault();
     setSubmitted(true);
 
+    // Dispatch lead to server mailer and storage
+    try {
+      fetch('/api/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          _subject: `CyTOS QuoteModal RFQ: ${formData.machine} from ${formData.company || formData.name}`,
+          Client_Name: formData.name,
+          Company: formData.company,
+          Email: formData.email,
+          Phone_WhatsApp: formData.phone,
+          Machine_Model: formData.machine,
+          Workpiece_Material: formData.material,
+          Application_Notes: formData.notes,
+          Source: 'CyTOS QuoteModal Component'
+        })
+      }).catch(() => {});
+    } catch(e) {}
+
     // Also offer WhatsApp direct pre-fill
     const message = `Hello CyTOS Engineering Team!%0A*RFQ Request Details:*%0A- *Name:* ${encodeURIComponent(formData.name)}%0A- *Company:* ${encodeURIComponent(formData.company)}%0A- *Phone:* ${encodeURIComponent(formData.phone)}%0A- *Email:* ${encodeURIComponent(formData.email)}%0A- *Machine Interested:* ${encodeURIComponent(formData.machine)}%0A- *Material:* ${encodeURIComponent(formData.material)}%0A- *Requirements:* ${encodeURIComponent(formData.notes)}`;
     

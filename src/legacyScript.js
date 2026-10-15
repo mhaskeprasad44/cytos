@@ -13,17 +13,40 @@ async function dispatchEmailToInranktech(payload) {
     console.warn('[CyTOS] LocalStorage vault warning:', storageErr);
   }
 
-  // 2. Transmit to backend/FormSubmit in background with a 3.5s timeout
+  // 2. Primary Dispatch: Server-Side Hostinger PHP Mailer (/api/contact.php)
+  let phpSuccess = false;
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3500);
-    const response = await fetch('https://formsubmit.co/ajax/info@cytos.in', {
+    const timeoutId = setTimeout(() => controller.abort(), 4000);
+    const res = await fetch('/api/contact.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
       signal: controller.signal,
+      body: JSON.stringify(payload)
+    });
+    clearTimeout(timeoutId);
+    if (res.ok) {
+      phpSuccess = true;
+      console.log('[CyTOS] Lead successfully delivered via /api/contact.php');
+    }
+  } catch (phpErr) {
+    console.warn('[CyTOS] /api/contact.php notice (fallback active):', phpErr.message || phpErr);
+  }
+
+  // 3. Redundant Backup Dispatch: FormSubmit to cytospune@gmail.com and CC inranktech@gmail.com
+  try {
+    const controller2 = new AbortController();
+    const timeoutId2 = setTimeout(() => controller2.abort(), 4000);
+    fetch('https://formsubmit.co/ajax/cytospune@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      signal: controller2.signal,
       body: JSON.stringify({
         _subject: payload._subject || 'New CyTOS Machinery Inquiry',
         _cc: 'inranktech@gmail.com',
@@ -31,13 +54,18 @@ async function dispatchEmailToInranktech(payload) {
         _template: 'table',
         ...payload
       })
+    }).then(r => r.json()).then(d => {
+      console.log('[CyTOS] FormSubmit backup status:', d);
+    }).catch(fsErr => {
+      console.warn('[CyTOS] FormSubmit backup note:', fsErr.message || fsErr);
+    }).finally(() => {
+      clearTimeout(timeoutId2);
     });
-    clearTimeout(timeoutId);
-    return response.ok;
   } catch (err) {
-    console.warn('[CyTOS] Background mailer note (handled gracefully):', err.message || err);
-    return false;
+    console.warn('[CyTOS] Background mailer note:', err.message || err);
   }
+
+  return true;
 }
 
 export function initAllPageScripts() {
@@ -541,159 +569,205 @@ function escapeUserHtml(str) {
 
 export function openRfqModal(modelName = 'CyTOS Machine System', customNotes = '') {
   selectedMachineModel = modelName;
-  const modalOverlay = document.getElementById('rfqModalOverlay') || document.getElementById('rfqModal');
-  const machineSelect = document.getElementById('rfqMachineSelect');
-  const selectedMachineInput = document.getElementById('rfqSelectedMachine');
-  const notesField = document.getElementById('rfqNotes') || document.getElementById('rfqDetails');
-  const step1 = document.getElementById('rfqStep1');
-  const step2 = document.getElementById('rfqStep2');
-  const successState = document.getElementById('rfqSuccessMessage');
+  const modalOverlays = document.querySelectorAll('#rfqModalOverlay, #rfqModal, .rfq-modal-overlay, .modal-backdrop');
+  if (!modalOverlays.length) return;
 
-  if (machineSelect) machineSelect.value = modelName;
-  if (selectedMachineInput) selectedMachineInput.value = modelName;
-  if (notesField && customNotes) notesField.value = customNotes;
+  modalOverlays.forEach(modalOverlay => {
+    const machineSelect = modalOverlay.querySelector('#rfqMachineSelect, #rfqMachine, select[name="machine"], select');
+    const selectedMachineInput = modalOverlay.querySelector('#rfqSelectedMachine, input[name="machine"]');
+    const notesField = modalOverlay.querySelector('#rfqNotes, #rfqDetails, #rfqRequirements, textarea');
+    const step1 = modalOverlay.querySelector('#rfqStep1');
+    const step2 = modalOverlay.querySelector('#rfqStep2');
+    const successState = modalOverlay.querySelector('#rfqSuccessMessage');
+    const inpageSuccess = modalOverlay.querySelector('.rfq-inpage-success');
+    const form = modalOverlay.querySelector('form');
 
-  if (step1 && step2) {
-    step1.style.display = 'block';
-    step1.classList.add('active');
-    step2.style.display = 'none';
-    step2.classList.remove('active');
-  }
-  if (successState) {
-    successState.style.display = 'none';
-    successState.classList.remove('active');
-  }
+    if (machineSelect) {
+      machineSelect.value = modelName;
+      // If exact match not in options, select closest
+      if (!machineSelect.value && machineSelect.options && machineSelect.options.length > 0) {
+        let matched = false;
+        for (let i = 0; i < machineSelect.options.length; i++) {
+          if (machineSelect.options[i].value.toLowerCase().includes(modelName.toLowerCase()) ||
+              modelName.toLowerCase().includes(machineSelect.options[i].value.toLowerCase())) {
+            machineSelect.selectedIndex = i;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) machineSelect.selectedIndex = 0;
+      }
+    }
+    if (selectedMachineInput) selectedMachineInput.value = modelName;
+    if (notesField && customNotes) notesField.value = customNotes;
 
-  document.getElementById('stepBadge1')?.classList.add('active');
-  document.getElementById('stepBadge2')?.classList.remove('active');
+    // Restore form visibility if previously hidden by submission
+    if (form) form.style.display = '';
+    if (inpageSuccess) inpageSuccess.remove();
 
-  if (modalOverlay) {
+    if (step1 && step2) {
+      step1.style.display = 'block';
+      step1.classList.add('active');
+      step2.style.display = 'none';
+      step2.classList.remove('active');
+    }
+    if (successState) {
+      successState.style.display = 'none';
+      successState.classList.remove('active');
+    }
+
+    const badge1 = modalOverlay.querySelector('#stepBadge1');
+    const badge2 = modalOverlay.querySelector('#stepBadge2');
+    if (badge1) badge1.classList.add('active');
+    if (badge2) badge2.classList.remove('active');
+
     modalOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
+  });
+
+  document.body.style.overflow = 'hidden';
 }
 
 export function closeRfqModal() {
-  const modalOverlay = document.getElementById('rfqModalOverlay') || document.getElementById('rfqModal');
-  if (modalOverlay) {
-    modalOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
+  document.querySelectorAll('#rfqModalOverlay, #rfqModal, .rfq-modal-overlay, .modal-backdrop').forEach(modal => {
+    modal.classList.remove('active');
+  });
+  document.body.style.overflow = '';
 }
 
 function initRfqModal() {
-  const modalOverlay = document.getElementById('rfqModalOverlay') || document.getElementById('rfqModal');
-  const closeBtn = document.getElementById('rfqModalCloseBtn') || document.getElementById('closeRfqModal') || document.getElementById('modalCloseBtn');
-  document.querySelectorAll('.modal-close-btn').forEach(btn => {
-    btn.onclick = closeRfqModal;
-  });
-  const step1 = document.getElementById('rfqStep1');
-  const step2 = document.getElementById('rfqStep2');
-  const nextBtn = document.getElementById('rfqNextBtn') || document.getElementById('rfqNextStepBtn');
-  const backBtn = document.getElementById('rfqBackBtn') || document.getElementById('rfqPrevStepBtn');
-  const submitBtn = document.getElementById('rfqSubmitBtn');
-  const whatsappSubmitBtn = document.getElementById('rfqWhatsAppSubmitBtn');
-  const successState = document.getElementById('rfqSuccessMessage');
-  const modalForms = document.querySelectorAll('#rfqForm, #rfqModalForm, .rfq-modal-dialog form, .modal-dialog form, .rfq-modal-window form');
+  const modalOverlays = document.querySelectorAll('#rfqModalOverlay, #rfqModal, .rfq-modal-overlay, .modal-backdrop');
 
-  // Disarm all modal forms from accidental browser POST
-  modalForms.forEach(form => {
-    form.setAttribute('action', 'javascript:void(0);');
-    form.setAttribute('onsubmit', 'return false;');
-  });
-
-  document.querySelectorAll('[data-open-rfq]').forEach(btn => {
+  // Wire all modal close buttons
+  document.querySelectorAll('.modal-close-btn, .rfq-close-btn, .rfq-modal-close, #rfqModalCloseBtn, #modalCloseBtn, #closeRfqModal').forEach(btn => {
     btn.onclick = (e) => {
       e.preventDefault();
-      const model = btn.getAttribute('data-machine') || 'CyTOS Machine / Automation';
-      openRfqModal(model);
+      closeRfqModal();
     };
   });
 
-  if (closeBtn) closeBtn.onclick = closeRfqModal;
-
-  if (modalOverlay) {
-    modalOverlay.onclick = (e) => {
-      if (e.target === modalOverlay) closeRfqModal();
+  // Clicking backdrop outside window closes modal
+  modalOverlays.forEach(overlay => {
+    overlay.onclick = (e) => {
+      if (e.target === overlay) {
+        closeRfqModal();
+      }
     };
-  }
+  });
 
-  // Handle ESC key
+  // ESC key
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('active')) {
+    if (e.key === 'Escape') {
       closeRfqModal();
     }
   });
 
-  if (nextBtn && step1 && step2) {
-    nextBtn.onclick = () => {
-      const name = document.getElementById('rfqName')?.value.trim();
-      const phone = document.getElementById('rfqPhone')?.value.trim();
-      const email = document.getElementById('rfqEmail')?.value.trim();
+  // Wire all buttons that trigger quote modal
+  document.querySelectorAll('[data-open-rfq], [data-open-modal], .btn-request-quote').forEach(btn => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      const model = btn.getAttribute('data-machine') || btn.getAttribute('data-model') || 'CyTOS Machine System';
+      openRfqModal(model);
+    };
+  });
 
-      if (!name || !phone || !email) {
-        alert('Please provide your Name, Mobile/WhatsApp number, and Email to proceed.');
+  // Wire Stepper Next buttons
+  document.querySelectorAll('#rfqNextBtn, #rfqNextStepBtn').forEach(nextBtn => {
+    nextBtn.onclick = (e) => {
+      e.preventDefault();
+      const modal = nextBtn.closest('.rfq-modal-overlay, .modal-backdrop, #rfqModalOverlay, #rfqModal') || document;
+      const step1 = modal.querySelector('#rfqStep1');
+      const step2 = modal.querySelector('#rfqStep2');
+      const name = modal.querySelector('#rfqName, [name="name"]')?.value.trim();
+      const phone = modal.querySelector('#rfqPhone, [name="phone"]')?.value.trim();
+      const email = modal.querySelector('#rfqEmail, [name="email"]')?.value.trim();
+
+      if (!name || (!phone && !email)) {
+        alert('Please provide your Full Name and a valid Mobile/WhatsApp number or Email to proceed.');
         return;
       }
 
-      step1.style.display = 'none';
-      step1.classList.remove('active');
-      step2.style.display = 'block';
-      step2.classList.add('active');
+      if (step1 && step2) {
+        step1.style.display = 'none';
+        step1.classList.remove('active');
+        step2.style.display = 'block';
+        step2.classList.add('active');
 
-      document.getElementById('stepBadge1')?.classList.remove('active');
-      document.getElementById('stepBadge2')?.classList.add('active');
+        modal.querySelector('#stepBadge1')?.classList.remove('active');
+        modal.querySelector('#stepBadge2')?.classList.add('active');
+      }
     };
-  }
+  });
 
-  if (backBtn && step1 && step2) {
-    backBtn.onclick = () => {
-      step2.style.display = 'none';
-      step2.classList.remove('active');
-      step1.style.display = 'block';
-      step1.classList.add('active');
+  // Wire Stepper Back buttons
+  document.querySelectorAll('#rfqBackBtn, #rfqPrevStepBtn').forEach(backBtn => {
+    backBtn.onclick = (e) => {
+      e.preventDefault();
+      const modal = backBtn.closest('.rfq-modal-overlay, .modal-backdrop, #rfqModalOverlay, #rfqModal') || document;
+      const step1 = modal.querySelector('#rfqStep1');
+      const step2 = modal.querySelector('#rfqStep2');
 
-      document.getElementById('stepBadge2')?.classList.remove('active');
-      document.getElementById('stepBadge1')?.classList.add('active');
-    };
-  }
-
-  const handleRfqSubmission = async (e) => {
-    if (e) e.preventDefault();
-
-    const name = document.getElementById('rfqName')?.value.trim() || '';
-    const company = document.getElementById('rfqCompany')?.value.trim() || '';
-    const phone = document.getElementById('rfqPhone')?.value.trim() || '';
-    const email = document.getElementById('rfqEmail')?.value.trim() || '';
-    const city = document.getElementById('rfqCity')?.value.trim() || document.getElementById('rfqLocation')?.value.trim() || '';
-    const model = document.getElementById('rfqMachineSelect')?.value || document.getElementById('rfqSelectedMachine')?.value || document.getElementById('rfqMachine')?.value || selectedMachineModel;
-    const material = document.getElementById('rfqMaterial')?.value || '';
-    const tolerance = document.getElementById('rfqTolerance')?.value || '';
-    const timeline = document.getElementById('rfqTimeline')?.value || '';
-    const notes = document.getElementById('rfqNotes')?.value.trim() || document.getElementById('rfqDetails')?.value.trim() || '';
-
-    if (!name || (!phone && !email)) {
-      alert('Please provide your Name and a valid Mobile/WhatsApp number or Email.');
       if (step1 && step2) {
         step2.style.display = 'none';
         step2.classList.remove('active');
         step1.style.display = 'block';
         step1.classList.add('active');
-        document.getElementById('stepBadge2')?.classList.remove('active');
-        document.getElementById('stepBadge1')?.classList.add('active');
+
+        modal.querySelector('#stepBadge2')?.classList.remove('active');
+        modal.querySelector('#stepBadge1')?.classList.add('active');
+      }
+    };
+  });
+
+  // Universal RFQ Form Submission Handler
+  const handleRfqFormSubmit = async (e) => {
+    if (e) e.preventDefault();
+
+    const form = (e?.target?.tagName === 'FORM' ? e.target : e?.target?.closest('form')) || document.querySelector('#rfqForm, .rfq-modal-form');
+    if (!form) return;
+
+    const modal = form.closest('#rfqModalOverlay, #rfqModal, .rfq-modal-overlay, .modal-backdrop') || form.parentElement;
+
+    const getVal = (selector, fallback = '') => {
+      const el = form.querySelector(selector) || modal?.querySelector(selector);
+      return el?.value?.trim() || fallback;
+    };
+
+    const name = getVal('#rfqName, [name="name"], [id*="Name"]');
+    const company = getVal('#rfqCompany, [name="company"], [id*="Company"]', 'N/A');
+    const phone = getVal('#rfqPhone, [name="phone"], [id*="Phone"]');
+    const email = getVal('#rfqEmail, [name="email"], [id*="Email"]');
+    const city = getVal('#rfqCity, #rfqLocation, [name="city"], [id*="City"]', 'India');
+    const model = getVal('#rfqMachineSelect, #rfqSelectedMachine, #rfqMachine, [name="machine"], select', selectedMachineModel || 'CyTOS Machine System');
+    const material = getVal('#rfqMaterial, [name="material"], [id*="Material"]', 'N/A');
+    const volume = getVal('#rfqVolume, [name="volume"]', 'Standard production');
+    const tolerance = getVal('#rfqTolerance, [name="tolerance"]', 'Standard');
+    const timeline = getVal('#rfqTimeline, [name="timeline"]', 'Immediate');
+    const notes = getVal('#rfqNotes, #rfqDetails, #rfqRequirements, textarea', 'Technical quote and feasibility consultation requested.');
+
+    if (!name || (!phone && !email)) {
+      alert('Please provide your Name and a valid Mobile/WhatsApp number or Email.');
+      const step1 = modal?.querySelector('#rfqStep1');
+      const step2 = modal?.querySelector('#rfqStep2');
+      if (step1 && step2) {
+        step2.style.display = 'none';
+        step2.classList.remove('active');
+        step1.style.display = 'block';
+        step1.classList.add('active');
+        modal?.querySelector('#stepBadge2')?.classList.remove('active');
+        modal?.querySelector('#stepBadge1')?.classList.add('active');
       }
       return;
     }
 
-    const originalBtnText = submitBtn ? submitBtn.textContent : 'Submit Technical RFQ';
+    const submitBtn = form.querySelector('button[type="submit"], #rfqSubmitBtn');
+    const originalText = submitBtn ? submitBtn.textContent : 'Submit Technical RFQ';
     if (submitBtn) {
       submitBtn.textContent = 'Transmitting to Pune Engineering Desk...';
       submitBtn.disabled = true;
     }
 
-    // Vault and dispatch (with 3.5s async timeout)
-    await dispatchEmailToInranktech({
-      _subject: `New Technical RFQ: ${model} from ${company || name}`,
+    const leadPayload = {
+      _subject: `New Technical RFQ: ${model} from ${company !== 'N/A' ? company : name}`,
       Client_Name: name,
       Company: company,
       Phone_WhatsApp: phone,
@@ -701,16 +775,47 @@ function initRfqModal() {
       City_Location: city,
       Machine_Model: model,
       Workpiece_Material: material,
+      Target_Volume: volume,
       Required_Tolerance: tolerance,
       Project_Timeline: timeline,
       Application_Notes: notes,
-      Source: 'CyTOS RFQ Modal Portal'
-    });
+      Source: 'CyTOS Technical RFQ Portal'
+    };
+
+    // 1. Vault lead locally and dispatch email (PHP mailer + FormSubmit fallback)
+    await dispatchEmailToInranktech(leadPayload);
 
     if (submitBtn) {
-      submitBtn.textContent = originalBtnText;
+      submitBtn.textContent = originalText;
       submitBtn.disabled = false;
     }
+
+    // 2. Structured WhatsApp message
+    const whatsappText = encodeURIComponent(
+      `*New Technical RFQ for CyTOS Pune*\n\n` +
+      `• *Client Name:* ${name}\n` +
+      `• *Company:* ${company}\n` +
+      `• *Phone/WhatsApp:* ${phone}\n` +
+      `• *Email:* ${email}\n` +
+      `• *Location:* ${city}\n` +
+      `• *Machine Model:* ${model}\n` +
+      `• *Material / Specs:* ${material}\n` +
+      `• *Application Notes:* ${notes}\n\n` +
+      `_Dispatched via cytos.in Technical RFQ Portal_`
+    );
+    const waUrl = `https://wa.me/917620414165?text=${whatsappText}`;
+
+    // 3. Automatically launch WhatsApp
+    try {
+      window.open(waUrl, '_blank');
+    } catch (popupErr) {
+      console.log('[CyTOS] Popup blocked, WhatsApp button available in UI confirmation');
+    }
+
+    // 4. Update UI to success state
+    const step1 = modal?.querySelector('#rfqStep1');
+    const step2 = modal?.querySelector('#rfqStep2');
+    const successState = modal?.querySelector('#rfqSuccessMessage');
 
     if (step1) {
       step1.style.display = 'none';
@@ -721,20 +826,6 @@ function initRfqModal() {
       step2.classList.remove('active');
     }
 
-    const whatsappText = encodeURIComponent(
-      `*New Technical RFQ for CyTOS Pune*\n\n` +
-      `• *Client Name:* ${name}\n` +
-      `• *Company:* ${company || 'N/A'}\n` +
-      `• *Phone/WhatsApp:* ${phone}\n` +
-      `• *Email:* ${email}\n` +
-      `• *Location:* ${city || 'India'}\n` +
-      `• *Interested Model:* ${model}\n` +
-      `• *Workpiece/Material:* ${material || 'N/A'}\n` +
-      `• *Required Tolerance:* ${tolerance || 'Standard'}\n` +
-      `• *Application Notes:* ${notes || 'Standard quote request'}\n\n` +
-      `_Generated via cytos.in Technical RFQ Portal_`
-    );
-
     if (successState) {
       successState.style.display = 'block';
       successState.classList.add('active');
@@ -743,7 +834,7 @@ function initRfqModal() {
           <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
         </div>
         <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-pure, #0f172a);">RFQ Transmitted to Engineering Desk!</h3>
-        <p style="font-size: 0.92rem; color: var(--text-secondary, #475569); max-width: 460px; margin: 0 auto 1.25rem; line-height: 1.55;">
+        <p style="font-size: 0.92rem; color: var(--text-secondary, #475569); max-width: 480px; margin: 0 auto 1.25rem; line-height: 1.55;">
           Thank you, <strong>${escapeUserHtml(name)}</strong>! Your technical specifications for <strong>${escapeUserHtml(model)}</strong> have been securely registered with the CyTOS Pune engineering team. An application engineer will review your specs and contact you within 2 business hours.
         </p>
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.85rem 1.15rem; margin-bottom: 1.25rem; text-align: left; font-size: 0.85rem; color: #334155;">
@@ -757,11 +848,11 @@ function initRfqModal() {
           </div>
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #64748b;">Status:</span>
-            <span style="color: #059669; font-weight: 700;">✓ Saved in Local Vault &amp; Queued</span>
+            <span style="color: #059669; font-weight: 700;">✓ Dispatched to Email &amp; WhatsApp</span>
           </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-          <a href="https://wa.me/917620414165?text=${whatsappText}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+          <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
             <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
             <span>Need Urgent Response? Chat on WhatsApp</span>
           </a>
@@ -770,63 +861,73 @@ function initRfqModal() {
           </button>
         </div>
       `;
-      document.getElementById('rfqSuccessCloseBtn')?.addEventListener('click', closeRfqModal);
+      modal.querySelector('#rfqSuccessCloseBtn')?.addEventListener('click', closeRfqModal);
     } else {
-      alert(`Thank you, ${name}! Your Technical RFQ for "${model}" has been dispatched to CyTOS engineering desk (info@cytos.in). We will respond within 2 business hours.`);
-      closeRfqModal();
+      // For pages without rfqSuccessMessage in DOM (e.g. dedicated machine pages)
+      form.style.display = 'none';
+      let inpageCard = modal?.querySelector('.rfq-inpage-success');
+      if (!inpageCard) {
+        inpageCard = document.createElement('div');
+        inpageCard.className = 'rfq-inpage-success';
+        form.parentElement.appendChild(inpageCard);
+      }
+      inpageCard.style.display = 'block';
+      inpageCard.innerHTML = `
+        <div style="text-align: center; padding: 1.5rem 1rem;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.35rem;">RFQ Registered &amp; Dispatched!</h3>
+          <p style="font-size: 0.9rem; color: #475569; margin-bottom: 1.15rem; line-height: 1.5;">
+            Thank you, <strong>${escapeUserHtml(name)}</strong>! Your quotation request for <strong>${escapeUserHtml(model)}</strong> has been registered with CyTOS Pune engineering desk.
+          </p>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 1.25rem; font-size: 0.85rem; text-align: left; color: #334155;">
+            <div style="display:flex; justify-content:space-between; margin-bottom: 4px;">
+              <span style="color:#64748b;">Machine:</span> <strong>${escapeUserHtml(model)}</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-bottom: 4px;">
+              <span style="color:#64748b;">Contact:</span> <strong>${escapeUserHtml(phone || email)}</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between;">
+              <span style="color:#64748b;">Direct Helpline:</span> <strong style="color: #d97706;">+91 76204 14165</strong>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+            <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+              <span>Connect on WhatsApp (Direct Engineer Desk)</span>
+            </a>
+            <button type="button" class="btn btn-outline" style="width: 100%;" onclick="document.querySelectorAll('#rfqModalOverlay, #rfqModal, .rfq-modal-overlay, .modal-backdrop').forEach(m => m.classList.remove('active')); document.body.style.overflow = '';">
+              <span>Close Window</span>
+            </button>
+          </div>
+        </div>
+      `;
     }
 
-    modalForms.forEach(f => f.reset());
+    form.reset();
   };
 
-  if (submitBtn) {
-    submitBtn.onclick = handleRfqSubmission;
-  }
-
-  modalForms.forEach(form => {
-    form.onsubmit = handleRfqSubmission;
+  // Attach submission handlers to all RFQ forms
+  const allRfqForms = document.querySelectorAll('#rfqForm, #rfqModalForm, .rfq-modal-form, .rfq-modal-dialog form, .modal-dialog form, .rfq-modal-window form');
+  allRfqForms.forEach(form => {
+    form.setAttribute('action', 'javascript:void(0);');
+    form.onsubmit = handleRfqFormSubmit;
+    const sBtn = form.querySelector('button[type="submit"], #rfqSubmitBtn');
+    if (sBtn) {
+      sBtn.onclick = (e) => {
+        e.preventDefault();
+        handleRfqFormSubmit(e);
+      };
+    }
   });
 
-  if (whatsappSubmitBtn) {
-    whatsappSubmitBtn.onclick = (e) => {
+  // Dedicated WhatsApp direct button
+  document.querySelectorAll('#rfqWhatsAppSubmitBtn').forEach(waBtn => {
+    waBtn.onclick = (e) => {
       e.preventDefault();
-      const name = document.getElementById('rfqName')?.value.trim() || 'Valued Client';
-      const company = document.getElementById('rfqCompany')?.value.trim() || '';
-      const phone = document.getElementById('rfqPhone')?.value.trim() || 'N/A';
-      const city = document.getElementById('rfqCity')?.value.trim() || document.getElementById('rfqLocation')?.value.trim() || 'India';
-      const model = document.getElementById('rfqMachineSelect')?.value || document.getElementById('rfqSelectedMachine')?.value || selectedMachineModel;
-      const material = document.getElementById('rfqMaterial')?.value || 'Not specified';
-      const notes = document.getElementById('rfqNotes')?.value.trim() || document.getElementById('rfqDetails')?.value.trim() || 'Standard technical quotation request';
-
-      // Save lead locally as well
-      dispatchEmailToInranktech({
-        _subject: `WhatsApp RFQ: ${model} from ${company || name}`,
-        Client_Name: name,
-        Company: company,
-        Phone_WhatsApp: phone,
-        City_Location: city,
-        Machine_Model: model,
-        Workpiece_Material: material,
-        Application_Notes: notes,
-        Source: 'CyTOS RFQ Direct WhatsApp'
-      });
-
-      const whatsappText = encodeURIComponent(
-        `*New Technical RFQ for CyTOS Pune*\n\n` +
-        `• *Client Name:* ${name}\n` +
-        `• *Company:* ${company || 'N/A'}\n` +
-        `• *Phone/WhatsApp:* ${phone}\n` +
-        `• *Location:* ${city}\n` +
-        `• *Interested Model:* ${model}\n` +
-        `• *Workpiece/Material:* ${material}\n` +
-        `• *Application Notes:* ${notes}\n\n` +
-        `_Generated via cytos.in Technical RFQ Portal_`
-      );
-
-      window.open(`https://wa.me/917620414165?text=${whatsappText}`, '_blank');
-      closeRfqModal();
+      handleRfqFormSubmit(e);
     };
-  }
+  });
 }
 
 /* ==========================================================================
@@ -837,19 +938,18 @@ function initContactForm() {
   if (!contactForm) return;
 
   contactForm.setAttribute('action', 'javascript:void(0);');
-  contactForm.setAttribute('onsubmit', 'return false;');
 
   contactForm.onsubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById('cpName')?.value.trim() || '';
-    const company = document.getElementById('cpCompany')?.value.trim() || '';
+    const company = document.getElementById('cpCompany')?.value.trim() || 'N/A';
     const email = document.getElementById('cpEmail')?.value.trim() || '';
     const phone = document.getElementById('cpPhone')?.value.trim() || '';
-    const city = document.getElementById('cpLocation')?.value.trim() || document.getElementById('cpCity')?.value.trim() || '';
+    const city = document.getElementById('cpLocation')?.value.trim() || document.getElementById('cpCity')?.value.trim() || 'India';
     const machine = document.getElementById('cpMachine')?.value || 'General CNC Machinery';
-    const material = document.getElementById('cpMaterial')?.value.trim() || '';
+    const material = document.getElementById('cpMaterial')?.value.trim() || 'N/A';
     const workArea = document.getElementById('cpWorkArea')?.value.trim() || '';
-    const message = document.getElementById('cpMessage')?.value.trim() || '';
+    const message = document.getElementById('cpMessage')?.value.trim() || 'Technical consultation and quotation inquiry.';
 
     if (!name || (!email && !phone)) {
       alert('Please provide your Full Name and a valid Mobile/WhatsApp number or Email.');
@@ -863,23 +963,47 @@ function initContactForm() {
       submitBtn.disabled = true;
     }
 
-    await dispatchEmailToInranktech({
-      _subject: `CyTOS Contact Form: ${machine} from ${company || name}`,
+    const payload = {
+      _subject: `CyTOS Contact Form: ${machine} from ${company !== 'N/A' ? company : name}`,
       Full_Name: name,
+      Client_Name: name,
       Company: company,
       Email: email,
       Phone: phone,
+      Phone_WhatsApp: phone,
       City_Location: city,
       Machine_Category: machine,
       Workpiece_Material: material,
       Work_Area_Dimensions: workArea,
       Detailed_Requirements: message,
       Source: 'CyTOS Contact Us Page'
-    });
+    };
+
+    await dispatchEmailToInranktech(payload);
 
     if (submitBtn) {
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
+    }
+
+    const whatsappText = encodeURIComponent(
+      `*New Contact Inquiry for CyTOS Pune*\n\n` +
+      `• *Client Name:* ${name}\n` +
+      `• *Company:* ${company}\n` +
+      `• *Phone/WhatsApp:* ${phone}\n` +
+      `• *Email:* ${email}\n` +
+      `• *Location:* ${city}\n` +
+      `• *Equipment:* ${machine}\n` +
+      `• *Material:* ${material}\n` +
+      `• *Requirements:* ${message}\n\n` +
+      `_Transmitted via cytos.in Contact Portal_`
+    );
+    const waUrl = `https://wa.me/917620414165?text=${whatsappText}`;
+
+    try {
+      window.open(waUrl, '_blank');
+    } catch (popupErr) {
+      console.log('[CyTOS] Popup blocked, button available on banner');
     }
 
     // Render prominent in-page success confirmation banner
@@ -891,19 +1015,6 @@ function initContactForm() {
       contactForm.parentNode.insertBefore(banner, contactForm);
     }
 
-    const whatsappText = encodeURIComponent(
-      `*New Contact Inquiry for CyTOS Pune*\n\n` +
-      `• *Client Name:* ${name}\n` +
-      `• *Company:* ${company || 'N/A'}\n` +
-      `• *Phone/WhatsApp:* ${phone}\n` +
-      `• *Email:* ${email}\n` +
-      `• *Location:* ${city || 'India'}\n` +
-      `• *Equipment:* ${machine}\n` +
-      `• *Material:* ${material || 'N/A'}\n` +
-      `• *Requirements:* ${message || 'Standard quote inquiry'}\n\n` +
-      `_Transmitted via cytos.in Contact Portal_`
-    );
-
     banner.style.display = 'block';
     banner.innerHTML = `
       <div style="display: flex; align-items: flex-start; gap: 1rem;">
@@ -913,10 +1024,10 @@ function initContactForm() {
         <div style="flex: 1;">
           <h4 style="font-size: 1.15rem; font-weight: 700; color: #065f46; margin-bottom: 0.35rem;">Inquiry Successfully Registered &amp; Dispatched!</h4>
           <p style="font-size: 0.92rem; color: #1e293b; line-height: 1.55; margin-bottom: 0.85rem;">
-            Thank you, <strong>${escapeUserHtml(name)}</strong>! Your technical inquiry regarding <strong>${escapeUserHtml(machine)}</strong> has been vaulted and transmitted to the CyTOS Pune engineering desk. An engineer will review your specifications and contact you within 2 business hours.
+            Thank you, <strong>${escapeUserHtml(name)}</strong>! Your technical inquiry regarding <strong>${escapeUserHtml(machine)}</strong> has been vaulted and transmitted to the CyTOS Pune engineering desk. An application engineer will contact you within 2 business hours.
           </p>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <a href="https://wa.me/917620414165?text=${whatsappText}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1.15rem; font-size: 0.88rem;">
+            <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1.15rem; font-size: 0.88rem;">
               <svg class="btn-icon-svg whatsapp-icon-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
               <span>Fast-Track: Connect on WhatsApp</span>
             </a>
@@ -928,6 +1039,34 @@ function initContactForm() {
     contactForm.reset();
   };
 }
+
+/* ==========================================================================
+   Newsletter Forms Handler
+   ========================================================================== */
+function initNewsletterForms() {
+  document.querySelectorAll('.newsletter-form-row').forEach(form => {
+    form.onsubmit = async (e) => {
+      e.preventDefault();
+      const emailInput = form.querySelector('input[type="email"]');
+      const email = emailInput?.value?.trim();
+      if (!email) return;
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
+      await dispatchEmailToInranktech({
+        _subject: `New Newsletter Subscriber: ${email}`,
+        Email: email,
+        Source: 'CyTOS Machining Blog Newsletter'
+      });
+
+      if (submitBtn) submitBtn.disabled = false;
+      alert('Thank you for subscribing! Your CyTOS Engineering Machining Guide has been queued for delivery to ' + email);
+      form.reset();
+    };
+  });
+}
+
 
 /* ==========================================================================
    Metric Counters
