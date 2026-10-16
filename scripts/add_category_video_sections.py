@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 scripts/add_category_video_sections.py
-Injects dedicated, direct in-place video demonstration sections into all 5 Category Hub pages:
+Injects high-contrast, attractive video demonstration showcases into all 5 Category Hub pages:
 - PcbDrillingPage.jsx
 - PcbPrototypingPage.jsx
 - CncRoutersPage.jsx
@@ -21,7 +21,7 @@ CATEGORY_CONFIGS = [
         "insert_before": "<!-- Complete Technical Specifications Table -->",
         "fallback_insert_before": "<!-- Workflow & Software Integration -->",
         "section_id": "pcb-drilling-videos",
-        "badge": "FACTORY FOOTAGE • 1-CLICK DIRECT PLAY",
+        "badge": "FACTORY FOOTAGE • AUTOPLAY 4K DEMOS",
         "title": "PCB Drilling & Routing Systems in Live Action",
         "subtitle": "Watch 100,000 RPM high-speed electro-spindles, 0.1 mm micro-hole drilling, and multi-spindle synchronized panel fabrication running live at our Bhosari MIDC, Pune facility.",
         "videos": [
@@ -48,7 +48,7 @@ CATEGORY_CONFIGS = [
         "insert_before": "<!-- Comparison: Chemical Etching vs CyTOS Mechanical Milling -->",
         "fallback_insert_before": "<!-- Technical Specifications Table -->",
         "section_id": "pcb-prototyping-videos",
-        "badge": "LAB DEMONSTRATION • DIRECT PLAY",
+        "badge": "LAB DEMONSTRATION • AUTOPLAY 4K",
         "title": "Chemical-Free PCB Prototyping in Live Action",
         "subtitle": "Watch the CyTOS PCBE3020 mill 6-mil tracks, auto-compensate surface warpage with electronic probing, and drill through-holes without toxic ferric chloride chemical baths.",
         "videos": [
@@ -67,7 +67,7 @@ CATEGORY_CONFIGS = [
         "insert_before": "<!-- Technical Specifications Table -->",
         "fallback_insert_before": "<!-- Application / Material Matrix -->",
         "section_id": "cnc-router-videos",
-        "badge": "WORKSHOP FOOTAGE • DIRECT PLAY",
+        "badge": "WORKSHOP FOOTAGE • AUTOPLAY 4K",
         "title": "Industrial CNC Routers & Milling in Live Operation",
         "subtitle": "Heavy-duty gantry routers machining aluminium panels, acrylic lightguides, wood, and composites with high-speed surface finish and burr-free edges.",
         "videos": [
@@ -86,7 +86,7 @@ CATEGORY_CONFIGS = [
         "insert_before": "<!-- Technical Specifications Table -->",
         "fallback_insert_before": "<!-- Material Compatibility Matrix -->",
         "section_id": "vdm-milling-videos",
-        "badge": "FACTORY FOOTAGE • DIRECT PLAY",
+        "badge": "FACTORY FOOTAGE • AUTOPLAY 4K",
         "title": "VDM Heavy Vertical Drilling & Milling in Action",
         "subtitle": "Multi-spindle rigid milling and deep hole drilling on electrical switchboard busbars, composite mounting plates, and aluminium profiles filmed at CyTOS Pune.",
         "videos": [
@@ -105,7 +105,7 @@ CATEGORY_CONFIGS = [
         "insert_before": "<!-- Turnkey Engineering Process -->",
         "fallback_insert_before": "<!-- Detailed Case Studies -->",
         "section_id": "pneumatic-fixture-videos",
-        "badge": "AUTOMATION FOOTAGE • DIRECT PLAY",
+        "badge": "AUTOMATION FOOTAGE • AUTOPLAY 4K",
         "title": "Pneumatic Welding & Automation Fixtures in Live Operation",
         "subtitle": "Watch custom pneumatic clamping, 90-degree rotary indexing, and turnkey assembly jigs engineered for automotive robotic welding lines.",
         "videos": [
@@ -135,7 +135,7 @@ def generate_video_section_html(cfg):
     if len(videos) == 1:
         v = videos[0]
         inner_content = f'''      <div class="machine-video-grid">
-        <div class="machine-video-frame-box video-thumb-box inline-video-thumb" data-video-id="{v['id']}" data-video-title="{v['title']}" title="Click to play {v['title']} right on this thumbnail" style="cursor: pointer; position: relative;">
+        <div class="machine-video-frame-box video-thumb-box inline-video-thumb" data-video-id="{v['id']}" data-video-title="{v['title']}" data-video-path="{v['spec_path']}" data-video-machine="{v['machine_name']}" title="Click to watch {v['title']}" style="cursor: pointer; position: relative;">
           <img src="https://i.ytimg.com/vi/{v['id']}/hqdefault.jpg" alt="{v['title']}" loading="lazy" class="video-thumb-img" style="width: 100%; height: 100%; object-fit: cover; display: block;">
           <div class="video-play-overlay">
             <div class="video-play-circle" aria-label="Play {v['title']}">
@@ -161,18 +161,18 @@ def generate_video_section_html(cfg):
             </li>
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>1-click playback directly on this thumbnail with zero popup delay</span>
+              <span>Instant theatre popup playback with automatic video start</span>
             </li>
           </ul>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <button class="btn btn-primary btn-play-trigger" data-video-id="{v['id']}" data-video-title="{v['title']}">
+            <button class="btn btn-primary btn-play-trigger" data-video-id="{v['id']}" data-video-title="{v['title']}" data-video-path="{v['spec_path']}" data-video-machine="{v['machine_name']}">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px;" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-              <span>Play Video on Thumbnail</span>
+              <span>Watch Video Demo</span>
             </button>
-            <a href="{v['spec_path']}" class="btn btn-outline" style="border-color: rgba(255,255,255,0.25); color: #ffffff;">
-              <span>View Full Machine Specs ❯</span>
+            <a href="{v['spec_path']}" class="btn-card-specs">
+              <span>View Machine Specs ❯</span>
             </a>
-            <a href="https://www.youtube.com/watch?v={v['id']}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.15); color: #94a3b8; font-size: 0.85rem;">
+            <a href="https://www.youtube.com/watch?v={v['id']}" target="_blank" rel="noopener noreferrer" class="btn-card-specs" style="color: #94a3b8 !important;">
               <span>YouTube ↗</span>
             </a>
           </div>
@@ -182,7 +182,7 @@ def generate_video_section_html(cfg):
         cards_html = []
         for v in videos:
             cards_html.append(f'''        <div style="background: rgba(30,41,59,0.7); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column;">
-          <div class="machine-video-frame-box video-thumb-box inline-video-thumb" data-video-id="{v['id']}" data-video-title="{v['title']}" title="Click to play {v['title']} right on this thumbnail" style="cursor: pointer; position: relative; margin-bottom: 1rem;">
+          <div class="machine-video-frame-box video-thumb-box inline-video-thumb" data-video-id="{v['id']}" data-video-title="{v['title']}" data-video-path="{v['spec_path']}" data-video-machine="{v['machine_name']}" title="Click to watch {v['title']}" style="cursor: pointer; position: relative; margin-bottom: 1rem;">
             <img src="https://i.ytimg.com/vi/{v['id']}/hqdefault.jpg" alt="{v['title']}" loading="lazy" class="video-thumb-img" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             <div class="video-play-overlay">
               <div class="video-play-circle" aria-label="Play {v['title']}">
@@ -194,11 +194,11 @@ def generate_video_section_html(cfg):
           <h4 style="color: #fff; margin: 0 0 0.5rem; font-size: 1.15rem; font-weight: 700; line-height: 1.35;">{v['title']}</h4>
           <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.55; margin-bottom: 1.25rem; flex-grow: 1;">{v['desc']}</p>
           <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
-            <button class="btn btn-primary btn-sm btn-play-trigger" data-video-id="{v['id']}" data-video-title="{v['title']}" style="flex: 1; min-width: 140px;">
-              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right: 4px;" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-              <span>Play on Thumbnail</span>
+            <button class="btn btn-primary btn-sm btn-play-trigger" data-video-id="{v['id']}" data-video-title="{v['title']}" data-video-path="{v['spec_path']}" data-video-machine="{v['machine_name']}" style="flex: 1; min-width: 140px;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right: 5px; vertical-align: -2px;" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Watch Video</span>
             </button>
-            <a href="{v['spec_path']}" class="btn btn-outline btn-sm" style="border-color: rgba(255,255,255,0.25); color: #e2e8f0;">
+            <a href="{v['spec_path']}" class="btn-card-specs">
               <span>Specs ❯</span>
             </a>
           </div>
@@ -210,7 +210,7 @@ def generate_video_section_html(cfg):
       </div>'''
 
     section_markup = f'''
-  <!-- Live Machinery Video Demonstration Section (In-Place Thumbnail Playback) -->
+  <!-- Live Machinery Video Demonstration Section (Theatre Modal Autoplay) -->
   <section class="machine-video-section" id="{cfg['section_id']}" style="background: #0b1120; padding: 3.5rem 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
     <div class="container">
       <div class="section-header text-center" style="margin-bottom: 2.5rem;">
@@ -238,23 +238,36 @@ def process_page(cfg):
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # If section already added, skip
-    if cfg["section_id"] in content:
-        print(f"Info: {cfg['file']} already has {cfg['section_id']}, skipping.")
-        return
-
     sec_html = generate_video_section_html(cfg)
 
     # Format for escaped javascript string inside const pageHtml = "..."
-    # Note that inside the file, double quotes are escaped as \" or line breaks are \r\n
-    # Let's inspect how the target file formats pageHtml
     is_template_literal = "const pageHtml = `" in content
-    
     if is_template_literal:
         formatted_sec = sec_html
     else:
-        # String literal with escaped quotes and \r\n
         formatted_sec = sec_html.replace('\\', '\\\\').replace('"', '\\"').replace('\r\n', '\n').replace('\n', '\\r\\n')
+
+    # If section already added, replace it
+    if cfg["section_id"] in content:
+        # Find start of section
+        id_str = f'id=\\"{cfg["section_id"]}\\"' if not is_template_literal else f'id="{cfg["section_id"]}"'
+        idx_id = content.find(id_str)
+        if idx_id == -1:
+            idx_id = content.find(cfg["section_id"])
+        
+        # find opening <section before it
+        sec_start_marker = '<section' if is_template_literal else '<section'
+        idx_sec_start = content.rfind(sec_start_marker, 0, idx_id)
+        # find closing </section> after it
+        sec_end_marker = '</section>'
+        idx_sec_end = content.find(sec_end_marker, idx_id)
+        if idx_sec_start != -1 and idx_sec_end != -1:
+            full_end = idx_sec_end + len(sec_end_marker)
+            new_content = content[:idx_sec_start] + formatted_sec.strip() + content[full_end:]
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(new_content)
+            print(f"Updated: Replaced video showcase in {cfg['file']} with high-contrast buttons.")
+            return
 
     # Try inserting before target marker
     target = cfg["insert_before"]
@@ -270,7 +283,6 @@ def process_page(cfg):
             f.write(new_content)
         print(f"Success: Injected video showcase into {cfg['file']}")
     else:
-        # Try finding </section> before footer
         idx_footer = content.find("main-footer")
         if idx_footer != -1:
             idx_prev_sec = content.rfind("<section", 0, idx_footer)
@@ -279,10 +291,6 @@ def process_page(cfg):
                 with open(file_path, "w", encoding="utf-8") as f:
                     f.write(new_content)
                 print(f"Success: Injected video showcase into {cfg['file']} (before section near footer)")
-            else:
-                print(f"Warning: Could not find insert spot in {cfg['file']}")
-        else:
-            print(f"Warning: Could not find insert spot in {cfg['file']}")
 
 if __name__ == "__main__":
     for cfg in CATEGORY_CONFIGS:

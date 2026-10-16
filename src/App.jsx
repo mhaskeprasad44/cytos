@@ -18,6 +18,7 @@ import TermsPage from './pages/TermsPage';
 import VdmMillingPage from './pages/VdmMillingPage';
 import BlogListingPage from './pages/BlogListingPage';
 import CookieConsent from './components/CookieConsent';
+import VideoModal from './components/VideoModal';
 import AnalyticsTracker from './components/AnalyticsTracker';
 import { blogArticles } from './data/blogData';
 
@@ -120,6 +121,7 @@ export default function App() {
         {/* Fallback to Home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <VideoModal />
       <CookieConsent />
     </Suspense>
   );

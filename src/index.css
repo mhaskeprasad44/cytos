@@ -6565,3 +6565,67 @@ html, body {
   color: #3b82f6;
   flex-shrink: 0;
 }
+
+
+/* High-Contrast Video Buttons & Specs Links */
+.btn-modal-specs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.55rem 1.1rem;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 6px;
+  color: #ffffff !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-modal-specs:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.btn-card-specs {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.35rem !important;
+  padding: 0.55rem 1rem !important;
+  background: #1e293b !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 6px !important;
+  font-size: 0.86rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+}
+
+.btn-card-specs:hover {
+  background: #334155 !important;
+  border-color: var(--brand-gold, #f59e0b) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* Ensure any outline buttons in dark video cards are high contrast */
+.video-card .btn-outline,
+.machine-video-section .btn-outline {
+  background: #1e293b !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.video-card .btn-outline:hover,
+.machine-video-section .btn-outline:hover {
+  background: #334155 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}

@@ -260,18 +260,18 @@ def generate_page_html(p):
     </div>
   </section>
 
-  <!-- Live Machine Demonstration Video Section (In-Place Thumbnail Direct Player) -->
+  <!-- Live Machine Demonstration Video Section (Popup Player with Autoplay) -->
   <section class="machine-video-section" id="video-demo" style="background: #0b1120; padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
     <div class="container">
       <div class="machine-video-grid">
-        <div class="machine-video-frame-box video-thumb-box inline-video-thumb" data-video-id="{p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}" data-video-title="{p.get('video', {}).get('video_title', p['name'])}" title="Click to play {p.get('video', {}).get('video_title', p['name'])} right on this thumbnail" style="cursor: pointer; position: relative;">
+        <div class="machine-video-frame-box video-thumb-box inline-video-thumb" data-video-id="{p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}" data-video-title="{p.get('video', {}).get('video_title', p['name'])}" data-video-path="{p['path']}" data-video-machine="{p['name']}" title="Click to watch {p.get('video', {}).get('video_title', p['name'])}" style="cursor: pointer; position: relative;">
           <img src="https://i.ytimg.com/vi/{p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}/hqdefault.jpg" alt="{p.get('video', {}).get('video_title', p['name'])}" loading="lazy" class="video-thumb-img" style="width: 100%; height: 100%; object-fit: cover; display: block;">
           <div class="video-play-overlay">
             <div class="video-play-circle" aria-label="Play demonstration video">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
             </div>
           </div>
-          <span class="video-duration-pill">4K HD • Direct Play</span>
+          <span class="video-duration-pill">4K HD • Autoplay Demo</span>
         </div>
         <div class="machine-video-content">
           <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin-bottom: 0.75rem;">
@@ -294,15 +294,15 @@ def generate_page_html(p):
             </li>
           </ul>
           <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <button class="btn btn-primary btn-play-trigger" data-video-id="{p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}" data-video-title="{p.get('video', {}).get('video_title', p['name'])}">
+            <button class="btn btn-primary btn-play-trigger" data-video-id="{p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}" data-video-title="{p.get('video', {}).get('video_title', p['name'])}" data-video-path="{p['path']}" data-video-machine="{p['name']}">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px;" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-              <span>Play Video on Thumbnail</span>
+              <span>Watch Video Demo</span>
             </button>
-            <button class="btn btn-outline" style="border-color: rgba(255,255,255,0.25); color: #ffffff;" data-open-rfq data-machine="{p['name']} Video Trial">
+            <button class="btn-card-specs" data-open-rfq data-machine="{p['name']} Video Trial">
               <span>Book Sample Cut Test</span>
             </button>
-            <a href="https://www.youtube.com/watch?v={p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.15); color: #94a3b8; font-size: 0.85rem;">
-              <span>Watch on YouTube ↗</span>
+            <a href="https://www.youtube.com/watch?v={p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}" target="_blank" rel="noopener noreferrer" class="btn-card-specs" style="color: #94a3b8 !important;">
+              <span>YouTube ↗</span>
             </a>
           </div>
         </div>

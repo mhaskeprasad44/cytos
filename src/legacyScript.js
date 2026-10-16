@@ -1283,11 +1283,55 @@ function initTermsToc() {
 
 
 /* ==========================================================================
-   Video Showcase: In-Place Direct Thumbnail Video Player & Category Filter
+   Video Showcase & Autoplay Modal Player
    ========================================================================== */
+export function openVideoModal(vidId, title, specsPath, machineName) {
+  const modal = document.getElementById('videoModal');
+  const iframe = document.getElementById('videoModalIframe');
+  const modalTitle = document.getElementById('videoModalTitle');
+  const quoteBtn = document.getElementById('videoModalQuoteBtn');
+  const viewSpecsBtn = document.getElementById('videoModalSpecsBtn');
+
+  if (!modal || !iframe || !vidId) return;
+
+  if (modalTitle) modalTitle.textContent = title || 'CyTOS Machine Video Demonstration';
+  // Autoplay enabled with rel=0
+  iframe.src = `https://www.youtube.com/embed/${vidId}?autoplay=1&rel=0&enablejsapi=1`;
+
+  if (quoteBtn) {
+    quoteBtn.setAttribute('data-machine', machineName || title || 'CNC Machine');
+  }
+
+  if (viewSpecsBtn) {
+    if (specsPath && specsPath !== '#' && specsPath !== 'javascript:void(0);') {
+      viewSpecsBtn.href = specsPath;
+      viewSpecsBtn.style.display = 'inline-flex';
+    } else {
+      viewSpecsBtn.style.display = 'none';
+    }
+  }
+
+  modal.classList.add('active');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+export function closeVideoModal() {
+  const modal = document.getElementById('videoModal');
+  const iframe = document.getElementById('videoModalIframe');
+  if (!modal) return;
+
+  modal.classList.remove('active');
+  modal.setAttribute('aria-hidden', 'true');
+  if (iframe) iframe.src = '';
+  document.body.style.overflow = '';
+}
+
 function initVideoShowcase() {
   const tabs = document.querySelectorAll('.video-tab-chip');
   const cards = document.querySelectorAll('.video-card');
+  const modal = document.getElementById('videoModal');
+  const closeBtn = document.getElementById('videoModalClose');
 
   // 1. Interactive Category Filter Tabs
   if (tabs.length && cards.length) {
@@ -1309,55 +1353,57 @@ function initVideoShowcase() {
     });
   }
 
-  // 2. Play Directly on the Same Thumbnail (In-Place Embed Replacement)
-  function playVideoInPlace(container, vidId, title) {
-    if (!container || !vidId) return;
-    if (container.querySelector('iframe')) return; // Already playing
+  // 2. Video Modal Trigger Handlers (Thumbnails, Buttons, Cards)
+  const triggers = document.querySelectorAll('[data-video-id], .video-thumb-box, .inline-video-thumb, .btn-play-trigger');
+  triggers.forEach(trigger => {
+    trigger.onclick = (e) => {
+      // Don't intercept direct specs links
+      if (e.target.closest('a') && !e.target.closest('[data-video-id]') && !e.target.closest('.video-thumb-box')) {
+        return;
+      }
+      
+      const card = trigger.closest('.video-card') || trigger.closest('article') || trigger.closest('.machine-video-grid') || trigger.parentElement;
+      const vidId = trigger.getAttribute('data-video-id') || (card ? card.querySelector('[data-video-id]')?.getAttribute('data-video-id') : null);
+      if (!vidId) return;
 
-    // Replace thumbnail with responsive YouTube iframe
-    container.innerHTML = `
-      <iframe 
-        src="https://www.youtube.com/embed/${vidId}?autoplay=1&rel=0" 
-        title="${title || 'CyTOS Machine Video Demonstration'}" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen 
-        style="width: 100%; height: 100%; border: none; display: block; border-radius: inherit;">
-      </iframe>
-    `;
-    container.style.cursor = 'default';
-
-    // Update action button text inside card if present
-    const card = container.closest('.video-card') || container.closest('article') || container.parentElement;
-    if (card) {
-      const playBtn = card.querySelector('.btn-play-trigger span');
-      if (playBtn) playBtn.textContent = 'Playing in Card';
-    }
-  }
-
-  // Bind clicks on all thumbnail boxes (Homepage and Machine pages)
-  const thumbBoxes = document.querySelectorAll('.video-thumb-box, .inline-video-thumb');
-  thumbBoxes.forEach(box => {
-    box.onclick = (e) => {
       e.preventDefault();
       e.stopPropagation();
-      const vidId = box.getAttribute('data-video-id');
-      const title = box.getAttribute('data-video-title');
-      playVideoInPlace(box, vidId, title);
+
+      const title = trigger.getAttribute('data-video-title') || 
+                    trigger.getAttribute('title') || 
+                    (card ? (card.querySelector('.video-card-title, h2, h3, h4')?.textContent) : '') ||
+                    'CyTOS Machine Video Demonstration';
+
+      const specsPath = trigger.getAttribute('data-video-path') || 
+                        (card ? card.querySelector('a[href*="/cnc-"], a[href*="/pcb-"], a[href*="/vdm-"], a[href*="/foam-"], a[href*="/spm-"]')?.getAttribute('href') : '') ||
+                        '';
+
+      const machineName = trigger.getAttribute('data-video-machine') || title;
+
+      openVideoModal(vidId, title, specsPath, machineName);
     };
   });
 
-  // Bind clicks on any action buttons with data-video-id
-  const playButtons = document.querySelectorAll('.btn-play-trigger, [data-play-inline]');
-  playButtons.forEach(btn => {
-    btn.onclick = (e) => {
+  // Close handlers
+  if (closeBtn) {
+    closeBtn.onclick = (e) => {
       e.preventDefault();
-      const vidId = btn.getAttribute('data-video-id');
-      const title = btn.getAttribute('data-video-title');
-      const card = btn.closest('.video-card') || btn.closest('article') || btn.closest('.machine-video-grid');
-      const targetBox = card ? card.querySelector('.video-thumb-box, .inline-video-thumb, .machine-video-frame-box') : null;
-      if (targetBox) {
-        playVideoInPlace(targetBox, vidId, title);
+      closeVideoModal();
+    };
+  }
+
+  if (modal) {
+    modal.onclick = (e) => {
+      if (e.target === modal) {
+        closeVideoModal();
       }
     };
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+      closeVideoModal();
+    }
   });
 }
+

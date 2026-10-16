@@ -16,10 +16,10 @@ const videoCardsHtml = videosData.map(v => {
   }
 
   return `          <article class="video-card" data-category="${catClass}">
-            <div class="video-thumb-box" data-video-id="${v.id}" data-video-title="${v.title.replace(/"/g, '&quot;')}" title="Click to play ${v.title.replace(/"/g, '&quot;')} right on this card">
+            <div class="video-thumb-box" data-video-id="${v.id}" data-video-title="${v.title.replace(/"/g, '&quot;')}" data-video-path="${v.relatedMachinePath}" data-video-machine="${v.title.replace(/"/g, '&quot;')}" title="Click to watch ${v.title.replace(/"/g, '&quot;')}">
               <img src="${v.thumbnail}" alt="${v.title.replace(/"/g, '&quot;')}" loading="lazy" class="video-thumb-img">
               <div class="video-play-overlay">
-                <div class="video-play-circle" aria-label="Play ${v.title.replace(/"/g, '&quot;')} on this thumbnail">
+                <div class="video-play-circle" aria-label="Play ${v.title.replace(/"/g, '&quot;')}">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 </div>
               </div>
@@ -28,16 +28,16 @@ const videoCardsHtml = videosData.map(v => {
             <div class="video-card-body">
               <div class="video-card-meta">
                 <span class="video-badge-tag">${catLabel}</span>
-                <span style="font-size: 0.75rem; color: #64748b; font-weight: 600;">Direct Play</span>
+                <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">Autoplay 4K</span>
               </div>
               <h3 class="video-card-title">${v.title}</h3>
               <p class="video-card-desc">${v.description}</p>
               <div class="video-card-actions">
-                <button class="btn btn-primary btn-sm btn-play-trigger" style="flex: 1; padding: 0.55rem 0.85rem; font-size: 0.85rem;" data-video-id="${v.id}" data-video-title="${v.title.replace(/"/g, '&quot;')}">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right: 4px; vertical-align: -2px;" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                  <span>Play on Thumbnail</span>
+                <button class="btn btn-primary btn-sm btn-play-trigger" style="flex: 1; padding: 0.55rem 0.85rem; font-size: 0.85rem;" data-video-id="${v.id}" data-video-title="${v.title.replace(/"/g, '&quot;')}" data-video-path="${v.relatedMachinePath}" data-video-machine="${v.title.replace(/"/g, '&quot;')}">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right: 5px; vertical-align: -2px;" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>Watch Video</span>
                 </button>
-                <a href="${v.relatedMachinePath}" class="btn btn-outline btn-sm" style="padding: 0.55rem 0.85rem; font-size: 0.85rem; border-color: rgba(255,255,255,0.2); color: #e2e8f0;">
+                <a href="${v.relatedMachinePath}" class="btn-card-specs">
                   <span>Specs ❯</span>
                 </a>
               </div>
@@ -82,13 +82,13 @@ const newShowcaseSectionHtml = `
     <div class="container">
       <div class="video-section-header">
         <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin: 0 auto 0.75rem;">
-          <span>VERIFIED FACTORY FOOTAGE • 1-CLICK DIRECT PLAY</span>
+          <span>VERIFIED FACTORY FOOTAGE • AUTOPLAY 4K DEMOS</span>
         </div>
         <h2 class="section-title" style="color: #ffffff;">
           Machinery in Action — <span class="gradient-text">Live Demonstration Videos</span>
         </h2>
         <p class="section-subtitle" style="color: #94a3b8; max-width: 720px; margin: 0 auto;">
-          Click any video thumbnail below to play directly on this page. See high-speed 125,000 RPM PCB drilling, 100% chemical-free circuit prototyping, robotic dispensing, and thermal foam fusion running live at our Pune facility.
+          Watch industrial 125,000 RPM PCB drilling, 100% chemical-free circuit prototyping, robotic dispensing, and thermal foam fusion running live at our Pune facility. Click any demonstration to watch in theatre popup with instant autoplay.
         </p>
 
         <!-- Category Filter Tabs -->
