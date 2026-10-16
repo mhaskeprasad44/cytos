@@ -105,7 +105,7 @@ urls = [
             {
                 "loc": "https://www.cytos.in/assets/images/machines/cnc-router-workshop.png",
                 "title": "CyTOS Heavy Duty CNC Gantry Welding and Stress Relieving",
-                "caption": "Welded tubular steel gantry engineered to Safety Factor 2.0 at CyTOS Bhosari MIDC Pune plant"
+                "caption": "Welded tubular steel gantry engineered to Safety Factor 2.0 at CyTOS Pune manufacturing plant"
             }
         ]
     },
@@ -305,7 +305,7 @@ urls = [
         "images": [
             {
                 "loc": "https://www.cytos.in/assets/images/machines/cytos-pune-plant.jpg",
-                "title": "CyTOS Manufacturing Plant in Bhosari MIDC, Pune",
+                "title": "CyTOS Manufacturing Plant in Pune",
                 "caption": "Modern 3,000 sq ft CNC machine tool fabrication and assembly facility in Pune, Maharashtra"
             },
             {
@@ -342,7 +342,7 @@ urls = [
             {
                 "loc": "https://www.cytos.in/assets/images/machines/cytos-facility-overview.png",
                 "title": "Contact CyTOS Pune - Machine Consultation & Plant Visit",
-                "caption": "J-153, MIDC Bhosari, Pune - application engineers and live machine demonstrations"
+                "caption": "Pune, Maharashtra - application engineers and live machine demonstrations"
             }
         ]
     },

@@ -41,7 +41,7 @@ def build_schema_json(product):
             "logo": "https://www.cytos.in/CyTOS New Logo.png",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "J-153, M.I.D.C., Bhosari",
+                "streetAddress": "Pune",
                 "addressLocality": "Pune",
                 "addressRegion": "Maharashtra",
                 "postalCode": "411026",
@@ -244,7 +244,7 @@ def generate_page_html(p):
         <div class="page-hero-media">
           <img src="{p["image"]}" alt="{p["image_title"]}" title="{p["image_title"]}" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
           <div class="page-hero-caption">
-            <strong>Featured Model:</strong> {p["name"]} • {p["model_code"]} • Manufactured at Bhosari MIDC, Pune
+            <strong>Featured Model:</strong> {p["name"]} • {p["model_code"]} • Manufactured in Pune, India
           </div>
         </div>
       </div>
@@ -271,18 +271,15 @@ def generate_page_html(p):
               <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
             </div>
           </div>
-          <span class="video-duration-pill">4K HD • Autoplay Demo</span>
+          <span class="video-duration-pill">4K HD Demo</span>
         </div>
         <div class="machine-video-content">
-          <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin-bottom: 0.75rem;">
-            <span>VERIFIED FACTORY FOOTAGE</span>
-          </div>
           <h2 style="font-size: 1.75rem; color: #ffffff; margin: 0 0 0.85rem; font-weight: 800; line-height: 1.3;">See the {p["name"]} in Live Action</h2>
-          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">{p.get('video', {}).get('video_desc', 'Authentic factory cutting and operation video filmed at CyTOS Bhosari MIDC plant in Pune.')}</p>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">{p.get('video', {}).get('video_desc', 'Authentic factory cutting and operation video filmed at CyTOS manufacturing facility in Pune.')}</p>
           <ul class="machine-video-feature-list">
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Recorded live at CyTOS facility in Bhosari MIDC, Pune</span>
+              <span>Recorded live at CyTOS facility in Pune</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -448,13 +445,13 @@ def generate_page_html(p):
             Schedule a Live Cutting Trial on the {p["name"]}
           </h2>
           <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
-            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
           </p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <button class="btn btn-primary btn-lg" data-open-rfq data-machine="{p["name"]} Live Trial">
               <span>Book Live Trial at Pune Works</span>
             </button>
-            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20{p["name"]}." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/917620414165?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20{p["name"]}." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
               <span>Send Drawing on WhatsApp</span>
             </a>
           </div>

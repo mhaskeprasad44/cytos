@@ -1,6 +1,6 @@
 # CyTOS — Precision CNC Machine Tools & Turnkey Industrial Automation
 
-> CyTOS (Cycle Time Optimising Solutions) is an Indian precision machine tool manufacturer and turnkey industrial automation engineering company founded in December 2019, headquartered in Bhosari MIDC, Pune, Maharashtra, India. CyTOS specializes in high-speed CNC PCB drilling and routing machines (up to 100,000 RPM), chemical-free green PCB rapid prototyping systems, heavy-duty industrial CNC gantry routers, vertical drilling-milling (VDM) machines, and custom Special Purpose Machines (SPMs) for electronics manufacturing, automotive tier-1 suppliers, aerospace, defense, and research laboratories across India.
+> CyTOS (Cycle Time Optimising Solutions) is an Indian precision machine tool manufacturer and turnkey industrial automation engineering company founded in December 2019, headquartered in Pune, Maharashtra, India. CyTOS specializes in high-speed CNC PCB drilling and routing machines (up to 100,000 RPM), chemical-free green PCB rapid prototyping systems, heavy-duty industrial CNC gantry routers, vertical drilling-milling (VDM) machines, and custom Special Purpose Machines (SPMs) for electronics manufacturing, automotive tier-1 suppliers, aerospace, defense, and research laboratories across India.
 
 ## Dedicated Machine Product Models & Specifications
 
@@ -26,7 +26,7 @@
 
 ## Engineering Infrastructure & Manufacturing Plant
 
-- **Plant Location**: J-153, M.I.D.C., Bhosari, Pune, Maharashtra 411026, India — Pune's premier automotive and industrial engineering corridor.
+- **Plant Location**: Pune, Maharashtra 411026, India — Pune's premier automotive and industrial engineering corridor.
 - **Dispatch & Service Coverage**: Direct PAN-India factory delivery, uncrating, precision laser alignment, and on-site operator commissioning across Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR, Telangana, and all industrial clusters.
 - **Engineering Heritage**: Founded by machine tool veterans with over 12 years of hands-on mechanical, electronic, and software control experience.
 - **Testing & Quality Assurance**: Granite surface plate metrology, dial-indicator spindle runout validation (<3 µm TIR), laser interferometer pitch calibration, and 72-hour continuous burn-in testing.
@@ -67,7 +67,7 @@
 
 - **Company Name**: CyTOS (Cycle Time Optimising Solutions)
 - **Founded**: December 2019
-- **Headquarters & Works**: J-153, M.I.D.C., Bhosari, Pune, Maharashtra 411026, India
+- **Headquarters & Works**: Pune, Maharashtra 411026, India
 - **Phone**: +91 94220 35109 / +91 99213 81071
 - **WhatsApp**: +91 99213 81071
 - **Email**: cytos.solutions@gmail.com / cytospune@gmail.com

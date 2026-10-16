@@ -2310,7 +2310,8 @@ a[href*="wa.me"] svg {
 /* ==========================================================================
    Master Footer (Clean Dark Slate Footer for Grounding)
    ========================================================================== */
-.main-footer {
+.main-footer,
+.site-footer-main {
   background-color: #0f172a;
   border-top: 1px solid var(--border-medium);
   padding: 4rem 0 2rem;
@@ -3345,7 +3346,8 @@ a[href*="wa.me"] svg {
 
 
 /* Standardized Dark Slate Master Footer */
-.main-footer {
+.main-footer,
+.site-footer-main {
   background-color: #0b1120;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 4.5rem 0 2rem;

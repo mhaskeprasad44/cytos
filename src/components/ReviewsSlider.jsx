@@ -16,7 +16,7 @@ const reviews = [
   {
     initials: "AD",
     name: "Anil Deshmukh",
-    designation: "Plant Head, Precision PCB Solutions (Bhosari MIDC)",
+    designation: "Plant Head, Precision PCB Solutions (Pune)",
     avatarBg: "#fef3c7",
     avatarColor: "#92400e",
     stars: 5,
@@ -45,7 +45,7 @@ const reviews = [
     avatarColor: "#065f46",
     stars: 5,
     tag: "Pneumatic Welding Fixtures",
-    review: "We commissioned 4 sets of robotic welding fixtures for exhaust manifold fabrication. The clamping sequence and Poka-Yoke part presence sensors ensure 100% repeatable weld gap. CyTOS completed trial runs at their Bhosari shop before dispatch. Highly recommended.",
+    review: "We commissioned 4 sets of robotic welding fixtures for exhaust manifold fabrication. The clamping sequence and Poka-Yoke part presence sensors ensure 100% repeatable weld gap. CyTOS completed trial runs at their Pune works before dispatch. Highly recommended.",
     date: "December 2025",
     badge: "Verified Industrial Buyer"
   },

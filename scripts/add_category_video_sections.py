@@ -23,7 +23,7 @@ CATEGORY_CONFIGS = [
         "section_id": "pcb-drilling-videos",
         "badge": "FACTORY FOOTAGE • AUTOPLAY 4K DEMOS",
         "title": "PCB Drilling & Routing Systems in Live Action",
-        "subtitle": "Watch 100,000 RPM high-speed electro-spindles, 0.1 mm micro-hole drilling, and multi-spindle synchronized panel fabrication running live at our Bhosari MIDC, Pune facility.",
+        "subtitle": "Watch 100,000 RPM high-speed electro-spindles, 0.1 mm micro-hole drilling, and multi-spindle synchronized panel fabrication running live at our Pune manufacturing facility.",
         "videos": [
             {
                 "id": "vvbIlXhe4BE",
@@ -145,15 +145,12 @@ def generate_video_section_html(cfg):
           <span class="video-duration-pill">{v['duration']}</span>
         </div>
         <div class="machine-video-content">
-          <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin-bottom: 0.75rem;">
-            <span>{cfg['badge']}</span>
-          </div>
           <h3 style="font-size: 1.75rem; color: #ffffff; margin: 0 0 0.85rem; font-weight: 800; line-height: 1.3;">{v['title']}</h3>
           <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">{v['desc']}</p>
           <ul class="machine-video-feature-list">
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Recorded live at CyTOS Bhosari MIDC manufacturing plant in Pune</span>
+              <span>Recorded live at CyTOS manufacturing facility in Pune</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -214,9 +211,6 @@ def generate_video_section_html(cfg):
   <section class="machine-video-section" id="{cfg['section_id']}" style="background: #0b1120; padding: 3.5rem 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
     <div class="container">
       <div class="section-header text-center" style="margin-bottom: 2.5rem;">
-        <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin: 0 auto 0.75rem;">
-          <span>{cfg['badge']}</span>
-        </div>
         <h2 class="section-title" style="color: #ffffff;">{cfg['title']}</h2>
         <p class="section-subtitle" style="color: #94a3b8; max-width: 760px; margin: 0 auto;">
           {cfg['subtitle']}

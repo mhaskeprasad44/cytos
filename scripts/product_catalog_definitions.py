@@ -15,7 +15,7 @@ MACHINE_PRODUCTS = [
         "category": "PCB Drilling & Routing Machines",
         "seo_title": "CNC 6060 PCB Drilling & Routing Machine - 60,000 to 100,000 RPM Spindle Manufacturer from Pune | CyTOS",
         "meta_desc": "Manufacturer of CNC 6060 PCB Drilling & Routing Machine - 18,000 to 100,000 RPM spindle, 0.2mm micro-drilling, multi-spindle & pneumatic ATC options. Direct factory price from CyTOS Pune, Maharashtra.",
-        "keywords": "CNC 6060 PCB Drilling Machine, PCB Routing Machine, PCB Drilling Machine Manufacturer Pune, 60000 RPM PCB Spindle, Micro Drill PCB Machine, Industrial PCB Drilling Machine India, CyTOS Bhosari MIDC",
+        "keywords": "CNC 6060 PCB Drilling Machine, PCB Routing Machine, PCB Drilling Machine Manufacturer Pune, 60000 RPM PCB Spindle, Micro Drill PCB Machine, Industrial PCB Drilling Machine India, CyTOS Pune",
         "image": "/assets/images/machines/pcb-drilling-pcb60.png",
         "image_title": "CNC 6060 PCB Drilling and Routing Machine Double Spindle with ATC, Pune, India",
         "image_caption": "CyTOS CNC 6060 floor-mounted PCB drilling and routing machine equipped with 60,000 to 100,000 RPM electro-spindle and PC-based industrial console.",
@@ -34,7 +34,7 @@ MACHINE_PRODUCTS = [
         "badge": "100,000 RPM ULTRA-HIGH SPEED",
         "hero_title": "CNC 6060 PCB Drilling &amp; Routing Machine",
         "hero_subtitle": "Industrial floor-mounted PCB production machine with 18,000 to 100,000 RPM electro-spindles, 0.2 mm micro-hole drilling capability, dowel-pin and vacuum bed clamping, and 1 to 5 spindle synchronized configurations for continuous 24/7 manufacturing shifts.",
-        "in_brief": "The CyTOS CNC 6060 is our flagship commercial PCB drilling and routing workhorse, manufactured at our Bhosari MIDC facility in Pune. Designed for medium to large production volumes, it delivers 0.2 mm micro-drilling and high-speed contour routing across multilayer FR4, CEM-1, CEM-3, and aluminium-backed MCPCB panels with ±0.03 mm repeatability and optional pneumatic tool changing.",
+        "in_brief": "The CyTOS CNC 6060 is our flagship commercial PCB drilling and routing workhorse, manufactured at our manufacturing facility in Pune. Designed for medium to large production volumes, it delivers 0.2 mm micro-drilling and high-speed contour routing across multilayer FR4, CEM-1, CEM-3, and aluminium-backed MCPCB panels with ±0.03 mm repeatability and optional pneumatic tool changing.",
         "highlights": [
             {"val": "100,000 RPM", "lbl": "Max Spindle RPM"},
             {"val": "0.2 mm", "lbl": "Min Micro-Drill Dia"},
@@ -112,7 +112,7 @@ MACHINE_PRODUCTS = [
             },
             {
                 "q": "What after-sales service and spare parts support is available?",
-                "a": "All machines are manufactured at our Bhosari MIDC facility in Pune. We maintain a full inventory of spindles, collets, ball screws, stepper/servo drives, and controllers. Our field engineers provide direct on-site installation, commissioning, operator training, and annual maintenance contracts (AMC) across India."
+                "a": "All machines are manufactured at our manufacturing facility in Pune. We maintain a full inventory of spindles, collets, ball screws, stepper/servo drives, and controllers. Our field engineers provide direct on-site installation, commissioning, operator training, and annual maintenance contracts (AMC) across India."
             }
         ]
     },
@@ -327,7 +327,7 @@ MACHINE_PRODUCTS = [
             },
             {
                 "q": "Where can we see a live demonstration of the CNC 3030?",
-                "a": "You are welcome to visit our manufacturing works at J-153, MIDC Bhosari in Pune. You can bring your component drawings or sample PCB material for a live trial run and cycle time test."
+                "a": "You are welcome to visit our manufacturing works at our manufacturing works in Pune. You can bring your component drawings or sample PCB material for a live trial run and cycle time test."
             }
         ]
     },
@@ -446,14 +446,14 @@ MACHINE_PRODUCTS = [
         "category": "Industrial CNC Routers & Milling",
         "seo_title": "CNC Router Machine - Heavy Duty Industrial Router for Aluminium, Acrylic & Wood Manufacturer from Pune | CyTOS",
         "meta_desc": "Manufacturer of Heavy-Duty CNC Router Machine for Wood, Acrylic, Aluminium & Soft Metals - 4x4, 8x4, 10x5 ft beds, multi-spindle & vacuum table. CyTOS Pune, Maharashtra.",
-        "keywords": "CNC Router Machine Pune, Industrial CNC Router Manufacturer, CNC Wood Router Pune, Aluminium CNC Router Machine, Acrylic CNC Cutting Machine, Heavy Duty Gantry Router India, CyTOS Bhosari",
+        "keywords": "CNC Router Machine Pune, Industrial CNC Router Manufacturer, CNC Wood Router Pune, Aluminium CNC Router Machine, Acrylic CNC Cutting Machine, Heavy Duty Gantry Router India, CyTOS Pune",
         "image": "/assets/images/machines/cnc-router-gantry.png",
         "image_title": "Heavy-Duty Industrial CNC Gantry Router for Aluminium and Wood, Pune, India",
         "image_caption": "CyTOS heavy-duty stress-relieved gantry router with 24,000 RPM high-torque spindle, vacuum matrix bed, and AC servo drives.",
         "additional_images": [
             {
                 "url": "/assets/images/machines/cnc-router-workshop.png",
-                "title": "CyTOS CNC Router Production Floor Bhosari MIDC, Pune",
+                "title": "CyTOS CNC Router Production Floor Pune",
                 "caption": "Precision assembly and laser alignment of large-format 8x4 and 10x5 ft router frames."
             },
             {
@@ -553,7 +553,7 @@ MACHINE_PRODUCTS = [
         "category": "Heavy Industrial Metal Machining",
         "seo_title": "VDM Vertical Drilling & Milling Machine - Cast Iron Heavy Metal CNC Machine Manufacturer from Pune | CyTOS",
         "meta_desc": "Manufacturer of VDM Heavy Vertical Drilling & Milling Machine (VDM30M, VDM50M, VDM100M) - 1mm to 50mm drilling, BT30/BT40 taper, Delta CNC controller. CyTOS Pune.",
-        "keywords": "VDM Vertical Drilling Machine, CNC Milling Machine Pune, Heavy Drilling Machine Manufacturer, VDM30M VDM50M VDM100M, Switchboard Plate Milling Machine, Cast Iron CNC Machine India, CyTOS Bhosari",
+        "keywords": "VDM Vertical Drilling Machine, CNC Milling Machine Pune, Heavy Drilling Machine Manufacturer, VDM30M VDM50M VDM100M, Switchboard Plate Milling Machine, Cast Iron CNC Machine India, CyTOS Pune",
         "image": "/assets/images/machines/vdm-milling-machine.png",
         "image_title": "CyTOS VDM Heavy Vertical Drilling and Milling Machine for MS, SS and Switchboards, Pune",
         "image_caption": "Heavy cast-iron base VDM series vertical drilling and milling machine with BT30/BT40 taper and Delta CNC controller.",
@@ -566,7 +566,7 @@ MACHINE_PRODUCTS = [
             {
                 "url": "/assets/images/machines/cytos-assembly-floor.png",
                 "title": "CyTOS Precision Cast Iron Scraping and Assembly, Pune",
-                "caption": "Hand scraping and laser interferometer alignment of heavy cast iron slideways at Bhosari facility."
+                "caption": "Hand scraping and laser interferometer alignment of heavy cast iron slideways in Pune facility."
             }
         ],
         "badge": "HEAVY CAST IRON VIBRATION DAMPENING",

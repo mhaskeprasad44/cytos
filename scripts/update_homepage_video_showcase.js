@@ -28,7 +28,6 @@ const videoCardsHtml = videosData.map(v => {
             <div class="video-card-body">
               <div class="video-card-meta">
                 <span class="video-badge-tag">${catLabel}</span>
-                <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">Autoplay 4K</span>
               </div>
               <h3 class="video-card-title">${v.title}</h3>
               <p class="video-card-desc">${v.description}</p>
@@ -75,15 +74,12 @@ const videoSchema = {
 
 const newShowcaseSectionHtml = `
   <!-- ==========================================================================
-       6. Live Machinery in Action: Video Showcase Section (In-Place Thumbnail Playback)
+       6. Live Machinery in Action: Video Showcase Section (Popup Modal Autoplay)
        ========================================================================== -->
   <section class="video-showcase-section" id="videos" aria-label="Machinery Video Demonstrations">
     <script type="application/ld+json">${JSON.stringify(videoSchema)}</script>
     <div class="container">
       <div class="video-section-header">
-        <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin: 0 auto 0.75rem;">
-          <span>VERIFIED FACTORY FOOTAGE • AUTOPLAY 4K DEMOS</span>
-        </div>
         <h2 class="section-title" style="color: #ffffff;">
           Machinery in Action — <span class="gradient-text">Live Demonstration Videos</span>
         </h2>

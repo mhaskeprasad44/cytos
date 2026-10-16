@@ -2,7 +2,7 @@ import React from 'react';
 import HtmlPageWrapper from '../components/HtmlPageWrapper';
 
 const pageHtml = `
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Educational & Training CNC Machines", "model": "CyTOS EduCNC Series", "description": "Manufacturer of Educational CNC Machines - Compact training CNC milling, router, and PCB machines with safety enclosures for engineering colleges and labs. CyTOS Pune.", "image": ["https://www.cytos.in/assets/images/machines/educational-cnc-lab.png", "https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png", "https://www.cytos.in/assets/images/machines/precision-machining-parts.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "J-153, M.I.D.C., Bhosari", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "Educational & Institutional CNC", "offers": {"@type": "Offer", "url": "https://www.cytos.in/educational-cnc-machines", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Educational & Training CNC Machines", "model": "CyTOS EduCNC Series", "description": "Manufacturer of Educational CNC Machines - Compact training CNC milling, router, and PCB machines with safety enclosures for engineering colleges and labs. CyTOS Pune.", "image": ["https://www.cytos.in/assets/images/machines/educational-cnc-lab.png", "https://www.cytos.in/assets/images/machines/pcb-prototyping-pcb30.png", "https://www.cytos.in/assets/images/machines/precision-machining-parts.png"], "brand": {"@type": "Brand", "name": "CyTOS"}, "manufacturer": {"@type": "Organization", "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)", "url": "https://www.cytos.in", "logo": "https://www.cytos.in/CyTOS New Logo.png", "address": {"@type": "PostalAddress", "streetAddress": "Pune", "addressLocality": "Pune", "addressRegion": "Maharashtra", "postalCode": "411026", "addressCountry": "IN"}}, "category": "Educational & Institutional CNC", "offers": {"@type": "Offer", "url": "https://www.cytos.in/educational-cnc-machines", "priceCurrency": "INR", "price": "Contact for Factory Direct Quote", "availability": "https://schema.org/InStock", "itemCondition": "https://schema.org/NewCondition"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "42"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.cytos.in"}, {"@type": "ListItem", "position": 2, "name": "Machines", "item": "https://www.cytos.in/#pillars"}, {"@type": "ListItem", "position": 3, "name": "Educational & Training CNC Machines", "item": "https://www.cytos.in/educational-cnc-machines"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why should colleges invest in CyTOS Educational CNC machines over consumer CNC kits?", "acceptedAnswer": {"@type": "Answer", "text": "Consumer hobby kits use weak 3D-printed parts, belt drives, and unstable open-source controllers that break quickly under student use. CyTOS Educational machines are built with genuine industrial ball screws, linear guides, and steel frames, offering real industrial reliability, accuracy, and Fanuc/Siemens-compatible G-code syntax."}}, {"@type": "Question", "name": "What training is provided for faculty and lab assistants?", "acceptedAnswer": {"@type": "Answer", "text": "We conduct an extensive hands-on faculty training program upon installation. Our engineers guide instructors through machine operation, safety protocols, CAD-to-CAM workflow, tooling selection, and troubleshooting so faculty can confidently teach student batches."}}, {"@type": "Question", "name": "Is special three-phase power or compressed air needed in the lab?", "acceptedAnswer": {"@type": "Answer", "text": "No. The CyTOS Educational CNC machine runs on standard 230V AC single-phase power from a regular domestic socket, requiring no special electrical substation or high-pressure plant air."}}, {"@type": "Question", "name": "Can students use standard CAD/CAM software like Fusion 360 or SolidWorks?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. CyTOS EduCAM accepts standard G-code exported from Autodesk Fusion 360, SolidWorks, Mastercam, Creo, NX, and EDA packages like Altium, KiCad, and Eagle."}}]}</script>
 
@@ -247,7 +247,7 @@ const pageHtml = `
         <div class="page-hero-media">
           <img src="/assets/images/machines/educational-cnc-lab.png" alt="Educational & Training CNC Machine Lab Workcell for Engineering Colleges, Pune" title="Educational & Training CNC Machine Lab Workcell for Engineering Colleges, Pune" class="slide-img" fetchpriority="high" style="border-radius: 8px; max-height: 480px; width: 100%; object-fit: contain; background: #ffffff;">
           <div class="page-hero-caption">
-            <strong>Featured Model:</strong> Educational & Training CNC Machines • CyTOS EduCNC Series • Manufactured at Bhosari MIDC, Pune
+            <strong>Featured Model:</strong> Educational & Training CNC Machines • CyTOS EduCNC Series • Manufactured in Pune, India
           </div>
         </div>
       </div>
@@ -289,18 +289,15 @@ const pageHtml = `
               <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
             </div>
           </div>
-          <span class="video-duration-pill">4K HD • Autoplay Demo</span>
+          <span class="video-duration-pill">4K HD Demo</span>
         </div>
         <div class="machine-video-content">
-          <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin-bottom: 0.75rem;">
-            <span>VERIFIED FACTORY FOOTAGE</span>
-          </div>
           <h2 style="font-size: 1.75rem; color: #ffffff; margin: 0 0 0.85rem; font-weight: 800; line-height: 1.3;">See the Educational & Training CNC Machines in Live Action</h2>
-          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">Authentic factory cutting and operation video filmed at CyTOS Bhosari MIDC plant in Pune.</p>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">Authentic factory cutting and operation video filmed at CyTOS manufacturing facility in Pune.</p>
           <ul class="machine-video-feature-list">
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Recorded live at CyTOS facility in Bhosari MIDC, Pune</span>
+              <span>Recorded live at CyTOS facility in Pune</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -594,13 +591,13 @@ const pageHtml = `
             Schedule a Live Cutting Trial on the Educational & Training CNC Machines
           </h2>
           <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
-            Bring your material or send component drawings (DXF/STEP/Gerber) to our Bhosari MIDC works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
+            Bring your material or send component drawings (DXF/STEP/Gerber) to our works in Pune. Our application specialists will run a live trial, calculate cycle times, measure edge finish, and provide a full technical report.
           </p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
             <button class="btn btn-primary btn-lg" data-open-rfq data-machine="Educational & Training CNC Machines Live Trial">
               <span>Book Live Trial at Pune Works</span>
             </button>
-            <a href="https://wa.me/919921381071?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20Educational & Training CNC Machines." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/917620414165?text=Hi%20CyTOS,%20I%20want%20to%20send%20a%20drawing%20for%20a%20cutting%20trial%20on%20Educational & Training CNC Machines." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
               <span>Send Drawing on WhatsApp</span>
             </a>
           </div>
@@ -722,11 +719,11 @@ const pageHtml = `
         </div>
       </div>
       <div class="sticky-rfq-buttons">
-        <a href="tel:+919921381071" class="btn btn-outline" title="Call Engineering Hotline">
+        <a href="tel:+917620414165" class="btn btn-outline" title="Call Engineering Hotline">
           <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
-          <span>+91 99213 81071</span>
+          <span>+91 76204 14165</span>
         </a>
-        <a href="https://wa.me/919921381071?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
+        <a href="https://wa.me/917620414165?text=Hi%20CyTOS%20team,%20I%20need%20a%20quote%20for%20a%20CNC%20machine." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" title="WhatsApp Quote">
           <svg class="whatsapp-icon-svg btn-icon-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.68C7.02 10.88 7.9 12.04 8.02 12.2C8.14 12.37 9.73 14.95 12.24 15.93C14.33 16.75 14.75 16.59 15.22 16.54C15.69 16.49 16.74 15.91 16.96 15.29C17.18 14.66 17.18 14.13 17.11 14.02C17.05 13.91 16.89 13.84 16.64 13.72C16.39 13.6 15.17 13 14.94 12.92C14.72 12.83 14.56 12.79 14.4 13.04C14.24 13.29 13.77 13.84 13.63 14.01C13.5 14.17 13.36 14.19 13.11 14.07C12.87 13.95 12.08 13.69 11.15 12.86C10.42 12.21 9.93 11.41 9.79 11.17C9.65 10.92 9.78 10.79 9.9 10.67C10.01 10.56 10.15 10.38 10.27 10.23C10.4 10.08 10.44 9.97 10.52 9.81C10.6 9.65 10.56 9.51 10.5 9.39C10.44 9.27 9.97 8.12 9.78 7.65C9.59 7.19 9.39 7.25 9.24 7.24C9.1 7.23 8.94 7.23 8.78 7.23H8.53Z"/></svg>
           <span>Quick WhatsApp RFQ</span>
         </a>
@@ -734,100 +731,139 @@ const pageHtml = `
     </div>
   </aside>
 
-  <!-- Complete Site Footer -->
-  <footer class="site-footer-main" role="contentinfo">
+  <!-- Master Footer (5-Column Layout: Quick Links on Left, Contact in the End) -->
+  <footer class="main-footer" id="footerSection">
     <div class="container">
+      <!-- 2-Column Industrial Trust Cards -->
+      <div class="footer-trust-strip">
+        <div class="footer-trust-grid">
+          
+          <!-- Card 1: Factor of Safety 2.0 -->
+          <div class="footer-trust-card">
+            <div class="footer-trust-card-header">
+              <div class="footer-trust-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h4 class="footer-trust-card-title">Factor of Safety 2.0 • 24×7 Continuous Duty</h4>
+            </div>
+            <p class="footer-trust-card-desc">
+              Every CyTOS CNC gantry, high-frequency spindle, and automation fixture is engineered with a strict 2.0 safety factor for round-the-clock industrial duty cycles without thermal distortion.
+            </p>
+            <div class="footer-trust-card-pills">
+              <span class="footer-trust-pill">100% Tested at Pune Plant</span>
+              <span class="footer-trust-pill">Dynamic Balancing G0.4</span>
+              <span class="footer-trust-pill">Class C3 Ground Ball Screws</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Pan-India Delivery & Commissioning -->
+          <div class="footer-trust-card">
+            <div class="footer-trust-card-header">
+              <div class="footer-trust-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <h4 class="footer-trust-card-title">🇮🇳 Direct Factory Machine Delivery &amp; On-Site Commissioning Across All India</h4>
+            </div>
+            <p class="footer-trust-card-desc">
+              Doorstep factory delivery, uncrating, laser alignment, and operator training across Maharashtra, Gujarat, Karnataka, Tamil Nadu, Delhi-NCR, and all industrial clusters nationwide.
+            </p>
+            <div class="footer-trust-card-pills">
+              <span class="footer-trust-pill">Turnkey Delivery</span>
+              <span class="footer-trust-pill">On-Site Calibration</span>
+              <span class="footer-trust-pill">Lifetime Spares &amp; Support</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div class="footer-grid">
+        
         <!-- Col 1: Brand & Credentials -->
-        <div class="footer-col footer-col-brand">
-          <div class="footer-brand-logo">
-            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-logo-img" width="130" height="72" style="height: 64px; width: auto; object-fit: contain;">
+        <div class="footer-col">
+          <div class="footer-brand-header">
+            <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Logo" class="footer-brand-logo" width="160" height="76" style="height: 76px; width: auto; object-fit: contain; margin-bottom: 1.25rem;">
           </div>
-          <p class="footer-brand-desc">
-            CYCLE TIME OPTIMISING SOLUTIONS (CyTOS) is a premier machine tool &amp; industrial automation manufacturer based in Bhosari MIDC, Pune, India. Specializing in high-speed PCB drilling machines (up to 100,000 RPM), chemical-free PCB prototyping, heavy-duty CNC routers, VDM milling, and custom turnkey SPMs.
+          <p class="footer-desc" style="line-height: 1.65; margin-bottom: 1.25rem; font-size: 0.88rem; color: #94a3b8;">
+            Pune-based machine tool &amp; industrial automation engineering company established in December 2019. Manufacturing precision CNC PCB drilling systems, green prototyping mills, heavy routers, and custom turnkey SPMs.
           </p>
-          <div class="footer-badges-list">
-            <span class="badge-mini">ISO 9001:2015</span>
-            <span class="badge-mini">Make In India</span>
-            <span class="badge-mini">Bhosari MIDC Plant</span>
-            <span class="badge-mini">CE / IEC 61439</span>
-          </div>
         </div>
 
-        <!-- Col 2: Machine Solutions -->
+        <!-- Col 2: Quick Links (LEFT) -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Precision CNC Machines</h4>
-          <ul class="footer-links-list">
-            <li><a href="/cnc-6060-pcb-drilling-routing-machine">CNC 6060 PCB Drilling &amp; Routing</a></li>
-            <li><a href="/cnc-3020-pcb-prototyping-machine">CNC 3020 PCB Rapid Prototyper</a></li>
-            <li><a href="/cnc-3030-pcb-prototyping-machine">CNC 3030 High Precision PCB Machine</a></li>
-            <li><a href="/pcb12-multi-spindle-drilling-machine">PCB12 3-Spindle High Throughput Gantry</a></li>
-            <li><a href="/cnc-wood-acrylic-aluminium-router-machine">Industrial CNC Routers (4x4 to 10x5 ft)</a></li>
-            <li><a href="/vdm-heavy-vertical-drilling-milling-machine">VDM Heavy Drilling &amp; Milling Machine</a></li>
-            <li><a href="/foam-welding-machine">Automatic Foam Welding Machine</a></li>
-            <li><a href="/educational-cnc-machines">Educational &amp; Training CNC Machines</a></li>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="/about">About CyTOS</a></li>
+            <li><a href="/blog">Engineering Blog</a></li>
+            <li><a href="/terms-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Automation & Resources -->
+        <!-- Col 3: Machine Solutions -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Automation &amp; Solutions</h4>
-          <ul class="footer-links-list">
-            <li><a href="/spm-automation">Custom SPM Automation</a></li>
-            <li><a href="/robotic-dispensing-cells">Robotic Dispensing Cells</a></li>
-            <li><a href="/pneumatic-welding-fixtures">Pneumatic Welding Fixtures</a></li>
-            <li><a href="/plc-control-panels">PLC Industrial Control Panels</a></li>
-            <li><a href="/applications">Industry Applications</a></li>
-            <li><a href="/case-studies">Automotive &amp; Industrial Case Studies</a></li>
-            <li><a href="/blog">Engineering Knowledge Base</a></li>
-            <li><a href="/cytos_newcatalog2026_with BG.pdf" target="_blank" rel="noopener noreferrer">Download 2026 Machine Catalog (PDF)</a></li>
+          <h4 class="footer-col-title">Machine Solutions</h4>
+          <ul class="footer-nav-list">
+            <li><a href="/pcb-drilling-routing">PCB Production Drilling &amp; Routing</a></li>
+            <li><a href="/pcb-prototyping">Chemical-Free PCB Prototyping</a></li>
+            <li><a href="/pcb-prototyping#educational-lab">Educational CNC Lab Trainers</a></li>
+            <li><a href="/cnc-routers-milling">4x4 &amp; 8x8 Industrial CNC Routers</a></li>
+            <li><a href="/vdm-milling">VDM Multi-Spindle Milling</a></li>
+            <li><a href="/spm-automation">Custom Turnkey SPMs &amp; Robotics</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Pune Works & Direct Contact -->
+        <!-- Col 4: Key Applications -->
         <div class="footer-col">
-          <h4 class="footer-col-title">Factory Works &amp; Contact</h4>
-          <div class="footer-contact-list">
-            <div class="footer-contact-item">
-              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>J-153, MIDC Bhosari, Pune, MH 411026, India</span>
-            </div>
-            <div class="footer-contact-item">
-              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <span>+91 99213 81071 / +91 76204 14165</span>
-            </div>
-            <div class="footer-contact-item">
-              <svg class="footer-contact-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>cytos.ltd@gmail.com</span>
-            </div>
-            <div style="margin-top: 1rem;">
-              <button class="btn btn-primary btn-block" data-open-rfq data-machine="Factory Direct Consultation">
-                <span>Request Machine Quote</span>
-              </button>
-            </div>
-          </div>
+          <h4 class="footer-col-title">Key Applications</h4>
+          <ul class="footer-nav-list">
+            <li><a href="/case-studies">Automotive Sunroof Dispensing</a></li>
+            <li><a href="/case-studies#welding-fixtures">90° Pneumatic Weld Fixtures</a></li>
+            <li><a href="/applications#multilayer-pcb">Multilayer Double-Sided PCBs</a></li>
+            <li><a href="/applications#mcpcb">Aluminium MCPCB &amp; Heat Sinks</a></li>
+            <li><a href="/applications#composites">Acrylic &amp; Composite Routing</a></li>
+            <li><a href="/about">Pune 3,000 Sq. Ft. Facility Tour</a></li>
+          </ul>
         </div>
+
+        <!-- Col 5: Pune Works & Contact (IN THE END) -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Pune Works &amp; Contact</h4>
+          <address class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+              <div>
+                <a href="tel:+917620414165">+91 76204 14165</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:info@cytos.in">info@cytos.in</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg class="footer-contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Monday – Saturday: 8:30 AM – 7:30 PM IST</span>
+            </div>
+          </address>
+        </div>
+
       </div>
 
-      <!-- Pan-India Delivery Bar -->
-      <div class="footer-pan-india-bar" style="margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; text-align: center;">
-        <strong style="color: #cbd5e1;">PAN-India Direct Delivery, Installation &amp; Service:</strong>
-        Pune (Bhosari / Chakan / Talegaon) • Mumbai • Nashik • Aurangabad • Ahmedabad • Vadodara • Bengaluru • Chennai • Hyderabad • Delhi NCR • Coimbatore
-      </div>
-
-      <div class="footer-bottom-bar" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; font-size: 0.8rem; color: #64748b;">
-        <div>&copy; 2026 CYCLE TIME OPTIMISING SOLUTIONS (CyTOS). All rights reserved. Made in Pune, India.</div>
-        <div class="footer-legal-links">
-          <a href="/privacy-policy" style="color: #64748b; margin-right: 1rem;">Privacy Policy</a>
-          <a href="/terms-conditions" style="color: #64748b; margin-right: 1rem;">Terms &amp; Conditions</a>
-          <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" style="color: #64748b;">Sitemap</a>
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          &copy; 2019–2026 CyTOS Engineering Solutions. All Rights Reserved. Engineered with precision in Pune, Maharashtra.
+        </div>
+        <div class="footer-credit">
+          <span>Designed &amp; Developed by</span>
+          <a href="https://inranktech.com" target="_blank" rel="noopener noreferrer" class="credit-link">Inrank Tech</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/919921381071?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+  <a href="https://wa.me/917620414165?text=Hello%20CyTOS%20Team%2C%20I%20am%20interested%20in%20your%20CNC%20and%20Automation%20Machines.%20Please%20share%20pricing%20and%20catalogue." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
       <path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.954.557 3.784 1.521 5.337L2 22l4.808-1.503a9.983 9.983 0 0 0 5.223 1.534h.005c5.535 0 10.03-4.495 10.03-10.031C22.066 6.495 17.571 2 12.031 2zm5.834 14.195c-.244.685-1.42 1.309-1.958 1.393-.513.08-1.182.115-1.914-.12-.444-.143-1.015-.333-1.748-.654-3.087-1.353-5.105-4.475-5.26-4.68-.154-.206-1.258-1.674-1.258-3.193 0-1.52.793-2.268 1.074-2.576.282-.308.615-.385.82-.385.205 0 .41.002.59.01.19.01.446-.072.697.533.256.615.872 2.128.949 2.282.077.154.128.333.026.539-.103.205-.154.333-.308.513-.154.18-.323.4-.462.538-.154.154-.314.323-.135.63.18.308.798 1.318 1.713 2.133 1.176 1.048 2.167 1.373 2.475 1.527.308.154.487.128.667-.077.18-.205.769-.897.974-1.205.205-.308.41-.256.692-.154.282.103 1.794.846 2.102 1.001.308.154.513.23.59.359.077.128.077.744-.167 1.429z" />
     </svg>
@@ -841,11 +877,11 @@ const pageHtml = `
         <div class="rfq-modal-title-group">
           <span class="badge-mini" style="background: var(--brand-gold); color: #fff;">DIRECT FACTORY PRICING</span>
           <h3 class="rfq-modal-title" id="rfqMachineTitle">Request Machine Quotation</h3>
-          <p class="rfq-modal-subtitle">Direct from CyTOS Bhosari MIDC Plant, Pune. Response within 2 business hours.</p>
+          <p class="rfq-modal-subtitle">Direct from CyTOS Pune Plant. Response within 2 business hours.</p>
         </div>
         <button class="rfq-modal-close" id="closeRfqModal" aria-label="Close RFQ Modal">&times;</button>
       </div>
-      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/919921381071?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
+      <form class="rfq-modal-form" id="rfqForm" onsubmit="event.preventDefault(); window.open('https://wa.me/917620414165?text=' + encodeURIComponent('Hi CyTOS, I requested quote for ' + (document.getElementById('rfqSelectedMachine').value || 'CNC Machine') + '. Name: ' + document.getElementById('rfqName').value + ', Company: ' + document.getElementById('rfqCompany').value + ', Phone: ' + document.getElementById('rfqPhone').value), '_blank'); document.getElementById('rfqModal').classList.remove('active');">
         <input type="hidden" id="rfqSelectedMachine" value="General Inquiry">
         <div class="form-row-2">
           <div class="form-group">
@@ -860,7 +896,7 @@ const pageHtml = `
         <div class="form-row-2">
           <div class="form-group">
             <label for="rfqPhone">Phone / WhatsApp *</label>
-            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 98765 43210">
+            <input type="tel" id="rfqPhone" required placeholder="e.g. +91 76204 14165">
           </div>
           <div class="form-group">
             <label for="rfqEmail">Work Email *</label>

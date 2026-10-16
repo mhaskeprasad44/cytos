@@ -43,7 +43,7 @@ export default function Navbar({ onOpenQuote }) {
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
-              <span>J-153, MIDC Bhosari, Pune, MH 411026</span>
+              <span>Pune, Maharashtra 411026</span>
             </span>
             <span className="top-bar-divider">|</span>
             <span className="top-bar-item">
@@ -253,7 +253,7 @@ export default function Navbar({ onOpenQuote }) {
           </div>
 
           <div className="mobile-nav-contact-footer">
-            <p><strong>CyTOS Factory:</strong> J-153, MIDC Bhosari, Pune</p>
+            <p><strong>CyTOS Factory:</strong> Pune, Maharashtra</p>
             <p><a href="tel:+917620414165">+91 76204 14165</a> | <a href="mailto:cytospune@gmail.com">cytospune@gmail.com</a></p>
           </div>
         </div>

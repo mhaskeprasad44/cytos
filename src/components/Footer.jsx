@@ -13,7 +13,7 @@ export default function Footer({ onOpenQuote }) {
             <img src="/CyTOS-New-Logo-White.png" alt="CyTOS Machines Pune" width="180" height="48" />
           </Link>
           <p className="footer-brand-desc">
-            CyTOS Machines is an ISO 9001:2015 certified manufacturer of high-precision CNC Routers, 60,000 RPM PCB Drilling & Routing Machines, Vertical Milling Centers, and Special Purpose Automation Systems (SPM) based in Bhosari MIDC, Pune.
+            CyTOS Machines is an ISO 9001:2015 certified manufacturer of high-precision CNC Routers, 60,000 RPM PCB Drilling & Routing Machines, Vertical Milling Centers, and Special Purpose Automation Systems (SPM) based in Pune.
           </p>
           <div className="footer-badges">
             <span className="badge badge-gold">ISO 9001:2015 Certified</span>
@@ -62,7 +62,7 @@ export default function Footer({ onOpenQuote }) {
           <div className="footer-contact-block">
             <p className="footer-address">
               <strong>Factory Works:</strong><br />
-              J-153, M.I.D.C., Bhosari,<br />
+              Pune, Maharashtra 411026,<br />
               Pune - 411026, Maharashtra, India
             </p>
             <p className="footer-contact-item">
@@ -90,7 +90,7 @@ export default function Footer({ onOpenQuote }) {
           <div className="pan-india-inner">
             <span className="pan-india-label">Direct Pan-India Installation, Spare Parts & On-Site Service:</span>
             <div className="pan-india-cities">
-              <span>Pune (Bhosari / Chakan / Talegaon)</span>
+              <span>Pune (Chakan / Talegaon)</span>
               <span>•</span>
               <span>Mumbai & Thane</span>
               <span>•</span>

@@ -12,7 +12,7 @@ export default function ProductDetailPage({ machineId, onOpenQuote }) {
         title={`${machine.name} | CyTOS Machines Pune`}
         description={machine.description}
         canonical={`https://www.cytos.in${machine.path}`}
-        keywords={`${machine.name}, CyTOS Pune, industrial machine, Bhosari MIDC, ${machine.category}`}
+        keywords={`${machine.name}, CyTOS Pune, industrial machine, Pune, ${machine.category}`}
       />
 
       {/* Product Hero Header */}
@@ -96,7 +96,7 @@ export default function ProductDetailPage({ machineId, onOpenQuote }) {
                 <h3>Engineering Overview</h3>
                 <p className="detail-text">{machine.description}</p>
                 <p className="detail-text">
-                  Manufactured at our Bhosari MIDC facility in Pune, each machine undergoes comprehensive laser interferometer calibration, dynamic spindle runout verification, and extended 72-hour burn-in trial before factory acceptance sign-off.
+                  Manufactured at our manufacturing facility in Pune, each machine undergoes comprehensive laser interferometer calibration, dynamic spindle runout verification, and extended 72-hour burn-in trial before factory acceptance sign-off.
                 </p>
               </div>
 
@@ -140,7 +140,7 @@ export default function ProductDetailPage({ machineId, onOpenQuote }) {
 
               {/* Trial & Delivery CTA */}
               <div className="factory-trial-cta-card">
-                <h4>Schedule a Live Cutting Trial at Bhosari MIDC</h4>
+                <h4>Schedule a Live Cutting Trial at Pune</h4>
                 <p>
                   Bring your material or send component drawings (DXF/STEP) to our Pune works. Our application engineers will run a live demonstration, optimize toolpaths, and calculate exact cycle times.
                 </p>
