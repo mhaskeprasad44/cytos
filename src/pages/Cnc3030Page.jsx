@@ -279,6 +279,56 @@ const pageHtml = `
     </div>
   </section>
 
+  <!-- Live Machine Demonstration Video Section (In-Place Thumbnail Direct Player) -->
+  <section class="machine-video-section" id="video-demo" style="background: #0b1120; padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div class="container">
+      <div class="machine-video-grid">
+        <div class="machine-video-frame-box video-thumb-box inline-video-thumb" data-video-id="Wc9UoQiWpxI" data-video-title="High Accuracy Mini Milling Machine" title="Click to play High Accuracy Mini Milling Machine right on this thumbnail" style="cursor: pointer; position: relative;">
+          <img src="https://i.ytimg.com/vi/Wc9UoQiWpxI/hqdefault.jpg" alt="High Accuracy Mini Milling Machine" loading="lazy" class="video-thumb-img" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+          <div class="video-play-overlay">
+            <div class="video-play-circle" aria-label="Play demonstration video">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+          <span class="video-duration-pill">4K HD • Direct Play</span>
+        </div>
+        <div class="machine-video-content">
+          <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin-bottom: 0.75rem;">
+            <span>VERIFIED FACTORY FOOTAGE</span>
+          </div>
+          <h2 style="font-size: 1.75rem; color: #ffffff; margin: 0 0 0.85rem; font-weight: 800; line-height: 1.3;">See the CNC 3030 High Precision PCB Drilling & Routing Machine in Live Action</h2>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.25rem;">Precision benchtop milling of soft and hard metals (metallic dies, brass, aluminium, FR4, nylon, acrylic) utilizing rigid vibration-damped construction and auto-tool break detection.</p>
+          <ul class="machine-video-feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Recorded live at CyTOS facility in Bhosari MIDC, Pune</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Demonstrates feed rate, spindle stability &amp; chip extraction</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Send your Gerber, DXF or material for a custom test video</span>
+            </li>
+          </ul>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary btn-play-trigger" data-video-id="Wc9UoQiWpxI" data-video-title="High Accuracy Mini Milling Machine">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 6px;" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Play Video on Thumbnail</span>
+            </button>
+            <button class="btn btn-outline" style="border-color: rgba(255,255,255,0.25); color: #ffffff;" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine Video Trial">
+              <span>Book Sample Cut Test</span>
+            </button>
+            <a href="https://www.youtube.com/watch?v=Wc9UoQiWpxI" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.15); color: #94a3b8; font-size: 0.85rem;">
+              <span>Watch on YouTube ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- In-Depth Engineering Features -->
   <section class="section" style="background: var(--bg-secondary);">
     <div class="container">
@@ -520,46 +570,6 @@ const pageHtml = `
             <li style="margin-bottom: 0.6rem;">+ Rotary 4th Axis Attachment for Cylindrical Component Engraving</li>
             <li style="margin-bottom: 0.6rem;">+ Full Soundproof Protective Enclosure with Safety Interlock Doors</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Live Machine Demonstration Video Section -->
-  <section class="machine-video-section" id="video-demo">
-    <div class="container">
-      <div class="machine-video-grid">
-        <div class="machine-video-frame-box">
-          <iframe src="https://www.youtube.com/embed/Wc9UoQiWpxI?rel=0" title="High Accuracy Mini Milling Machine" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="machine-video-content">
-          <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin-bottom: 0.75rem;">
-            <span>FACTORY DEMONSTRATION</span>
-          </div>
-          <h3>See the CNC 3030 High Precision PCB Drilling & Routing Machine in Action</h3>
-          <p>Precision benchtop milling of soft and hard metals (metallic dies, brass, aluminium, FR4, nylon, acrylic) utilizing rigid vibration-damped construction and auto-tool break detection.</p>
-          <ul class="machine-video-feature-list">
-            <li>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Recorded live at CyTOS facility in Bhosari MIDC, Pune</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Demonstrates feed rate, spindle stability &amp; chip extraction</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Send your Gerber, DXF or material for a custom test video</span>
-            </li>
-          </ul>
-          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-            <button class="btn btn-primary" data-open-rfq data-machine="CNC 3030 High Precision PCB Drilling & Routing Machine Video Trial">
-              <span>Book Sample Cut Test</span>
-            </button>
-            <a href="https://www.youtube.com/watch?v=Wc9UoQiWpxI" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.25); color: #ffffff;">
-              <span>Watch in 4K on YouTube ↗</span>
-            </a>
-          </div>
         </div>
       </div>
     </div>
