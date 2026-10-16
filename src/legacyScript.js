@@ -84,6 +84,7 @@ export function initAllPageScripts() {
   initConsentBanner();
   initBlogFilter();
   initTermsToc();
+  initVideoShowcase();
   checkSubmissionStatus();
 }
 
@@ -1278,4 +1279,98 @@ function initTermsToc() {
       });
     }
   });
+}
+
+
+/* ==========================================================================
+   Video Showcase & Modal Player
+   ========================================================================== */
+function initVideoShowcase() {
+  const tabs = document.querySelectorAll('.video-tab-chip');
+  const cards = document.querySelectorAll('.video-card');
+  const modal = document.getElementById('videoModal');
+  const iframe = document.getElementById('videoModalIframe');
+  const modalTitle = document.getElementById('videoModalTitle');
+  const closeBtn = document.getElementById('videoModalClose');
+  const quoteBtn = document.getElementById('videoModalQuoteBtn');
+  const viewSpecsBtn = document.getElementById('videoModalSpecsBtn');
+
+  // 1. Filter Tabs
+  if (tabs.length && cards.length) {
+    tabs.forEach(tab => {
+      tab.onclick = () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.getAttribute('data-filter') || 'all';
+
+        cards.forEach(card => {
+          const cat = card.getAttribute('data-category') || '';
+          if (filter === 'all' || cat === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      };
+    });
+  }
+
+  // 2. Video Modal Triggering
+  const triggers = document.querySelectorAll('[data-video-id]');
+  if (triggers.length && modal && iframe) {
+    function openModal(vidId, title, specsPath, machineName) {
+      if (modalTitle) modalTitle.textContent = title || 'CyTOS Machine Video Demonstration';
+      iframe.src = 'https://www.youtube.com/embed/' + vidId + '?autoplay=1&rel=0';
+      if (quoteBtn) {
+        quoteBtn.setAttribute('data-machine', machineName || title || 'CNC Machine');
+      }
+      if (viewSpecsBtn) {
+        if (specsPath) {
+          viewSpecsBtn.href = specsPath;
+          viewSpecsBtn.style.display = 'inline-flex';
+        } else {
+          viewSpecsBtn.style.display = 'none';
+        }
+      }
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      iframe.src = '';
+      document.body.style.overflow = '';
+    }
+
+    triggers.forEach(trigger => {
+      trigger.onclick = (e) => {
+        // If clicking on direct specs link inside card, don't trigger modal
+        if (e.target.closest('a') && !e.target.closest('[data-video-id]')) return;
+        const vidId = trigger.getAttribute('data-video-id');
+        const title = trigger.getAttribute('data-video-title');
+        const specsPath = trigger.getAttribute('data-video-path');
+        const machine = trigger.getAttribute('data-video-machine');
+        if (vidId) {
+          e.preventDefault();
+          openModal(vidId, title, specsPath, machine);
+        }
+      };
+    });
+
+    if (closeBtn) {
+      closeBtn.onclick = closeModal;
+    }
+
+    modal.onclick = (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    };
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  }
 }

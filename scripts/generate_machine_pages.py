@@ -15,7 +15,7 @@ import re
 from product_catalog_definitions import MACHINE_PRODUCTS
 from build_full_machines_ecosystem import TOP_BAR_HTML, get_header_html, FOOTER_HTML
 
-ROOT = r"c:\Users\PrasadMhaske\Downloads\Project1"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SRC = os.path.join(ROOT, "src")
 PAGES_DIR = os.path.join(SRC, "pages")
 PUBLIC_DIR = os.path.join(ROOT, "public")
@@ -104,10 +104,34 @@ def build_schema_json(product):
         ]
     }
 
+    video_meta = product.get("video")
+    video_schema_str = ""
+    if video_meta:
+        v_schema = {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": video_meta["video_title"],
+            "description": video_meta["video_desc"],
+            "thumbnailUrl": [f"https://img.youtube.com/vi/{video_meta['video_id']}/hqdefault.jpg"],
+            "uploadDate": "2026-10-01T00:00:00+05:30",
+            "contentUrl": f"https://www.youtube.com/watch?v={video_meta['video_id']}",
+            "embedUrl": f"https://www.youtube.com/embed/{video_meta['video_id']}",
+            "publisher": {
+                "@type": "Organization",
+                "name": "CYCLE TIME OPTIMISING SOLUTIONS (CyTOS)",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.cytos.in/CyTOS New Logo.png"
+                }
+            }
+        }
+        video_schema_str = f'\n<script type="application/ld+json">{json.dumps(v_schema, ensure_ascii=False)}</script>'
+
     return (
         f'<script type="application/ld+json">{json.dumps(product_schema, ensure_ascii=False)}</script>\n'
         f'<script type="application/ld+json">{json.dumps(breadcrumb_schema, ensure_ascii=False)}</script>\n'
         f'<script type="application/ld+json">{json.dumps(faq_schema, ensure_ascii=False)}</script>'
+        + video_schema_str
     )
 
 def generate_page_html(p):
@@ -341,6 +365,46 @@ def generate_page_html(p):
           <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7;">
 {opt_acc}
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Machine Demonstration Video Section -->
+  <section class="machine-video-section" id="video-demo">
+    <div class="container">
+      <div class="machine-video-grid">
+        <div class="machine-video-frame-box">
+          <iframe src="https://www.youtube.com/embed/{p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}?rel=0" title="{p.get('video', {}).get('video_title', p['name'])}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="machine-video-content">
+          <div class="hero-badge" style="background: rgba(37,99,235,0.2); border-color: rgba(59,130,246,0.35); color: #93c5fd; margin-bottom: 0.75rem;">
+            <span>FACTORY DEMONSTRATION</span>
+          </div>
+          <h3>See the {p["name"]} in Action</h3>
+          <p>{p.get('video', {}).get('video_desc', 'Authentic factory cutting and operation video filmed at CyTOS Bhosari MIDC plant in Pune.')}</p>
+          <ul class="machine-video-feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Recorded live at CyTOS facility in Bhosari MIDC, Pune</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Demonstrates feed rate, spindle stability &amp; chip extraction</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Send your Gerber, DXF or material for a custom test video</span>
+            </li>
+          </ul>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-rfq data-machine="{p['name']} Video Trial">
+              <span>Book Sample Cut Test</span>
+            </button>
+            <a href="https://www.youtube.com/watch?v={p.get('video', {}).get('video_id', 'Wc9UoQiWpxI')}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: rgba(255,255,255,0.25); color: #ffffff;">
+              <span>Watch in 4K on YouTube ↗</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

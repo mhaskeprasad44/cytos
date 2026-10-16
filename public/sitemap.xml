@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.cytos.in/</loc>
     <lastmod>2026-10-05</lastmod>
@@ -26,7 +27,51 @@
       <image:title>CyTOS Heavy Duty Industrial Gantry CNC Router</image:title>
       <image:caption>Precision industrial CNC router for aluminium, acrylic, composites and wood</image:caption>
     </image:image>
-  </url>
+      <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Wc9UoQiWpxI/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Accuracy Mini Milling Machine</video:title>
+      <video:description>TITAN machining process for soft and hard metals and non-metals (metallic die, plastic, FR4, nylon, wood, brass, aluminium). Manufactured by CyTOS Pune.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=Wc9UoQiWpxI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/Wc9UoQiWpxI</video:player_loc>
+      <video:duration>132</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.cytos.in">CyTOS Engineering Solutions</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/VFu1gzPGcH0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Automatic Thermal Foam Welding Machine</video:title>
+      <video:description>Thermal fusion foam welding machine with 700x700mm platen. Welds 10mm to 250mm thick EPE/EVA/XLPE foam in seconds with 100% glue-free molecular bonding.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=VFu1gzPGcH0</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/VFu1gzPGcH0</video:player_loc>
+      <video:duration>83</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.cytos.in">CyTOS Engineering Solutions</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/vvbIlXhe4BE/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>High Speed Industrial PCB Drilling Machine</video:title>
+      <video:description>Commercial PCB manufacturing machine with pneumatic ATC and high-speed micro-drilling up to 160 hits/min on multilayer panels.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=vvbIlXhe4BE</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/vvbIlXhe4BE</video:player_loc>
+      <video:duration>101</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.cytos.in">CyTOS Engineering Solutions</video:uploader>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/5qZVqYg9CYc/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Chemical-Free PCB Prototyping Machine</video:title>
+      <video:description>Compact 100% chemical-free rapid prototyper for research labs and colleges with auto-leveling surface height compensation.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=5qZVqYg9CYc</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/5qZVqYg9CYc</video:player_loc>
+      <video:duration>119</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.cytos.in">CyTOS Engineering Solutions</video:uploader>
+    </video:video>
+</url>
   <url>
     <loc>https://www.cytos.in/cnc-6060-pcb-drilling-routing-machine</loc>
     <lastmod>2026-10-05</lastmod>
@@ -75,7 +120,18 @@
       <image:title>PCB12 Multi-Spindle PCB Drilling Machine - 3 Spindles 60,000 RPM</image:title>
       <image:caption>CyTOS PCB12 heavy-duty 3-spindle synchronized PCB drilling machine for commercial PCB manufacturing plants</image:caption>
     </image:image>
-  </url>
+      <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/IT64Y8PkU9A/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>PCB12 3-Axis Multi-Spindle PCB CNC Drilling Machine with ATC</video:title>
+      <video:description>Triple synchronized spindles working concurrently over 1200x1200mm gantry envelope, cutting panel drill cycle time by 66%.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=IT64Y8PkU9A</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/IT64Y8PkU9A</video:player_loc>
+      <video:duration>51</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.cytos.in">CyTOS Engineering Solutions</video:uploader>
+    </video:video>
+</url>
   <url>
     <loc>https://www.cytos.in/cnc-wood-acrylic-aluminium-router-machine</loc>
     <lastmod>2026-10-05</lastmod>
@@ -194,7 +250,18 @@
       <image:title>Automotive Pneumatic Welding Jigs and Fixtures</image:title>
       <image:caption>90 degree rotary indexing turnover fixture for robotic welding lines</image:caption>
     </image:image>
-  </url>
+      <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/FOrQVsCUNrk/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>2-Axis Automatic Soldering Robot SPM Demonstration</video:title>
+      <video:description>Custom automated selective soldering robot designed for precision PCB assembly and repeatable cycle times within a 100x100mm work area.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=FOrQVsCUNrk</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/FOrQVsCUNrk</video:player_loc>
+      <video:duration>63</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.cytos.in">CyTOS Engineering Solutions</video:uploader>
+    </video:video>
+</url>
   <url>
     <loc>https://www.cytos.in/robotic-dispensing-cells</loc>
     <lastmod>2026-10-05</lastmod>
@@ -205,7 +272,18 @@
       <image:title>Robotic Dispensing Cells - 3-Axis Cartesian Automation</image:title>
       <image:caption>High-speed automated dispensing systems for RTV silicone, sealants, and potting adhesives</image:caption>
     </image:image>
-  </url>
+      <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/N6U-hsFEUhk/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>3-Axis Automotive Sunroof Adhesive Dispensing Robot Demonstration</video:title>
+      <video:description>3000 x 1500 mm reach Cartesian dispensing robot executing continuous polyurethane perimeter beading on an automotive panoramic sunroof.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=N6U-hsFEUhk</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/N6U-hsFEUhk</video:player_loc>
+      <video:duration>84</video:duration>
+      <video:publication_date>2026-10-01T00:00:00+05:30</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:uploader info="https://www.cytos.in">CyTOS Engineering Solutions</video:uploader>
+    </video:video>
+</url>
   <url>
     <loc>https://www.cytos.in/pneumatic-welding-fixtures</loc>
     <lastmod>2026-10-05</lastmod>

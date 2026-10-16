@@ -7,6 +7,7 @@ Structured product data extracted directly from CyTOS 2026 Catalog & Profile.
 MACHINE_PRODUCTS = [
     {
         "id": "cnc-6060",
+        "video": {"video_id": "vvbIlXhe4BE", "video_title": "High Speed Industrial PCB Drilling Machine", "video_desc": "Watch the CyTOS CNC 6060 performing high-speed PCB drilling and routing with pneumatic automatic tool change (ATC) and high-frequency electro-spindles reaching up to 100,000 RPM at 160 hits/min on multilayer panels."},
         "path": "/cnc-6060-pcb-drilling-routing-machine",
         "jsx_filename": "Cnc6060Page.jsx",
         "name": "CNC 6060 PCB Drilling & Routing Machine",
@@ -117,6 +118,7 @@ MACHINE_PRODUCTS = [
     },
     {
         "id": "cnc-3020",
+        "video": {"video_id": "5qZVqYg9CYc", "video_title": "Chemical-Free PCB Prototyping Machine", "video_desc": "Demonstration of tabletop dry mechanical isolation milling, auto-leveling surface height compensation, and micro-hole drilling for rapid in-house circuit prototyping in research laboratories and colleges."},
         "path": "/cnc-3020-pcb-prototyping-machine",
         "jsx_filename": "Cnc3020Page.jsx",
         "name": "CNC 3020 PCB Rapid Prototyping Machine",
@@ -225,6 +227,7 @@ MACHINE_PRODUCTS = [
     },
     {
         "id": "cnc-3030",
+        "video": {"video_id": "Wc9UoQiWpxI", "video_title": "High Accuracy Mini Milling Machine", "video_desc": "Precision benchtop milling of soft and hard metals (metallic dies, brass, aluminium, FR4, nylon, acrylic) utilizing rigid vibration-damped construction and auto-tool break detection."},
         "path": "/cnc-3030-pcb-prototyping-machine",
         "jsx_filename": "Cnc3030Page.jsx",
         "name": "CNC 3030 High Precision PCB Drilling & Routing Machine",
@@ -330,6 +333,7 @@ MACHINE_PRODUCTS = [
     },
     {
         "id": "pcb12",
+        "video": {"video_id": "IT64Y8PkU9A", "video_title": "3-Axis PCB CNC Drilling & Routing Machine with ATC", "video_desc": "Triple synchronized spindles working concurrently over a 1200x1200mm gantry envelope, cutting panel drill cycle time by 66% on multilayer FR4 and aluminium MCPCB panels."},
         "path": "/pcb12-multi-spindle-drilling-machine",
         "jsx_filename": "Pcb12MultiSpindlePage.jsx",
         "name": "CyTOS PCB12 3-Spindle High Throughput PCB Machine",
@@ -645,6 +649,7 @@ MACHINE_PRODUCTS = [
     },
     {
         "id": "foam-welding",
+        "video": {"video_id": "VFu1gzPGcH0", "video_title": "Automatic Thermal Foam Welding Machine", "video_desc": "100% glue-free thermal molecular fusion welding of packaging foam (EPE, EVA, XLPE) across a 700x700mm bed format in a 5 to 15-second production cycle."},
         "path": "/foam-welding-machine",
         "jsx_filename": "FoamWeldingMachinePage.jsx",
         "name": "Automatic Thermal Foam Welding Machine",

@@ -8,7 +8,7 @@ import os
 import json
 import xml.etree.ElementTree as ET
 
-ROOT = r"c:\Users\PrasadMhaske\Downloads\Project1"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SRC = os.path.join(ROOT, "src")
 PAGES_DIR = os.path.join(SRC, "pages")
 DATA_DIR = os.path.join(SRC, "data")
