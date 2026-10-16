@@ -40,13 +40,63 @@
     <meta name="twitter:description" content="Precision CNC Routers, PCB Drilling & Milling Machines, and SPM Automation in Pune, India." />
     <meta name="twitter:image" content="https://www.cytos.in/CyTOS%20New%20Logo.png" />
 
-    <!-- Google Tag Manager (Enables 1-Click Verification in Google Search Console) -->
+    <!-- 1. Google Consent Mode v2 (Default settings before GTM & GA4 load) -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      (function() {
+        var isAnalyticsGranted = true;
+        var isMarketingGranted = true;
+        try {
+          var saved = localStorage.getItem('cytos_cookie_consent');
+          if (saved) {
+            var parsed = JSON.parse(saved);
+            if (parsed && typeof parsed === 'object') {
+              if (parsed.analytics === false) isAnalyticsGranted = false;
+              if (parsed.functional === false) isMarketingGranted = false;
+            }
+          }
+        } catch(e) {}
+
+        gtag('consent', 'default', {
+          'analytics_storage': isAnalyticsGranted ? 'granted' : 'denied',
+          'ad_storage': isMarketingGranted ? 'granted' : 'denied',
+          'ad_user_data': isMarketingGranted ? 'granted' : 'denied',
+          'ad_personalization': isMarketingGranted ? 'granted' : 'denied',
+          'wait_for_update': 500
+        });
+      })();
+    </script>
+
+    <!-- 2. Google Tag Manager (Enables 1-Click Verification in Google Search Console & Custom Triggers) -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P6DNQQ3H');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- 3. Google Analytics GA4 (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLPML4D2SB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TLPML4D2SB', {
+        send_page_view: true
+      });
+    </script>
+    <!-- End Google Analytics GA4 -->
+
+    <!-- 4. Microsoft Clarity Session Recording & Heatmaps -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ypy7znoaq7");
+    </script>
+    <!-- End Microsoft Clarity -->
 
     <!-- High-Visibility Color Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

@@ -18,6 +18,7 @@ import TermsPage from './pages/TermsPage';
 import VdmMillingPage from './pages/VdmMillingPage';
 import BlogListingPage from './pages/BlogListingPage';
 import CookieConsent from './components/CookieConsent';
+import AnalyticsTracker from './components/AnalyticsTracker';
 import { blogArticles } from './data/blogData';
 
 // Standalone Individual Machine Pages
@@ -44,6 +45,7 @@ function PageLoader() {
 export default function App() {
   return (
     <Suspense fallback={<PageLoader />}>
+      <AnalyticsTracker />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

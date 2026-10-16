@@ -19,11 +19,14 @@ export default function CookieConsent() {
         setConsentGiven(true);
         const parsed = JSON.parse(saved);
         if (parsed && typeof parsed === 'object') {
+          const isAnalytics = parsed.analytics !== false;
+          const isFunctional = parsed.functional !== false;
           setPreferences({
             necessary: true,
-            analytics: parsed.analytics !== false,
-            functional: parsed.functional !== false
+            analytics: isAnalytics,
+            functional: isFunctional
           });
+          applyConsent(isAnalytics, isFunctional);
         }
       } else {
         // If first visit, show after a smooth 800ms delay
@@ -38,6 +41,36 @@ export default function CookieConsent() {
     }
   }, []);
 
+  const applyConsent = (analyticsAllowed, functionalAllowed) => {
+    // 1. Google Consent Mode v2
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        'analytics_storage': analyticsAllowed ? 'granted' : 'denied',
+        'ad_storage': functionalAllowed ? 'granted' : 'denied',
+        'ad_user_data': functionalAllowed ? 'granted' : 'denied',
+        'ad_personalization': functionalAllowed ? 'granted' : 'denied'
+      });
+    }
+
+    // 2. Google Tag Manager dataLayer event
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({
+        event: 'consent_update',
+        consent_analytics: analyticsAllowed ? 'granted' : 'denied',
+        consent_functional: functionalAllowed ? 'granted' : 'denied'
+      });
+    }
+
+    // 3. Microsoft Clarity consent
+    if (typeof window.clarity === 'function') {
+      try {
+        if (analyticsAllowed) {
+          window.clarity('consent');
+        }
+      } catch (e) {}
+    }
+  };
+
   const handleAcceptAll = () => {
     const all = { necessary: true, analytics: true, functional: true, timestamp: new Date().toISOString() };
     try {
@@ -47,6 +80,7 @@ export default function CookieConsent() {
     setConsentGiven(true);
     setIsOpen(false);
     setShowSettings(false);
+    applyConsent(true, true);
   };
 
   const handleNecessaryOnly = () => {
@@ -58,6 +92,7 @@ export default function CookieConsent() {
     setConsentGiven(true);
     setIsOpen(false);
     setShowSettings(false);
+    applyConsent(false, false);
   };
 
   const handleSaveCustom = () => {
@@ -65,9 +100,11 @@ export default function CookieConsent() {
     try {
       localStorage.setItem('cytos_cookie_consent', JSON.stringify(custom));
     } catch (e) {}
+    setPreferences(custom);
     setConsentGiven(true);
     setIsOpen(false);
     setShowSettings(false);
+    applyConsent(preferences.analytics, preferences.functional);
   };
 
   return (

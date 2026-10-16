@@ -162,11 +162,6 @@ def generate_page_html(p):
     ])
 
     full_html = f"""
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6DNQQ3H"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
 {schema_markup}
 
 {TOP_BAR_HTML}
