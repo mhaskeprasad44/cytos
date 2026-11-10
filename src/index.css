@@ -4068,6 +4068,51 @@ a[href*="wa.me"] svg {
   margin: 0;
 }
 
+.terms-clause-number {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--brand-gold-dark);
+  background: rgba(217, 119, 6, 0.12);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+}
+
+.terms-callout-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--brand-gold);
+  border-radius: 0 8px 8px 0;
+  padding: 1.15rem 1.4rem;
+  margin: 1.25rem 0;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.terms-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.terms-bullet-list,
+.terms-numbered-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.terms-bullet-list li,
+.terms-numbered-list li {
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 900px) {
   .terms-layout {
     grid-template-columns: 1fr;

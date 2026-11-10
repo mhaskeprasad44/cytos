@@ -1256,18 +1256,22 @@ function initTermsToc() {
   if (!links.length) return;
 
   const sections = document.querySelectorAll('.terms-section');
+  if (!sections.length) return;
 
-  window.addEventListener('scroll', () => {
+  function updateActiveLink() {
     let currentId = '';
-    const scrollPos = window.scrollY + 140;
+    const targetOffset = 160;
 
     sections.forEach(sec => {
-      const top = sec.offsetTop;
-      const height = sec.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top <= targetOffset && rect.bottom > targetOffset) {
         currentId = sec.getAttribute('id');
       }
     });
+
+    if (!currentId && window.scrollY < 250 && sections.length > 0) {
+      currentId = sections[0].getAttribute('id');
+    }
 
     if (currentId) {
       links.forEach(l => {
@@ -1278,7 +1282,36 @@ function initTermsToc() {
         }
       });
     }
+  }
+
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const headerOffset = 90;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+
+          links.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+          if (history.pushState) {
+            history.pushState(null, '', href);
+          }
+        }
+      }
+    });
   });
+
+  window.addEventListener('scroll', updateActiveLink, { passive: true });
+  updateActiveLink();
 }
 
 

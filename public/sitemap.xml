@@ -625,4 +625,34 @@
       <image:caption>Single-flute polished carbide tool geometry, cold air cooling, and burr-free edges</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.cytos.in/blog/multi-spindle-drilling-tapping-spm</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/blog/automatic-foam-welding-machine-spm</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/blog/rotary-indexing-table-assembly-spm</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/blog/custom-gantry-pick-and-place-automation-spm</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.cytos.in/blog/spm-machine-roi-and-cycle-time-calculation</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
